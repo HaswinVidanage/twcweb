@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="no"?> 
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <font id="prismic-website" horiz-adv-x="24">
+    <font-face font-family="prismic-website"
+      units-per-em="24" ascent="24"
+      descent="0" />
+    <missing-glyph horiz-adv-x="0" />
+    <glyph glyph-name="done"
+      unicode="&#xE001;"
+      horiz-adv-x="24" d=" M9 7.8L4.8 12L3.4 10.6L9 5L21 17L19.6 18.4L9 7.8z" />
+    <glyph glyph-name="arrow-drop-down"
+      unicode="&#xE002;"
+      horiz-adv-x="24" d=" M7 14L12 9L17 14z" />
+    <glyph glyph-name="mode-edit"
+      unicode="&#xE003;"
+      horiz-adv-x="24" d=" M3 6.75V3H6.75L17.81 14.06L14.06 17.81L3 6.75zM20.71 16.96C21.1 17.35 21.1 17.98 20.71 18.37L18.37 20.71C17.98 21.1 17.35 21.1 16.96 20.71L15.13 18.88L18.88 15.13L20.71 16.96z" />
+    <glyph glyph-name="menu"
+      unicode="&#xE004;"
+      horiz-adv-x="24" d=" M3 6H21V8H3V6zM3 11H21V13H3V11zM3 18V16H21V18H3z" />
+    <glyph glyph-name="close"
+      unicode="&#xE005;"
+      horiz-adv-x="24" d=" M19 17.59L17.59 19L12 13.41L6.41 19L5 17.59L10.59 12L5 6.41L6.41 5L12 10.59L17.59 5L19 6.41L13.41 12z" />
+    <glyph glyph-name="arrow-right"
+      unicode="&#xE006;"
+      horiz-adv-x="24" d=" M8.59 7.66L13.17 12.25L8.59 16.84L10 18.25L16 12.25L10 6.25z" />
+    <glyph glyph-name="arrow-forward"
+      unicode="&#xE007;"
+      horiz-adv-x="24" d=" M12 20L10.59 18.59L16.17 13H4V11H16.17L10.59 5.41L12 4L20 12z" />
+  </font>
+</defs>
+</svg>

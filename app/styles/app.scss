@@ -1,12 +1,12 @@
-$space-large:  2.5rem;
-$title-color: #555;
+//variables
+@import "base/variables";
 
-.page-title{
-  color:$title-color;
-  margin-top: $space-large;
-  margin-bottom: $space-large;
-}
+//foundation
+@import "base/foundation-settings";
+@import "foundation";
+@include foundation-everything;
 
-input[type=search] {
-  box-shadow: none;
-}
+
+//components
+@import "components/body";
+@import "components/navigation";

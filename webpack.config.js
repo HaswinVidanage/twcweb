@@ -1,4 +1,7 @@
 var webpack = require('webpack');
+var path = require ('path');
+
+process.env.NODE_ENV = process.env.NODE_ENV || 'development' ;
 
 module.exports = {
   entry:[
@@ -12,7 +15,14 @@ module.exports = {
   plugins :[
     new webpack.ProvidePlugin({
       '$':'jquery',
-      'jQuery':'jquery'
+      'jQuery':'jquery',
+
+    }),
+
+    new webpack.optimize.UglifyJsPlugin({
+      compressor :  {
+        warnings : false
+      }
     })
   ],
   output: {
@@ -21,17 +31,23 @@ module.exports = {
   },
   resolve:{
     root:__dirname,
+    modulesDirectories : [
+      'node_modules',
+      './app/components',
+      './app/api',
+      './app/styles/*'
+    ],
     alias:{
-      Main : 'app/components/Main.jsx',
-      Nav  : 'app/components/Nav.jsx',
-      Weather:'app/components/Weather.jsx',
-      About:'app/components/About.jsx',
-      Examples:'app/components/Examples.jsx',
-      WeatherForm:'app/components/WeatherForm.jsx',
-      WeatherMessage:'app/components/WeatherMessage.jsx',
-      openWeatherMap:'app/api/openWeatherMap.jsx',
-      ErrorModal :'app/components/ErrorModal.jsx',
-      applicationStyles: 'app/styles/app.scss'
+    Main : 'app/components/Main.jsx',
+    Nav  : 'app/components/Nav.jsx',
+    Weather:'app/components/Weather.jsx',
+    About:'app/components/About.jsx',
+    Examples:'app/components/Examples.jsx',
+    WeatherForm:'app/components/WeatherForm.jsx',
+    WeatherMessage:'app/components/WeatherMessage.jsx',
+    openWeatherMap:'app/api/openWeatherMap.jsx',
+    ErrorModal :'app/components/ErrorModal.jsx',
+    applicationStyles: 'app/styles/app.scss'
     },
     extensions:['','.js','.jsx']
   },
@@ -46,6 +62,12 @@ module.exports = {
         exclude: /(node_modules|bower_components)/
       }
     ]
+
   },
-  devtool: 'cheap-module-eval-source-map'
+  sassLoader: {
+    includePaths: [
+      path.resolve(__dirname, './node_modules/foundation-sites/scss')
+    ]
+  },
+  devtool: process.env.NODE_ENV === 'production' ? undefined : 'cheap-module-eval-source-map'
 };
