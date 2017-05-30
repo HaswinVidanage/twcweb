@@ -29,7 +29,7 @@ var Nav = React.createClass({
       <nav className="vertical light menu">
         <div className="navbar align-middle row">
           <a className="brand small-6 medium-1 large-3 align-middle columns" href="index.html">
-            <img alt="twcinnovations" src="./images/logo.png"/>
+            <img alt="twcinnovations" src="./images/logo123.png"/>
           </a>
 
 
@@ -119,6 +119,7 @@ var Nav = React.createClass({
             </li>
             <li><Link to="/about" activeClassName="active" activeStyle={{fontWeight:'bold'}}>About</Link></li>
             <li><Link to="/examples" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Examples</Link></li>
+            <li><Link to="/portfolio" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Portfolio</Link></li>
             <li><a href="docs.html">Docs</a></li>
             <li className="separator"></li>
             <li><a href="dashboard/index.html">Login</a></li>
