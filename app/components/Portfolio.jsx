@@ -8,7 +8,7 @@ var fullpageJs = require('fullpage.js');
 
 var Portfolio = React.createClass({
   componentDidMount: function(){
-    $('#fullpage').fullpage();    
+    $('#fullpage').fullpage();
   },
   render : function(){
     return (

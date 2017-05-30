@@ -7,6 +7,7 @@
     "axios": "^0.16.1",
     "dotenv": "4.0.0",
     "express": "^4.15.2",
+    "fullpage-react": "^2.0.3",
     "fullpage.js": "^2.9.4",
     "keystone": "4.0.0-beta.5",
     "keystone-email": "1.0.5",
@@ -17,6 +18,7 @@
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-router": "^2.0.0",
+    "react-tappable": "^1.0.0",
     "resolve-url-loader": "^2.0.2",
     "restful-keystone": "^0.3.0",
     "resty-stone": "0.0.32-alpha"
