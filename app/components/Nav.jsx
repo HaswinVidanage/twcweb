@@ -25,17 +25,17 @@ var Nav = React.createClass({
       //   </div>
       //
       // </div>
-      <nav className="light menu">
 
+      <nav className="vertical light menu">
         <div className="navbar align-middle row">
           <a className="brand small-6 medium-1 large-3 align-middle columns" href="index.html">
-            <img alt="prismicio" src="...a3f951e/images/logoHeader.svg"/><span>prismic.io</span>
+            <img alt="twcinnovations" src="./images/logo.png"/>
           </a>
 
 
           <ul className="menu-desktop medium-11 large-9 align-right align-middle row">
             <li>
-              <div className="menu-group">
+              <div className="menu-group" >
                 <span>Features</span>
                 <div className="sub-items row">
 
@@ -117,8 +117,8 @@ var Nav = React.createClass({
                 </div>
               </div>
             </li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="quickstart.html">Quickstart</a></li>
+            <li><Link to="/about" activeClassName="active" activeStyle={{fontWeight:'bold'}}>About</Link></li>
+            <li><Link to="/examples" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Examples</Link></li>
             <li><a href="docs.html">Docs</a></li>
             <li className="separator"></li>
             <li><a href="dashboard/index.html">Login</a></li>
@@ -221,6 +221,8 @@ var Nav = React.createClass({
           </div>
         </div>
       </nav>
+
+
 
 
     );

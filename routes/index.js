@@ -29,18 +29,50 @@ keystone.pre('render', middleware.flashMessages);
 // Import Route Controllers
 var routes = {
 	views: importRoutes('./views'),
+	api: importRoutes('./api')
 };
 
 // Setup Route Bindings
 exports = module.exports = function (app) {
 	// Views
 	app.get('/', routes.views.index);
+	app.get('/blogs', routes.views.blog);
 	app.get('/blog/:category?', routes.views.blog);
 	app.get('/blog/post/:post', routes.views.post);
 	app.get('/gallery', routes.views.gallery);
 	app.all('/contact', routes.views.contact);
 
+	//api endpoints
+	// API
+	app.get('/api/posts', keystone.middleware.api, routes.api.post.getPosts);
+	// app.get('/api/posts/:id', keystone.middleware.api, routes.api.ticket.getTicketById);
+	// app.post('/api/posts', keystone.middleware.api, routes.api.ticket.createTicket);
+	// app.put('/api/posts/:id', keystone.middleware.api, routes.api.ticket.updateTicketById);
+	// app.delete('/api/posts/:id', keystone.middleware.api, routes.api.ticket.deleteTicketById);
+
+	// var restful = require('restful-keystone')(keystone);
+	//   restful.expose({
+	//     Post : true
+	//   }).start();
+
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);
 
+
 };
+
+
+//creating api endpoints for keystone models// file: routes/index.js
+
+
+// Pass your keystone instance to the module
+//https://github.com/d-pac/restful-keystone
+// var restful = require('restful-keystone')(keystone);
+//
+//
+// exports = module.exports = function( app ){
+//   //Explicitly define which lists we want exposed
+//   restful.expose({
+//     Post : true
+//   }).start();
+// }
