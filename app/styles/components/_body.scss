@@ -1,3 +1,27 @@
 html body {
-    background: $prism-green!important;
+    background: #fefefe;
+
+    // background: #e52d27!important;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to top, #b31217, #e52d27)!important;  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to bottom, #b31217, #e52d27)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+
+html body h1, html body h2 {
+    letter-spacing: 1px;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Hind Vadodara", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #6E7DA2;
+    background: #fefefe;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

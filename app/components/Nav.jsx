@@ -29,14 +29,16 @@ var Nav = React.createClass({
       <nav className="vertical light menu">
         <div className="navbar align-middle row">
           <a className="brand small-6 medium-1 large-3 align-middle columns" href="index.html">
-            <img alt="twcinnovations" src="./images/logo123.png"/>
+            <object data="./images/logo.svg" type="image/svg+xml">
+              <img src="./images/logo.png" />
+            </object>
           </a>
 
 
           <ul className="menu-desktop medium-11 large-9 align-right align-middle row">
             <li>
               <div className="menu-group" >
-                <span>Features</span>
+                <span>Services</span>
                 <div className="sub-items row">
 
 
@@ -117,13 +119,12 @@ var Nav = React.createClass({
                 </div>
               </div>
             </li>
-            <li><Link to="/about" activeClassName="active" activeStyle={{fontWeight:'bold'}}>About</Link></li>
-            <li><Link to="/examples" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Examples</Link></li>
+            <li><Link to="/Saless" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Sales Suit</Link></li>
             <li><Link to="/portfolio" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Portfolio</Link></li>
-            <li><a href="docs.html">Docs</a></li>
+            <li><Link to="/about" activeClassName="active" activeStyle={{fontWeight:'bold'}}>About</Link></li>
             <li className="separator"></li>
-            <li><a href="dashboard/index.html">Login</a></li>
-            <li><a className="button" href="%23create.html">Test it out</a></li>
+            <li><a href="dashboard/index.html">Blog</a></li>
+            <li><a className="button navButton" href="%23create.html" >Contact Us</a></li>
           </ul>
 
 
@@ -132,7 +133,7 @@ var Nav = React.createClass({
             <div className="menu-mobile-container small-12">
               <i className="icon-close"></i>
               <div className="menu-content">
-                <span className="group-label">Features</span>
+                <span className="group-label">Services</span>
                 <div className="sub-items">
                   <div className="sub-item small-12">
                     <a href="feature/custom-type-builder.html">

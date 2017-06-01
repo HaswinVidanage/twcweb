@@ -2173,7 +2173,7 @@ kbd {
 }
 
 .icon-close:before {
-  content: '\E005'!important; 
+  content: '\E005'!important;
 }
 
 .icon-arrow-right:before {
@@ -2272,7 +2272,7 @@ nav.menu {
         nav.menu .menu-desktop li > a:hover, nav.menu .menu-desktop li .menu-group > span:hover {
           color: #b3afff; }
         nav.menu .menu-desktop li > a.button, nav.menu .menu-desktop li .menu-group > span.button {
-          border: 2px solid #5E5AB4;
+          border: 2px solid #2d3434;
           border-radius: 140px;
           padding: 0 25px;
           line-height: 40px;
@@ -7362,4 +7362,10 @@ a.doc-tab {
 // Navigation menu button on click grey
 nav.menu .menu-desktop li .menu-group.open>span {
     color: #4fad95!important;
+}
+
+//navigation buttons
+
+.navButton{
+  background-color: rgba(255, 0, 0, 0)!important;
 }
