@@ -21,7 +21,7 @@ var Nav = require('Nav');
 //</div>
 var Main = (props) =>{
   return(
-    <div>
+    <div className="main-wrapper">
       <div className="main-nav-wrapper">
         <Nav/>
       </div>
