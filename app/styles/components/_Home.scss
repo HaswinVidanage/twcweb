@@ -6,25 +6,25 @@
   background: linear-gradient(to bottom, #b31217, #e52d27)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-// .header:after {
-//     content: "";
-//     -webkit-clip-path: polygon(100% 100%,100% 0,0 100%)!important;
-//     clip-path: polygon(100% 100%,100% 0,0 100%)!important;
-//     display: block;
-//     position: absolute;
-//     bottom: 0;
-//     left: 0;
-//     z-index: 0;
-//     height: 254px;
-//     width: 100%!important;
-//     max-width: 1440px;
-//     background: #e52d27!important;  /* fallback for old browsers */
-//     background: -webkit-linear-gradient(to bottom, #b31217, #e52d27)!important;  /* Chrome 10-25, Safari 5.1-6 */
-//     background-image: -moz-linear-gradient(to bottom, #b31217, #e52d27)!important;
-//     background: linear-gradient(to bottom, #b31217, #e52d27)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-//
-//     top: 420px;
-// }
+.section0-home:after {
+    content: "";
+    -webkit-clip-path: polygon(100% 100%,100% 0,0 100%)!important;
+    clip-path: polygon(100% 100%,100% 0,0 100%)!important;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    height: 254px;
+    width: 100%!important;
+    max-width: 1440px;
+    background: #e52d27!important;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #b31217, #e52d27)!important;  /* Chrome 10-25, Safari 5.1-6 */
+    background-image: -moz-linear-gradient(to bottom, #b31217, #e52d27)!important;
+    background: linear-gradient(to bottom, #b31217, #e52d27)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    top: 405px;
+}
 
 
 
