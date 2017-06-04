@@ -4,26 +4,45 @@
   background: -webkit-linear-gradient(to bottom, #b31217, #e52d27)!important;  /* Chrome 10-25, Safari 5.1-6 */
   background-image: -moz-linear-gradient(to bottom, #b31217, #e52d27)!important;
   background: linear-gradient(to bottom, #b31217, #e52d27)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  height: 720px;
+  min-height: 660px!important;
+  max-height: 660px!important;
+  width: 100%;
+  margin: 0;
+  box-sizing: inherit;
+  padding: 0;
+
 }
+
 
 .section0-home:after {
     content: "";
     -webkit-clip-path: polygon(100% 100%,100% 0,0 100%)!important;
     clip-path: polygon(100% 100%,100% 0,0 100%)!important;
     display: block;
-    position: absolute;
+    position: absolute!important;
     bottom: 0;
     left: 0;
     z-index: 0;
     height: 254px;
     width: 100%!important;
-    max-width: 1440px;
+    //width: 1440px;
+    //max-width: 1440px;
+    max-width: 100%!important;
     background: #e52d27!important;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #b31217, #e52d27)!important;  /* Chrome 10-25, Safari 5.1-6 */
     background-image: -moz-linear-gradient(to bottom, #b31217, #e52d27)!important;
     background: linear-gradient(to bottom, #b31217, #e52d27)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     top: 405px;
+    overflow:hidden!important;
+
+    @media screen and (min-width: 253px){
+      height: 253px;
+      //display: none!important;
+    }
 }
 
 
@@ -93,10 +112,18 @@
 
 // presentation
 .presentation{
-  max-width: 50%;
+  //max-width: 50%;
   padding-top: 200px;
   position: relative;
-  text-align: left!important;
+  text-align: left;
+  z-index: 1;
+  @media screen and (max-width: 63.9375em){
+    text-align: center;
+    left: 200px;
+    right: 200px;
+    padding: 120 0px;
+
+  }
 }
 
 // illustration
@@ -109,13 +136,60 @@
   position: absolute!important;
   z-index: 2;
   top: 210px;
+  max-width: 50%!important;
+
+  @media-screen and (min-width: 1024px){
+    display: none!important;
+  }
 }
 
 .illu-code{
     position: absolute!important;
-    top: 110px;
-    right: -73px;
+    top: 108px;
+    right: 0px;
     z-index: 1;
+
+    @media-screen and (min-width: 1024px){
+      display: none!important;
+    }
+}
+
+.align-center {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.align-justify {
+    /* -webkit-box-pack: justify; */
+    /* -webkit-justify-content: space-between; */
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    /* justify-content: space-between; */
+}
+
+.align-middle {
+    /* -webkit-box-align: center; */
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.row {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: -webkit-box; */
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    /* display: flex; */
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
 }
 // .align-right {
 //     -webkit-box-pack: end;
@@ -153,6 +227,9 @@
   height: 520px!important;
 }
 
+.hashtags {
+  z-index: 1;
+}
 .hashtags strong {
     font-weight: normal;
 }
@@ -191,6 +268,7 @@ h1 {
 
 .logos {
   margin-top: 72px;
+  z-index: 1;
 }
 
 .section2-home {
@@ -200,7 +278,6 @@ h1 {
 // Animation
 
 #nexus{
-
   -webkit-transition: all 0.7s ease-out;
   -moz-transition: all 0.7s ease-out;
   -o-transition: all 0.7s ease-out;
@@ -210,6 +287,7 @@ h1 {
   -webkit-perspective: 1000;
 }
 
+//not used
 #nexus.active{
 		-webkit-transform: translate3d(213px, 0px, 0px);
 		-moz-transform: translate3d(213px, 0px, 0px);
@@ -218,9 +296,10 @@ h1 {
 	}
 
 #nexus.moveDown{
-  	-webkit-transform: translate3d(0, 75%, 0);
-    -ms-transform: translate3d(0, 75%, 0);
-    transform: translate3d(0, 75%, 0);
+  	-webkit-transform: translate3d(0, 90%, 0);
+    -ms-transform: translate3d(0, 90%, 0);
+    transform: translate3d(0, 90%, 0);
+
   }
 
 #nexus.moveUp{
@@ -229,3 +308,40 @@ h1 {
     transform: translate3d(0, 0, 0);
   }
 //Animation End
+
+/* overriding styling when turning down the slimscroll overflow option */
+
+// .fp-section,
+// .fp-slide,
+// .fp-tableCell {
+//   height: auto !important;
+// }
+
+
+div.header .header-container .illustration {
+  @media screen and (max-width: 63.9375em) {
+    width: auto!important;
+  }
+}
+
+
+.illustration .illu-editor  {
+  @media screen and (max-width: 63.9375em){
+    display: none!important;
+  }
+}
+
+.illustration .illu-code  {
+  @media screen and (max-width: 63.9375em){
+    display: none!important;
+  }
+}
+
+.invisible {
+  display: none!important;
+}
+
+
+#obj-nexus {
+  
+}

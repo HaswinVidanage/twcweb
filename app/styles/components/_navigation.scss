@@ -7369,3 +7369,11 @@ nav.menu .menu-desktop li .menu-group.open>span {
 .navButton{
   background-color: rgba(255, 0, 0, 0)!important;
 }
+
+
+
+nav.menu .navbar {
+  @media screen and (min-width: 40em){
+    padding: 0 40px;
+  }
+}

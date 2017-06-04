@@ -1,5 +1,5 @@
 var React = require('react');
-//var fullpageJs = require('fullpage.js');
+var fullpageJs = require('fullpage.js');
 
 var Home = React.createClass({
 	componentDidMount: function(){
@@ -8,25 +8,29 @@ var Home = React.createClass({
 							menu: '#menu',
 							anchors: ['?firstPage', '?secondPage', '?3rdPage'],
 							autoScrolling: false,
+						  scrollOverflow: false,
+							fitToSection:false,
 
 							'afterLoad': function(anchorLink, index){
-								if(index == 2){
-									// $('#iphone3, #iphone2, #iphone4').addClass('active');
-									console.log('Index 2');
-								}
+								console.log("Width : " + $( window ).width());
+								console.log("Height : " + $( window ).height());
+								// if(index == 1){
+								// 	// $('#iphone3, #iphone2, #iphone4').addClass('active');
+								// 	console.log('Index 1');
+								// }
 							},
 
 							'onLeave': function(index, nextIndex, direction){
-								if (index == 2 && direction == 'down'){
-									console.log('index 2 down');
-									//$('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
-								}
-								else if(index == 2 && direction == 'up'){
-									console.log('index 2 up');
-									//$('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
-								}
+								// make navbar hidden if autoScrolling
+								// if(index == 1 && direction == 'down'){
+								// 	// make navbar dark
+								// 	$('#navbar').addClass('invisible');
+								// } else if(index == 2 && direction == 'up'){
+								// 	$('#navbar').removeClass('invisible');
+								// }
 
-								$('#nexus').toggleClass('moveDown', (index == 1 && direction == 'down' ) || (index == 4 && direction == 'up'));
+
+								$('#nexus').toggleClass('moveDown', (index == 1 && direction == 'down' ) || (index == 2 && direction == 'down' ) );
 								$('#nexus').toggleClass('moveUp', nextIndex == 1);
 								//$('#nexus').toggleClass('moveUp', index == 1 && direction == 'up');
 
@@ -94,8 +98,8 @@ var Home = React.createClass({
 			// 	</div>
 			// </div>
 
-			<div id="fullpage">
-				<div className="section section0-home" id="section0-home">
+			<div id="fullpage" className="small-12 medium-12 large-12">
+				<div className="section section0-home small-12 medium-12 large-12" id="section0-home">
 					<div className="header header-home">
 	          <div className="header-container">
 	            <div className="row align-middle align-justify">
@@ -122,31 +126,26 @@ var Home = React.createClass({
 
 	              <div className="illustration small-11 medium-6 large-6 align-right text-center">
 	                <div className="illu illu-editor" id="nexus">
-
-	                  <object data="./images/Home/nexus.svg" type="image/svg+xml">
+	                  <object id="obj-nexus" data="./images/Home/nexus.svg" type="image/svg+xml">
 	                    <img src="./images/Home/nexus.png" />
 	                  </object>
-
-
 	                </div>
-
-	                <div className="illu illu-code text-right">
-										<object  data="./images/Home/browser-window.svg" type="image/svg+xml">
+	                <div className="illu illu-code text-right small-11 medium-6 large-6">
+										<object id="obj-browser" data="./images/Home/browser-window.svg" type="image/svg+xml">
 	                    <img src="./images/Home/browser-window.png" />
 	                  </object>
 	                </div>
-
 	              </div>
 	            </div>
 	          </div>
 	        </div>
 				</div>
-				<div className="section" id="section1-home">
+				<div className="section small-12 medium-12 large-12" id="section1-home">
 					<div className="section2-home">
 						<h1>Enjoy it</h1>
 					</div>
 				</div>
-				<div className="section" id="section3-home">
+				<div className="section small-12 medium-12 large-12" id="section3-home">
 					<div className="section3-home">
 						<h1>Enjoy it</h1>
 					</div>
