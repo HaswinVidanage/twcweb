@@ -296,10 +296,10 @@ h1 {
 	}
 
 #nexus.moveDown{
-  	-webkit-transform: translate3d(0, 90%, 0);
-    -ms-transform: translate3d(0, 90%, 0);
-    transform: translate3d(0, 90%, 0);
-
+  	-webkit-transform: translate3d(0, 75%, 0);
+    -ms-transform: translate3d(0, 75%, 0);
+    transform: translate3d(0, 75%, 0);
+    // TODO : Write Media Queries
   }
 
 #nexus.moveUp{
@@ -343,5 +343,5 @@ div.header .header-container .illustration {
 
 
 #obj-nexus {
-  
+
 }
