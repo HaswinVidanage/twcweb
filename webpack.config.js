@@ -16,6 +16,7 @@ module.exports = {
     new webpack.ProvidePlugin({
       '$':'jquery',
       'jQuery':'jquery',
+      '@' :'transform-decorators-legacy'
 
     }),
     new webpack.optimize.UglifyJsPlugin({
@@ -51,6 +52,8 @@ module.exports = {
     Portfolio : 'app/components/Portfolio.jsx',
     applicationStyles: 'app/styles/app.scss',
     ContactUsBar:  'app/components/common/ContactUsBar.jsx',
+    MiniContactForm: 'app/components/home/MiniContactForm.jsx',
+    MapBox: 'app/components/common/Map.jsx',
     },
     extensions:['','.js','.jsx']
   },

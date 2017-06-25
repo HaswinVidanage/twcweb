@@ -3,6 +3,7 @@ var fullpageJs = require('fullpage.js');
 
 var Footer = require('Footer');
 var ContactUsBar = require('ContactUsBar');
+var MiniContactForm = require('MiniContactForm');
 
 var Home = React.createClass({
 	componentDidMount: function(){
@@ -162,9 +163,8 @@ var Home = React.createClass({
 								</div>
 							</div>
 						</div>
-
-
 					</div>
+					<MiniContactForm/>
 				</div>
 
 				<ContactUsBar/>
