@@ -20,7 +20,8 @@
     "react-tappable": "^1.0.0",
     "resolve-url-loader": "^2.0.2",
     "restful-keystone": "^0.3.0",
-    "resty-stone": "0.0.32-alpha"
+    "resty-stone": "0.0.32-alpha",
+    "react-icons": "2.2.5"
   },
   "devDependencies": {
     "eslint": "3.15.0",

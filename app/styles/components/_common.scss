@@ -1,0 +1,49 @@
+.btn-round-black {
+  border: 2px solid #2d3434;
+  border-radius: 140px;
+  padding: 0 25px;
+  line-height: 40px;
+  display: inline-block;
+}
+
+.btn-round-red-white {
+  border: 2px solid $blood-red-light;
+  background-color: white;
+  color: $blood-red-dark;
+  border-radius: 140px;
+  padding: 0 25px;
+  line-height: 40px;
+  display: inline-block;
+}
+
+.btn-round-red-white:focus, .btn-round-red-white:hover {
+    background-color: $blood-red-light;
+    color: white;
+}
+
+.btn-round-red-red:focus, .btn-round-red-red:hover {
+  background-color: white;
+  color: $blood-red-light;
+}
+
+.btn-round-red-red {
+  border: 2px solid $blood-red-light;
+  background-color: $blood-red-light;
+  color: white;
+  border-radius: 140px;
+  padding: 0 25px;
+  line-height: 40px;
+  display: inline-block;
+}
+
+.contactus-bar-text {
+  color : $blood-red-dark;
+}
+
+.ContactUsBar{
+  height: 200px;
+}
+
+.padding-top-50 {
+  padding: 50px;
+}

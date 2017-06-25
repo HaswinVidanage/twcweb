@@ -1,0 +1,68 @@
+.footer {
+  background: $footer-grey;
+}
+
+.footer-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer-row-col-1 {
+  padding: 50px 20px 10px 20px;
+}
+
+.footer-logo-wrap {
+  display: block;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.footer-logo-text-wrap {
+  color: $footer-font-grey-dark;
+}
+
+.footer-logo-text {
+  color: $footer-font-grey-dark;
+  font-size:small;
+  text-align: center;
+}
+
+.footer-menu-wrap {
+  padding: 50px 45px 20px;
+  color: $footer-font-grey-light;
+}
+
+.footer-contact-wrapper {
+  padding: 50px 45px 20px;
+  color: $footer-font-grey-light;
+}
+
+.footer-social-wrapper {
+  padding: 50px 5px 50px 50px;
+  color: $footer-font-grey-light;
+}
+.footer-menu-ul-wrap {
+  margin-top: 10px;
+}
+
+.footer-ul {
+  list-style-type: none;
+}
+
+.footer-contact-text-wrapper {
+  margin-top: 10px;
+}
+
+.footer-social-text {
+  color: $footer-font-grey-light;
+}
+div.vertical-line{
+    width: 2px; /* Line width */
+    background-color: $footer-font-grey-dark; /* Line color */
+    height: 80%; /* Override in-line if you want specific height. */
+    float: left; /* Causes the line to float to left of content.
+      You can instead use position:absolute or display:inline-block
+      if this fits better with your design */
+    margin-top: 40px;
+
+  }

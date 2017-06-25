@@ -18,7 +18,6 @@ module.exports = {
       'jQuery':'jquery',
 
     }),
-
     new webpack.optimize.UglifyJsPlugin({
       compressor :  {
         warnings : false
@@ -40,6 +39,7 @@ module.exports = {
     alias:{
     Main : 'app/components/Main.jsx',
     Nav  : 'app/components/Nav.jsx',
+    Footer : 'app/components/Footer.jsx',
     Home : 'app/components/Home.jsx',
     Weather:'app/components/Weather.jsx',
     About:'app/components/About.jsx',
@@ -49,7 +49,8 @@ module.exports = {
     openWeatherMap:'app/api/openWeatherMap.jsx',
     ErrorModal :'app/components/ErrorModal.jsx',
     Portfolio : 'app/components/Portfolio.jsx',
-    applicationStyles: 'app/styles/app.scss'
+    applicationStyles: 'app/styles/app.scss',
+    ContactUsBar:  'app/components/common/ContactUsBar.jsx',
     },
     extensions:['','.js','.jsx']
   },
