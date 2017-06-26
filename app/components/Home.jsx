@@ -10,7 +10,7 @@ var Home = React.createClass({
 		$('#fullpage').fullpage({
 							verticalCentered: true,
 							menu: '#menu',
-							anchors: ['?intro1', '?intro2', '?intro3','?intro4'],
+							anchors: ['?section1', '?section2', '?section3','?section4','?section5'],
 							autoScrolling: false,
 						  scrollOverflow: false,
 							fitToSection:false,
@@ -23,8 +23,9 @@ var Home = React.createClass({
 								// 	// $('#iphone3, #iphone2, #iphone4').addClass('active');
 								// 	console.log('Index 1');
 								// }
-							},
 
+
+							},
 							'onLeave': function(index, nextIndex, direction){
 								// make navbar hidden if autoScrolling
 								// if(index == 1 && direction == 'down'){
@@ -34,8 +35,7 @@ var Home = React.createClass({
 								// 	$('#navbar').removeClass('invisible');
 								// }
 
-
-								$('#nexus').toggleClass('moveDown', (index == 1 && direction == 'down' ) || (index == 2 && direction == 'down' ) );
+								$('#nexus').toggleClass('moveDown', (index == 1 && direction == 'down' ) || (index != 1) );
 								$('#nexus').toggleClass('moveUp', nextIndex == 1);
 								//$('#nexus').toggleClass('moveUp', index == 1 && direction == 'up');
 
@@ -86,7 +86,7 @@ var Home = React.createClass({
 				</div>
 				<div className="section section1-home small-12 medium-12 large-12 " id="section1-home">
 
-					<div className="r row align-justify align-middle ">
+					<div className="row align-justify align-middle ">
 						<div className = 'small-12 medium-6 large-6 content column'>
 
 							<div className="container-sales-suit">
@@ -164,9 +164,36 @@ var Home = React.createClass({
 							</div>
 						</div>
 					</div>
-					<MiniContactForm/>
 				</div>
-
+				<div className="section section5-home small-12 medium-12 large-12" id="section5-home">
+					<div className="half-grey">
+						<MiniContactForm/>
+						<div className = 'padding-top-50 off-white small-12 medium-12 large-12 content column'>
+							<div className="padding-sides-350">
+							<p className="logo-text-title">Sri Lanka's best companies use TWC to improve their productivity.</p>
+							</div>
+							<div className="row">
+								<div className="small-12 medium-12 large-12 content column small-block-grid-12">
+										<div className="small-2 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
+										<div className="small-2 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
+										<div className="small-2 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
+										<div className="small-2 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
+										<div className="small-2 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
+										<div className="small-2 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
+								</div>
+							</div>
+							<div className="row">
+								<div className="small-12 medium-12 large-12 content column small-block-grid-12">
+										<div className="small-3 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
+										<div className="small-3 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
+										<div className="small-3 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
+										<div className="small-3 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
+								</div>
+							</div>
+							<p className="logo-text-desc">Trusted by companies islandwide</p>
+						</div>
+					</div>
+				</div>
 				<ContactUsBar/>
 				<Footer/>
 			</div>

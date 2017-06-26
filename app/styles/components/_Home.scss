@@ -96,6 +96,7 @@
 
 }
 
+
 .section3-home {
   height: 331px;
   padding-top: 5%;
@@ -387,4 +388,38 @@ div.header .header-container .illustration {
   padding-bottom: 20px;
   background-color: white;
   color: #c40000;
+}
+
+.section5-home {
+  background-color: $off-white;
+}
+
+.half-grey {
+  // position: fixed;
+  //  top: 0px;
+  //  left: 0px;
+   width: 100%;
+   height: 50%;
+   background-color: $medium-grey;
+   z-index: 1;
+}
+
+.off-white {
+  background-color: $off-white;
+}
+
+.logo-text-title {
+  font-size: 2.125rem;
+  color : $blood-red-dark;
+  font-align: center;
+}
+
+.logo-text-desc {
+  color : $blood-red-dark;
+  font-align: center;
+}
+
+.padding-sides-350 {
+  padding-left: 350px;
+  padding-right: 350px;
 }
