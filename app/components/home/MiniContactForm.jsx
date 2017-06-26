@@ -16,7 +16,8 @@ var MiniContactForm = React.createClass({
                     <option value="mercedes">Mercedes</option>
                     <option value="audi">Audi</option>
                   </select>
-                  <textarea className="mini-contact-input" rows="4" cols="50" placeholder="Your lovely feedback goes here..." />
+                  <textarea className="mini-text-area" rows="4" cols="50" placeholder="Your lovely feedback goes here..." />
+                  <div className="mini-submit-wrapper"> <p>Hello</p> </div>
               </div>
 
           </div>
@@ -24,6 +25,7 @@ var MiniContactForm = React.createClass({
           <div className="MabBox-Wrapper small-6 medium-6 large-6 columns">
             <MapBox className="left-curved-5px"/>
           </div>
+          
       </div>
     );
   }

@@ -190,7 +190,7 @@ var Home = React.createClass({
 										<div className="small-3 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
 								</div>
 							</div>
-							<p className="logo-text-desc">Trusted by companies islandwide</p>
+							<p className="logo-text-desc">Trusted by companies islandwide</p>							
 						</div>
 					</div>
 				</div>

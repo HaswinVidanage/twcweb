@@ -1,26 +1,52 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
+var styleJson = require("./MapStyle.json");
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+const AnyReactComponent = ({ text }) => <div className="MapIcon">{text}</div>;
+import MyGreatPlace from './my_great_place.jsx';
+
+
+function createMapOptions(maps) {
+  console.log(styleJson);
+  // next props are exposed at maps
+  // "Animation", "ControlPosition", "MapTypeControlStyle", "MapTypeId",
+  // "NavigationControlStyle", "ScaleControlStyle", "StrokePosition", "SymbolPath", "ZoomControlStyle",
+  // "DirectionsStatus", "DirectionsTravelMode", "DirectionsUnitSystem", "DistanceMatrixStatus",
+  // "DistanceMatrixElementStatus", "ElevationStatus", "GeocoderLocationType", "GeocoderStatus", "KmlLayerStatus",
+  // "MaxZoomStatus", "StreetViewStatus", "TransitMode", "TransitRoutePreference", "TravelMode", "UnitSystem"
+  return {
+    zoomControlOptions: {
+      position: maps.ControlPosition.RIGHT_CENTER,
+      style: maps.ZoomControlStyle.SMALL
+    },
+    mapTypeControlOptions: {
+      position: maps.ControlPosition.TOP_RIGHT
+    },
+    mapTypeControl: true,
+    panControl: false,
+    scrollwheel: false,
+    styles: styleJson
+  };
+}
 
 class MapBox extends Component {
   static defaultProps = {
-    center: {lat: 59.95, lng: 30.33},
-    zoom: 11
+    center: {lat: 6.848437, lng: 79.879381},
+    zoom: 15
   };
 
+
   render() {
+
     return (
-      <GoogleMapReact
+      <GoogleMapReact options={createMapOptions}
         bootstrapURLKeys={{key:'AIzaSyC3FhlIljYjukBKmAN2X_tXP2jY8JoYsSA'}}
         defaultCenter={this.props.center}
         defaultZoom={this.props.zoom}
       >
-        <AnyReactComponent
-          lat={59.955413}
-          lng={30.337844}
-          text={'Kreyser Avrora'}
-        />
+
+        <MyGreatPlace  lat={6.848437} lng={79.879381} text={''} /* TWC Innovations */ />
+
       </GoogleMapReact>
     );
   }
