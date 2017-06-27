@@ -105,6 +105,9 @@
 
 .section4-home {
   background-color: #2c2c2c;
+  height: 331px;
+  padding-top: 5%;
+  min-height: 500px;
 }
 //
 //  #section1-home .fp-tableCell :after {
@@ -376,6 +379,25 @@ div.header .header-container .illustration {
   margin-right: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.container-section4-content{
+  padding-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.section4-title {
+  color : $title-white;
+  text-align: left;
+}
+
+.section4-content-1 {
+  color:$section4-blue;
+  font-size: 1.2em;
+  line-height: 1.8;
 }
 
 .justify-text{

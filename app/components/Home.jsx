@@ -126,30 +126,27 @@ var Home = React.createClass({
 								</div>
 							</div>
 						</div>
-
-
 					</div>
 				</div>
 				<div className="section section4-home small-12 medium-12 large-12" id="section4-home">
 					<div className="section3-home">
 						<div className="r row align-justify align-middle ">
 							<div className = 'small-12 medium-6 large-6 content column'>
-								<div className="container-sales-suit">
-									<object id="obj-sales-suit" data="./images/Home/grabber-logo.svg" type="image/svg+xml">
-										<img src="./images/Home/grabber-logo.png" />
-									</object>
+								<div className="container-section4-content">
+									<div>
+										<h2 className="section4-title">We take care of<br/>Upgrades, Maintenance<br/>and Security</h2>
+									</div>
+
 
 									<div className="align-center">
-										<p className="justify-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-											cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										<p className="justify-text section4-content-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 										</p>
 									</div>
 								</div>
 							</div>
 							<div className = 'small-12 medium-6 large-6 content column'>
 
-								<div className="container-sales-suit">
+								<div className="container-section4-content">
 									<object id="obj-sales-suit" data="./images/Home/grabber-logo.svg" type="image/svg+xml">
 										<img src="./images/Home/grabber-logo.png" />
 									</object>
@@ -190,7 +187,7 @@ var Home = React.createClass({
 										<div className="small-3 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
 								</div>
 							</div>
-							<p className="logo-text-desc">Trusted by companies islandwide</p>							
+							<p className="logo-text-desc">Trusted by companies islandwide</p>
 						</div>
 					</div>
 				</div>
