@@ -7,7 +7,6 @@ import MyGreatPlace from './my_great_place.jsx';
 
 
 function createMapOptions(maps) {
-  console.log(styleJson);
   // next props are exposed at maps
   // "Animation", "ControlPosition", "MapTypeControlStyle", "MapTypeId",
   // "NavigationControlStyle", "ScaleControlStyle", "StrokePosition", "SymbolPath", "ZoomControlStyle",

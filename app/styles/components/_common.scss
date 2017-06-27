@@ -37,6 +37,27 @@
   display: inline-block;
 }
 
+.btn-submit-green-mini {
+  border: 2px solid $submit-green;
+  border-top-left-radius: 5px;
+  padding-right: 0px;
+  border-right-width: 0px;
+  background-color: $submit-green;
+  color: white;
+  padding: 0 25px;
+  display: inline-block;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  margin-left: 355px;
+  height: 50px;
+  width: 111px;
+}
+
+.btn-submit-green-mini:focus, .btn-submit-green-mini:hover {
+    background-color: $submit-green-focus;
+    border: 0px solid $submit-green-focus;
+}
+
 .contactus-bar-text {
   color : $blood-red-dark;
 }
@@ -87,7 +108,8 @@
 [type=url]:focus, [type=week]:focus {
   padding-right: 0px;
   padding-left:  8px;
-  padding-bottom: 0px;
+  padding-bottom: 8px;
+  padding-top: 3px;
   border-right-width: 0px;
   color: $blood-red-light;
   border: 2px solid $blood-red-light;
@@ -96,7 +118,7 @@
   margin-bottom: 8px;
   margin-top: 0px;
   border-right: 0px;
-
+  border-top-width: 3px;
 }
 
 .mini-text-area {
@@ -171,9 +193,6 @@ textarea:focus{
   border-right-width: 0px;
 }
 
-.mini-contact-input :focus {
-    display: none;
-}
 
 [type=color]:focus, [type=date]:focus, [type=datetime-local]:focus, [type=datetime]:focus, [type=email]:focus, [type=month]:focus, [type=number]:focus, [type=password]:focus, [type=search]:focus, [type=tel]:focus, [type=text]:focus, [type=time]:focus,
 [type=url]:focus, [type=week]:focus ,textarea:focus {
@@ -522,3 +541,49 @@ textarea:focus{
 }
 
 //Map Marker End
+
+// Custom CSS for Select - used mainly in mini-form-box
+select {
+
+  /* styling */
+  padding-top: 0px!important;
+  background-color: white;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+select.round {
+  background-image:
+    linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, white 50%, transparent 50%),
+    radial-gradient($select-arrow-red 70%, transparent 72%);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - .5em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
+}
+
+
+//custom css for select end
+
+#MiniContactForm {
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(45, 50, 126, 0.1), 0 5px 15px 0 rgba(45, 50, 126, 0.07);  
+}
