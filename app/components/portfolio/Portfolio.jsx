@@ -1,8 +1,9 @@
 var React = require('react');
+var Footer = require('Footer');
 var projectsApi = require('projectsApi');
 
 var SingleProject = require('SingleProject');
-var testJson = require("./test.json");
+var fullpageJs = require('fullpage.js');
 
 var Portfolio = React.createClass({
   getInitialState : function(){
@@ -14,7 +15,6 @@ var Portfolio = React.createClass({
   },
   componentWillMount:function(){
     this.fetchProjects();
-
   },
   fetchProjects:function(){
     var that = this;
@@ -57,14 +57,27 @@ var Portfolio = React.createClass({
       }
       return projects.map((project) =>{
         return (
-          <SingleProject key={project._id} {...project} />
+          <SingleProject key={project._id} {...project}  />
         );
       });
     };
 
     return (
       <div>
-      {renderSingleProject()}
+        <div className="small-12 medium-12 large-12 portfolio-title-wrap">
+          <div className="row portfolio-text-area">
+            <div className="small-6 medium-6 large-6">
+              <h2 className="portfolio-title">Our Works</h2>
+            </div>
+            <div className="small-6 medium-6 large-6">
+              <p  className="portfolio-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+        {renderSingleProject()}
+        </div>
+        <Footer/>
     </div>
     );
   }
