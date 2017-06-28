@@ -1,0 +1,37 @@
+{
+"posts": [
+  {
+  "_id": "59533ffbe99b7c491c0d231d",
+  "slug": "test-post",
+  "title": "Test Post",
+  "__v": 0,
+  "categories": [],
+  "state": "draft"
+  },
+  {
+  "_id": "5953422383fc333df08a7919",
+  "slug": "test-upload",
+  "title": "Test Upload",
+  "__v": 0,
+  "author": "5928090c8ab0930b2c9476a1",
+  "publishedDate": "2017-06-27T18:30:00.000Z",
+  "categories": [],
+  "content": {
+  "brief": "<p>Hello Upload</p>",
+  "extended": "<p>Hello UploadHello UploadHello UploadHello UploadHello Upload</p>"
+  },
+  "image": {
+  "public_id": "hiiqmtvh2j5ogtb7pu0v",
+  "version": 1498628709,
+  "signature": "073fa39520f8df7d4fbbe040fb667665a29c239c",
+  "width": 188,
+  "height": 188,
+  "format": "jpg",
+  "resource_type": "image",
+  "url": "http://res.cloudinary.com/haswind/image/upload/v1498628709/hiiqmtvh2j5ogtb7pu0v.jpg",
+  "secure_url": "https://res.cloudinary.com/haswind/image/upload/v1498628709/hiiqmtvh2j5ogtb7pu0v.jpg"
+  },
+  "state": "published"
+  }
+  ]
+}

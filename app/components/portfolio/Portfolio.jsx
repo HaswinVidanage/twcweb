@@ -1,23 +1,46 @@
 var React = require('react');
-var fullpageJs = require('fullpage.js');
+var projectsApi = require('projectsApi');
 
-// $(document).ready(function(){
-//   // $('#fullpage').fullpage();
-//   alert('ready');
-// });
+var SingleProject = require('SingleProject');
+var testJson = require("./test.json");
 
 var Portfolio = React.createClass({
-  componentDidMount: function(){
-    $('#fullpage').fullpage();
+
+  componentDidMount:function(){
+    this.fetchProjects();
+    
+  },
+  fetchProjects:function(){
+    var that = this;
+
+    // this.setState({
+    //   isLoading: true,
+    //   errorMessage: undefined
+    // });
+
+    projectsApi.getProjects().then(function(projects){
+      console.log('fetched and inside react app');
+      console.log(projects);
+      console.log('fetched and inside react app end');
+
+      // that.setState({
+      //   location:location,
+      //   temp:temp,
+      //   isLoading:false
+      // });
+    },function(e){
+      console.log(e);
+      // that.setState({
+      //   isLoading:false,
+      //   errorMessage: e.message
+      // });
+    });
   },
   render : function(){
     return (
       <div>
-        <div id="fullpage">
-          <div className="section">Some section</div>
-          <div className="section">Some section</div>
-          <div className="section">Some section</div>
-          <div className="section">Some section</div>
+        <div>
+          <SingleProject/>
         </div>
       </div>
     );
