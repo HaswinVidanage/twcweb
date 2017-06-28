@@ -1,0 +1,12 @@
+.single-project-wrap {
+  padding-top: 200px;
+  background: #e52d27!important;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #b31217, #e52d27)!important;  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: -moz-linear-gradient(to bottom, #b31217, #e52d27)!important;
+  background: linear-gradient(to bottom, #b31217, #e52d27)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.project-desktop-thumb, .project-tablet-thumb, .project-mobile-thumb {
+  height: 100px;
+  width: 200px;
+}
