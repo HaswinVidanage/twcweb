@@ -49,7 +49,7 @@ module.exports = {
     WeatherMessage:'app/components/WeatherMessage.jsx',
     openWeatherMap:'app/api/openWeatherMap.jsx',
     ErrorModal :'app/components/ErrorModal.jsx',
-    Portfolio : 'app/components/Portfolio.jsx',
+    Portfolio : 'app/components/portfolio/Portfolio.jsx',
     applicationStyles: 'app/styles/app.scss',
     ContactUsBar:  'app/components/common/ContactUsBar.jsx',
     MiniContactForm: 'app/components/home/MiniContactForm.jsx',
@@ -58,7 +58,7 @@ module.exports = {
     extensions:['','.js','.jsx']
   },
   module:{
-    
+
     loaders:[
       {
         loader:'babel-loader',
