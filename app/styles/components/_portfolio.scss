@@ -46,3 +46,13 @@ div .single-project-wrap:nth-of-type(4n+4) {
   background: #9e0b0f;
 }
 // nth element css end
+
+// svg classes
+.st1{
+
+  background: url(http://res.cloudinary.com/haswind/image/upload/v1498631172/b3vunipnng1x3b10tkvl.png) 50% 0%;
+  background-size: cover;
+  // // background-image: url("http://res.cloudinary.com/haswind/image/upload/v1498631172/b3vunipnng1x3b10tkvl.png");
+  // -webkit-mask-image: url('http://res.cloudinary.com/haswind/image/upload/v1498631172/b3vunipnng1x3b10tkvl.png');
+  // mask-image: url('http://res.cloudinary.com/haswind/image/upload/v1498631172/b3vunipnng1x3b10tkvl.png');
+}
