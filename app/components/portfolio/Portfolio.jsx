@@ -52,7 +52,9 @@ var Portfolio = React.createClass({
     var renderSingleProject = () => {
       if(projects.length === 0){
         return (
-          <p className="container__message">No Projects Added.</p>
+          <div className="row">
+            <p className="container__message">No Projects Added.</p>
+          </div>
         );
       }
       return projects.map((project) =>{
