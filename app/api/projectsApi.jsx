@@ -1,6 +1,6 @@
 var axios = require('axios');
 
-const TWC_PORTFOLIO_API_URL ='http://localhost:3000/api/projects/';
+const TWC_PORTFOLIO_API_URL ='https://twcwebs.herokuapp.com/api/projects';
 
 module.exports = {
   getProjects:function(){
