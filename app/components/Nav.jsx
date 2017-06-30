@@ -9,8 +9,8 @@ var Nav = React.createClass({
       <nav className="vertical light menu" id="navbar">
         <div className="navbar align-middle row">
           <a className="brand small-6 medium-1 large-3 align-middle columns" href="index.html">
-            <object data="./images/logoxxx.svg" type="image/svg+xml">
-              <img src="./images/logoxxx.png" />
+            <object data="./images/logo.svg" type="image/svg+xml">
+              <img src="./images/logo.png" />
             </object>
           </a>
 
