@@ -83,10 +83,14 @@
     height: 1000px;
     min-height: 1000px;
   }
-  @media (min-width: $tab-sc) and (max-width : $desktop-sc) {
+  @media (min-width: $tab-sc) and (max-width: 640px) {
+    height: 900px;
+    min-height: 900px;
+   }
+  @media (min-width: 640px) and (max-width : $desktop-sc) {
     height: 600px;
     min-height: 600px;
-   }
+  }
   @media (min-width: $desktop-sc) and (max-width : 1330px)  {
     height: 600px;
     min-height: 600px;
@@ -147,9 +151,12 @@
   @media only screen and (min-width : $mobile-sc) and (max-width : $tab-sc ) {
     padding: 20px;
   }
-  @media (min-width: $tab-sc) and (max-width : $desktop-sc) {
-    margin-top: 120px;
+  @media (min-width: $tab-sc) and (max-width: 640px) {
+    margin-top: -140px;
    }
+  @media (min-width: 640px) and (max-width : $desktop-sc) {
+    padding-top: 120px;
+  }
   @media (min-width: $desktop-sc) and (max-width : 1330px) {
      padding-top: 120px;
    }
