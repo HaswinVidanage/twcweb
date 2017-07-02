@@ -28,12 +28,12 @@ var SingleProject = React.createClass({
       <div className="single-project-wrap">
         <div className="project-card">
           <div className="small-12 medium-12 large-12 columns">
-            <div className="small-6 medium-6 large-6 columns project-content">
+            <div className="small-12 medium-6 large-6 columns project-content">
               <h1 className="project-title">{title}</h1>
               <p className="project-desc">{description}</p>
             </div>
-            <div className="small-6 medium-6 large-6 columns">
-              <div className="project-svg-wrapper">
+            <div className="small-12 medium-6 large-6 columns">
+              <div className=" float-center">
                 <div>
                     {(function() {
                       switch(deviceVisible) {
@@ -47,7 +47,7 @@ var SingleProject = React.createClass({
                           );
 
                           return (
-                                    <svg className="project-desktop-thumb" version={1.0} id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" style={{enableBackground: 'new 0 0 1000 1000'}} xmlSpace="preserve">
+                                    <svg className="small-12 project-desktop-thumb" version={1.0} id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" style={{enableBackground: 'new 0 0 1000 1000'}} xmlSpace="preserve">
                                       <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t.st0{fill:#414042;}\n\t\n\t.st2{fill:#7C828B;}\n\t.st3{fill:#808285;}\n\t.st4{fill:#A7A9AC;}\n\t.st5{fill:#C5CED6;}\n" }} />
                                       <g>
                                         <path className="st0" d="M820.2,258.8H181.4c-8.9,0-16.1,7.2-16.1,16.1v425.7h671V274.9C836.3,266.1,829,258.8,820.2,258.8z" />
@@ -63,7 +63,7 @@ var SingleProject = React.createClass({
                                   );
                           case 'tab':
                           return (
-                                  <svg className="project-tablet-thumb" version={1.0} id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" style={{enableBackground: 'new 0 0 1000 1000'}} xmlSpace="preserve">
+                                  <svg className="small-12 project-tablet-thumb" version={1.0} id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" style={{enableBackground: 'new 0 0 1000 1000'}} xmlSpace="preserve">
                                     <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t.st6{fill:#414042;}\n\t.st7{fill:#E6E7E8;}\n\t.st8{fill:#58595B;}\n\t.st9{fill:#808285;}\n" }} />
                                     <g>
                                       <path className="st6" d="M837.4,875.1c0,20.7-16.9,37.6-37.6,37.6H223.6c-20.6,0-37.6-16.9-37.6-37.6V103.7c0-20.7,16.9-37.6,37.6-37.6
@@ -79,7 +79,7 @@ var SingleProject = React.createClass({
                                   );
                           case 'mob':
                           return (
-                                  <svg className="project-mobile-thumb" version={1.0} id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" style={{enableBackground: 'new 0 0 1000 1000'}} xmlSpace="preserve">
+                                  <svg className="small-12 project-mobile-thumb" version={1.0} id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" style={{enableBackground: 'new 0 0 1000 1000'}} xmlSpace="preserve">
                                     <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t.st10{fill:#414042;}\n\t.st11{fill:#E6E7E8;}\n\t.st12{fill:#808285;}\n\t.st13{fill:#58595B;}\n" }} />
                                     <g>
                                       <g>
@@ -105,16 +105,29 @@ var SingleProject = React.createClass({
             </div>
           </div>
 
-          <div className="small-12 medium-12 large-12 columns">
-            <div className="small-6 medium-6 large-6 columns">
+          <div className="small-12 medium-12 large-12 columns hide-for-small-only">
+            <div className="small-12 medium-6 large-6 columns">
                 <a id="see-live-btn" href={url} target="_blank" className="hollow button">SEE IT LIVE</a>
             </div>
-            <div className="small-6 medium-6 large-6 columns">
-              <div className="device-btn-row">
+            <div className="small-12 medium-6 large-6 columns">
+              <div className="device-btn-wrap small-12 small-centered columns float-center">
                 <FaLaptop  size={60} color= { (deviceVisible == 'lap')? "#fff" : "#515156"} className="btn-lap" onClick={this.handleLapClick}/>
                 <FaTablet  size={60} color= { (deviceVisible == 'tab')? "#fff" : "#515156"} className="btn-tab" onClick={this.handleTabClick}/>
                 <FaMobile  size={60} color= { (deviceVisible == 'mob')? "#fff" : "#515156"} className="btn-mob" onClick={this.handleMobClick}/>
               </div>
+            </div>
+          </div>
+
+          <div className="small-12 medium-12 large-12 columns show-for-small-only">
+            <div className="small-12 medium-6 large-6 columns">
+              <div className="device-btn-wrap small-12 small-centered columns float-center">
+                <FaLaptop  size={60} color= { (deviceVisible == 'lap')? "#fff" : "#515156"} className="btn-lap" onClick={this.handleLapClick}/>
+                <FaTablet  size={60} color= { (deviceVisible == 'tab')? "#fff" : "#515156"} className="btn-tab" onClick={this.handleTabClick}/>
+                <FaMobile  size={60} color= { (deviceVisible == 'mob')? "#fff" : "#515156"} className="btn-mob" onClick={this.handleMobClick}/>
+              </div>
+            </div>
+            <div className="small-12 medium-6 large-6 columns">
+                <a id="see-live-btn" href={url} target="_blank" className="hollow expanded button">SEE IT LIVE</a>
             </div>
           </div>
 
