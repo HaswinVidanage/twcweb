@@ -1,4 +1,6 @@
 var React = require('react');
+import TitleBar from '../common/TitleBar';
+
 var Footer = require('Footer');
 var projectsApi = require('projectsApi');
 
@@ -10,7 +12,9 @@ var Portfolio = React.createClass({
     return {
       isLoading: true,
       projects: [],
-      errorMessage: undefined
+      errorMessage: undefined,
+      title: 'OUR WORKS',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     };
   },
   componentWillMount:function(){
@@ -46,7 +50,7 @@ var Portfolio = React.createClass({
     });
   },
   render : function(){
-    var {isLoading , projects, errorMessage} = this.state;
+    var {isLoading , projects, errorMessage, title, content} = this.state;
     console.log(projects);
 
     var renderSingleProject = () => {
@@ -66,20 +70,13 @@ var Portfolio = React.createClass({
 
     return (
       <div>
-        <div className="small-12 medium-12 large-12 portfolio-title-wrap">
-          <div className="row portfolio-text-area">
-            <div className="small-12 medium-6 large-6">
-              <h2 className="portfolio-title">OUR WORKS</h2>
-            </div>
-            <div className="small-12 medium-6 large-6">
-              <p  className="portfolio-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-        </div>
+
+        <TitleBar title={title} content={content}/>
+
         <div>
         {renderSingleProject()}
         </div>
-        
+
     </div>
     );
   }

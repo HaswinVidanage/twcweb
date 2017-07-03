@@ -56,6 +56,7 @@ module.exports = {
     ContactUsBar:  'app/components/common/ContactUsBar.jsx',
     MiniContactForm: 'app/components/home/MiniContactForm.jsx',
     MapBox: 'app/components/common/Map.jsx',
+    TitleBar: 'app/components/common/TitleBar.jsx',
     },
     extensions:['','.js','.jsx']
   },

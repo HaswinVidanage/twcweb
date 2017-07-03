@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Team" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1440 905" style="enable-background:new 0 0 1440 905;" xml:space="preserve">
+<style type="text/css">
+	.about-st0{fill:none;enable-background:new    ;}
+	.about-st1{fill:#F6F6F6;}
+	.about-st2{fill:#FFFFFF;}
+	.about-st2:hover {
+		fill: #ff0404!important;
+	}
+</style>
+<path class="about-st0" d="z"/>
+<g id="teams">
+	<rect class="about-st1" width="1440" height="901"/>
+	<g id="_1">
+		<path id="polygon-8" class="about-st2" d="M813.4,675.6l133.9-133.9l133.9,133.9L947.3,809.5L813.4,675.6z"/>
+		<path id="polygon-3" class="about-st2" d="M531.8,389.2l133.9-133.9l133.9,133.9L665.7,523.1L531.8,389.2z"/>
+		<path id="polygon-1" class="about-st2" d="M672.7,248.4l133.9-133.9l133.9,133.9L806.6,382.3L672.7,248.4z"/>
+	</g>
+	<g id="_2">
+		<path id="polygon-6" class="about-st2" d="M672.5,530.1l133.9-133.9l133.9,133.9L806.4,664L672.5,530.1z"/>
+		<path id="polygon-4" class="about-st2" d="M813.4,389.2l133.9-133.9l133.9,133.9L947.3,523.1L813.4,389.2z"/>
+		<path id="polygon-2" class="about-st2" d="M954.2,248.4l133.9-133.9L1222,248.4l-133.9,133.9L954.2,248.4z"/>
+	</g>
+	<g id="_3">
+		<path id="polygon-5" class="about-st2" d="M1096.7,391.1l133.9-133.9l133.9,133.9l-133.9,133.9L1096.7,391.1z"/>
+		<path id="polygon-7" class="about-st2" d="M954.5,534.3l133.9-133.9l133.9,133.9l-133.9,133.9L954.5,534.3z"/>
+	</g>
+</g>
+</svg>
