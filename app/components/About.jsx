@@ -1,5 +1,6 @@
 var React = require('react');
 import TitleBar from './common/TitleBar';
+import FounderMessage from './about/FounderMessage';
 
 //use of stateless functional components
 
@@ -65,6 +66,8 @@ var About = React.createClass({
             </svg>
           </div>
         </div>
+
+        <FounderMessage/>
       </div>
     );
   }

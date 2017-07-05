@@ -22,3 +22,44 @@
 // .about-st2:hover {
 //   fill: #ff0404!important;
 // }
+
+.founder-title {
+  font-weight: 600;
+}
+
+.founder-title , .founder-message{
+  text-align: center;
+}
+
+.founder-message-wrap {
+  padding: 30px;
+}
+
+.founder-quot-wrap {
+  padding: 30px;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 100;
+  color: #253137;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+.founder-img{
+    background-image: url("http://www.swardbil.se/wp/wp-content/uploads/2015/09/man_green2.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.round-img-div {
+    padding-left: 40%;
+}
+.round-img-title-div {
+  float: left;
+  padding-left: 5%;
+  padding:20px;
+}
