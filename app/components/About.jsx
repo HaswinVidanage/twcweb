@@ -7,6 +7,7 @@ import FounderMessage from './about/FounderMessage';
 var About = React.createClass({
 
   handlePolyClick : function(id) {
+    console.log('PolyClick');
     this.setState({clicked: true});
   },
 
@@ -14,6 +15,10 @@ var About = React.createClass({
     this.setState({clicked: false});
   },
 
+  handleResetGrid : function() {
+    console.log('handleResetGrid');
+    this.setState({clicked: false});
+  },
   getInitialState : function(){
     return {
       clicked: false,
@@ -51,7 +56,7 @@ var About = React.createClass({
                     <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t.st0{fill:none;enable-background:new;}\n\t.st1{fill:#F6F6F6;}\n" }} />
                     <path className="st0" d="M0,0" />
                     <g id="Team_1_">
-                      <rect className="st1" width={1440} height={901} />
+                      <rect className="st1" width={1440} height={901} onMouseEnter={() => this.handleResetGrid()}  />
                       <g id="_x33_">
                         <g>
                           <defs>
@@ -149,7 +154,7 @@ var About = React.createClass({
                             <use xlinkHref="#Member_01" style={{overflow: 'visible'}} />
                           </clippath>
                           <g style={{clipPath: 'url(#polygon-1)'}}>
-                            <path id="path-polygon-1"  onClick={() => this.handlePolyClick(1)}   className="about-st2" d="M672.7,248.4l133.9-133.9l133.9,133.9L806.6,382.3L672.7,248.4z" />
+                            <path id="path-polygon-1"  onMouseEnter={() => this.handlePolyClick(1)}   className="about-st2" d="M672.7,248.4l133.9-133.9l133.9,133.9L806.6,382.3L672.7,248.4z" />
                             {renderSVG()}
                           </g>
                         </g>
