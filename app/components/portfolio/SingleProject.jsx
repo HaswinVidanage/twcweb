@@ -39,13 +39,6 @@ var SingleProject = React.createClass({
                       switch(deviceVisible) {
                           case 'lap':
 
-                          var  linkAs = (key, attrs) => (
-                            (this.__cb4r3fs || (this.__cb4r3fs = new Map())).get(key) || this.__cb4r3fs.set(key, node => (
-                              this.refs[key] !== node && (this.refs = Object.assign({}, this.refs, { [key]: node })),
-                              node && Object.keys(attrs).forEach(attr => node.setAttributeNS(null, attr, attrs[attr]))
-                            )).get(key)
-                          );
-
                           return (
                                     <svg className="small-12 project-desktop-thumb" version={1.0} id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" style={{enableBackground: 'new 0 0 1000 1000'}} xmlSpace="preserve">
                                       <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t.st0{fill:#414042;}\n\t\n\t.st2{fill:#7C828B;}\n\t.st3{fill:#808285;}\n\t.st4{fill:#A7A9AC;}\n\t.st5{fill:#C5CED6;}\n" }} />
