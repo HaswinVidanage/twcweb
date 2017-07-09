@@ -57,6 +57,7 @@ module.exports = {
     MiniContactForm: 'app/components/home/MiniContactForm.jsx',
     MapBox: 'app/components/common/Map.jsx',
     TitleBar: 'app/components/common/TitleBar.jsx',
+    TeamGrid : 'app/components/about/TeamGrid'
     },
     extensions:['','.js','.jsx']
   },

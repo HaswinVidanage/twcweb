@@ -7,6 +7,16 @@
   padding-right: 50px;
 }
 
+.floating-about-text-mob {
+  float: left;
+  width: 100%;
+  text-align: center;
+  top: 600px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background: $team-grid-grey;
+}
+
 .red-span {
   color : #ca0d0d;
 }
@@ -39,7 +49,8 @@
 
 
 .founder-img{
-    background-image: url("http://www.swardbil.se/wp/wp-content/uploads/2015/09/man_green2.jpg");
+    background-image: url("http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ginger-guy.png");
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: 50%;
     border-radius: 50%;

@@ -654,3 +654,42 @@ select.round {
 .titlebar-title , .titlebar-content {
   color: white;
 }
+
+.prime-loc-left, .prime-loc-right {
+  min-height: 600px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.prime-loc-left {
+  background-color: #333333;
+}
+
+.prime-loc-right {
+  background-color: #404040;
+}
+
+.loc-heading {
+  color: white;
+}
+
+.loc-title {
+  color : $grey-font;
+}
+
+.loc-text-wrap {
+  margin-left: 200px;
+  margin-right: 100px;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+
+.hide-for-small-sc-only {
+  display: none!important;
+  // @media (max-width : $mobile-sc) {
+  //   display: none!important;
+  // }
+  // @media only screen and (min-width : $mobile-sc) and (max-width : $tab-sc ) {
+  //   display: none!important;
+  // }
+}
