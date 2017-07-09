@@ -32,8 +32,10 @@ class FounderMessage extends Component {
               <div className="row">
                 <div className="small-6 medium-6 large-6  round-img-div rows"><div className="founder-img"/></div>
                 <div className="small-6 medium-6 large-6 round-img-title-div rows">
-                  <div><h5>- Nafeel Jalaldeen</h5></div>
-                  <div>&nbsp;&nbsp;&nbsp;Founder TWC</div>
+                  <div>
+                    <div><h5 className="founder-name">- Nafeel Jalaldeen</h5></div>
+                    <div className="founder-name">&nbsp;&nbsp;&nbsp;Founder TWC</div>
+                  </div>
                 </div>
               </div>
             </div>

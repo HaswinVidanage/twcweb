@@ -23,16 +23,16 @@ var Nav = React.createClass({
 
 
                   <div className="sub-item medium-6 large-4 column">
-                    <a href="feature/custom-type-builder.html">
+                    <a href="/index.html#/websites?" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
 
                       <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
 
 
                       <span className="menu-item ">
-                          Custom type builder
+                          Web Design & Development
                         </span>
 
-                      <p>Model your content in the blink of an eye</p>
+                      <p>Join us to deliver an unique web presence to your clients</p>
                     </a>
                   </div>
 
@@ -122,7 +122,7 @@ var Nav = React.createClass({
 
 
                       <span className="">
-                      Custom type builder
+                      Web Design & Development
                     </span>
 
                     </a>
