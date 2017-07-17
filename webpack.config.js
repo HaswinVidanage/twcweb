@@ -58,7 +58,8 @@ module.exports = {
     MapBox: 'app/components/common/Map.jsx',
     TitleBar: 'app/components/common/TitleBar.jsx',
     TeamGrid : 'app/components/about/TeamGrid',
-    Web : 'app/components/services/Web.jsx'
+    Web : 'app/components/services/Web.jsx',
+    MobileApps : 'app/components/services/MobileApps.jsx'
     },
     extensions:['','.js','.jsx']
   },

@@ -6,6 +6,15 @@ var ContactUsBar = require('ContactUsBar');
 var MiniContactForm = require('MiniContactForm');
 
 var Home = React.createClass({
+	componentWillMount: function() {
+
+		//add this so fullpage js won't give error saying you called it multiple times
+		if ( $( 'html' ).hasClass( 'fp-enabled' ) ) {
+			console.log('fullpage was there');
+			$('#fullpage').fullpage.destroy('all');
+		}
+
+	},
 	componentDidMount: function(){
 		$('#fullpage').fullpage({
 							verticalCentered: true,
@@ -42,6 +51,8 @@ var Home = React.createClass({
 							}
 
 					});
+
+
 	},
 	render: function() {
 		return (

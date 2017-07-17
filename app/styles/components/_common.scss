@@ -693,3 +693,50 @@ select.round {
   //   display: none!important;
   // }
 }
+
+.discover-service-panel{
+  background-color: $grey-discovery;
+}
+
+.discover-text {
+  color: white;
+}
+
+.dicsovery-title {
+  font-size: 1em;
+}
+
+.dicsovery-desc {
+  color: $grey-font;
+  font-size: 1em;
+  font-size: 1em;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+
+.discovery-box {
+  cursor: pointer;
+  // box-shadow: 0 0 1px 2px rgb(68, 63, 63);
+  border: 1px solid rgba(0, 0, 0, .2);
+  width: 300px;
+  height: 130px;
+  margin:15px;
+  border-radius: 8px;
+  background-color: rgba(240, 248, 255, 0.05);
+}
+
+// .discovery-box:focus,.discovery-box :hover {
+//   background-color: rgba(240, 248, 255, 0.07)!important;
+//
+// }
+
+.dicovery-row {
+  margin-left: 218px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.discovery-text-wrap {
+  margin:12px;
+}

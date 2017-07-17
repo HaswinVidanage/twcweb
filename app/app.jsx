@@ -10,6 +10,7 @@ var About = require('About');
 var Examples = require('Examples');
 var Portfolio = require('Portfolio');
 var Web = require('Web');
+var MobileApps = require('MobileApps');
 
 //Load foundation
 require('style!css!foundation-sites/dist/foundation.min.css');
@@ -27,6 +28,7 @@ ReactDOM.render(
        <Route path="portfolio" component={Portfolio}/>
        <Route path="weather" component={Weather}/>
        <Route path="websites" component={Web}/>
+       <Route path="mobileapps" component={MobileApps}/>
 
        <IndexRoute component={Home}/>
      </Route>

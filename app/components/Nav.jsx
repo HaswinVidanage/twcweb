@@ -36,21 +36,19 @@ var Nav = React.createClass({
                     </a>
                   </div>
 
-
                   <div className="sub-item medium-6 large-4 column">
-                    <a href="feature/scheduling-and-previews.html">
+                    <a href="/index.html#/mobileapps?" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
 
                       <img src="https://prismicio.cdn.prismic.io/prismicio%2F0512e2c7-dea5-4af0-9e92-f83ca41c8536_schedule.svg" alt="" />
 
 
                       <span className="menu-item ">
-                          Scheduling &amp; previews
+                          Mobile Application Development
                         </span>
 
-                      <p>Manage, schedule and preview your content releases</p>
+                      <p>Join us to deliver an unique mobile presence to your clients</p>
                     </a>
                   </div>
-
 
                   <div className="sub-item medium-6 large-4 column">
                     <a href="feature/full-history-revision.html">
