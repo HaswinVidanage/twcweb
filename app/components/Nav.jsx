@@ -102,7 +102,7 @@ var Nav = React.createClass({
             <li><Link to="/about" activeClassName="active" activeStyle={{fontWeight:'bold'}}>About</Link></li>
             <li className="separator"></li>
             <li><a href="dashboard/index.html">Blog</a></li>
-            <li><a className="button navButton" href="%23create.html" >Contact Us</a></li>
+            <li><a className="button navButton" href="/index.html#/contact" >Contact Us</a></li>
           </ul>
 
 

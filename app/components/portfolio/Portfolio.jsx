@@ -8,6 +8,7 @@ var SingleProject = require('SingleProject');
 var fullpageJs = require('fullpage.js');
 
 var Portfolio = React.createClass({
+
   getInitialState : function(){
     return {
       isLoading: true,
@@ -18,8 +19,16 @@ var Portfolio = React.createClass({
     };
   },
   componentWillMount:function(){
+
+    if ( $( 'html' ).hasClass( 'fp-enabled' ) ) {
+      console.log('fullpage was there');
+      $('#fullpage').fullpage.destroy('all');
+    }
+
     this.fetchProjects();
   },
+
+
   fetchProjects:function(){
     var that = this;
 
@@ -63,7 +72,7 @@ var Portfolio = React.createClass({
       }
       return projects.map((project) =>{
         return (
-          <SingleProject key={project._id} {...project}  />
+          <SingleProject  key={project._id} {...project}  />
         );
       });
     };

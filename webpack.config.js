@@ -59,7 +59,8 @@ module.exports = {
     TitleBar: 'app/components/common/TitleBar.jsx',
     TeamGrid : 'app/components/about/TeamGrid',
     Web : 'app/components/services/Web.jsx',
-    MobileApps : 'app/components/services/MobileApps.jsx'
+    MobileApps : 'app/components/services/MobileApps.jsx',
+    ContactUs : 'app/components/contact/contactus.jsx'
     },
     extensions:['','.js','.jsx']
   },

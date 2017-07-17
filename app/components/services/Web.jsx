@@ -15,9 +15,7 @@ var Web = React.createClass ({
 
   },
   componentDidMount: function(){
-		$('#fullpage').fullpage({
-            //sectionsColor: ['#1bbc9b', '#e52d27', '#7BAABE', 'whitesmoke', '#ccddff']
-					});
+		$('#fullpage').fullpage();
 
 	},
   getInitialState : function() {
@@ -52,7 +50,7 @@ var Web = React.createClass ({
                   <h1>Slide 3</h1>
               </div>
           </div>
-          <div className="section" id="section2">
+          <div className="section service-info" id="section2">
               <div className="intro">
                   <h1>Scroll Down</h1>
                   <p>And it will animate down to the first section</p>
@@ -71,38 +69,34 @@ var Web = React.createClass ({
                   <div className="discover-menu-wrap small-12 medium-12 large-12">
                     <div className ="row dicovery-row hide-for-small-only">
                       <div className="small-6 medium-4 large-4 columns">
-                        <a href="#/websites?">
-                          <div className="discovery-box">
-                            <div className="discovery-text-wrap">
-                              <div className="small-2 medium-2 large-2 columns">
-                                <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
-                              </div>
-                              <div className="small-10 medium-10 large-10 columns">
-                                <span>
-                                  <h5 className = "discover-text discover-title dicsovery-title">Web Design & Development</h5>
-                                  <p className="dicsovery-desc">Join us to deliver an unique web presence to your clients</p>
-                                </span>
-                              </div>
+                        <div className="discovery-box">
+                          <div className="discovery-text-wrap">
+                            <div className="small-2 medium-2 large-2 columns">
+                              <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
+                            </div>
+                            <div className="small-10 medium-10 large-10 columns">
+                              <span>
+                                <h5 className = "discover-text discover-title dicsovery-title">Web Design & Development</h5>
+                                <p className="dicsovery-desc">Join us to deliver an unique web presence to your clients</p>
+                              </span>
                             </div>
                           </div>
-                        </a>
+                        </div>
                       </div>
                       <div className="small-6 medium-4 large-4 columns">
-                        <a href="#/mobileapp">
-                          <div className="discovery-box">
-                            <div className="discovery-text-wrap">
-                              <div className="small-2 medium-2 large-2 columns">
-                                <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
-                              </div>
-                              <div className="small-10 medium-10 large-10 columns">
-                                <span>
-                                  <h5 className = "discover-text discover-title dicsovery-title">Mobile App Development</h5>
-                                  <p className="dicsovery-desc">Join us to deliver an unique web presence to your clients</p>
-                                </span>
-                              </div>
+                        <div className="discovery-box">
+                          <div className="discovery-text-wrap">
+                            <div className="small-2 medium-2 large-2 columns">
+                              <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
+                            </div>
+                            <div className="small-10 medium-10 large-10 columns">
+                              <span>
+                                <h5 className = "discover-text discover-title dicsovery-title">Web Design & Development</h5>
+                                <p className="dicsovery-desc">Join us to deliver an unique web presence to your clients</p>
+                              </span>
                             </div>
                           </div>
-                        </a>
+                        </div>
                       </div>
                       <div className="small-6 medium-4 large-4 columns">
                         <div className="discovery-box">
