@@ -27,3 +27,42 @@
   text-align: center;
   font-weight: 100;
 }
+
+.contact-title {
+  font-size: 1.5em;
+  color: black;
+  text-align: center;
+  font-weight: 500;
+}
+
+.contact-btn-desc-wrap {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.about-detail-panel {
+  height: 400px;
+}
+
+.address-panel {
+background-color: blue;
+height: 100%;
+}
+
+.map-panel{
+background-color: red;
+height: 100%;
+padding-left: 0px;
+padding-right: 0px;
+}
+
+
+.orange-border {
+  border: 2px solid $map-orange!important;
+}
+.map-popup {
+  width: 100px;
+  height: 150px;
+  color: white;
+  background-color: $map-orange;
+}

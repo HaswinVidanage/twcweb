@@ -1,7 +1,7 @@
 var React = require('react');
 import MapBox from '../common/Map';
 
-// var {message_typing} = require('react-icons/lib/ti/message-typing');
+
 var {TiMessageTyping} = require('react-icons/lib/ti/');
 var {FaEnvelope} = require('react-icons/lib/fa/');
 var MiniContactForm = React.createClass({

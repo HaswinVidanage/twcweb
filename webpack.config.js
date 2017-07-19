@@ -56,11 +56,14 @@ module.exports = {
     ContactUsBar:  'app/components/common/ContactUsBar.jsx',
     MiniContactForm: 'app/components/home/MiniContactForm.jsx',
     MapBox: 'app/components/common/Map.jsx',
-    TitleBar: 'app/components/common/TitleBar.jsx',
+    AboutMap : 'app/components/common/Map.jsx',
+    TitleBar: 'app/components/common/AboutMap.jsx',
     TeamGrid : 'app/components/about/TeamGrid',
     Web : 'app/components/services/Web.jsx',
     MobileApps : 'app/components/services/MobileApps.jsx',
-    ContactUs : 'app/components/contact/contactus.jsx'
+    ContactUs : 'app/components/contact/contactus.jsx',
+    DescPanel : 'app/components/contact/DescPanel.jsx',
+    DetailPanel : 'app/components/contact/DetailPanel.jsx'
     },
     extensions:['','.js','.jsx']
   },
