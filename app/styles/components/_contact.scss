@@ -41,16 +41,16 @@
 }
 
 .about-detail-panel {
-  height: 400px;
+  height: 500px;
 }
 
 .address-panel {
-background-color: blue;
+background-color: $map-grey;
 height: 100%;
 }
 
 .map-panel{
-background-color: red;
+background-color: $map-grey;
 height: 100%;
 padding-left: 0px;
 padding-right: 0px;
@@ -60,9 +60,67 @@ padding-right: 0px;
 .orange-border {
   border: 2px solid $map-orange!important;
 }
+
 .map-popup {
-  width: 100px;
-  height: 150px;
-  color: white;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: $map-orange;
+    color: white;
+    bottom: 200px;
+    right: 100px;
+}
+
+.map-popup:before{
+    content: "";
+    position: absolute;
+    top: 248px;
+    left: 103px;
+    z-index: 1;
+    border: solid 15px transparent;
+    border-right-color: $map-orange;
+    -ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(270deg);
+    // background-color: $map-orange;
+}
+
+.map-popup-text-wrap {
+  position: absolute;
+  top: 30px;
+  width: 250px;
+  bottom: 0px;
+  left: auto;
+  margin-left: 0px;
+  padding-left: 25px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: left;
+  right: 0px;
+}
+
+.map-popup-address-text {
+  font-size: 1.4em;
+}
+
+.map-popup-address {
+  margin-top: 20px;
+}
+
+.orange-hollow {
+  border: 2px solid #ffffff!important;
+  color: #ffffff;
   background-color: $map-orange;
+  border-radius: 140px;
+}
+
+.orange-hollow:focus, .orange-hollow:hover {
+    background-color: #f54631;
+    color: #fefefe;
+}
+
+.dir-btn-wrap {
+  margin-left: 18px;
+  margin-right: 18px;
 }

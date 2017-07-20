@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
-var styleJson = require("./MapStyle.json");
+var styleJson = require("./AboutMapStyle.json");
 
 const AnyReactComponent = ({ text }) => <div className="MapIcon">{text}</div>;
 import PlaceWithName from './place_with_name.jsx';
@@ -30,10 +30,9 @@ function createMapOptions(maps) {
 
 class AboutMap extends Component {
   static defaultProps = {
-    center: {lat: 6.848437, lng: 79.879381},
+    center: {lat: 6.849805, lng: 79.879348},
     zoom: 15
   };
-
 
   render() {
 
@@ -44,7 +43,7 @@ class AboutMap extends Component {
         defaultZoom={this.props.zoom}
       >
 
-        <PlaceWithName  lat={6.848437} lng={79.879381} text={''} /* TWC Innovations */ />
+        <PlaceWithName  lat={6.849805} lng={79.879348} text={''} />
 
       </GoogleMapReact>
     );

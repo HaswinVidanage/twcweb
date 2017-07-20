@@ -6,8 +6,8 @@ var DetailPanel = React.createClass({
     return (
       <div>
         <div className="about-detail-panel">
-          <div className="small-8 medium-8 large-8 columns address-panel"></div>
-          <div className="small-4 medium-4 large-4 columns map-panel">
+          <div className="small-7 medium-7 large-7 columns address-panel"></div>
+          <div className="small-5 medium-5 large-5 columns map-panel">
             <MapBox className="Detail-Map"/>
           </div>
         </div>
