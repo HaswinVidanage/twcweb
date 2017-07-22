@@ -26,7 +26,7 @@ export default class PlaceWithName extends Component {
               <span className="map-popup-address-text">
                 <span><MapPin/> TWC Innovations</span>
                 <br/>
-                <span className="padding-left-10">&nbsp;&nbsp;Corportate Office</span>
+                <span className="padding-left-10">&nbsp;&nbsp;Corporate Office</span>
                 <br/> <br/>
                 <span className="map-popup-address padding-left-10">
                   25 Vijitha Road, Nedimala
@@ -36,7 +36,7 @@ export default class PlaceWithName extends Component {
 
                 <br/><br/>
                 <span className="dir-btn-wrap">
-                  <a className="button  orange-hollow" href="https://goo.gl/UqLpkw" target="_blank">&nbsp;&nbsp;&nbsp;Get Directions >&nbsp;&nbsp;&nbsp;</a>
+                  <a className="button  orange-hollow" href="https://goo.gl/UqLpkw" target="_blank">&nbsp;&nbsp;&nbsp;Get Directions&nbsp;&nbsp;&nbsp;</a>
                 </span>
               </span>
             </div>

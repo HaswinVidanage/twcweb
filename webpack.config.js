@@ -63,7 +63,8 @@ module.exports = {
     MobileApps : 'app/components/services/MobileApps.jsx',
     ContactUs : 'app/components/contact/contactus.jsx',
     DescPanel : 'app/components/contact/DescPanel.jsx',
-    DetailPanel : 'app/components/contact/DetailPanel.jsx'
+    DetailPanel : 'app/components/contact/DetailPanel.jsx',
+    ContactForm : 'app/components/contact/ContactForm.jsx'
     },
     extensions:['','.js','.jsx']
   },

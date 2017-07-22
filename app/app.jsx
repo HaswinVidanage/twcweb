@@ -25,6 +25,7 @@ ReactDOM.render(
      <Route path="/" component={Main}>
        <Route path="about" component={About}/>
        <Route path="contact" component={ContactUs}/>
+       <Route path="contact-form" component={ContactUs}/>
        <Route path="examples" component={Examples}/>
        <Route path="portfolio" component={Portfolio}/>
        <Route path="weather" component={Weather}/>

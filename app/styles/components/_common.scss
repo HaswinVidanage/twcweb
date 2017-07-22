@@ -104,8 +104,7 @@
    color:    $blood-red-light;
 }
 
-.mini-contact-input, [type=color]:focus, [type=date]:focus, [type=datetime-local]:focus, [type=datetime]:focus, [type=email]:focus, [type=month]:focus, [type=number]:focus, [type=password]:focus, [type=search]:focus, [type=tel]:focus, [type=text]:focus, [type=time]:focus,
-[type=url]:focus, [type=week]:focus {
+.mini-contact-input {
   padding-right: 0px;
   padding-left:  8px;
   padding-bottom: 8px;
@@ -139,7 +138,7 @@
   resize: none;
 }
 
-textarea:focus{
+.mini-text-area:focus{
   padding-top: 8px;
   padding-right: 0px;
   padding-left:  8px;
@@ -194,13 +193,13 @@ textarea:focus{
 }
 
 
-[type=color]:focus, [type=date]:focus, [type=datetime-local]:focus, [type=datetime]:focus, [type=email]:focus, [type=month]:focus, [type=number]:focus, [type=password]:focus, [type=search]:focus, [type=tel]:focus, [type=text]:focus, [type=time]:focus,
-[type=url]:focus, [type=week]:focus ,textarea:focus {
-
-    outline: none;
-    box-shadow: none!important;
-    transition: none!important;
-}
+// [type=color]:focus, [type=date]:focus, [type=datetime-local]:focus, [type=datetime]:focus, [type=email]:focus, [type=month]:focus, [type=number]:focus, [type=password]:focus, [type=search]:focus, [type=tel]:focus, [type=text]:focus, [type=time]:focus,
+// [type=url]:focus, [type=week]:focus ,textarea:focus {
+//
+//     outline: none;
+//     box-shadow: none!important;
+//     transition: none!important;
+// }
 
 
 //Map Marker Start

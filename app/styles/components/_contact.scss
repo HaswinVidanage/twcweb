@@ -1,5 +1,5 @@
 .contact-desc {
-  height: 620px;
+  height: 520px;
   background-color: white;
 }
 
@@ -123,4 +123,37 @@ padding-right: 0px;
 .dir-btn-wrap {
   margin-left: 18px;
   margin-right: 18px;
+}
+
+// address
+
+address {
+  text-align:center;
+  font-size: 1.1em;
+}
+address > span {text-align:left; display:inline-block;}
+
+.address-row-1 {
+    margin-top: 100px;
+}
+
+.address-row-2 {
+    margin-top: 300px;
+}
+
+.address-title {
+  font-weight: 700;
+}
+
+.contact-submit-btn {
+  background-color: $map-orange;
+}
+
+.contact-submit-btn:focus, .contact-submit-btn:hover {
+  background-color: #f54631;
+}
+
+#contact-form {
+  padding-top: 30px;
+  padding-bottom:30px;
 }

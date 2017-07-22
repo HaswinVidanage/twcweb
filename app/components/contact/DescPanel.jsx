@@ -1,6 +1,13 @@
 var React = require('react');
 
+
 var DescPanel = React.createClass({
+
+  onButtonClicked : function(id){
+    return () => {
+      this.props.onBtnClick(id);
+    }
+  },
   render :function () {
     return (
       <div>
@@ -20,7 +27,7 @@ var DescPanel = React.createClass({
 
                     <div className="small-12 medium-12 large-12">
                       <div className="contact-btn-desc-wrap">
-                        <button className="button btn-round-red-white orange-border">Request a Demo ></button>
+                        <a href="#contact-form" id="back" className="button btn-round-red-white orange-border" refs="btnDemo" onClick={this.onButtonClicked(0)}>Request a Demo</a>
                       </div>
                     </div>
                   </div>
@@ -30,11 +37,12 @@ var DescPanel = React.createClass({
                     <img src ="https://i.gyazo.com/930e5b728e619ca3feef3db2d1a904a4.png"/>
                   </div>
                   <div className="small-12 medium-12 large-12 ">
-                    <div className="contact-title">Salary Inquiry</div>
+                    <div className="contact-title">Sales Inquiry</div>
                     <p className="inquiry-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                     <div className="small-12 medium-12 large-12">
                       <div className="contact-btn-desc-wrap">
-                        <button className="button btn-round-red-white orange-border">&nbsp;&nbsp;&nbsp;Salary Inquiry >&nbsp;&nbsp;&nbsp;</button>
+                        <a href="#contact-form" className="button btn-round-red-white orange-border"  refs="btnSales" onClick={this.onButtonClicked(1)}>&nbsp;&nbsp;&nbsp;Sales Inquiry&nbsp;&nbsp;&nbsp;</a>
+
                       </div>
                     </div>
                   </div>
@@ -48,7 +56,7 @@ var DescPanel = React.createClass({
                     <p className="inquiry-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                     <div className="small-12 medium-12 large-12">
                       <div className="contact-btn-desc-wrap">
-                        <button className="button btn-round-red-white orange-border">Customer Support ></button>
+                        <a href="#contact-form" className="button btn-round-red-white orange-border"  refs="btnCustomerSup" onClick={this.onButtonClicked(2)}>Customer Support</a>
                       </div>
                     </div>
                   </div>
