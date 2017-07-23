@@ -49,6 +49,7 @@ module.exports = {
     WeatherMessage:'app/components/WeatherMessage.jsx',
     openWeatherMap:'app/api/openWeatherMap.jsx',
     projectsApi:'app/api/projectsApi.jsx',
+    enquiryAPI:'app/api/enquiryAPI.jsx',
     ErrorModal :'app/components/ErrorModal.jsx',
     Portfolio : 'app/components/portfolio/Portfolio.jsx',
     SingleProject: 'app/components/portfolio/SingleProject.jsx',

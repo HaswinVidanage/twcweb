@@ -42,7 +42,7 @@ var DetailPanel = React.createClass({
               </div>
             </div>
             <div className= "small-12 medium-12 large-12 address-row-2">
-              <div className="small-6 medium-6 large-6 columns">
+              <div className="small-4 medium-4 large-4 columns">
                 <address>
                     <span>
                         <h3 className="address-title">Sales Inquiries</h3>
@@ -52,7 +52,7 @@ var DetailPanel = React.createClass({
                     </span>
                 </address>
               </div>
-              <div className="small-6 medium-6 large-6 columns">
+              <div className="small-4 medium-4 large-4 columns">
                 <address>
                     <span>
                         <h3 className="address-title">International Sales</h3>
@@ -61,6 +61,8 @@ var DetailPanel = React.createClass({
                         Email: info@twcwebs.com<br/>
                     </span>
                 </address>
+              </div>
+              <div className="small-4 medium-4 large-4 columns">
               </div>
             </div>
           </div>

@@ -139,6 +139,7 @@ address > span {text-align:left; display:inline-block;}
 
 .address-row-2 {
     margin-top: 300px;
+    margin-left: 40px;
 }
 
 .address-title {
@@ -146,7 +147,10 @@ address > span {text-align:left; display:inline-block;}
 }
 
 .contact-submit-btn {
+  max-height: 60px;
+  font-weight: 200;
   background-color: $map-orange;
+  font-size: 1.2em;
 }
 
 .contact-submit-btn:focus, .contact-submit-btn:hover {
@@ -156,4 +160,12 @@ address > span {text-align:left; display:inline-block;}
 #contact-form {
   padding-top: 30px;
   padding-bottom:30px;
+}
+
+.form-loader {
+    float: right;
+}
+
+.spinner-wrap{
+
 }

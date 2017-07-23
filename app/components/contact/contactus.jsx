@@ -5,11 +5,13 @@ var DetailPanel = require('DetailPanel');
 var ContactForm = require('ContactForm');
 var {Link, IndexLink} = require('react-router');
 var Footer = require('Footer');
+var enquiryAPI = require('enquiryAPI');
 
 var ContactUs = React.createClass({
   getInitialState : function(){
     return {
       contactChoice: 0,
+      isLoading: 'inactive',
       contactFormShow : 'hide',
       title: 'GET IN TOUCH',
       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -21,19 +23,34 @@ var ContactUs = React.createClass({
       contactFormShow : 'unhide'
     });
   },
-  handleContactForm:function(name){
-    alert("clicked "+name);
+  handleContactForm:function(res){
+    this.setState({
+      isLoading:true
+    });
+    this.postEnquiry(res);
   },
 
+  postEnquiry:function(res){
+    var that = this;
+    enquiryAPI.postEnquiry(res).then(function(){
+      console.log('post completed');
+      that.setState({
+        isLoading:false
+      });
+    },function(e){
+      console.log(e);
+    });
+
+  },
   render : function () {
-    var {title, content, contactFormShow, contactChoice } = this.state;
+    var {title, content, contactFormShow, contactChoice, isLoading } = this.state;
     return (
       <div>
 
         <TitleBar title={title} content={content}/>
         <DescPanel onBtnClick={this.handleClick} />
         <DetailPanel />
-        <ContactForm id="contact-form"  optionsState={contactChoice} visibility={contactFormShow} onSubmitComplete={this.handleContactForm}/>
+        <ContactForm id="contact-form"  isLoading={isLoading} optionsState={contactChoice} visibility={contactFormShow} onSubmitComplete={this.handleContactForm}/>
         <Footer/>
       </div>
     );
