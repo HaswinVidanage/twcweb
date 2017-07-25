@@ -16,6 +16,7 @@ var Nav = React.createClass({
 
 
           <ul className="menu-desktop medium-11 large-9 align-right align-middle row">
+            <li><a  href="/index.html" activeClassName="active" activeStyle={{fontWeight:'bold'}} >Home</a></li>
             <li>
               <div className="menu-group" >
                 <span>Services</span>
@@ -101,7 +102,7 @@ var Nav = React.createClass({
             <li><Link to="/portfolio" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Portfolio</Link></li>
             <li><Link to="/about" activeClassName="active" activeStyle={{fontWeight:'bold'}}>About</Link></li>
             <li className="separator"></li>
-            <li><a href="dashboard/index.html">Blog</a></li>
+            <li><Link to="/blog" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Blog</Link></li>
             <li><a className="button navButton" href="/index.html#/contact" >Contact Us</a></li>
           </ul>
 

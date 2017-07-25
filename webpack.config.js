@@ -44,6 +44,7 @@ module.exports = {
     Home : 'app/components/Home.jsx',
     Weather:'app/components/Weather.jsx',
     About:'app/components/About.jsx',
+    Blog:'app/components/blog/Blog.jsx',
     Examples:'app/components/Examples.jsx',
     WeatherForm:'app/components/WeatherForm.jsx',
     WeatherMessage:'app/components/WeatherMessage.jsx',

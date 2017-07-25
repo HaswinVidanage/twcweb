@@ -19,7 +19,7 @@ var DescPanel = React.createClass({
               <div className="small-12 medium-12 large-12">
                 <div className="small-12 medium-4 large-4 columns">
                   <div className="small-12 medium-12 large-12 ">
-                    <img src ="https://i.gyazo.com/e281e27fd646b6dd844922fc6d051354.png"/>
+                    <img className="about-images center" src ="./images/contact/request-demo.svg"/>
                   </div>
                   <div className="small-12 medium-12 large-12 ">
                     <div className="contact-title">Request A Demo</div>
@@ -34,7 +34,7 @@ var DescPanel = React.createClass({
                 </div>
                 <div className="small-12 medium-4 large-4 columns">
                   <div className="small-12 medium-12 large-12 ">
-                    <img src ="https://i.gyazo.com/930e5b728e619ca3feef3db2d1a904a4.png"/>
+                    <img className="about-images" src ="./images/contact/sales-enquiry.svg"/>
                   </div>
                   <div className="small-12 medium-12 large-12 ">
                     <div className="contact-title">Sales Inquiry</div>
@@ -49,7 +49,7 @@ var DescPanel = React.createClass({
                 </div>
                 <div className="small-12 medium-4 large-4 columns">
                   <div className="small-12 medium-12 large-12 ">
-                    <img src ="https://i.gyazo.com/f2403fcd08ad58fa5f1caa0183d20332.png"/>
+                    <img className="about-images" src ="./images/contact/customer-support.svg"/>
                   </div>
                   <div className="small-12 medium-12 large-12 ">
                     <div className="contact-title">Customer Support</div>
