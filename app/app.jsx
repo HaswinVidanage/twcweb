@@ -28,7 +28,8 @@ ReactDOM.render(
        <Route path="contact-form" component={ContactUs}/>
        <Route path="examples" component={Examples}/>
        <Route path="portfolio" component={Portfolio}/>
-       <Route path="blog" component={Blog}/>
+       <Route  path="blog" component={Blog}/>
+       {/* <Route  path="blog/:article" component={Blog}/> */}
 
        <Route path="websites" component={Web}/>
        <Route path="mobileapps" component={MobileApps}/>

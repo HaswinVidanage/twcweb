@@ -10,9 +10,7 @@ module.exports = {
       if(res.data.cod && res.data.message){
         console.log('error fetching posts from api');
         throw new Error(res.data.message);
-      } else {
-        console.log('fetch success');
-        console.log(res.data.posts);
+      } else {      
         return res.data.posts;
       }
 

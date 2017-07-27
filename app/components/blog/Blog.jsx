@@ -1,7 +1,7 @@
 var React = require('react');
 var blogAPI = require('blogAPI');
 import TitleBar from '../common/TitleBar';
-
+var moment = require('moment');
 
 var Blog = React.createClass({
   getInitialState : function(){
@@ -15,6 +15,11 @@ var Blog = React.createClass({
   componentWillMount:function(){
     this.fetchPosts();
   },
+  componentDidMount :function(){
+  //  console.log(this.props.params.article);
+    // var day = moment("2017-05-23T18:30:00.000Z").fromNow();
+    // console.log(day);
+  },
   fetchPosts:function(){
     var that = this;
 
@@ -25,7 +30,7 @@ var Blog = React.createClass({
     });
 
     blogAPI.getPosts().then(function(posts){
-      console.log(posts);
+
       that.setState({
         posts:posts,
         isLoading:false,
@@ -45,8 +50,6 @@ var Blog = React.createClass({
   render : function(){
     var {title, content, posts} = this.state;
 
-    console.log(posts);
-
     var renderSinglePosts = () => {
       if(posts.length === 0){
         return (
@@ -56,12 +59,12 @@ var Blog = React.createClass({
         );
       }
       return posts.map((post) =>{
-        console.log(post.author.name.first);
+
         return (
           <div>
             <h1 className="blog-prev-title">{post.title}</h1>
-            <div>Uploaded {post.publishedDate} in <span className="highlight">Lifestyle</span> by <span className="highlight">{post.author.name.first +' '+post.author.name.last}</span></div>
-            <p className="blog-prev-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div>Uploaded {moment(post.publishedDate).fromNow()} under {post.categories.name}<span className="highlight"></span> by <span className="highlight">{post.author.name.first +' '+post.author.name.last}</span></div>
+            <p className="blog-prev-content">{post.content.extended}</p>
           </div>
         );
       });
@@ -73,6 +76,7 @@ var Blog = React.createClass({
         <div className="row">
           <div className="columns small-12 medium-12 large-12 large-centered margin-top-20">
             <div className="columns small-8 medium-8 large-8 ">
+               {/* <h2>PARAM : {this.props.params.article}</h2> */}
               {renderSinglePosts()}
             </div>
             <div className="columns small-4 medium-4 large-4 ">

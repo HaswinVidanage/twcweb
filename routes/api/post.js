@@ -34,7 +34,7 @@ exports.getPosts = function(req, res) {
     //   });
     // });
 
-  Post.model.find({'state':'published'}).populate('author', 'name email isAdmin').exec(function(err, posts) {
+  Post.model.find({'state':'published'}).populate('author categories', 'name email isAdmin').exec(function(err, posts) {
      //console.log(posts[1].author.password);
      //delete posts.blue;
      if (err) return res.apiError('database error', err);
