@@ -39,9 +39,6 @@ var Portfolio = React.createClass({
     });
 
     projectsApi.getProjects().then(function(projects){
-      console.log('fetched and inside react app');
-      console.log(projects);
-      console.log('fetched and inside react app end');
 
       that.setState({
         projects:projects,
@@ -60,7 +57,6 @@ var Portfolio = React.createClass({
   },
   render : function(){
     var {isLoading , projects, errorMessage, title, content} = this.state;
-    console.log(projects);
 
     var renderSingleProject = () => {
       if(projects.length === 0){

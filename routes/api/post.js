@@ -5,15 +5,50 @@ var keystone = require('keystone'),
  * List Tickets
  */
 exports.getPosts = function(req, res) {
-	Post.model.find(function(err, items) {
+	// Post.model.find(function(err, items) {
+  //
+	// 	if (err) return res.apiError('database error', err);
+  //
+	// 	res.apiResponse({
+	// 		posts: items
+	// 	});
+  //
+	// });
 
-		if (err) return res.apiError('database error', err);
+  // keystone.list('Post').model.find().exec(function(err,	posts)	{
+  //     console.log(posts);
+  //     posts.populateRelated('users', function(err) {
+  //       if (err) return res.apiError('database error', err);
+  //
+  //       res.apiResponse({
+  //   			posts: posts
+  //   		});
+  //
+  //     });
+  //   });
 
-		res.apiResponse({
-			posts: items
-		});
+    // Post.model.findOne().exec(function(err, post) {
+    //   post.populateRelated('users', function(err) {
+    //     // posts is populated
+    //     console.log(post);
+    //   });
+    // });
 
-	});
+  Post.model.find({'state':'published'}).populate('author', 'name email isAdmin').exec(function(err, posts) {
+     //console.log(posts[1].author.password);
+     //delete posts.blue;
+     if (err) return res.apiError('database error', err);
+
+     res.apiResponse({
+    		posts: posts
+     });
+   });
+  // keystone.list('Post').model.findOne().populate('author', function (err, doc) {
+  //   if (err) return res.apiError('database error', err);
+  //   console.log(doc); // Joe
+  //   //console.log(doc.populated('author'));  // '1234af9876b024c680d111a1' -> _id
+  // });
+
 }
 
 // /**

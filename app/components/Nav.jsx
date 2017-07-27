@@ -9,14 +9,14 @@ var Nav = React.createClass({
       <nav className="vertical light menu" id="navbar">
         <div className="navbar align-middle row">
           <a className="brand small-6 medium-1 large-3 align-middle columns" href="index.html">
-            <object data="./images/logo.svg" type="image/svg+xml">
-              <img src="./images/logo.png" />
+            <object data="./images/logo1.svg" type="image/svg+xml">
+              <img src="./images/logo1.png" />
             </object>
           </a>
 
 
           <ul className="menu-desktop medium-11 large-9 align-right align-middle row">
-            <li><a  href="/index.html" activeClassName="active" activeStyle={{fontWeight:'bold'}} >Home</a></li>
+            <li><Link to="#">Home</Link></li>
             <li>
               <div className="menu-group" >
                 <span>Services</span>
@@ -24,8 +24,7 @@ var Nav = React.createClass({
 
 
                   <div className="sub-item medium-6 large-4 column">
-                    <a href="/index.html#/websites?" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
-
+                  <Link to="/websites" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
                       <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
 
 
@@ -34,12 +33,11 @@ var Nav = React.createClass({
                         </span>
 
                       <p>Join us to deliver an unique web presence to your clients</p>
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="sub-item medium-6 large-4 column">
-                    <a href="/index.html#/mobileapps?" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
-
+                    <Link to="/mobileapps" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
                       <img src="https://prismicio.cdn.prismic.io/prismicio%2F0512e2c7-dea5-4af0-9e92-f83ca41c8536_schedule.svg" alt="" />
 
 
@@ -48,7 +46,7 @@ var Nav = React.createClass({
                         </span>
 
                       <p>Join us to deliver an unique mobile presence to your clients</p>
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="sub-item medium-6 large-4 column">
@@ -103,7 +101,8 @@ var Nav = React.createClass({
             <li><Link to="/about" activeClassName="active" activeStyle={{fontWeight:'bold'}}>About</Link></li>
             <li className="separator"></li>
             <li><Link to="/blog" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Blog</Link></li>
-            <li><a className="button navButton" href="/index.html#/contact" >Contact Us</a></li>
+            <li><Link to="/contact" className="button navButton" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Contact Us</Link></li>
+
           </ul>
 
 
