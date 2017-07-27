@@ -2,6 +2,7 @@ var React = require('react');
 var blogAPI = require('blogAPI');
 import TitleBar from '../common/TitleBar';
 var moment = require('moment');
+import ReactHtmlParser from 'react-html-parser';
 
 var Blog = React.createClass({
   getInitialState : function(){
@@ -61,10 +62,10 @@ var Blog = React.createClass({
       return posts.map((post) =>{
 
         return (
-          <div>
+          <div key={post._id}>
             <h1 className="blog-prev-title">{post.title}</h1>
             <div>Uploaded {moment(post.publishedDate).fromNow()} under {post.categories.name}<span className="highlight"></span> by <span className="highlight">{post.author.name.first +' '+post.author.name.last}</span></div>
-            <p className="blog-prev-content">{post.content.extended}</p>
+            <p className="blog-prev-content">{ReactHtmlParser(post.content.brief)}</p>
           </div>
         );
       });
