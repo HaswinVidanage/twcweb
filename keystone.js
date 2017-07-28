@@ -12,7 +12,7 @@ var keystone = require('keystone');
 keystone.init({
 	'name': 'twcweb',
 	'brand': 'twcweb',
-
+   'signin logo': ['../images/login.png', 200, 200] ,
 	'sass': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',

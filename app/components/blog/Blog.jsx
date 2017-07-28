@@ -3,7 +3,9 @@ var blogAPI = require('blogAPI');
 import TitleBar from '../common/TitleBar';
 var moment = require('moment');
 import ReactHtmlParser from 'react-html-parser';
-
+import { Timeline } from 'react-twitter-widgets'
+//pagination
+//https://github.com/AdeleD/react-paginate/blob/master/demo/js/demo.js
 var Blog = React.createClass({
   getInitialState : function(){
     return {
@@ -18,8 +20,6 @@ var Blog = React.createClass({
   },
   componentDidMount :function(){
   //  console.log(this.props.params.article);
-    // var day = moment("2017-05-23T18:30:00.000Z").fromNow();
-    // console.log(day);
   },
   fetchPosts:function(){
     var that = this;
@@ -59,8 +59,8 @@ var Blog = React.createClass({
           </div>
         );
       }
-      return posts.map((post) =>{
-
+      return posts.map((post, i) =>{
+        console.log(`index ${i}`);
         return (
           <div key={post._id}>
             <h1 className="blog-prev-title">{post.title}</h1>
@@ -74,14 +74,35 @@ var Blog = React.createClass({
     return (
       <div>
         <TitleBar title={title} content={content}/>
-        <div className="row">
-          <div className="columns small-12 medium-12 large-12 large-centered margin-top-20">
-            <div className="columns small-8 medium-8 large-8 ">
+        <div className="blog-wrap-main">
+          <div className="columns small-12 medium-12 large-12 large-centered margin-top-20 blog-wrap-content">
+            <div className="columns small-6 medium-6 large-6 small-push-2">
                {/* <h2>PARAM : {this.props.params.article}</h2> */}
               {renderSinglePosts()}
+              <ul className="pagination" role="navigation" aria-label="Pagination">
+                <li className="pagination-previous disabled">Previous <span className="show-for-sr">page</span></li>
+                <li className="current"><span className="show-for-sr">You're on page</span> 1</li>
+                <li><a href="#" aria-label="Page 2">2</a></li>
+                <li><a href="#" aria-label="Page 3">3</a></li>
+                <li><a href="#" aria-label="Page 4">4</a></li>
+                <li className="ellipsis" aria-hidden="true"></li>
+                <li><a href="#" aria-label="Page 12">12</a></li>
+                <li><a href="#" aria-label="Page 13">13</a></li>
+                <li className="pagination-next"><a href="#" aria-label="Next page">Next <span className="show-for-sr">page</span></a></li>
+              </ul>
             </div>
             <div className="columns small-4 medium-4 large-4 ">
-              <h1>Facebook/ Twitter Panel</h1>
+              <Timeline
+                 dataSource={{
+                   sourceType: 'profile',
+                   screenName: 'twcinnovations'
+                 }}
+                 options={{
+                   username: 'twcinnovations',
+                   height: '600'
+                 }}
+                 onLoad={() => console.log('Timeline is loaded!')}
+               />
             </div>
           </div>
 

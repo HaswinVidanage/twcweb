@@ -10,3 +10,21 @@
 .highlight {
   color:black;
 }
+
+.blog-wrap-main {
+  display: flex;
+  background-color: #fff!important;
+}
+
+.blog-wrap-content {
+  padding-left: 0px;
+}
+
+.timeline-Header {
+  background-color: #24b4ff!important;
+  padding: 18px!important;
+}
+
+.timeline-Header-title, .timeline-Header-byline, .customisable-highlight {
+  color: #fff!important;
+}
