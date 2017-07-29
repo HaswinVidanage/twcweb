@@ -36,18 +36,19 @@ var routes = {
 exports = module.exports = function (app) {
 	// Views
 	app.get('/', routes.views.index);
-	app.get('/blogs', routes.views.blog);
-	app.get('/blog/:category?', routes.views.blog);
-	app.get('/blog/post/:post', routes.views.post);
+	// app.get('/blogs', routes.views.blog);
+	// app.get('/blog/:category?', routes.views.blog);
+	// app.get('/blog/post/:post', routes.views.post);
 
 	// app.get('/gallery', routes.views.gallery);
-	app.all('/contactkey', routes.views.contact);
+	//app.all('/contactkey', routes.views.contact);
 
 	//api endpoints
 	// API
 	app.get('/api/posts', keystone.middleware.api, routes.api.post.getPosts);
 	app.post('/api/enquire', keystone.middleware.api, routes.api.enquire.createEnquiry);
-	//app.get('/api/posts/:id', keystone.middleware.api, routes.api.ticket.getTicketById);
+	//app.get('/api/posts/:slug', keystone.middleware.api, routes.api.ticket.getTicketById);
+	app.get('/api/posts/:id', keystone.middleware.api, routes.api.post.getPostByID);
 	// app.post('/api/posts', keystone.middleware.api, routes.api.ticket.createTicket);
 	// app.put('/api/posts/:id', keystone.middleware.api, routes.api.ticket.updateTicketById);
 	// app.delete('/api/posts/:id', keystone.middleware.api, routes.api.ticket.deleteTicketById);

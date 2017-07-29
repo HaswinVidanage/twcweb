@@ -1,4 +1,5 @@
 var React = require('react');
+var {Link, IndexLink} = require('react-router');
 var blogAPI = require('blogAPI');
 import TitleBar from '../common/TitleBar';
 var moment = require('moment');
@@ -26,9 +27,7 @@ var Blog = React.createClass({
 
     this.fetchPosts();
   },
-  componentDidMount :function(){
-  //  console.log(this.props.params.article);
-  },
+
   fetchPosts:function(){
     var that = this;
 
@@ -69,9 +68,13 @@ var Blog = React.createClass({
       }
       return posts.map((post, i) =>{
         console.log(`index ${i}`);
+        var link = `/blog-single/${post.slug}`;
         return (
+
           <div key={post._id}>
-            <h1 className="blog-prev-title">{post.title}</h1>
+            <Link to={link} >
+              <h1 className="blog-prev-title">{post.title}</h1>
+            </Link>
             <div>Uploaded {moment(post.publishedDate).fromNow()} under {post.categories.name}<span className="highlight"></span> by <span className="highlight">{post.author.name.first +' '+post.author.name.last}</span></div>
             <p className="blog-prev-content">{Parser(post.content.brief)}</p>
           </div>
@@ -107,7 +110,9 @@ var Blog = React.createClass({
                  }}
                  options={{
                    username: 'twcinnovations',
-                   height: '600'
+                   height: '600',
+                   chrome:'nofooter noscrollbar'
+
                  }}
                  onLoad={() =>
                    {
@@ -125,16 +130,6 @@ var Blog = React.createClass({
                       'color': '#24b4ff'
                     });
 
-                    // $("iframe#twitter-widget-0").contents().find(".customisable-highlight").css({
-                    //   'font-size': '16px',
-                    //   'font-weight': '100',
-                    //   'line-height': '16px',
-                    //   'color': 'white',
-                    //   'display':'block'
-                    // });
-                    // $("iframe#twitter-widget-0").contents().find(".TweetAuthor-name").css({
-                    //   'color': 'black!important'
-                    // });
                    }
                }
                />

@@ -6,6 +6,7 @@ var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 var Main = require('Main');
 var Home = require('Home');
 var Blog = require('Blog');
+var BlogSingle = require('BlogSingle');
 var About = require('About');
 var Examples = require('Examples');
 var Portfolio = require('Portfolio');
@@ -29,7 +30,7 @@ ReactDOM.render(
        <Route path="examples" component={Examples}/>
        <Route path="portfolio" component={Portfolio}/>
        <Route  path="blog" component={Blog}/>
-       {/* <Route  path="blog/:article" component={Blog}/> */}
+       <Route  path="blog-single/:slug" component={BlogSingle}/>
 
        <Route path="websites" component={Web}/>
        <Route path="mobileapps" component={MobileApps}/>
