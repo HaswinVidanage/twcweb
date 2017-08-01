@@ -6,6 +6,8 @@ import Parser from 'html-react-parser';
 var ReactDOM = require('react-dom');
 var Footer = require('Footer');
 var ContactUsBar = require('ContactUsBar');
+import { FacebookButton, FacebookCount } from "react-social";
+import DocumentMeta from 'react-document-meta';
 
 import {
   ShareButtons,
@@ -95,10 +97,31 @@ var BlogSingle = React.createClass({
 
   render : function(){
     var {post} = this.state;
-    const shareUrl = `https://twcwebs.herokuapp.com/#/blog-single/${post.slug}`;
-
-    //const shareUrl = `www.test.com`;
+    //const shareUrl = `https://twcwebs.herokuapp.com/#/blog-single/${post.slug}`;
+    const shareUrl = "https://github.com";
+    let url = "https://github.com";
     const title = 'Blog';
+
+    // <meta property="fb:app_id" content="231413577317212"/>
+    // <meta property="og:site_name" content="twcinnovations"/>
+    // <meta property="og:title" content="twcinnovations" />
+    // <meta property="og:description" content="twcinnovations" />
+    // <meta property="og:type" content="http://www.example.com/images/xxx.png">
+    // <meta property="og:url" content="https://twcwebs.herokuapp.com/"/>
+    // <meta property="og:image" content="http://res.cloudinary.com/haswind/image/upload/v1500191502/Untitled_ltuspt.png"/>
+
+
+    const meta = {
+      title: 'Some Meta Title',
+      description: 'I am a description, and I can create multiple tags',
+      canonical: 'http://example.com/path/to/page',
+      meta: {
+        charset: 'utf-8',
+        name: {
+          keywords: 'react,meta,document,html,tags'
+        }
+      }
+    };
 
     if(post.length === 0){
       return (
@@ -126,8 +149,8 @@ var BlogSingle = React.createClass({
     };
 
     return (
+      <DocumentMeta {...meta}>
       <div>
-
         <BlogBar title={post.title}
           publishedDate = {post.publishedDate}
           categoryName = {post.categories.name}
@@ -135,9 +158,7 @@ var BlogSingle = React.createClass({
         />
         <div className="blog-wrap-main no-left-padding margin-top-20">
           <div className="small-8 medium-8 large-8 small-centered">
-               {/* <h2>PARAM : {this.props.params.article}</h2> */}
               {renderSinglePost()}
-
               <div className="Demo__some-network">
                 <FacebookShareButton
                   url={shareUrl}
@@ -154,13 +175,17 @@ var BlogSingle = React.createClass({
                   className="Demo__some-network__share-count">
                   {count => count}
                 </FacebookShareCount>
+                {/* <FacebookButton url={url}>
+                  <FacebookCount url={url} />
+                  {" Share " + url}
+                </FacebookButton> */}
               </div>
           </div>
-
         </div>
         <ContactUsBar/>
         <Footer/>
       </div>
+      </DocumentMeta>
     );
   }
 });
