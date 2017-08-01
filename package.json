@@ -26,6 +26,7 @@
     "react-inlinesvg": "^0.6.0",
     "react-pure-render": "^1.0.2",
     "react-router": "^2.0.0",
+    "react-share": "^1.15.0",
     "react-tappable": "^1.0.0",
     "react-twitter-widgets": "^1.4.0",
     "resolve-url-loader": "^2.0.2",

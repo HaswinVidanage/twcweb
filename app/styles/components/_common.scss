@@ -646,6 +646,27 @@ select.round {
 
 }
 
+.blogbar-text-area {
+
+  color: white;
+
+  @media only screen and (min-width : $mobile-sc) and (max-width : $tab-sc ) {
+    padding: 120px 20px 20px 29px;
+  }
+  @media (min-width: $tab-sc) and (max-width : $desktop-sc) {
+    padding: 135px 45px 20px 29px;
+   }
+  @media (min-width: $desktop-sc) and (max-width : 1330px) {
+    padding: 150px 45px 20px 29px;
+   }
+  @media (min-width: 1330px) and (max-width : $large-sc) {
+    padding: 150px 45px 20px 29px;
+  }
+  @media (min-width : $large-sc) {
+    padding: 150px 45px 20px 29px;
+  }
+
+}
 .titlebar-title{
   font-weight: 500;
 }

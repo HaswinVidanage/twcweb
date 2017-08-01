@@ -1,17 +1,57 @@
 var React = require('react');
 var blogAPI = require('blogAPI');
-import TitleBar from '../common/TitleBar';
+import BlogBar from '../common/BlogBar';
 var moment = require('moment');
 import Parser from 'html-react-parser';
 var ReactDOM = require('react-dom');
+var Footer = require('Footer');
+var ContactUsBar = require('ContactUsBar');
+
+import {
+  ShareButtons,
+  ShareCounts,
+  generateShareIcon
+} from 'react-share';
+
+const {
+  FacebookShareButton,
+  GooglePlusShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  PinterestShareButton,
+  VKShareButton,
+  OKShareButton,
+  TelegramShareButton,
+  WhatsappShareButton,
+  RedditShareButton,
+} = ShareButtons;
+
+const {
+  FacebookShareCount,
+  GooglePlusShareCount,
+  LinkedinShareCount,
+  PinterestShareCount,
+  VKShareCount,
+  OKShareCount,
+  RedditShareCount,
+} = ShareCounts;
+
+const FacebookIcon = generateShareIcon('facebook');
+const TwitterIcon = generateShareIcon('twitter');
+const GooglePlusIcon = generateShareIcon('google');
+const LinkedinIcon = generateShareIcon('linkedin');
+const PinterestIcon = generateShareIcon('pinterest');
+const VKIcon = generateShareIcon('vk');
+const OKIcon = generateShareIcon('ok');
+const TelegramIcon = generateShareIcon('telegram');
+const WhatsappIcon = generateShareIcon('whatsapp');
+const RedditIcon = generateShareIcon('reddit');
 
 var BlogSingle = React.createClass({
   getInitialState : function(){
     return {
       isLoading: false,
       post: [],
-      title: 'Our Single Blog',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     };
   },
   componentWillMount:function(){
@@ -54,9 +94,20 @@ var BlogSingle = React.createClass({
   },
 
   render : function(){
-    var {title, content, post} = this.state;
+    var {post} = this.state;
+    const shareUrl = `https://twcwebs.herokuapp.com/#/blog-single/${post.slug}`;
 
-    console.log(post);
+    //const shareUrl = `www.test.com`;
+    const title = 'Blog';
+
+    if(post.length === 0){
+      return (
+        <div className="row">
+          <p className="container__message">Loading...</p>
+        </div>
+      );
+    }
+
     var renderSinglePost = () => {
       if(post.length === 0){
         return (
@@ -67,30 +118,48 @@ var BlogSingle = React.createClass({
       }
 
       return (
+
           <div key={post._id}>
-            <h1 className="blog-prev-title">{post.title}</h1>
-            <div>Uploaded {moment(post.publishedDate).fromNow()} under {post.categories.name}<span className="highlight"></span> by <span className="highlight">{post.author.name.first +' '+post.author.name.last}</span></div>
-            <p className="blog-prev-content">{Parser(post.content.extended)}</p>
+            <div className="blog-prev-content">{Parser(post.content.extended)}</div>
           </div>
         );
     };
 
     return (
       <div>
-        <TitleBar title={title} content={content}/>
-        <div className="blog-wrap-main no-left-padding">
-          <div className="columns small-12 medium-12 large-12 large-centered margin-top-20 no-left-padding">
-            <div className="columns small-6 medium-6 large-6 small-push-2 no-left-padding">
+
+        <BlogBar title={post.title}
+          publishedDate = {post.publishedDate}
+          categoryName = {post.categories.name}
+          authorName = {post.author.name.first +' '+post.author.name.last}
+        />
+        <div className="blog-wrap-main no-left-padding margin-top-20">
+          <div className="small-8 medium-8 large-8 small-centered">
                {/* <h2>PARAM : {this.props.params.article}</h2> */}
               {renderSinglePost()}
 
-            </div>
-            <div className="columns small-4 medium-4 large-4 ">
+              <div className="Demo__some-network">
+                <FacebookShareButton
+                  url={shareUrl}
+                  title={title}
+                  // picture={`${String(window.location)}/${exampleImage}`}
+                  className="Demo__some-network__share-button">
+                  <FacebookIcon
+                    size={32}
+                    round />
+                </FacebookShareButton>
 
-            </div>
+                <FacebookShareCount
+                  url={shareUrl}
+                  className="Demo__some-network__share-count">
+                  {count => count}
+                </FacebookShareCount>
+              </div>
           </div>
 
         </div>
+        <ContactUsBar/>
+        <Footer/>
       </div>
     );
   }
