@@ -1,7 +1,6 @@
 var axios = require('axios');
 
-const TWC_POSTS_API_URL ='/api/posts';
-const TWC_POSTS_SINGLE_API_URL ='/api/posts/1st-post';
+const TWC_POSTS_API_URL ='http://twcwebs.herokuapp.com/api/posts';
 module.exports = {
   getPosts:function(){
     var requestUrl = `${TWC_POSTS_API_URL}`;
@@ -22,7 +21,7 @@ module.exports = {
   },
 
   getPostsBySlug:function(slug){
-    var requestUrl = `/api/posts/${slug}`;
+    var requestUrl = `http://twcwebs.herokuapp.com/api/posts/${slug}`;
     console.log('requestUrl', requestUrl);
 
     return axios.get(requestUrl).then(function(res){

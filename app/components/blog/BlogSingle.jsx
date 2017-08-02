@@ -7,7 +7,9 @@ var ReactDOM = require('react-dom');
 var Footer = require('Footer');
 var ContactUsBar = require('ContactUsBar');
 import { FacebookButton, FacebookCount } from "react-social";
-import DocumentMeta from 'react-document-meta';
+// import DocumentMeta from 'react-document-meta';
+// import {Helmet} from "react-helmet";
+import MetaTags from 'react-meta-tags';
 
 import {
   ShareButtons,
@@ -97,9 +99,9 @@ var BlogSingle = React.createClass({
 
   render : function(){
     var {post} = this.state;
-    //const shareUrl = `https://twcwebs.herokuapp.com/#/blog-single/${post.slug}`;
-    const shareUrl = "https://github.com";
-    let url = "https://github.com";
+    const shareUrl = `https://twcwebs.herokuapp.com/#/blog-single/${post.slug}`;
+    //const shareUrl = "https://github.com";
+    //let url = "https://github.com";
     const title = 'Blog';
 
     // <meta property="fb:app_id" content="231413577317212"/>
@@ -111,9 +113,28 @@ var BlogSingle = React.createClass({
     // <meta property="og:image" content="http://res.cloudinary.com/haswind/image/upload/v1500191502/Untitled_ltuspt.png"/>
 
 
+
+    // const meta = {
+    //   title: 'Some Meta ',
+    //   description: 'I am a description, and I can create multiple tags',
+    //   canonical: 'http://example.com/path/to/page',
+    //   meta: {
+    //     charset: 'utf-8',
+    //     name: {
+    //       keywords: 'react,meta,document,html,tags'
+    //     }
+    //   }
+    // };
+
+    // <meta charset="utf-8" data-rdm="">
+    // <meta name="keywords" content="react,meta,document,html,tags" data-rdm="">
+    // <meta name="description" content="I am a description, and I can create multiple tags" data-rdm="">
+    // <link rel="canonical" href="http://example.com/path/to/page" data-rdm="">
+    <meta property="fb:app_id" content="231413577317212"/>
     const meta = {
-      title: 'Some Meta Title',
-      description: 'I am a description, and I can create multiple tags',
+      title: 'Facebook Meta ',
+      app_id: '231413577317212',
+
       canonical: 'http://example.com/path/to/page',
       meta: {
         charset: 'utf-8',
@@ -149,8 +170,18 @@ var BlogSingle = React.createClass({
     };
 
     return (
-      <DocumentMeta {...meta}>
+      // <DocumentMeta {...meta}>
       <div>
+        <MetaTags>
+            <title>Page 1</title>
+            <meta id="fb-app-id" property="fb:app_id" content="231413577317212"/>
+            <meta id="site_name" property="og:site_name" content="twcinnovations"/>
+            <meta id="title" property="og:title" content="twcinnovations" />
+            <meta id="description" property="og:description" content="twcinnovations" />
+            <meta id="type" property="og:type" content='http://www.example.com/images/xxx.png'/>
+            <meta id="url" property="og:url" content='https://twcwebs.herokuapp.com/'/>
+            <meta id="image" property="og:image" content='http://res.cloudinary.com/haswind/image/upload/v1500191502/Untitled_ltuspt.png' />
+        </MetaTags>
         <BlogBar title={post.title}
           publishedDate = {post.publishedDate}
           categoryName = {post.categories.name}
@@ -185,7 +216,7 @@ var BlogSingle = React.createClass({
         <ContactUsBar/>
         <Footer/>
       </div>
-      </DocumentMeta>
+      // </DocumentMeta>
     );
   }
 });
