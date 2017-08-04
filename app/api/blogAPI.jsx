@@ -21,7 +21,7 @@ module.exports = {
   },
 
   getPostsBySlug:function(slug){
-    var requestUrl = `http://twcwebs.herokuapp.com/api/posts/${slug}`;
+    var requestUrl = `https://twcwebs.herokuapp.com/api/posts/${slug}`;
     console.log('requestUrl', requestUrl);
 
     return axios.get(requestUrl).then(function(res){
