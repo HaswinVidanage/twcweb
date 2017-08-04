@@ -169,6 +169,7 @@ var BlogSingle = React.createClass({
         );
     };
 
+    console.log(post.image.secure_url);
     return (
       // <DocumentMeta {...meta}>
       <div>
@@ -176,11 +177,11 @@ var BlogSingle = React.createClass({
             <title>Page 1</title>
             <meta id="fb-app-id" property="fb:app_id" content="231413577317212"/>
             <meta id="site_name" property="og:site_name" content="twcinnovations"/>
-            <meta id="title" property="og:title" content="twcinnovations" />
-            <meta id="description" property="og:description" content="twcinnovations" />
+            <meta id="title" property="og:title" content="twc meta" />
+            <meta id="description" property="og:description" content="twc meta" />
             <meta id="type" property="og:type" content='http://www.example.com/images/xxx.png'/>
             <meta id="url" property="og:url" content='https://twcwebs.herokuapp.com/'/>
-            <meta id="image" property="og:image" content='http://res.cloudinary.com/haswind/image/upload/v1500191502/Untitled_ltuspt.png' />
+            <meta id="image" property="og:image" content= {post.image.secure_url} />
         </MetaTags>
         <BlogBar title={post.title}
           publishedDate = {post.publishedDate}
