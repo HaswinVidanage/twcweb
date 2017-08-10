@@ -17,9 +17,6 @@
  * See the Express application routing documentation for more information:
  * http://expressjs.com/api.html#app.VERB
  */
- require('babel-register')({
-   presets : ['react']
- });
 
 var keystone = require('keystone');
 var middleware = require('./middleware');
@@ -37,11 +34,8 @@ var routes = {
 
 // Setup Route Bindings
 exports = module.exports = function (app) {
-	app.use(require('./routes_ssr/index.jsx'));
 	// Views
-	//app.get('/', routes.views.index);
-
-
+	app.get('/', routes.views.index);
 	// app.get('/blogs', routes.views.blog);
 	// app.get('/blog/:category?', routes.views.blog);
 	// app.get('/blog/post/:post', routes.views.post);
@@ -59,6 +53,10 @@ exports = module.exports = function (app) {
 	// app.put('/api/posts/:id', keystone.middleware.api, routes.api.ticket.updateTicketById);
 	// app.delete('/api/posts/:id', keystone.middleware.api, routes.api.ticket.deleteTicketById);
 
+	// var restful = require('restful-keystone')(keystone);
+	//   restful.expose({
+	//     Post : true
+	//   }).start();
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);
@@ -68,3 +66,19 @@ exports = module.exports = function (app) {
 
 
 };
+
+
+//creating api endpoints for keystone models// file: routes/index.js
+
+
+// Pass your keystone instance to the module
+//https://github.com/d-pac/restful-keystone
+// var restful = require('restful-keystone')(keystone);
+//
+//
+// exports = module.exports = function( app ){
+//   //Explicitly define which lists we want exposed
+//   restful.expose({
+//     Post : true
+//   }).start();
+// }
