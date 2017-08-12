@@ -18,7 +18,7 @@
  * http://expressjs.com/api.html#app.VERB
  */
  require('babel-register')({
-   presets : ['react']
+   presets : ["react","es2015","stage-0"]
  });
 
 var keystone = require('keystone');
@@ -37,7 +37,7 @@ var routes = {
 
 // Setup Route Bindings
 exports = module.exports = function (app) {
-	app.use(require('./routes_ssr/index.jsx'));
+
 	// Views
 	//app.get('/', routes.views.index);
 
@@ -66,5 +66,5 @@ exports = module.exports = function (app) {
 	// API FOR Portfolio
 	app.get('/api/projects', keystone.middleware.api, routes.api.project.getProjects);
 
-
+  app.use(require('./routes_ssr/index.jsx'));
 };

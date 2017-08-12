@@ -24,7 +24,12 @@ build/Release
 # see https://npmjs.org/doc/faq.html#Should-I-check-my-node_modules-folder-into-git
 node_modules
 node_modules_old
+node_modules_1
+node_modules_err1
+node_modules_new
+
 package-bak.json
+
 
 # Ignore .env configuration files
 .env

@@ -3,6 +3,9 @@ var React = require('react');
 var ReactDOMServer = require('react-dom/server');
 var ReactRouter = require('react-router');
 
+
+
+
 router.get('*', function(request, response){
   var props = {title : 'Universal React App'};
   console.log('inside index.jsx');

@@ -1,5 +1,4 @@
 var axios = require('axios');
-
 const TWC_POSTS_API_URL ='/api/posts';
 module.exports = {
   getPosts:function(){

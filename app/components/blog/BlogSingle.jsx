@@ -1,15 +1,16 @@
 var React = require('react');
-var blogAPI = require('blogAPI');
+var blogAPI = require('../../api/blogAPI.jsx');
 import BlogBar from '../common/BlogBar';
 var moment = require('moment');
 import Parser from 'html-react-parser';
 var ReactDOM = require('react-dom');
-var Footer = require('Footer');
-var ContactUsBar = require('ContactUsBar');
+var Footer = require('../Footer.jsx');
+var ContactUsBar = require('../common/ContactUsBar.jsx');
 import { FacebookButton, FacebookCount } from "react-social";
 // import DocumentMeta from 'react-document-meta';
-// import {Helmet} from "react-helmet";
-import MetaTags from 'react-meta-tags';
+//import MetaTags from 'react-meta-tags';
+//import {Helmet} from "react-helmet";
+
 
 import {
   ShareButtons,
@@ -59,10 +60,10 @@ var BlogSingle = React.createClass({
     };
   },
   componentWillMount:function(){
-    if ( $( 'html' ).hasClass( 'fp-enabled' ) ) {
-      console.log('fullpage was there');
-      $('#fullpage').fullpage.destroy('all');
-    }
+    // if ( $( 'html' ).hasClass( 'fp-enabled' ) ) {
+    //   console.log('fullpage was there');
+    //   $('#fullpage').fullpage.destroy('all');
+    // }
 
     console.log(this.props.params.slug);
     this.fetchPostsBySlug(this.props.params.slug);
@@ -173,7 +174,7 @@ var BlogSingle = React.createClass({
     return (
       // <DocumentMeta {...meta}>
       <div>
-        <MetaTags>
+        {/* <MetaTags>
             <title>Page 1</title>
             <meta id="fb-app-id" property="fb:app_id" content="231413577317212"/>
             <meta id="site_name" property="og:site_name" content="twcinnovations"/>
@@ -182,7 +183,18 @@ var BlogSingle = React.createClass({
             <meta id="type" property="og:type" content='http://www.example.com/images/xxx.png'/>
             <meta id="url" property="og:url" content='https://twcwebs.herokuapp.com/'/>
             <meta id="image" property="og:image" content= {post.image.secure_url} />
-        </MetaTags>
+        </MetaTags> */}
+
+        {/* <Helmet>
+          <title>HaswinRulz</title>
+          <meta id="fb-app-id" property="fb:app_id" content="231413577317212"/>
+          <meta id="site_name" property="og:site_name" content="twcinnovations"/>
+          <meta id="title" property="og:title" content="twc meta" />
+          <meta id="description" property="og:description" content="twc meta" />
+          <meta id="type" property="og:type" content='http://www.example.com/images/xxx.png'/>
+          <meta id="url" property="og:url" content='https://twcwebs.herokuapp.com/'/>
+          <meta id="image" property="og:image" content= {post.image.secure_url} />
+        </Helmet> */}
         <BlogBar title={post.title}
           publishedDate = {post.publishedDate}
           categoryName = {post.categories.name}

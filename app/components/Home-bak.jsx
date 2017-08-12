@@ -1,8 +1,17 @@
 var React = require('react');
+// Create a window object.  See also: https://github.com/fgnass/domino#usage
+// const domino = require('domino');
+// const window = domino.createWindow('');
+// const document = window.document;
 
-var Footer = require('../../app/components/Footer.jsx');
-var ContactUsBar = require('../../app/components/common/ContactUsBar.jsx');
-var MiniContactForm = require('../../app/components/home/MiniContactForm.jsx');
+// Create a jquery instance
+//const $ = require('jquery')(window);
+
+//var fullpageJs = require('fullpage.js');
+
+// var Footer = require('Footer');
+// var ContactUsBar = require('ContactUsBar');
+// var MiniContactForm = require('MiniContactForm');
 
 var Home = React.createClass({
 	// componentWillMount: function() {
@@ -14,62 +23,45 @@ var Home = React.createClass({
 	// 	}
   //
 	// },
-	componentDidMount: function(){
-
-		fullpage.initialize('#fullpage', {
-			'verticalCentered': true,
-			'menu': '#menu',
-			'anchors': ['?section1', '?section2', '?section3','?section4','?section5'],
-			'autoScrolling': false,
-			'scrollOverflow': false,
-			'fitToSection':false,
-
-			'onLeave': function(index, nextIndex, direction){
-
-				$('#nexus').toggleClass('moveDown', (index == 1 && direction == 'down' ) || (index != 1) );
-				$('#nexus').toggleClass('moveUp', nextIndex == 1);
-
-			}
-		});
-
-		// $('#fullpage').fullpage({
-		// 					verticalCentered: true,
-		// 					menu: '#menu',
-		// 					anchors: ['?section1', '?section2', '?section3','?section4','?section5'],
-		// 					autoScrolling: false,
-		// 				  scrollOverflow: false,
-		// 					fitToSection:false,
-		//
-		// 					'afterLoad': function(anchorLink, index){
-		// 						// console.log("Width/2 : " + $( window ).width()/2);
-		// 						// console.log("Height/2 : " + $( window ).height()/2);
-		// 						//$('#obj-nexus').width( ($( window ).height()) - 2);
-		// 						// if(index == 1){
-		// 						// 	// $('#iphone3, #iphone2, #iphone4').addClass('active');
-		// 						// 	console.log('Index 1');
-		// 						// }
-		//
-		//
-		// 					},
-		// 					'onLeave': function(index, nextIndex, direction){
-		// 						// make navbar hidden if autoScrolling
-		// 						// if(index == 1 && direction == 'down'){
-		// 						// 	// make navbar dark
-		// 						// 	$('#navbar').addClass('invisible');
-		// 						// } else if(index == 2 && direction == 'up'){
-		// 						// 	$('#navbar').removeClass('invisible');
-		// 						// }
-		//
-		// 						$('#nexus').toggleClass('moveDown', (index == 1 && direction == 'down' ) || (index != 1) );
-		// 						$('#nexus').toggleClass('moveUp', nextIndex == 1);
-		// 						//$('#nexus').toggleClass('moveUp', index == 1 && direction == 'up');
-		//
-		// 					}
-		//
-		// 			});
-
-
-	},
+	// componentDidMount: function(){
+	// 	$('#fullpage').fullpage({
+	// 						verticalCentered: true,
+	// 						menu: '#menu',
+	// 						anchors: ['?section1', '?section2', '?section3','?section4','?section5'],
+	// 						autoScrolling: false,
+	// 					  scrollOverflow: false,
+	// 						fitToSection:false,
+  //
+	// 						'afterLoad': function(anchorLink, index){
+	// 							// console.log("Width/2 : " + $( window ).width()/2);
+	// 							// console.log("Height/2 : " + $( window ).height()/2);
+	// 							//$('#obj-nexus').width( ($( window ).height()) - 2);
+	// 							// if(index == 1){
+	// 							// 	// $('#iphone3, #iphone2, #iphone4').addClass('active');
+	// 							// 	console.log('Index 1');
+	// 							// }
+  //
+  //
+	// 						},
+	// 						'onLeave': function(index, nextIndex, direction){
+	// 							// make navbar hidden if autoScrolling
+	// 							// if(index == 1 && direction == 'down'){
+	// 							// 	// make navbar dark
+	// 							// 	$('#navbar').addClass('invisible');
+	// 							// } else if(index == 2 && direction == 'up'){
+	// 							// 	$('#navbar').removeClass('invisible');
+	// 							// }
+  //
+	// 							$('#nexus').toggleClass('moveDown', (index == 1 && direction == 'down' ) || (index != 1) );
+	// 							$('#nexus').toggleClass('moveUp', nextIndex == 1);
+	// 							//$('#nexus').toggleClass('moveUp', index == 1 && direction == 'up');
+  //
+	// 						}
+  //
+	// 				});
+  //
+  //
+	// },
 	render: function() {
 		return (
 
@@ -191,7 +183,7 @@ var Home = React.createClass({
 				</div>
 				<div className="section section5-home small-12 medium-12 large-12" id="section5-home">
 					<div className="half-grey">
-						<MiniContactForm/>
+						{/* <MiniContactForm/> */}
 						<div className = 'padding-top-50 off-white small-12 medium-12 large-12 content column'>
 							<div className="padding-sides-350">
 							<p className="logo-text-title">Sri Lanka's best companies use TWC to improve their productivity.</p>
@@ -218,8 +210,8 @@ var Home = React.createClass({
 						</div>
 					</div>
 				</div>
-				 <ContactUsBar/>
-				 <Footer/>
+				{/* <ContactUsBar/>
+				<Footer/> */}
 			</div>
 
 		);

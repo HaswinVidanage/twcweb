@@ -2,9 +2,10 @@ var React = require('react');
 import TitleBar from './common/TitleBar';
 import PrimaryLocations from './common/PrimaryLocations';
 import FounderMessage from './about/FounderMessage';
-var TeamGrid = require('TeamGrid');
-var ContactUsBar = require('ContactUsBar');
-var Footer = require('Footer');
+
+var TeamGrid = require('./about/TeamGrid.jsx');
+var ContactUsBar = require('./common/ContactUsBar.jsx');
+var Footer = require('./Footer.jsx');
 
 
 

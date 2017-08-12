@@ -1,6 +1,7 @@
 var React = require('react');
 var {Link, IndexLink} = require('react-router');
-var blogAPI = require('blogAPI');
+var blogAPI = require('../../api/blogAPI.jsx');
+var Footer = require('../Footer.jsx');
 import TitleBar from '../common/TitleBar';
 var moment = require('moment');
 // import ReactHtmlParser from 'react-html-parser';
@@ -19,10 +20,10 @@ var Blog = React.createClass({
     };
   },
   componentWillMount:function(){
-    if ( $( 'html' ).hasClass( 'fp-enabled' ) ) {
-      console.log('fullpage was there');
-      $('#fullpage').fullpage.destroy('all');
-    }
+    // if ( $( 'html' ).hasClass( 'fp-enabled' ) ) {
+    //   console.log('fullpage was there');
+    //   $('#fullpage').fullpage.destroy('all');
+    // }
 
 
     this.fetchPosts();
