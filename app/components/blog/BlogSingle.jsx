@@ -7,7 +7,7 @@ var ReactDOM = require('react-dom');
 var Footer = require('../Footer.jsx');
 var ContactUsBar = require('../common/ContactUsBar.jsx');
 import { FacebookButton, FacebookCount } from "react-social";
-// import DocumentMeta from 'react-document-meta';
+import DocumentMeta from 'react-document-meta';
 //import MetaTags from 'react-meta-tags';
 //import {Helmet} from "react-helmet";
 
@@ -57,6 +57,7 @@ var BlogSingle = React.createClass({
     return {
       isLoading: false,
       post: [],
+      customMeta : ''
     };
   },
   componentWillMount:function(){
@@ -64,7 +65,9 @@ var BlogSingle = React.createClass({
     //   console.log('fullpage was there');
     //   $('#fullpage').fullpage.destroy('all');
     // }
-
+    this.setState({
+      customMeta : <title>3TWC Innovations</title>
+    });
     console.log(this.props.params.slug);
     this.fetchPostsBySlug(this.props.params.slug);
   },
@@ -85,7 +88,8 @@ var BlogSingle = React.createClass({
       that.setState({
         post:post,
         isLoading:false,
-        errorMessage:undefined
+        errorMessage:undefined,
+        customMeta : <title>2TWC Innovations</title>
       });
 
     },function(e){
@@ -131,12 +135,12 @@ var BlogSingle = React.createClass({
     // <meta name="keywords" content="react,meta,document,html,tags" data-rdm="">
     // <meta name="description" content="I am a description, and I can create multiple tags" data-rdm="">
     // <link rel="canonical" href="http://example.com/path/to/page" data-rdm="">
-    <meta property="fb:app_id" content="231413577317212"/>
+    // <meta property="fb:app_id" content="231413577317212"/>
     const meta = {
-      title: 'Facebook Meta ',
+      title: 'Fb Haswin',
       app_id: '231413577317212',
 
-      canonical: 'http://example.com/path/to/page',
+      canonical: 'http://Haswin.com/path/to/page',
       meta: {
         charset: 'utf-8',
         name: {
@@ -172,8 +176,12 @@ var BlogSingle = React.createClass({
 
     console.log(post.image.secure_url);
     return (
-      // <DocumentMeta {...meta}>
+      <DocumentMeta {...meta}>
+      <head>
+        <meta name="description" content="HASWIN VIDANAGE 0001" data-rdm=""/>
+      </head>
       <div>
+
         {/* <MetaTags>
             <title>Page 1</title>
             <meta id="fb-app-id" property="fb:app_id" content="231413577317212"/>
@@ -229,7 +237,7 @@ var BlogSingle = React.createClass({
         <ContactUsBar/>
         <Footer/>
       </div>
-      // </DocumentMeta>
+      </DocumentMeta>
     );
   }
 });

@@ -18,18 +18,32 @@ var Main = React.createClass({
     $(document).foundation();
 
   },
+  getInitialState : function(){
+    return {
+      customMeta : <title>1TWC Innovations</title>
+    };
+  },
   render : function() {
     var custom = this.props.custom;
-    console.log('Props at Main', custom);
+    //var meta = this.props.meta;
+     var customMeta = this.state.customMeta;
+    // console.log('Meta at Main', this.props.custom.meta);
+    // console.log('Props at Main', custom);
+    var renderCustomMeta = function() {
+      console.log('MAIN JSX META ', customMeta);
+      return customMeta;
+      //console.log(meta);
+      //return meta;
+    };
     return (
       <html>
-        <head>
+        {/* <head>
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <title>TWC Innovations</title>
+          {renderCustomMeta()}
 
-           <link rel="stylesheet" type="text/css" href="/js/fullpagejs/javascript.fullPage.css" />
-           <script src="/js/fullpagejs/javascript.fullPage.js"></script>
-        </head>
+
+
+        </head> */}
         <body>
             <div className="main-wrapper">
               <div className="main-nav-wrapper">
@@ -42,6 +56,8 @@ var Main = React.createClass({
           <script dangerouslySetInnerHTML={{
             __html: 'window.PROPS='+JSON.stringify(custom)
           }}/>
+          <link rel="stylesheet" type="text/css" href="/js/fullpagejs/javascript.fullPage.css" />
+          <script src="/js/fullpagejs/javascript.fullPage.js"></script>
           <script src ='/bundle.js'/>
           <script  src="js/twc/web.js"></script>
         </body>
