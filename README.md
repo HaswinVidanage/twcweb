@@ -10,3 +10,5 @@ https://stackoverflow.com/a/37734302/3418572
 
 14/8/2017 : try
 https://github.com/geekyme/react-doc-meta
+or finally move to prerendering options
+like https://www.npmjs.com/package/react-prerender

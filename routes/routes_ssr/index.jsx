@@ -32,7 +32,10 @@ router.get('*', function(request, response){
       // console.log('props', props);
 
       //var html = '<h1>This is to test</h1>'
-      response.send(html);
+      response.send(
+        '<!DOCTYPE html>' +
+        html
+      );
     } else {
       console.log('in  else');
       response.status(404).send('Not Found');
