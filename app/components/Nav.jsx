@@ -107,9 +107,13 @@ var Nav = React.createClass({
 
 
           <div className="menu-mobile small-6">
-            <i className="icon-menu"></i>
+            <i className="icon-menu">
+              <img src = "http://flatironsmineralclub.org/wp-content/themes/fmc/img/menu_icon.png" className="navbar-icon"/>
+            </i>
             <div className="menu-mobile-container small-12">
-              <i className="icon-close"></i>
+              <i className="icon-close">                
+                <img src = "https://cdn2.iconfinder.com/data/icons/designers-and-developers-icon-set/32/close-512.png" className="navbar-icon"/>
+              </i>
               <div className="menu-content">
                 <span className="group-label">Services</span>
                 <div className="sub-items">
