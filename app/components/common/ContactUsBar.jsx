@@ -14,7 +14,7 @@ var ContactUsBar = React.createClass({
               </div>
             </div>
           </div>
-          <div className="small-8 medium-6 large-6 contact-us-btns columns">
+          <div className="small-8 medium-6 large-6  columns contact-us-btns">
             <div className="small-12 medium-6 large-6 columns">
               <button className="button btn-round-red-white"><big className="contact-btn-txt">Call Us</big></button>
             </div>

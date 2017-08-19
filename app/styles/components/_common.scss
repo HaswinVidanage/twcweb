@@ -159,14 +159,14 @@
 }
 
 .contact-us-btns {
-  @media (min-width : $chrome-321) {
-
+  @media (max-width : $chrome-321) {
+    padding-left: 30px;
   }
   @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
-
+    padding-left: 30px;
   }
   @media (min-width: $chrome-376) and (max-width: $chrome-426) {
-
+    padding-left: 50px;
    }
   @media (min-width: $chrome-426) and (max-width : $chrome-769) {
     padding: 50px;
