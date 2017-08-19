@@ -98,9 +98,41 @@
 
 
 .section3-home {
-  height: 331px;
-  padding-top: 5%;
-  min-height: 500px;
+  // height: 331px;
+  //
+
+  @media (max-width : $chrome-321) {
+    padding-top: 16%;
+    min-height: 1000px;
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+    padding-top: 16%;
+    min-height: 1000px;
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+    padding-top: 5%;
+    min-height: 730px;
+   }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    padding-top: 5%;
+    min-height: 500px;
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+    padding-top: 5%;
+    min-height: 500px;
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+    padding-top: 5%;
+    min-height: 500px;
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+    padding-top: 5%;
+    min-height: 500px;
+  }
+  @media (min-width : $chrome-2561) {
+    padding-top: 5%;
+    min-height: 500px;
+  }
 }
 
 .section4-home {
