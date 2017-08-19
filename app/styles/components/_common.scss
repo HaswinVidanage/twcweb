@@ -78,7 +78,7 @@
 }
 
 .contact-text-pad {
-  @media (min-width : $chrome-321) {
+  @media (max-width : $chrome-321) {
     padding-left: 0px;
   }
   @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
@@ -105,7 +105,7 @@
 }
 
 .contact-us-inner-wrap {
-  
+
   @media (max-width : $chrome-321) {
     padding: 20px;
   }
