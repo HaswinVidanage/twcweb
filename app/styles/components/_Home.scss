@@ -139,20 +139,46 @@
 
 // presentation
 .presentation{
-  //max-width: 50%;
+
   padding-top: 200px;
   position: relative;
   text-align: left;
   z-index: 1;
-  @media screen and (max-width: 63.9375em){
+
+  @media (min-width : $mobile-sc) {
     text-align: center;
-    left: 200px;
-    right: 200px;
+    left: 0px;
+    right: 0px;
     padding: 120 0px;
+  }
+  @media only screen and (min-width : $mobile-sc) and (max-width : $tab-sc ) {
+    // height: 1000px;
+    // min-height: 1000px;
+    text-align: center;
+    left: 0px;
+    right: 0px;
+    padding: 120 0px;
+  }
+  @media (min-width: $tab-sc) and (max-width: 640px) {
+
+   }
+  @media (min-width: 640px) and (max-width : $desktop-sc) {
+
+  }
+  @media (min-width: $desktop-sc) and (max-width : 1330px)  {
+
+  }
+  @media (min-width: 1330px) and (max-width : $large-sc) {
+
+  }
+  @media (min-width : $large-sc) {
 
   }
 }
 
+.body-class {
+  width: 100%!important;
+}
 // illustration
 #home div.header .illustration {
     position: absolute!important;

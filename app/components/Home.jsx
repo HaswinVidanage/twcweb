@@ -62,7 +62,7 @@ var Home = React.createClass({
 					<div className="header header-home">
 	          <div className="header-container">
 	            <div className="row align-middle align-justify">
-	              <div className="presentation small-10 medium-6 large-6 align-center">
+	              <div className="presentation small-12 medium-6 large-6 align-center">
 	                <div className="column">
 	                  <div className="hashtags small-12 medium-12 large-11">
 	                    <h1>
@@ -79,13 +79,13 @@ var Home = React.createClass({
 	                </div>
 	              </div>
 
-	              <div className="illustration small-11 medium-6 large-6 align-right text-center">
+	              <div className="illustration hide-for-small-only medium-6 large-6 align-right text-center">
 	                <div className="illu illu-editor" id="nexus">
 	                  <object id="obj-nexus" data="./images/Home/nexus.svg" type="image/svg+xml">
 	                    <img src="./images/Home/nexus.png" />
 	                  </object>
 	                </div>
-	                <div className="illu illu-code text-right small-11 medium-6 large-6">
+	                <div className="illu illu-code text-right hide-for-small-only medium-6 large-6">
 										<object id="obj-browser" data="./images/Home/browser-window.svg" type="image/svg+xml">
 	                    <img src="./images/Home/browser-window.png" />
 	                  </object>
@@ -118,7 +118,7 @@ var Home = React.createClass({
 				<div className="section section3-home small-12 medium-12 large-12" id="section3-home">
 					<div className="section3-home">
 						<div className="r row align-justify align-middle ">
-							<div className = 'small-12 medium-6 large-6 content column'>
+							<div className = 'small-12 medium-6 large-6 content column z-index-high'>
 								<img src="./images/Home/dummy.png" />
 							</div>
 							<div className = 'small-12 medium-6 large-6 content column'>
@@ -139,7 +139,7 @@ var Home = React.createClass({
 						</div>
 					</div>
 				</div>
-				<div className="section section4-home small-12 medium-12 large-12" id="section4-home">
+				<div className="section section4-home hide-for-small-only medium-12 large-12" id="section4-home">
 					<div className="section3-home">
 						<div className="r row align-justify align-middle ">
 							<div className = 'small-12 medium-6 large-6 content column'>
@@ -173,7 +173,7 @@ var Home = React.createClass({
 						</div>
 					</div>
 				</div>
-				<div className="section section5-home small-12 medium-12 large-12" id="section5-home">
+				<div className="section section5-home hide-for-small-only medium-12 large-12" id="section5-home">
 					<div className="half-grey">
 						<MiniContactForm/>
 						<div className = 'padding-top-50 off-white small-12 medium-12 large-12 content column'>

@@ -2412,8 +2412,10 @@ nav.menu {
       position: absolute;
       background: white;
       top: 17px;
+
       width: -moz-calc(100% - 18px);
       width: calc(100% - 18px);
+
       left: 9px;
       border-radius: 3px;
       padding: 40px 25px 20px;
@@ -7376,4 +7378,55 @@ nav.menu .navbar {
   @media screen and (min-width: 40em){
     padding: 0 40px;
   }
+}
+
+.navbar-custom {
+
+
+    // @media (min-width : $chrome-321) {
+    //   width: 320px;
+    //   margin-left: 0px!important;
+    //   margin-right: 0px!important;
+    //   padding-left: 20px!important;
+    //   padding-right: 20px!important;
+    //   border-right-width: 0px;
+    // }
+    @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+
+      width: -moz-calc(100% - 18px);
+      width: calc(100% - 18px);
+      //width: 320px;
+      margin-left: 0px!important;
+      margin-right: 0px!important;
+      padding-left: 20px!important;
+      padding-right: 20px!important;
+      border-right-width: 0px;
+    }
+    @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+      width: -moz-calc(100% - 0px);
+      width: calc(100% - 0px);
+
+      //width: 320px;
+      margin-left: 0px!important;
+      margin-right: 0px!important;
+      padding-left: 20px!important;
+      padding-right: 20px!important;
+      border-right-width: 0px;
+     }
+    @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+      width: -moz-calc(100% - 0px);
+      width: calc(100% - 0px);
+    }
+    @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+    }
+    @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+    }
+    @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+    }
+    @media (min-width : $chrome-2561) {
+
+    }
 }
