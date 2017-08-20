@@ -69,6 +69,31 @@
 
 .contactus-bar-text {
   color : $blood-red-dark;
+
+  @media (min-width : $chrome-321) {
+
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+
+   }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    min-width: 320px;
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+    min-width: 320px;
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+    min-width: 320px;
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+    min-width: 320px;
+  }
+  @media (min-width : $chrome-2561) {
+    min-width: 320px;
+  }
 }
 
 .ContactUsBar{

@@ -10,7 +10,8 @@ var Footer = React.createClass({
     return (
       <footer className="footer" id="footer">
         <div className="footer-row">
-          <div className="small-4  columns">
+
+          <div className="small-12 medium-4 columns">
             <div className="footer-row-col-1">
               <div className="footer-logo-wrap">
                 <object id="obj-browser" data="./images/Home/footer-logo.svg" type="image/svg+xml">
@@ -21,9 +22,8 @@ var Footer = React.createClass({
                 <p className="footer-logo-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             </div>
-
           </div>
-          <div className="small-3  columns">
+          <div className="small-12  medium-3 columns">
             <div className="vertical-line" >
             </div>
             <div className="footer-menu-wrap">
@@ -32,7 +32,7 @@ var Footer = React.createClass({
               </div>
 
               <div className="footer-menu-ul-wrap">
-                <div className="small-6 columns">
+                <div className="small-12 medium-6 columns">
                   <ul className="footer-ul">
                     <li>About</li>
                     <li>Contact Us</li>
@@ -41,7 +41,7 @@ var Footer = React.createClass({
                   </ul>
                 </div>
 
-                <div className="small-6 columns">
+                <div className="small-12 medium-6 columns">
                   <ul className="footer-ul">
                     <li>FAQ</li>
                     <li>Careers</li>
@@ -52,10 +52,11 @@ var Footer = React.createClass({
               </div>
             </div>
           </div>
-          <div className="small-3  columns">
+
+          <div className="small-12 medium-3 columns">
             <div className="vertical-line" />
             <div className="footer-contact-wrapper">
-              <div className="small-12 columns">
+              <div className="small-12 medium-12 columns">
                 <strong>CONTACT US</strong>
                 <div className="footer-contact-text-wrapper">
                   <ul className="footer-ul">
@@ -67,10 +68,10 @@ var Footer = React.createClass({
               </div>
             </div>
           </div>
-          <div className="small-2  columns">
+          <div className="small-12  medium-2 columns">
             <div className="vertical-line" />
             <div className="footer-social-wrapper">
-              <div className="small-12 columns">
+              <div className="small-12 medium-12 columns">
                 <strong>FOLLOW US</strong>
                 <div className="footer-contact-text-wrapper">
                   <ul className="footer-ul">
