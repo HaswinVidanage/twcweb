@@ -111,94 +111,101 @@ var Nav = React.createClass({
               <img src = "http://flatironsmineralclub.org/wp-content/themes/fmc/img/menu_icon.png" className="navbar-icon"/>
             </i>
             <div className="menu-mobile-container small-12">
-              <i className="icon-close">                
-                <img src = "https://cdn2.iconfinder.com/data/icons/designers-and-developers-icon-set/32/close-512.png" className="navbar-icon"/>
+              <i className="icon-close">
+                <img src = "https://cdn2.iconfinder.com/data/icons/designers-and-developers-icon-set/32/close-512.png" className="navbar-close"/>
               </i>
               <div className="menu-content">
+                <div className="item small-12"><li><Link to="#">Home</Link></li></div>
+
                 <span className="group-label">Services</span>
                 <div className="sub-items">
                   <div className="sub-item small-12">
-                    <a href="feature/custom-type-builder.html">
 
+                    <Link to="/websites" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
                       <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
 
 
                       <span className="">
-                      Web Design & Development
+                      Web Development
                     </span>
 
-                    </a>
+                    </Link>
                   </div>
                   <div className="sub-item small-12">
-                    <a href="feature/scheduling-and-previews.html">
 
-                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F0512e2c7-dea5-4af0-9e92-f83ca41c8536_schedule.svg" alt="" />
-
-                      <span className="">
-                        Scheduling &amp; previews
-                      </span>
-
-                    </a>
-                  </div>
-
-
-                  <div className="sub-item small-12">
-                    <a href="feature/full-history-revision.html">
-
-                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F20867243-c0c0-4c46-94d8-bd20ceda4618_history.svg" alt="" />
+                    <Link to="/mobileapps" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
+                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
 
 
                       <span className="">
-                      Full revision history
+                      Mobile App Development
                     </span>
 
-                    </a>
-                  </div>
-
-                  <div className="sub-item small-12">
-                    <a href="feature/localization-and-multilanguage.html">
-
-                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F12786898-79c8-4316-98d7-92b22a6bb453_localization.svg" alt="" />
-
-
-                      <span className="">
-                        Multi-language
-                      </span>
-
-                    </a>
+                    </Link>
                   </div>
 
 
                   <div className="sub-item small-12">
-                    <a href="feature/dynamic-layout-content-components.html">
 
-                      <img src="https://prismicio.cdn.prismic.io/prismicio%2Fffdae39b-7aed-4cd4-9b6c-34046faa5406_layout.svg" alt="" />
+                    <Link to="/websites" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
+                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
+
+
                       <span className="">
-                        Dynamic layouts
-                      </span>
+                      Web Development
+                    </span>
 
-                    </a>
+                    </Link>
+                  </div>
+
+                  <div className="sub-item small-12">
+
+                    <Link to="/websites" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
+                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
+
+
+                      <span className="">
+                      Web Development
+                    </span>
+
+                    </Link>
+                  </div>
+
+
+                  <div className="sub-item small-12">
+
+                    <Link to="/websites" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
+                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
+
+
+                      <span className="">
+                      Web Development
+                    </span>
+
+                    </Link>
+                  </div>
+
+                  <div className="sub-item small-12">
+
+                    <Link to="/websites" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
+                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
+
+
+                      <span className="">
+                      Web Development
+                    </span>
+
+                    </Link>
                   </div>
 
                 </div>
-
-
-                <div className="item small-12"><a href="pricing.html">Pricing</a></div>
-
-
-                <div className="item small-12"><a href="quickstart.html">Quickstart</a></div>
-
-
-                <div className="item small-12"><a href="docs.html">Docs</a></div>
-
                 <span className="separator"></span>
-
-
-                <div className="item small-12"><a href="dashboard/index.html">Login</a></div>
-
-
-                <div className="item small-12"><a className="button" href="%23create.html">Test it out</a></div>
-
+                <div className="item small-12"><Link to="/Saless" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Sales Suit</Link></div>
+                <div className="item small-12"><li><Link to="/portfolio" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Portfolio</Link></li></div>
+                <div className="item small-12"><li><Link to="/about" activeClassName="active" activeStyle={{fontWeight:'bold'}}>About</Link></li></div>
+                <span className="separator"></span>
+                <div className="item small-12"><li><Link to="/blog" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Blog</Link></li></div>
+                <div className="item small-12"><li><Link to="/contact" className="button navButton" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Contact Us</Link></li></div>
 
               </div>
             </div>

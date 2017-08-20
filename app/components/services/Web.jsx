@@ -21,7 +21,7 @@ var Web = React.createClass ({
   getInitialState : function() {
     return {
       reload:true,
-      title: 'MOBILE APPLICATION DEVELOPMENT',
+      title: 'WEB APPLICATION DEVELOPMENT',
       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     };
   },
