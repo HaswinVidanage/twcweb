@@ -28,26 +28,44 @@ var Web = React.createClass ({
   render: function() {
     return (
       <div id="fullpage">
-          <div className="section " id="section0">
+          {/* <div className="section " id="section0">
               <h1>fullPage.js</h1>
               <p>Continuous Scrolling Enabled</p>
               <img src="imgs/fullPage.png" alt="fullPage" />
-          </div>
+          </div> */}
           <div className="section section0-home active" id="section1">
-              <div className="slide " id="slide1">
-                  <div className="intro">
-                      <h1>Around the world scrolling</h1>
-                      <p>Go to the first section and scroll up or to the last one and scroll down to see how it works.</p>
-                  </div>
-              </div>
-              <div className="slide   active" id="slide2">
+              <div className="slide active" id="slide1">
                 <div>
-                  <div className="small-6 medium-6 large-6 columns">Sithaka Tea</div>
-                  <div className="small-6 medium-6 large-6 columns"> <img src="http://res.cloudinary.com/haswind/image/upload/v1500191502/Untitled_ltuspt.png" /></div>
+                  <div className="small-6 medium-6 large-6 columns">
+                    <div className = "intro service-intro">
+                      <h2 className="service-title">Greenary Website</h2>
+                      <p className="service-intro-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                      <div className="small-12 medium-6 large-6 columns">
+                        <button className="button btn-round-red-white btn-service-call"><big className="contact-btn-txt">Call Us</big></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="small-6 medium-6 large-6 columns service-img-wrap">
+                    <img className="service-img" src="http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png" />
+                  </div>
                 </div>
               </div>
-              <div className="slide" id="slide3">
-                  <h1>Slide 3</h1>
+              <div className="slide" id="slide2">
+                <div>
+                  <div className="small-6 medium-6 large-6 columns">Ecom Website</div>
+                  <div className="small-6 medium-6 large-6 columns service-img-wrap">
+                    <img className="service-img" src="http://res.cloudinary.com/haswind/image/upload/v1503939454/ecom_a43ses.png" />
+                  </div>
+                </div>
+              </div>
+              <div className="slide" id="slide2">
+                <div>
+                  <div className="small-6 medium-6 large-6 columns">Cartec Lanka</div>
+                  <div className="small-6 medium-6 large-6 columns service-img-wrap">
+                    <img className="service-img" src="http://res.cloudinary.com/haswind/image/upload/v1503939474/cartec_cqnugb.png" />
+                  </div>
+                </div>
               </div>
           </div>
           <div className="section service-info" id="section2">

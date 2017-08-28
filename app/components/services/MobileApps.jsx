@@ -16,7 +16,7 @@ var MobileApps = React.createClass ({
   },
   componentDidMount: function(){
 		$('#fullpage').fullpage({
-            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+            sectionsColor: ['#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
 					});
 
 	},
@@ -30,11 +30,11 @@ var MobileApps = React.createClass ({
   render: function() {
     return (
       <div id="fullpage">
-          <div className="section " id="section0">
+          {/* <div className="section " id="section0">
               <h1>fullPage.js</h1>
               <p>Continuous Scrolling Enabled</p>
               <img src="imgs/fullPage.png" alt="fullPage" />
-          </div>
+          </div> */}
           <div className="section active" id="section1">
               <div className="slide" id="slide1">
                   <div className="intro">
