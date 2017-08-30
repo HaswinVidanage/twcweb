@@ -5,11 +5,6 @@ var FooterComponent = require('Footer');
 
 
 var Web = React.createClass ({
-  getInitialState: function() {
-    return {
-      slideIndex: 0
-    };
-  },
   componentWillMount: function() {
 
     //add this so fullpage js won't give error saying you called it multiple times
@@ -21,14 +16,9 @@ var Web = React.createClass ({
   },
   componentDidMount: function(){
 
-    console.log("This", this);
-    var that = this;
 		$('#fullpage').fullpage({
       onSlideLeave: ( anchorLink, index, slideIndex, direction, nextSlideIndex ) => {
 
-        this.setState({
-          slideIndex:1
-        });
 
     		var leavingSlide = $(this);
         console.log('This got called!!! index'+slideIndex +" leavingSlide : "+leavingSlide );
@@ -57,7 +47,7 @@ var Web = React.createClass ({
     return (
       <div id="fullpage">
 
-          <div className={ `section section0-home active ` } id="section1">
+          <div className= "section section0-home section0-home-services active" id="section1">
 
               <div className="slide active" id="slide1">
                 <div>
