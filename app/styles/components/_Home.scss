@@ -8,7 +8,7 @@
 
   height: 720px;
   min-height: 660px!important;
-  max-height: 660px!important;
+  // max-height: 660px!important;
   width: 100%;
   margin: 0;
   box-sizing: inherit;
@@ -503,4 +503,33 @@ div.header .header-container .illustration {
 .padding-sides-350 {
   padding-left: 350px;
   padding-right: 350px;
+}
+
+
+.fp-controlArrow.fp-prev {
+  border-width: 28px 30px 10px 10px;
+  transform: rotate(45deg);
+  border-style: solid;
+  border-color: transparent transparent #f7f7f7 #fff2f2;
+}
+
+.fp-controlArrow.fp-prev:hover {
+  border-width: 32px 34px 14px 14px;
+  transform: rotate(45deg);
+  border-style: solid;
+  border-color: transparent transparent #f7f7f7 #fff2f2;
+}
+
+.fp-controlArrow.fp-next {
+  border-width: 28px 30px 10px 10px;
+  transform: rotate(225deg);
+  border-style: solid;
+  border-color: transparent transparent #f7f7f7 #fff2f2;
+}
+
+.fp-controlArrow.fp-next:hover {
+  border-width: 32px 34px 14px 14px;
+  transform: rotate(225deg);
+  border-style: solid;
+  border-color: transparent transparent #f7f7f7 #fff2f2;
 }

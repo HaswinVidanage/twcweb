@@ -5,6 +5,11 @@ var FooterComponent = require('Footer');
 
 
 var Web = React.createClass ({
+  getInitialState: function() {
+    return {
+      slideIndex: 0
+    };
+  },
   componentWillMount: function() {
 
     //add this so fullpage js won't give error saying you called it multiple times
@@ -15,7 +20,30 @@ var Web = React.createClass ({
 
   },
   componentDidMount: function(){
-		$('#fullpage').fullpage();
+
+    console.log("This", this);
+    var that = this;
+		$('#fullpage').fullpage({
+      onSlideLeave: ( anchorLink, index, slideIndex, direction, nextSlideIndex ) => {
+
+        this.setState({
+          slideIndex:1
+        });
+
+    		var leavingSlide = $(this);
+        console.log('This got called!!! index'+slideIndex +" leavingSlide : "+leavingSlide );
+    		//leaving the first slide of the 2nd Section to the right
+    		if(index == 2 && slideIndex == 0 && direction == 'right'){
+    			alert("Leaving the fist slide!!");
+    		}
+
+    		//leaving the 3rd slide of the 2nd Section to the left
+    		if(index == 2 && slideIndex == 2 && direction == 'left'){
+    			alert("Going to slide 2! ");
+    		}
+    	}
+
+    });
 
 	},
   getInitialState : function() {
@@ -28,22 +56,19 @@ var Web = React.createClass ({
   render: function() {
     return (
       <div id="fullpage">
-          {/* <div className="section " id="section0">
-              <h1>fullPage.js</h1>
-              <p>Continuous Scrolling Enabled</p>
-              <img src="imgs/fullPage.png" alt="fullPage" />
-          </div> */}
-          <div className="section section0-home active" id="section1">
+
+          <div className={ `section section0-home active ` } id="section1">
+
               <div className="slide active" id="slide1">
                 <div>
                   <div className="small-6 medium-6 large-6 columns">
                     <div className = "intro service-intro">
                       <h2 className="service-title">Greenary Website</h2>
                       <p className="service-intro-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.</p>
-                      <div className="small-12 medium-6 large-6 columns">
-                        <button className="button btn-round-red-white btn-service-call"><big className="contact-btn-txt">Call Us</big></button>
-                      </div>
+                        incididunt ut labore et dolore magna aliqua.
+                        <br/><br/>
+                        <button className="button btn-round-red-white btn-service-call"><big className="contact-btn-txt">See it live</big></button>
+                      </p>
                     </div>
                   </div>
                   <div className="small-6 medium-6 large-6 columns service-img-wrap">
@@ -51,17 +76,37 @@ var Web = React.createClass ({
                   </div>
                 </div>
               </div>
-              <div className="slide" id="slide2">
+
+              <div className="slide " id="slide2">
                 <div>
-                  <div className="small-6 medium-6 large-6 columns">Ecom Website</div>
+                  <div className="small-6 medium-6 large-6 columns">
+                    <div className = "intro service-intro">
+                      <h2 className="service-title">Greenary Website</h2>
+                      <p className="service-intro-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                        <br/><br/>
+                        <button className="button btn-round-red-white btn-service-call"><big className="contact-btn-txt">See it live</big></button>
+                      </p>
+                    </div>
+                  </div>
                   <div className="small-6 medium-6 large-6 columns service-img-wrap">
                     <img className="service-img" src="http://res.cloudinary.com/haswind/image/upload/v1503939454/ecom_a43ses.png" />
                   </div>
                 </div>
               </div>
-              <div className="slide" id="slide2">
+
+              <div className="slide " id="slide3">
                 <div>
-                  <div className="small-6 medium-6 large-6 columns">Cartec Lanka</div>
+                  <div className="small-6 medium-6 large-6 columns">
+                    <div className = "intro service-intro">
+                      <h2 className="service-title">Greenary Website</h2>
+                      <p className="service-intro-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                        <br/><br/>
+                        <button className="button btn-round-red-white btn-service-call"><big className="contact-btn-txt">See it live</big></button>
+                      </p>
+                    </div>
+                  </div>
                   <div className="small-6 medium-6 large-6 columns service-img-wrap">
                     <img className="service-img" src="http://res.cloudinary.com/haswind/image/upload/v1503939474/cartec_cqnugb.png" />
                   </div>
