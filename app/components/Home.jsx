@@ -119,7 +119,7 @@ var Home = React.createClass({
 					<div className="section3-home">
 						<div className="r row align-justify align-middle ">
 							<div className = 'small-12 medium-6 large-6 content column z-index-high'>
-								<img src="./images/Home/dummy.png" />
+								<img src="http://res.cloudinary.com/haswind/image/upload/v1504292304/computer_sfnkzc.svg" />
 							</div>
 							<div className = 'small-12 medium-6 large-6 content column'>
 

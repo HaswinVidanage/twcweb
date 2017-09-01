@@ -104,10 +104,20 @@ var Web = React.createClass ({
               </div>
           </div>
           <div className="section service-info" id="section2">
-              <div className="intro">
-                  <h1>Scroll Down</h1>
-                  <p>And it will animate down to the first section</p>
+            <div className="row">
+              <div className="small-4">
+                <div className="intro">
+                    <p>
+                      <h1 className="service-title-title">Website Design & Development</h1>
+                      And it will animate down to the first section
+                    </p>
+                </div>
               </div>
+              <div className="small-8">
+                
+              </div>
+            </div>
+
           </div>
           <div className="section discover-service-panel" id="section3">
               <div className="discover-service-wrap small-12 medium-12 large-12 ">
