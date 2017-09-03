@@ -1,5 +1,6 @@
 var React = require('react');
 
+
 const defImg    = 'http://res.cloudinary.com/haswind/image/upload/v1499575396/0-default_aznpyk.png';
 const north  = 'http://res.cloudinary.com/haswind/image/upload/v1499575398/1-north_adhoox.png';
 const north_east = 'http://res.cloudinary.com/haswind/image/upload/v1499575399/2-north-east_hizwcg.png';
@@ -11,128 +12,231 @@ const west = 'http://res.cloudinary.com/haswind/image/upload/v1499575400/7-west_
 const north_west = 'http://res.cloudinary.com/haswind/image/upload/v1499575398/8-north-west_xnx3jo.png';
 
 
+//chathuranga
+const defImg_chathu    = '/images/about/team/chathuranga/0.jpg';
+const north_chathu  = '/images/about/team/chathuranga/1.jpg';
+const north_east_chathu = '/images/about/team/chathuranga/2.jpg';
+const north_east_east_chathu = '/images/about/team/chathuranga/10_NEE.jpg';
+const east_chathu = '/images/about/team/chathuranga/3.jpg';
+const south_east_chathu = '/images/about/team/chathuranga/4.jpg';
+const south_east_east_chathu = '/images/about/team/chathuranga/9_SEE.jpg';
+const south_chathu = '/images/about/team/chathuranga/5.jpg';
+const south_west_chathu = '/images/about/team/chathuranga/6.jpg';
+const west_chathu = '/images/about/team/chathuranga/7.jpg';
+const north_west_chathu = '/images/about/team/chathuranga/8.jpg';
+
+//kasun
+const defImg_kasun    = '/images/about/team/kasun/0.jpg';
+const north_kasun  = '/images/about/team/kasun/1.jpg';
+const north_east_kasun = '/images/about/team/kasun/2.jpg';
+const north_east_east_kasun = '/images/about/team/kasun/10_NEE.jpg';
+const east_kasun = '/images/about/team/kasun/3.jpg';
+const south_east_kasun = '/images/about/team/kasun/4.jpg';
+const south_east_east_kasun = '/images/about/team/kasun/9_SEE.jpg';
+const south_kasun = '/images/about/team/kasun/5.jpg';
+const south_west_kasun = '/images/about/team/kasun/6.jpg';
+const west_kasun = '/images/about/team/kasun/7.jpg';
+const north_west_kasun = '/images/about/team/kasun/8.jpg';
+
+//jala
+const defImg_jala    = '/images/about/team/jala/0.jpg';
+const north_jala  = '/images/about/team/jala/1.jpg';
+const north_east_jala = '/images/about/team/jala/2.jpg';
+const north_east_east_jala = '/images/about/team/jala/10_NEE.jpg';
+const east_jala = '/images/about/team/jala/3.jpg';
+const south_east_jala = '/images/about/team/jala/4.jpg';
+const south_east_east_jala = '/images/about/team/jala/9_SEE.jpg';
+const south_jala = '/images/about/team/jala/5.jpg';
+const south_west_jala = '/images/about/team/jala/6.jpg';
+const west_jala = '/images/about/team/jala/7.jpg';
+const north_west_jala = '/images/about/team/jala/8.jpg';
+
+//haswin
+const defImg_haswin    = '/images/about/team/haswin/0.jpg';
+const north_haswin  = '/images/about/team/haswin/1.jpg';
+const north_east_haswin = '/images/about/team/haswin/2.jpg';
+//const north_east_east_haswin = '/images/about/team/haswin/10_NEE.jpg';
+const east_haswin = '/images/about/team/haswin/3.jpg';
+const south_east_haswin = '/images/about/team/haswin/4.jpg';
+const south_west_west_haswin = '/images/about/team/haswin/6_SWW.jpg';
+const south_haswin = '/images/about/team/haswin/5.jpg';
+const south_west_haswin = '/images/about/team/haswin/6.jpg';
+const west_haswin = '/images/about/team/haswin/7.jpg';
+const north_west_haswin = '/images/about/team/haswin/8.jpg';
+
+
+//dinuka
+const defImg_dinuka    = '/images/about/team/dinuka/0.jpg';
+const north_dinuka  = '/images/about/team/dinuka/1.jpg';
+const north_east_dinuka = '/images/about/team/dinuka/2.jpg';
+//const north_east_east_dinuka = '/images/about/team/dinuka/10_NEE.jpg';
+const east_dinuka = '/images/about/team/dinuka/3.jpg';
+const south_east_dinuka = '/images/about/team/dinuka/4.jpg';
+const south_west_west_dinuka = '/images/about/team/dinuka/6_SWW.jpg';
+const south_dinuka = '/images/about/team/dinuka/5.jpg';
+const south_west_dinuka = '/images/about/team/dinuka/6.jpg';
+const west_dinuka = '/images/about/team/dinuka/7.jpg';
+const north_west_dinuka = '/images/about/team/dinuka/8.jpg';
+
+//hashi
+const defImg_hashi    = '/images/about/team/hashi/0.jpg';
+const north_hashi  = '/images/about/team/hashi/1.jpg';
+const north_east_hashi = '/images/about/team/hashi/2.jpg';
+//const north_east_east_hashi = '/images/about/team/hashi/10_NEE.jpg';
+const east_hashi = '/images/about/team/hashi/3.jpg';
+const south_east_hashi = '/images/about/team/hashi/4.jpg';
+const south_west_west_hashi = '/images/about/team/hashi/6_SWW.jpg';
+const south_hashi = '/images/about/team/hashi/5.jpg';
+const south_west_hashi = '/images/about/team/hashi/6.jpg';
+const west_hashi = '/images/about/team/hashi/7.jpg';
+const north_west_hashi = '/images/about/team/hashi/8.jpg';
+
+//sachin
+const defImg_sachin    = '/images/about/team/sachin/0.jpg';
+const north_sachin  = '/images/about/team/sachin/1.jpg';
+const north_east_sachin = '/images/about/team/sachin/2.jpg';
+//const north_east_east_sachin = '/images/about/team/sachin/10_NEE.jpg';
+const east_sachin = '/images/about/team/sachin/3.jpg';
+const south_east_sachin = '/images/about/team/sachin/4.jpg';
+const south_west_west_sachin = '/images/about/team/sachin/6_SWW.jpg';
+const south_sachin = '/images/about/team/sachin/5.jpg';
+const south_west_sachin = '/images/about/team/sachin/6.jpg';
+const west_sachin = '/images/about/team/sachin/7.jpg';
+const north_west_sachin = '/images/about/team/sachin/8.jpg';
+
+//cactus
+const defImg_cactus    = '/images/about/team/cactus/0.jpg';
+const north_cactus  = '/images/about/team/cactus/1.jpg';
+const north_east_cactus = '/images/about/team/cactus/2.jpg';
+const east_cactus = '/images/about/team/cactus/3.jpg';
+const south_east_cactus = '/images/about/team/cactus/4.jpg';
+const south_cactus = '/images/about/team/cactus/5.jpg';
+const south_west_cactus = '/images/about/team/cactus/6.jpg';
+const west_cactus = '/images/about/team/cactus/7.jpg';
+const north_west_cactus = '/images/about/team/cactus/8.jpg';
+
 var TeamGrid = React.createClass({
   handlePolyOver : function(id) {
 
     switch (id) {
       case 1:
         this.setState({
-          fname: 'GUY',
-          lname: 'ONE',
+          fname: 'Dinuka',
+          lname: '',
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-          url_1:defImg,
-          url_2:west,
-          url_3:north_east,
-          url_4:north_west,
-          url_5:north_west,
-          url_6:north,
-          url_7:north_west,
-          url_8:north
+          url_1:defImg_dinuka,
+          url_2:west_hashi,
+          url_3:north_east_chathu,
+          url_4:north_west_sachin,
+          url_5:north_west_haswin,
+          url_6:north_kasun,
+          url_7:north_west_jala,
+          url_8:north_cactus
         });
         break;
       case 2:
         this.setState({
-          fname: 'GUY',
-          lname: 'TWO',
+          fname: 'Hashi',
+          lname: '',
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-          url_1:east,
-          url_2:defImg,
-          url_3:north_east,
-          url_4:north_east,
-          url_5:north_west,
-          url_6:north_east,
-          url_7:north,
-          url_8:north
+          url_1:east_dinuka,
+          url_2:defImg_hashi,
+          url_3:north_east_east_chathu,
+          url_4:north_east_sachin,
+          url_5:north_west_haswin,
+          url_6:north_east_kasun,
+          url_7:north_jala,
+          url_8:north_cactus
         });
         break;
       case 3:
         this.setState({
-          fname: 'GUY',
-          lname: 'THREE',
+          fname: 'Chathuranga',
+          lname: '',
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-          url_1:south_west,
-          url_2:south_west,
-          url_3:defImg,
-          url_4:west,
-          url_5:west,
-          url_6:north_west,
-          url_7:north_west,
-          url_8:north_west
+          url_1:south_west_dinuka,
+          url_2:south_west_hashi,
+          url_3:defImg_chathu,
+          url_4:west_sachin,
+          url_5:west_haswin,
+          url_6:north_west_kasun,
+          url_7:north_west_jala,
+          url_8:north_west_cactus
         });
         break;
       case 4:
         this.setState({
-          fname: 'GUY',
-          lname: 'FOUR',
+          fname: 'Sachin',
+          lname: '',
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-          url_1:south_east,
-          url_2:south_west,
-          url_3:east,
-          url_4:defImg,
-          url_5:west,
-          url_6:north_east,
-          url_7:north_west,
-          url_8:north
+          url_1:south_east_dinuka,
+          url_2:south_west_hashi,
+          url_3:east_chathu,
+          url_4:defImg_sachin,
+          url_5:west_haswin,
+          url_6:north_east_kasun,
+          url_7:north_west_jala,
+          url_8:north_cactus
         });
         break;
       case 5:
         this.setState({
-          fname: 'GUY',
-          lname: 'FIVE',
+          fname: 'Haswin',
+          lname: '',
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-          url_1:south_east,
-          url_2:south_east,
-          url_3:east,
-          url_4:east,
-          url_5:defImg,
-          url_6:north_east,
-          url_7:north_east,
-          url_8:north_east
+          url_1:south_east_dinuka,
+          url_2:south_east_hashi,
+          url_3:east_chathu,
+          url_4:east_sachin,
+          url_5:defImg_haswin,
+          url_6:north_east_east_kasun,
+          url_7:north_east_jala,
+          url_8:north_east_cactus
         });
         break;
       case 6:
         this.setState({
-          fname: 'GUY',
-          lname: 'SIX',
+          fname: 'Kasun',
+          lname: '',
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-          url_1:south,
-          url_2:south_west,
-          url_3:south_east,
-          url_4:south_west,
-          url_5:south_west,
-          url_6:defImg,
-          url_7:west,
-          url_8:north_west
+          url_1:south_dinuka,
+          url_2:south_west_hashi,
+          url_3:south_east_chathu,
+          url_4:south_west_sachin,
+          url_5:south_west_haswin,
+          url_6:defImg_kasun,
+          url_7:west_jala,
+          url_8:north_west_cactus
         });
         break;
       case 7:
         this.setState({
-          fname: 'GUY',
-          lname: 'SEVEN',
+          fname: 'Nafeel',
+          lname: '',
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-          url_1:south_east,
-          url_2:south,
-          url_3:south_east,
-          url_4:south_east,
-          url_5:south_west,
-          url_6:east,
-          url_7:defImg,
-          url_8:north_east
+          url_1:south_east_dinuka,
+          url_2:south_hashi,
+          url_3:south_east_east_chathu,
+          url_4:south_east_sachin,
+          url_5:south_west_west_haswin,
+          url_6:east_kasun,
+          url_7:defImg_jala,
+          url_8:north_east_cactus
         });
         break;
       case 8:
         this.setState({
-          fname: 'HASWIN',
-          lname: 'VIDANAGE',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-          url_1:south,
-          url_2:south,
-          url_3:south_east,
-          url_4:south,
-          url_5:south_west,
-          url_6:south_east,
-          url_7:south_west,
-          url_8:defImg
+          fname: 'Cactus',
+          lname: '',
+          desc: 'She is good at sleeping and eating.',
+          url_1:south_dinuka,
+          url_2:south_hashi,
+          url_3:south_east_chathu,
+          url_4:south_sachin,
+          url_5:south_west_west_haswin,
+          url_6:south_east_kasun,
+          url_7:south_west_jala,
+          url_8:defImg_cactus
         });
         break;
     }
@@ -144,14 +248,14 @@ var TeamGrid = React.createClass({
     this.setState({
       fname: 'ONE CARING',
       lname: 'TEAM',
-      url_1:'http://res.cloudinary.com/haswind/image/upload/v1499575396/0-default_aznpyk.png',
-      url_2:'http://res.cloudinary.com/haswind/image/upload/v1499575396/0-default_aznpyk.png',
-      url_3:'http://res.cloudinary.com/haswind/image/upload/v1499575396/0-default_aznpyk.png',
-      url_4:'http://res.cloudinary.com/haswind/image/upload/v1499575396/0-default_aznpyk.png',
-      url_5:'http://res.cloudinary.com/haswind/image/upload/v1499575396/0-default_aznpyk.png',
-      url_6:'http://res.cloudinary.com/haswind/image/upload/v1499575396/0-default_aznpyk.png',
-      url_7:'http://res.cloudinary.com/haswind/image/upload/v1499575396/0-default_aznpyk.png',
-      url_8:'http://res.cloudinary.com/haswind/image/upload/v1499575396/0-default_aznpyk.png'
+      url_1: defImg_dinuka,
+      url_2: defImg_hashi,
+      url_3: defImg_chathu,
+      url_4: defImg_sachin,
+      url_5: defImg_haswin,
+      url_6: defImg_kasun,
+      url_7: defImg_jala,
+      url_8: defImg_cactus
     });
   },
   getInitialState : function(){
@@ -160,14 +264,14 @@ var TeamGrid = React.createClass({
       fname: 'ONE CARING',
       lname: 'TEAM',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      url_1: 'http://res.cloudinary.com/haswind/image/upload/v1499575396/0-default_aznpyk.png',
-      url_2: 'http://res.cloudinary.com/haswind/image/upload/v1499575396/0-default_aznpyk.png',
-      url_3: 'http://res.cloudinary.com/haswind/image/upload/v1499575396/0-default_aznpyk.png',
-      url_4: 'http://res.cloudinary.com/haswind/image/upload/v1499575396/0-default_aznpyk.png',
-      url_5: 'http://res.cloudinary.com/haswind/image/upload/v1499575396/0-default_aznpyk.png',
-      url_6: 'http://res.cloudinary.com/haswind/image/upload/v1499575396/0-default_aznpyk.png',
-      url_7: 'http://res.cloudinary.com/haswind/image/upload/v1499575396/0-default_aznpyk.png',
-      url_8: 'http://res.cloudinary.com/haswind/image/upload/v1499575396/0-default_aznpyk.png'
+      url_1:  defImg_dinuka,
+      url_2:  defImg_hashi,
+      url_3:  defImg_chathu,
+      url_4:  defImg_sachin,
+      url_5:  defImg_haswin,
+      url_6:  defImg_kasun,
+      url_7:  defImg_jala,
+      url_8:  defImg_cactus
 
 
     };
