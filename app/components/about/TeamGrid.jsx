@@ -11,109 +11,110 @@ const south_west = 'http://res.cloudinary.com/haswind/image/upload/v1499575397/6
 const west = 'http://res.cloudinary.com/haswind/image/upload/v1499575400/7-west_hkybna.png';
 const north_west = 'http://res.cloudinary.com/haswind/image/upload/v1499575398/8-north-west_xnx3jo.png';
 
+const cloudinary_format = 'http://res.cloudinary.com/haswind/image/upload/c_scale,q_30,w_300/v1504503061/teamgrid/';
 
 //chathuranga
-const defImg_chathu    = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/0.jpg';
-const north_chathu  = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/1.jpg';
-const north_east_chathu = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/2.jpg';
-const north_east_east_chathu = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/10_NEE.jpg';
-const east_chathu = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/3.jpg';
-const south_east_chathu = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/4.jpg';
-const south_east_east_chathu = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/9_SEE.jpg';
-const south_chathu = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/5.jpg';
-const south_west_chathu = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/6.jpg';
-const west_chathu = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/7.jpg';
-const north_west_chathu = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/8.jpg';
+const defImg_chathu    = cloudinary_format + 'chathuranga/0.jpg';
+const north_chathu  = cloudinary_format + 'chathuranga/1.jpg';
+const north_east_chathu = cloudinary_format + 'chathuranga/2.jpg';
+const north_east_east_chathu = cloudinary_format + 'chathuranga/10_NEE.jpg';
+const east_chathu = cloudinary_format + 'chathuranga/3.jpg';
+const south_east_chathu = cloudinary_format + 'chathuranga/4.jpg';
+const south_east_east_chathu = cloudinary_format + 'chathuranga/9_SEE.jpg';
+const south_chathu = cloudinary_format + 'chathuranga/5.jpg';
+const south_west_chathu = cloudinary_format + 'chathuranga/6.jpg';
+const west_chathu = cloudinary_format + 'chathuranga/7.jpg';
+const north_west_chathu = cloudinary_format + 'chathuranga/8.jpg';
 
 //kasun
-const defImg_kasun    = '/images/about/team/kasun/0.jpg';
-const north_kasun  = '/images/about/team/kasun/1.jpg';
-const north_east_kasun = '/images/about/team/kasun/2.jpg';
-const north_east_east_kasun = '/images/about/team/kasun/10_NEE.jpg';
-const east_kasun = '/images/about/team/kasun/3.jpg';
-const south_east_kasun = '/images/about/team/kasun/4.jpg';
-const south_east_east_kasun = '/images/about/team/kasun/9_SEE.jpg';
-const south_kasun = '/images/about/team/kasun/5.jpg';
-const south_west_kasun = '/images/about/team/kasun/6.jpg';
-const west_kasun = '/images/about/team/kasun/7.jpg';
-const north_west_kasun = '/images/about/team/kasun/8.jpg';
+const defImg_kasun    = cloudinary_format + 'kasun/0.jpg';
+const north_kasun  = cloudinary_format + 'kasun/1.jpg';
+const north_east_kasun = cloudinary_format + 'kasun/2.jpg';
+const north_east_east_kasun = cloudinary_format + 'kasun/10_NEE.jpg';
+const east_kasun = cloudinary_format + 'kasun/3.jpg';
+const south_east_kasun = cloudinary_format + 'kasun/4.jpg';
+const south_east_east_kasun = cloudinary_format + 'kasun/9_SEE.jpg';
+const south_kasun = cloudinary_format + 'kasun/5.jpg';
+const south_west_kasun = cloudinary_format + 'kasun/6.jpg';
+const west_kasun = cloudinary_format + 'kasun/7.jpg';
+const north_west_kasun = cloudinary_format + 'kasun/8.jpg';
 
 //jala
-const defImg_jala    = '/images/about/team/jala/0.jpg';
-const north_jala  = '/images/about/team/jala/1.jpg';
-const north_east_jala = '/images/about/team/jala/2.jpg';
-const north_east_east_jala = '/images/about/team/jala/10_NEE.jpg';
-const east_jala = '/images/about/team/jala/3.jpg';
-const south_east_jala = '/images/about/team/jala/4.jpg';
-const south_east_east_jala = '/images/about/team/jala/9_SEE.jpg';
-const south_jala = '/images/about/team/jala/5.jpg';
-const south_west_jala = '/images/about/team/jala/6.jpg';
-const west_jala = '/images/about/team/jala/7.jpg';
-const north_west_jala = '/images/about/team/jala/8.jpg';
+const defImg_jala    = cloudinary_format + 'jala/0.jpg';
+const north_jala  = cloudinary_format + 'jala/1.jpg';
+const north_east_jala = cloudinary_format + 'jala/2.jpg';
+const north_east_east_jala = cloudinary_format + 'jala/10_NEE.jpg';
+const east_jala = cloudinary_format + 'jala/3.jpg';
+const south_east_jala = cloudinary_format + 'jala/4.jpg';
+const south_east_east_jala = cloudinary_format + 'jala/9_SEE.jpg';
+const south_jala = cloudinary_format + 'jala/5.jpg';
+const south_west_jala = cloudinary_format + 'jala/6.jpg';
+const west_jala = cloudinary_format + 'jala/7.jpg';
+const north_west_jala = cloudinary_format + 'jala/8.jpg';
 
 //haswin
-const defImg_haswin    = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/haswin/0.jpg';
-const north_haswin  = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/haswin/1.jpg';
-const north_east_haswin = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/2.jpg';
-//const north_east_east_haswin = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/10_NEE.jpg';
-const east_haswin = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/3.jpg';
-const south_east_haswin = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/4.jpg';
-const south_west_west_haswin = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/6_SWW.jpg';
-const south_haswin = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/5.jpg';
-const south_west_haswin = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/6.jpg';
-const west_haswin = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/7.jpg';
-const north_west_haswin = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/8.jpg';
+const defImg_haswin    = cloudinary_format + 'haswin/0.jpg';
+const north_haswin  = cloudinary_format + 'haswin/1.jpg';
+const north_east_haswin = cloudinary_format + 'haswin/2.jpg';
+//const north_east_east_haswin = cloudinary_format + 'haswin/10_NEE.jpg';
+const east_haswin = cloudinary_format + 'haswin/3.jpg';
+const south_east_haswin = cloudinary_format + 'haswin/4.jpg';
+const south_west_west_haswin = cloudinary_format + 'haswin/6_SWW.jpg';
+const south_haswin = cloudinary_format + 'haswin/5.jpg';
+const south_west_haswin = cloudinary_format + 'haswin/6.jpg';
+const west_haswin = cloudinary_format + 'haswin/7.jpg';
+const north_west_haswin = cloudinary_format + 'haswin/8.jpg';
 
 
 //dinuka
-const defImg_dinuka    = '/images/about/team/dinuka/0.jpg';
-const north_dinuka  = '/images/about/team/dinuka/1.jpg';
-const north_east_dinuka = '/images/about/team/dinuka/2.jpg';
-//const north_east_east_dinuka = '/images/about/team/dinuka/10_NEE.jpg';
-const east_dinuka = '/images/about/team/dinuka/3.jpg';
-const south_east_dinuka = '/images/about/team/dinuka/4.jpg';
-const south_west_west_dinuka = '/images/about/team/dinuka/6_SWW.jpg';
-const south_dinuka = '/images/about/team/dinuka/5.jpg';
-const south_west_dinuka = '/images/about/team/dinuka/6.jpg';
-const west_dinuka = '/images/about/team/dinuka/7.jpg';
-const north_west_dinuka = '/images/about/team/dinuka/8.jpg';
+const defImg_dinuka    = cloudinary_format + 'dinuka/0.jpg';
+const north_dinuka  = cloudinary_format + 'dinuka/1.jpg';
+const north_east_dinuka = cloudinary_format + 'dinuka/2.jpg';
+//const north_east_east_dinuka = cloudinary_format + 'dinuka/10_NEE.jpg';
+const east_dinuka = cloudinary_format + 'dinuka/3.jpg';
+const south_east_dinuka = cloudinary_format + 'dinuka/4.jpg';
+const south_west_west_dinuka = cloudinary_format + 'dinuka/6_SWW.jpg';
+const south_dinuka = cloudinary_format + 'dinuka/5.jpg';
+const south_west_dinuka = cloudinary_format + 'dinuka/6.jpg';
+const west_dinuka = cloudinary_format + 'dinuka/7.jpg';
+const north_west_dinuka = cloudinary_format + 'dinuka/8.jpg';
 
 //hashi
-const defImg_hashi    = '/images/about/team/hashi/0.jpg';
-const north_hashi  = '/images/about/team/hashi/1.jpg';
-const north_east_hashi = '/images/about/team/hashi/2.jpg';
-//const north_east_east_hashi = '/images/about/team/hashi/10_NEE.jpg';
-const east_hashi = '/images/about/team/hashi/3.jpg';
-const south_east_hashi = '/images/about/team/hashi/4.jpg';
-const south_west_west_hashi = '/images/about/team/hashi/6_SWW.jpg';
-const south_hashi = '/images/about/team/hashi/5.jpg';
-const south_west_hashi = '/images/about/team/hashi/6.jpg';
-const west_hashi = '/images/about/team/hashi/7.jpg';
-const north_west_hashi = '/images/about/team/hashi/8.jpg';
+const defImg_hashi    = cloudinary_format + 'hashi/0.jpg';
+const north_hashi  = cloudinary_format + 'hashi/1.jpg';
+const north_east_hashi = cloudinary_format + 'hashi/2.jpg';
+//const north_east_east_hashi = cloudinary_format + 'hashi/10_NEE.jpg';
+const east_hashi = cloudinary_format + 'hashi/3.jpg';
+const south_east_hashi = cloudinary_format + 'hashi/4.jpg';
+const south_west_west_hashi = cloudinary_format + 'hashi/6_SWW.jpg';
+const south_hashi = cloudinary_format + 'hashi/5.jpg';
+const south_west_hashi = cloudinary_format + 'hashi/6.jpg';
+const west_hashi = cloudinary_format + 'hashi/7.jpg';
+const north_west_hashi = cloudinary_format + 'hashi/8.jpg';
 
 //sachin
-const defImg_sachin    = '/images/about/team/sachin/0.jpg';
-const north_sachin  = '/images/about/team/sachin/1.jpg';
-const north_east_sachin = '/images/about/team/sachin/2.jpg';
-//const north_east_east_sachin = '/images/about/team/sachin/10_NEE.jpg';
-const east_sachin = '/images/about/team/sachin/3.jpg';
-const south_east_sachin = '/images/about/team/sachin/4.jpg';
-const south_west_west_sachin = '/images/about/team/sachin/6_SWW.jpg';
-const south_sachin = '/images/about/team/sachin/5.jpg';
-const south_west_sachin = '/images/about/team/sachin/6.jpg';
-const west_sachin = '/images/about/team/sachin/7.jpg';
-const north_west_sachin = '/images/about/team/sachin/8.jpg';
+const defImg_sachin    = cloudinary_format + 'sachin/0.jpg';
+const north_sachin  = cloudinary_format + 'sachin/1.jpg';
+const north_east_sachin = cloudinary_format + 'sachin/2.jpg';
+//const north_east_east_sachin = cloudinary_format + 'sachin/10_NEE.jpg';
+const east_sachin = cloudinary_format + 'sachin/3.jpg';
+const south_east_sachin = cloudinary_format + 'sachin/4.jpg';
+const south_west_west_sachin = cloudinary_format + 'sachin/6_SWW.jpg';
+const south_sachin = cloudinary_format + 'sachin/5.jpg';
+const south_west_sachin = cloudinary_format + 'sachin/6.jpg';
+const west_sachin = cloudinary_format + 'sachin/7.jpg';
+const north_west_sachin = cloudinary_format + 'sachin/8.jpg';
 
 //cactus
-const defImg_cactus    = '/images/about/team/cactus/0.jpg';
-const north_cactus  = '/images/about/team/cactus/1.jpg';
-const north_east_cactus = '/images/about/team/cactus/2.jpg';
-const east_cactus = '/images/about/team/cactus/3.jpg';
-const south_east_cactus = '/images/about/team/cactus/4.jpg';
-const south_cactus = '/images/about/team/cactus/5.jpg';
-const south_west_cactus = '/images/about/team/cactus/6.jpg';
-const west_cactus = '/images/about/team/cactus/7.jpg';
-const north_west_cactus = '/images/about/team/cactus/8.jpg';
+const defImg_cactus    = cloudinary_format + 'cactus/0.jpg';
+const north_cactus  = cloudinary_format + 'cactus/1.jpg';
+const north_east_cactus = cloudinary_format + 'cactus/2.jpg';
+const east_cactus = cloudinary_format + 'cactus/3.jpg';
+const south_east_cactus = cloudinary_format + 'cactus/4.jpg';
+const south_cactus = cloudinary_format + 'cactus/5.jpg';
+const south_west_cactus = cloudinary_format + 'cactus/6.jpg';
+const west_cactus = cloudinary_format + 'cactus/7.jpg';
+const north_west_cactus = cloudinary_format + 'cactus/8.jpg';
 
 var TeamGrid = React.createClass({
   handlePolyOver : function(id) {
