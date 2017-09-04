@@ -52,17 +52,17 @@ const west_jala = '/images/about/team/jala/7.jpg';
 const north_west_jala = '/images/about/team/jala/8.jpg';
 
 //haswin
-const defImg_haswin    = '/images/about/team/haswin/0.jpg';
-const north_haswin  = '/images/about/team/haswin/1.jpg';
-const north_east_haswin = '/images/about/team/haswin/2.jpg';
-//const north_east_east_haswin = '/images/about/team/haswin/10_NEE.jpg';
-const east_haswin = '/images/about/team/haswin/3.jpg';
-const south_east_haswin = '/images/about/team/haswin/4.jpg';
-const south_west_west_haswin = '/images/about/team/haswin/6_SWW.jpg';
-const south_haswin = '/images/about/team/haswin/5.jpg';
-const south_west_haswin = '/images/about/team/haswin/6.jpg';
-const west_haswin = '/images/about/team/haswin/7.jpg';
-const north_west_haswin = '/images/about/team/haswin/8.jpg';
+const defImg_haswin    = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/haswin/0.jpg';
+const north_haswin  = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/haswin/1.jpg';
+const north_east_haswin = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/2.jpg';
+//const north_east_east_haswin = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/10_NEE.jpg';
+const east_haswin = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/3.jpg';
+const south_east_haswin = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/4.jpg';
+const south_west_west_haswin = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/6_SWW.jpg';
+const south_haswin = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/5.jpg';
+const south_west_haswin = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/6.jpg';
+const west_haswin = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/7.jpg';
+const north_west_haswin = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502951/teamgrid/8.jpg';
 
 
 //dinuka
