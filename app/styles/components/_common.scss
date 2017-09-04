@@ -220,7 +220,7 @@
 .mini-form-box {
   z-index: 5;
   background-color: $blood-red-light;
-  height: 400px;
+  height: 450px;
   border: 2px solid $blood-red-light;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -925,4 +925,8 @@ select.round {
 
 .navbar-close {
   width: 36px;
+}
+
+.font-white, .font-white:hover , .font-white:focus {
+  color: white!important;
 }
