@@ -13,17 +13,17 @@ const north_west = 'http://res.cloudinary.com/haswind/image/upload/v1499575398/8
 
 
 //chathuranga
-const defImg_chathu    = '/images/about/team/chathuranga/0.jpg';
-const north_chathu  = '/images/about/team/chathuranga/1.jpg';
-const north_east_chathu = '/images/about/team/chathuranga/2.jpg';
-const north_east_east_chathu = '/images/about/team/chathuranga/10_NEE.jpg';
-const east_chathu = '/images/about/team/chathuranga/3.jpg';
-const south_east_chathu = '/images/about/team/chathuranga/4.jpg';
-const south_east_east_chathu = '/images/about/team/chathuranga/9_SEE.jpg';
-const south_chathu = '/images/about/team/chathuranga/5.jpg';
-const south_west_chathu = '/images/about/team/chathuranga/6.jpg';
-const west_chathu = '/images/about/team/chathuranga/7.jpg';
-const north_west_chathu = '/images/about/team/chathuranga/8.jpg';
+const defImg_chathu    = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/0.jpg';
+const north_chathu  = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/1.jpg';
+const north_east_chathu = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/2.jpg';
+const north_east_east_chathu = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/10_NEE.jpg';
+const east_chathu = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/3.jpg';
+const south_east_chathu = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/4.jpg';
+const south_east_east_chathu = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/9_SEE.jpg';
+const south_chathu = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/5.jpg';
+const south_west_chathu = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/6.jpg';
+const west_chathu = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/7.jpg';
+const north_west_chathu = 'http://res.cloudinary.com/haswind/image/upload/q_auto:low/v1504502680/teamgrid/chathuranga/8.jpg';
 
 //kasun
 const defImg_kasun    = '/images/about/team/kasun/0.jpg';
