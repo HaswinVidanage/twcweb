@@ -9,7 +9,7 @@ var Main = (props) =>{
       </div>
       <div >
         <div>{props.children}</div>
-      </div>
+      </div>    
   </div>
   );
 }

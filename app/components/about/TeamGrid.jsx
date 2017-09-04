@@ -1,6 +1,6 @@
 var React = require('react');
-
-
+var Loadable = require('react-loading-overlay');
+const spinner = '/images/Spinner.gif';
 const defImg    = 'http://res.cloudinary.com/haswind/image/upload/v1499575396/0-default_aznpyk.png';
 const north  = 'http://res.cloudinary.com/haswind/image/upload/v1499575398/1-north_adhoox.png';
 const north_east = 'http://res.cloudinary.com/haswind/image/upload/v1499575399/2-north-east_hizwcg.png';
@@ -43,10 +43,10 @@ const north_west_kasun = cloudinary_format + 'kasun/8.jpg';
 const defImg_jala    = cloudinary_format + 'jala/0.jpg';
 const north_jala  = cloudinary_format + 'jala/1.jpg';
 const north_east_jala = cloudinary_format + 'jala/2.jpg';
-const north_east_east_jala = cloudinary_format + 'jala/10_NEE.jpg';
+//const north_east_east_jala = cloudinary_format + 'jala/10_NEE.jpg';
 const east_jala = cloudinary_format + 'jala/3.jpg';
 const south_east_jala = cloudinary_format + 'jala/4.jpg';
-const south_east_east_jala = cloudinary_format + 'jala/9_SEE.jpg';
+//const south_east_east_jala = cloudinary_format + 'jala/9_SEE.jpg';
 const south_jala = cloudinary_format + 'jala/5.jpg';
 const south_west_jala = cloudinary_format + 'jala/6.jpg';
 const west_jala = cloudinary_format + 'jala/7.jpg';
@@ -65,7 +65,6 @@ const south_west_haswin = cloudinary_format + 'haswin/6.jpg';
 const west_haswin = cloudinary_format + 'haswin/7.jpg';
 const north_west_haswin = cloudinary_format + 'haswin/8.jpg';
 
-
 //dinuka
 const defImg_dinuka    = cloudinary_format + 'dinuka/0.jpg';
 const north_dinuka  = cloudinary_format + 'dinuka/1.jpg';
@@ -73,7 +72,7 @@ const north_east_dinuka = cloudinary_format + 'dinuka/2.jpg';
 //const north_east_east_dinuka = cloudinary_format + 'dinuka/10_NEE.jpg';
 const east_dinuka = cloudinary_format + 'dinuka/3.jpg';
 const south_east_dinuka = cloudinary_format + 'dinuka/4.jpg';
-const south_west_west_dinuka = cloudinary_format + 'dinuka/6_SWW.jpg';
+//const south_west_west_dinuka = cloudinary_format + 'dinuka/6_SWW.jpg';
 const south_dinuka = cloudinary_format + 'dinuka/5.jpg';
 const south_west_dinuka = cloudinary_format + 'dinuka/6.jpg';
 const west_dinuka = cloudinary_format + 'dinuka/7.jpg';
@@ -86,7 +85,7 @@ const north_east_hashi = cloudinary_format + 'hashi/2.jpg';
 //const north_east_east_hashi = cloudinary_format + 'hashi/10_NEE.jpg';
 const east_hashi = cloudinary_format + 'hashi/3.jpg';
 const south_east_hashi = cloudinary_format + 'hashi/4.jpg';
-const south_west_west_hashi = cloudinary_format + 'hashi/6_SWW.jpg';
+//const south_west_west_hashi = cloudinary_format + 'hashi/6_SWW.jpg';
 const south_hashi = cloudinary_format + 'hashi/5.jpg';
 const south_west_hashi = cloudinary_format + 'hashi/6.jpg';
 const west_hashi = cloudinary_format + 'hashi/7.jpg';
@@ -99,7 +98,7 @@ const north_east_sachin = cloudinary_format + 'sachin/2.jpg';
 //const north_east_east_sachin = cloudinary_format + 'sachin/10_NEE.jpg';
 const east_sachin = cloudinary_format + 'sachin/3.jpg';
 const south_east_sachin = cloudinary_format + 'sachin/4.jpg';
-const south_west_west_sachin = cloudinary_format + 'sachin/6_SWW.jpg';
+//const south_west_west_sachin = cloudinary_format + 'sachin/6_SWW.jpg';
 const south_sachin = cloudinary_format + 'sachin/5.jpg';
 const south_west_sachin = cloudinary_format + 'sachin/6.jpg';
 const west_sachin = cloudinary_format + 'sachin/7.jpg';
@@ -116,169 +115,233 @@ const south_west_cactus = cloudinary_format + 'cactus/6.jpg';
 const west_cactus = cloudinary_format + 'cactus/7.jpg';
 const north_west_cactus = cloudinary_format + 'cactus/8.jpg';
 
-var TeamGrid = React.createClass({
-  handlePolyOver : function(id) {
+var Img_Array = [
+  defImg_chathu, north_chathu, north_east_chathu,
+  north_east_east_chathu, east_chathu, south_east_chathu,
+  south_east_east_chathu, south_chathu, south_west_chathu,
+  west_chathu, north_west_chathu,
+  defImg_kasun, north_kasun, north_east_kasun, north_east_east_kasun,
+  east_kasun, south_east_kasun, south_east_east_kasun, south_kasun,
+  south_west_kasun, west_kasun, north_west_kasun,
+  defImg_jala, north_jala, north_east_jala, east_jala, south_east_jala, south_jala,
+  south_west_jala, west_jala, north_west_jala,
+  defImg_haswin, north_haswin, east_haswin, south_east_haswin,
+  south_west_west_haswin, south_haswin, south_west_haswin, west_haswin,
+  north_west_haswin,
+  defImg_dinuka, north_dinuka, north_east_dinuka, east_dinuka,
+  south_east_dinuka, south_dinuka, south_west_dinuka,
+  west_dinuka, north_west_dinuka, defImg_hashi, north_hashi, north_east_hashi,
+  east_hashi, south_east_hashi, south_hashi,  south_west_hashi,
+  west_hashi, north_west_hashi,
+  defImg_sachin, north_sachin, north_east_sachin, east_sachin, south_east_sachin,
+  south_sachin, south_west_sachin, west_sachin, north_west_sachin,
+  defImg_cactus, north_cactus, north_east_cactus, east_cactus, south_east_cactus, south_cactus,
+  south_west_cactus, west_cactus, north_west_cactus
+];
 
-    switch (id) {
-      case 1:
-        this.setState({
-          fname: 'Dinuka',
-          lname: '',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-          url_1:defImg_dinuka,
-          url_2:west_hashi,
-          url_3:north_east_chathu,
-          url_4:north_west_sachin,
-          url_5:north_west_haswin,
-          url_6:north_kasun,
-          url_7:north_west_jala,
-          url_8:north_cactus
-        });
-        break;
-      case 2:
-        this.setState({
-          fname: 'Hashi',
-          lname: '',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-          url_1:east_dinuka,
-          url_2:defImg_hashi,
-          url_3:north_east_east_chathu,
-          url_4:north_east_sachin,
-          url_5:north_west_haswin,
-          url_6:north_east_kasun,
-          url_7:north_jala,
-          url_8:north_cactus
-        });
-        break;
-      case 3:
-        this.setState({
-          fname: 'Chathuranga',
-          lname: '',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-          url_1:south_west_dinuka,
-          url_2:south_west_hashi,
-          url_3:defImg_chathu,
-          url_4:west_sachin,
-          url_5:west_haswin,
-          url_6:north_west_kasun,
-          url_7:north_west_jala,
-          url_8:north_west_cactus
-        });
-        break;
-      case 4:
-        this.setState({
-          fname: 'Sachin',
-          lname: '',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-          url_1:south_east_dinuka,
-          url_2:south_west_hashi,
-          url_3:east_chathu,
-          url_4:defImg_sachin,
-          url_5:west_haswin,
-          url_6:north_east_kasun,
-          url_7:north_west_jala,
-          url_8:north_cactus
-        });
-        break;
-      case 5:
-        this.setState({
-          fname: 'Haswin',
-          lname: '',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-          url_1:south_east_dinuka,
-          url_2:south_east_hashi,
-          url_3:east_chathu,
-          url_4:east_sachin,
-          url_5:defImg_haswin,
-          url_6:north_east_east_kasun,
-          url_7:north_east_jala,
-          url_8:north_east_cactus
-        });
-        break;
-      case 6:
-        this.setState({
-          fname: 'Kasun',
-          lname: '',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-          url_1:south_dinuka,
-          url_2:south_west_hashi,
-          url_3:south_east_chathu,
-          url_4:south_west_sachin,
-          url_5:south_west_haswin,
-          url_6:defImg_kasun,
-          url_7:west_jala,
-          url_8:north_west_cactus
-        });
-        break;
-      case 7:
-        this.setState({
-          fname: 'Nafeel',
-          lname: '',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-          url_1:south_east_dinuka,
-          url_2:south_hashi,
-          url_3:south_east_east_chathu,
-          url_4:south_east_sachin,
-          url_5:south_west_west_haswin,
-          url_6:east_kasun,
-          url_7:defImg_jala,
-          url_8:north_east_cactus
-        });
-        break;
-      case 8:
-        this.setState({
-          fname: 'Cactus',
-          lname: '',
-          desc: 'She is good at sleeping and eating.',
-          url_1:south_dinuka,
-          url_2:south_hashi,
-          url_3:south_east_chathu,
-          url_4:south_sachin,
-          url_5:south_west_west_haswin,
-          url_6:south_east_kasun,
-          url_7:south_west_jala,
-          url_8:defImg_cactus
-        });
-        break;
+var TeamGrid = React.createClass({
+
+
+  handleImageLoaded : function() {
+    this.setState({
+      loadedImgCount : this.state.loadedImgCount + 1,
+      imageStatus: 'loading'
+    });
+
+    if (this.state.loadedImgCount === (Img_Array.length - 1)){
+      this.setState({
+        imageStatus: 'loaded',
+        isLoading : false,
+        fname: 'ONE CARING',
+        lname: 'TEAM',
+        url_1: defImg_dinuka,
+        url_2: defImg_hashi,
+        url_3: defImg_chathu,
+        url_4: defImg_sachin,
+        url_5: defImg_haswin,
+        url_6: defImg_kasun,
+        url_7: defImg_jala,
+        url_8: defImg_cactus
+      });
+
+    } else {
+      console.log('count ', this.state.loadedImgCount);
+    }
+
+  },
+  handleImageError : function(item) {
+    console.log('Failed to load :', item);
+    this.setState({ imageStatus: 'failed to load' });
+
+  },
+  handlePolyOver : function(id) {
+    if(!this.state.isLoading) {
+      switch (id) {
+        case 1:
+          this.setState({
+            fname: 'Dinuka',
+            lname: '',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            url_1:defImg_dinuka,
+            url_2:west_hashi,
+            url_3:north_east_chathu,
+            url_4:north_west_sachin,
+            url_5:north_west_haswin,
+            url_6:north_kasun,
+            url_7:north_west_jala,
+            url_8:north_cactus
+          });
+          break;
+        case 2:
+          this.setState({
+            fname: 'Hashi',
+            lname: '',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            url_1:east_dinuka,
+            url_2:defImg_hashi,
+            url_3:north_east_east_chathu,
+            url_4:north_east_sachin,
+            url_5:north_west_haswin,
+            url_6:north_east_kasun,
+            url_7:north_jala,
+            url_8:north_cactus
+          });
+          break;
+        case 3:
+          this.setState({
+            fname: 'Chathuranga',
+            lname: '',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            url_1:south_west_dinuka,
+            url_2:south_west_hashi,
+            url_3:defImg_chathu,
+            url_4:west_sachin,
+            url_5:west_haswin,
+            url_6:north_west_kasun,
+            url_7:north_west_jala,
+            url_8:north_west_cactus
+          });
+          break;
+        case 4:
+          this.setState({
+            fname: 'Sachin',
+            lname: '',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            url_1:south_east_dinuka,
+            url_2:south_west_hashi,
+            url_3:east_chathu,
+            url_4:defImg_sachin,
+            url_5:west_haswin,
+            url_6:north_east_kasun,
+            url_7:north_west_jala,
+            url_8:north_cactus
+          });
+          break;
+        case 5:
+          this.setState({
+            fname: 'Haswin',
+            lname: '',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            url_1:south_east_dinuka,
+            url_2:south_east_hashi,
+            url_3:east_chathu,
+            url_4:east_sachin,
+            url_5:defImg_haswin,
+            url_6:north_east_east_kasun,
+            url_7:north_east_jala,
+            url_8:north_east_cactus
+          });
+          break;
+        case 6:
+          this.setState({
+            fname: 'Kasun',
+            lname: '',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            url_1:south_dinuka,
+            url_2:south_west_hashi,
+            url_3:south_east_chathu,
+            url_4:south_west_sachin,
+            url_5:south_west_haswin,
+            url_6:defImg_kasun,
+            url_7:west_jala,
+            url_8:north_west_cactus
+          });
+          break;
+        case 7:
+          this.setState({
+            fname: 'Nafeel',
+            lname: '',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            url_1:south_east_dinuka,
+            url_2:south_hashi,
+            url_3:south_east_east_chathu,
+            url_4:south_east_sachin,
+            url_5:south_west_west_haswin,
+            url_6:east_kasun,
+            url_7:defImg_jala,
+            url_8:north_east_cactus
+          });
+          break;
+        case 8:
+          this.setState({
+            fname: 'Cactus',
+            lname: '',
+            desc: 'She is good at sleeping and eating.',
+            url_1:south_dinuka,
+            url_2:south_hashi,
+            url_3:south_east_chathu,
+            url_4:south_sachin,
+            url_5:south_west_west_haswin,
+            url_6:south_east_kasun,
+            url_7:south_west_jala,
+            url_8:defImg_cactus
+          });
+          break;
+      }
     }
 
   },
 
   handleResetGrid : function() {
-    console.log('handleResetGrid');
-    this.setState({
-      fname: 'ONE CARING',
-      lname: 'TEAM',
-      url_1: defImg_dinuka,
-      url_2: defImg_hashi,
-      url_3: defImg_chathu,
-      url_4: defImg_sachin,
-      url_5: defImg_haswin,
-      url_6: defImg_kasun,
-      url_7: defImg_jala,
-      url_8: defImg_cactus
-    });
+    if(!this.state.isLoading) {
+      this.setState({
+        fname: 'ONE CARING',
+        lname: 'TEAM',
+        url_1: defImg_dinuka,
+        url_2: defImg_hashi,
+        url_3: defImg_chathu,
+        url_4: defImg_sachin,
+        url_5: defImg_haswin,
+        url_6: defImg_kasun,
+        url_7: defImg_jala,
+        url_8: defImg_cactus
+      });
+    }
   },
   getInitialState : function(){
     return {
-
+      imgArray : Img_Array,
+      isLoading : true,
+      loadedImgCount : 0,
+      imageStatus: 'loading',
       fname: 'ONE CARING',
       lname: 'TEAM',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      url_1:  defImg_dinuka,
-      url_2:  defImg_hashi,
-      url_3:  defImg_chathu,
-      url_4:  defImg_sachin,
-      url_5:  defImg_haswin,
-      url_6:  defImg_kasun,
-      url_7:  defImg_jala,
-      url_8:  defImg_cactus
+      url_1:  spinner,
+      url_2:  spinner,
+      url_3:  spinner,
+      url_4:  spinner,
+      url_5:  spinner,
+      url_6:  spinner,
+      url_7:  spinner,
+      url_8:  spinner
 
 
     };
   },
   render:function(){
-    var { fname, lname, desc, url_1,url_2,url_3,url_4,url_5,url_6,url_7,url_8} = this.state;
+    var { fname, lname, desc, url_1,url_2,url_3,url_4,url_5,url_6,url_7,url_8 , imgArray} = this.state;
+
     return (
       <div classsName = "small-12 medium-12 large-12 ">
         <div className="floating-about-text hide-for-small-only">
@@ -303,7 +366,10 @@ var TeamGrid = React.createClass({
                           <use xlinkHref="#Member_07" style={{overflow: 'visible'}} />
                         </clippath>
                         <g transform="matrix(1 0 0 1 -6.103516e-05 0)" style={{clipPath: 'url(#polygon-7)'}}>
-                          <image onMouseEnter={() => this.handlePolyOver(7)} style={{overflow: 'visible'}} width={600} height={600}
+                          <image
+                            onMouseEnter={() => this.handlePolyOver(7)}
+                            style={{overflow: 'visible'}}
+                            width={600} height={600}
                             xlinkHref={url_7} transform="matrix(0.4463 0 0 0.4463 953.5 395.1)">
                           </image>
                         </g>
@@ -405,6 +471,24 @@ var TeamGrid = React.createClass({
                     </g>
                   </g>
                 </svg>
+        </div>
+
+        <div>
+
+          {
+            imgArray.map((item, index) => (
+               <img
+                 className="render_hidden"
+                 key={index}
+                 src= {item}
+                 onLoad={this.handleImageLoaded}
+                 onError={() => this.handleImageError(item)}
+               />
+            ))
+          }
+
+          <h1>{this.state.loadedImgCount}</h1>
+          <h2>{this.state.imageStatus}</h2>
         </div>
       </div>
     );
