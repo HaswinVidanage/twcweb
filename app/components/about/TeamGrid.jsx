@@ -343,161 +343,164 @@ var TeamGrid = React.createClass({
     var { fname, lname, desc, url_1,url_2,url_3,url_4,url_5,url_6,url_7,url_8 , imgArray} = this.state;
 
     return (
-      <div classsName = "small-12 medium-12 large-12 ">
-        <div className="progress progress-teamgrid" role="progressbar" tabindex="0"
-          aria-valuenow= { (this.state.loadedImgCount / this.state.imgArray.length ) * 100} aria-valuemin="0" aria-valuetext="50 percent" aria-valuemax="100">
-          <div className="progress-meter progress-meter-teamgrid" style={{width: (this.state.loadedImgCount / this.state.imgArray.length ) * 100 + '%'}}></div>
-        </div>
-        {/* <h1>{this.state.loadedImgCount}</h1>
-        <h1>Total :{this.state.imgArray.length}</h1>
-        <h1>{ (this.state.loadedImgCount / this.state.imgArray.length ) * 100} % </h1>
-        <h2>{this.state.imageStatus}</h2> */}
-        <div className="floating-about-text hide-for-small-only">
-          <h2 className="about-title">{fname}&nbsp;<span className= "red-span">{lname}</span> </h2>
-          <p>{desc}</p>
-        </div>
-        <div className="floating-about-text-mob show-for-small-only">
-          <h2 className="about-title">ONE CARING&nbsp;<span className= "red-span">TEAM</span> </h2>
-        </div>
-        <div className = 'svg-wrapper'>
-              <svg version="1.1" id="Team" xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1440 905"
-              style={{enableBackground: 'new 0 0 1440 905'}} xmlSpace="preserve">
-                  <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t.st0{fill:none;enable-background:new;}\n\t.st1{fill:#F6F6F6;}\n" }} />
-                  <path className="st0" d="M0,0" />
-                  <g id="Team_1_">
-                    <rect className="st1" width={1440} height={901} onMouseEnter={() => this.handleResetGrid()}  />
-                    <g id="_x33_">
-                      <g>
-                        <defs>
-                          <path id="Member_07" d="M953.5,529l133.9-133.9L1221.3,529l-133.9,133.9L953.5,529z" />
-                        </defs>
-                        <clippath id="polygon-7">
-                          <use xlinkHref="#Member_07" style={{overflow: 'visible'}} />
-                        </clippath>
-                        <g transform="matrix(1 0 0 1 -6.103516e-05 0)" style={{clipPath: 'url(#polygon-7)'}}>
-                          <image
-                            onMouseEnter={() => this.handlePolyOver(7)}
-                            style={{overflow: 'visible'}}
-                            width={600} height={600}
-                            xlinkHref={url_7} transform="matrix(0.4463 0 0 0.4463 953.5 395.1)">
-                          </image>
+      <div classsName = "small-12 medium-12 large-12">
+        <div className= 'teamgrid-main-wrap' >
+          <div className="progress progress-teamgrid" role="progressbar" tabindex="0"
+            aria-valuenow= { (this.state.loadedImgCount / this.state.imgArray.length ) * 100} aria-valuemin="0" aria-valuetext="50 percent" aria-valuemax="100">
+            <div className="progress-meter progress-meter-teamgrid" style={{width: (this.state.loadedImgCount / this.state.imgArray.length ) * 100 + '%'}}></div>
+          </div>
+          {/* <h1>{this.state.loadedImgCount}</h1>
+          <h1>Total :{this.state.imgArray.length}</h1>
+          <h1>{ (this.state.loadedImgCount / this.state.imgArray.length ) * 100} % </h1>
+          <h2>{this.state.imageStatus}</h2> */}
+          <div className="floating-about-text hide-for-small-only">
+            <h2 className="about-title">{fname}&nbsp;<span className= "red-span">{lname}</span> </h2>
+            <p>{desc}</p>
+          </div>
+          <div className="floating-about-text-mob show-for-small-only">
+            <h2 className="about-title">ONE CARING&nbsp;<span className= "red-span">TEAM</span> </h2>
+          </div>
+          <div className = 'svg-wrapper'>
+                <svg version="1.1" id="Team" xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1440 905"
+                style={{enableBackground: 'new 0 0 1440 905'}} xmlSpace="preserve">
+                    <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t.st0{fill:none;enable-background:new;}\n\t.st1{fill:#F6F6F6;}\n" }} />
+                    <path className="st0" d="M0,0" />
+                    <g id="Team_1_">
+                      <rect className="st1" width={1440} height={901} onMouseEnter={() => this.handleResetGrid()}  />
+                      <g id="_x33_">
+                        <g>
+                          <defs>
+                            <path id="Member_07" d="M953.5,529l133.9-133.9L1221.3,529l-133.9,133.9L953.5,529z" />
+                          </defs>
+                          <clippath id="polygon-7">
+                            <use xlinkHref="#Member_07" style={{overflow: 'visible'}} />
+                          </clippath>
+                          <g transform="matrix(1 0 0 1 -6.103516e-05 0)" style={{clipPath: 'url(#polygon-7)'}}>
+                            <image
+                              onMouseEnter={() => this.handlePolyOver(7)}
+                              style={{overflow: 'visible'}}
+                              width={600} height={600}
+                              xlinkHref={url_7} transform="matrix(0.4463 0 0 0.4463 953.5 395.1)">
+                            </image>
+                          </g>
+                        </g>
+                        <g>
+                          <defs>
+                            <path id="Member_08" d="M813.5,669l133.9-133.9L1081.3,669L947.4,802.9L813.5,669z" />
+                          </defs>
+                          <clippath id="polygon-8">
+                            <use xlinkHref="#Member_08" style={{overflow: 'visible'}} />
+                          </clippath>
+                          <g style={{clipPath: 'url(#polygon-8)'}}>
+                            <image onMouseEnter={() => this.handlePolyOver(8)} style={{overflow: 'visible'}} width={600} height={600}
+                              xlinkHref={url_8} transform="matrix(0.4463 0 0 0.4463 813.5 535.1)">
+                            </image>
+                          </g>
+                        </g>
+                        <g>
+                          <defs>
+                            <path id="Member_05" d="M1094.4,388.2l133.9-133.9l133.9,133.9l-133.9,133.9L1094.4,388.2z" />
+                          </defs>
+                          <clippath id="polygon-5">
+                            <use xlinkHref="#Member_05" style={{overflow: 'visible'}} />
+                          </clippath>
+                          <g transform="matrix(1 0 0 1 0 -1.525879e-05)" style={{clipPath: 'url(#polygon-5)'}}>
+                            <image onMouseEnter={() => this.handlePolyOver(5)} style={{overflow: 'visible'}} width={600} height={600}
+                              xlinkHref={url_5} transform="matrix(0.4463 0 0 0.4463 1094.4 254.1)">
+                            </image>
+                          </g>
                         </g>
                       </g>
-                      <g>
-                        <defs>
-                          <path id="Member_08" d="M813.5,669l133.9-133.9L1081.3,669L947.4,802.9L813.5,669z" />
-                        </defs>
-                        <clippath id="polygon-8">
-                          <use xlinkHref="#Member_08" style={{overflow: 'visible'}} />
-                        </clippath>
-                        <g style={{clipPath: 'url(#polygon-8)'}}>
-                          <image onMouseEnter={() => this.handlePolyOver(8)} style={{overflow: 'visible'}} width={600} height={600}
-                            xlinkHref={url_8} transform="matrix(0.4463 0 0 0.4463 813.5 535.1)">
-                          </image>
+                      <g id="_x32_">
+                        <g>
+                          <defs>
+                            <path id="Member_06" d="M672.5,530.1l133.9-133.9l133.9,133.9L806.4,664L672.5,530.1z" />
+                          </defs>
+                          <clippath id="polygon-6">
+                            <use xlinkHref="#Member_06" style={{overflow: 'visible'}} />
+                          </clippath>
+                          <g style={{clipPath: 'url(#polygon-6)'}}>
+                            <image onMouseEnter={() => this.handlePolyOver(6)} style={{overflow: 'visible'}} width={600} height={600}
+                              xlinkHref={url_6} transform="matrix(0.4463 0 0 0.4463 672.5 396.2)">
+                            </image>
+                          </g>
+                        </g>
+                        <g>
+                          <defs>
+                            <path id="Member_04" d="M812.5,389.2l133.9-133.9l133.9,133.9L946.4,523.1L812.5,389.2z" />
+                          </defs>
+                          <clippath id="polygon-4">
+                            <use xlinkHref="#Member_04" style={{overflow: 'visible'}} />
+                          </clippath>
+                          <g transform="matrix(1 0 0 1 0 -1.525879e-05)" style={{clipPath: 'url(#polygon-4)'}}>
+                            <image onMouseEnter={() => this.handlePolyOver(4)} style={{overflow: 'visible'}} width={600} height={600}
+                              xlinkHref={url_4} transform="matrix(0.4463 0 0 0.4463 812.5 255.3)">
+                            </image>
+                          </g>
+                        </g>
+                        <g>
+                          <defs>
+                            <path id="Member_02" d="M952.5,248.4l133.9-133.9l133.9,133.9l-133.9,133.9L952.5,248.4z" />
+                          </defs>
+                          <clippath id="polygon-2">
+                            <use xlinkHref="#Member_02" style={{overflow: 'visible'}} />
+                          </clippath>
+                          <g transform="matrix(1 0 0 1 -6.103516e-05 0)" style={{clipPath: 'url(#polygon-2)'}}>
+                            <image onMouseEnter={() => this.handlePolyOver(2)} style={{overflow: 'visible'}} width={600} height={600}
+                              xlinkHref={url_2} transform="matrix(0.4463 0 0 0.4463 952.5 114.5)">
+                            </image>
+                          </g>
                         </g>
                       </g>
-                      <g>
-                        <defs>
-                          <path id="Member_05" d="M1094.4,388.2l133.9-133.9l133.9,133.9l-133.9,133.9L1094.4,388.2z" />
-                        </defs>
-                        <clippath id="polygon-5">
-                          <use xlinkHref="#Member_05" style={{overflow: 'visible'}} />
-                        </clippath>
-                        <g transform="matrix(1 0 0 1 0 -1.525879e-05)" style={{clipPath: 'url(#polygon-5)'}}>
-                          <image onMouseEnter={() => this.handlePolyOver(5)} style={{overflow: 'visible'}} width={600} height={600}
-                            xlinkHref={url_5} transform="matrix(0.4463 0 0 0.4463 1094.4 254.1)">
-                          </image>
+                      <g id="_x31_">
+                        <g>
+                          <defs>
+                            <path id="Member_03" d="M531.8,389.2l133.9-133.9l133.9,133.9L665.7,523.1L531.8,389.2z" />
+                          </defs>
+                          <clippath id="polygon-3">
+                            <use xlinkHref="#Member_03" style={{overflow: 'visible'}} />
+                          </clippath>
+                          <g transform="matrix(1 0 0 1 0 -1.525879e-05)" style={{clipPath: 'url(#polygon-3)'}}>
+                            <image onMouseEnter={() => this.handlePolyOver(3)} style={{overflow: 'visible'}} width={600} height={600}
+                              xlinkHref={url_3} transform="matrix(0.4463 0 0 0.4463 531.8 255.3)">
+                            </image>
+                          </g>
+                        </g>
+                        <g>
+                          <defs>
+                            <path id="Member_01" d="M672.7,248.4l133.9-133.9l133.9,133.9L806.6,382.3L672.7,248.4z" />
+                          </defs>
+                          <clippath id="polygon-1" >
+                            <use xlinkHref="#Member_01" style={{overflow: 'visible'}} />
+                          </clippath>
+                          <g style={{clipPath: 'url(#polygon-1)'}}>
+                            <image onMouseEnter={() => this.handlePolyOver(1)} style={{overflow: 'visible'}} width={600} height={600}
+                              xlinkHref={url_1} transform="matrix(0.4463 0 0 0.4463 672.7 114.3)"></image>
+                          </g>
                         </g>
                       </g>
                     </g>
-                    <g id="_x32_">
-                      <g>
-                        <defs>
-                          <path id="Member_06" d="M672.5,530.1l133.9-133.9l133.9,133.9L806.4,664L672.5,530.1z" />
-                        </defs>
-                        <clippath id="polygon-6">
-                          <use xlinkHref="#Member_06" style={{overflow: 'visible'}} />
-                        </clippath>
-                        <g style={{clipPath: 'url(#polygon-6)'}}>
-                          <image onMouseEnter={() => this.handlePolyOver(6)} style={{overflow: 'visible'}} width={600} height={600}
-                            xlinkHref={url_6} transform="matrix(0.4463 0 0 0.4463 672.5 396.2)">
-                          </image>
-                        </g>
-                      </g>
-                      <g>
-                        <defs>
-                          <path id="Member_04" d="M812.5,389.2l133.9-133.9l133.9,133.9L946.4,523.1L812.5,389.2z" />
-                        </defs>
-                        <clippath id="polygon-4">
-                          <use xlinkHref="#Member_04" style={{overflow: 'visible'}} />
-                        </clippath>
-                        <g transform="matrix(1 0 0 1 0 -1.525879e-05)" style={{clipPath: 'url(#polygon-4)'}}>
-                          <image onMouseEnter={() => this.handlePolyOver(4)} style={{overflow: 'visible'}} width={600} height={600}
-                            xlinkHref={url_4} transform="matrix(0.4463 0 0 0.4463 812.5 255.3)">
-                          </image>
-                        </g>
-                      </g>
-                      <g>
-                        <defs>
-                          <path id="Member_02" d="M952.5,248.4l133.9-133.9l133.9,133.9l-133.9,133.9L952.5,248.4z" />
-                        </defs>
-                        <clippath id="polygon-2">
-                          <use xlinkHref="#Member_02" style={{overflow: 'visible'}} />
-                        </clippath>
-                        <g transform="matrix(1 0 0 1 -6.103516e-05 0)" style={{clipPath: 'url(#polygon-2)'}}>
-                          <image onMouseEnter={() => this.handlePolyOver(2)} style={{overflow: 'visible'}} width={600} height={600}
-                            xlinkHref={url_2} transform="matrix(0.4463 0 0 0.4463 952.5 114.5)">
-                          </image>
-                        </g>
-                      </g>
-                    </g>
-                    <g id="_x31_">
-                      <g>
-                        <defs>
-                          <path id="Member_03" d="M531.8,389.2l133.9-133.9l133.9,133.9L665.7,523.1L531.8,389.2z" />
-                        </defs>
-                        <clippath id="polygon-3">
-                          <use xlinkHref="#Member_03" style={{overflow: 'visible'}} />
-                        </clippath>
-                        <g transform="matrix(1 0 0 1 0 -1.525879e-05)" style={{clipPath: 'url(#polygon-3)'}}>
-                          <image onMouseEnter={() => this.handlePolyOver(3)} style={{overflow: 'visible'}} width={600} height={600}
-                            xlinkHref={url_3} transform="matrix(0.4463 0 0 0.4463 531.8 255.3)">
-                          </image>
-                        </g>
-                      </g>
-                      <g>
-                        <defs>
-                          <path id="Member_01" d="M672.7,248.4l133.9-133.9l133.9,133.9L806.6,382.3L672.7,248.4z" />
-                        </defs>
-                        <clippath id="polygon-1" >
-                          <use xlinkHref="#Member_01" style={{overflow: 'visible'}} />
-                        </clippath>
-                        <g style={{clipPath: 'url(#polygon-1)'}}>
-                          <image onMouseEnter={() => this.handlePolyOver(1)} style={{overflow: 'visible'}} width={600} height={600}
-                            xlinkHref={url_1} transform="matrix(0.4463 0 0 0.4463 672.7 114.3)"></image>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
+                  </svg>
+          </div>
+
+          <div>
+
+            {
+              imgArray.map((item, index) => (
+                 <img
+                   className="render_hidden"
+                   key={index}
+                   src= {item}
+                   onLoad={this.handleImageLoaded}
+                   onError={() => this.handleImageError(item)}
+                 />
+              ))
+            }
+
+          </div>
         </div>
 
-        <div>
-
-          {
-            imgArray.map((item, index) => (
-               <img
-                 className="render_hidden"
-                 key={index}
-                 src= {item}
-                 onLoad={this.handleImageLoaded}
-                 onError={() => this.handleImageError(item)}
-               />
-            ))
-          }
-
-        </div>
       </div>
     );
   }

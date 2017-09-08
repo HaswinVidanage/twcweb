@@ -45,6 +45,38 @@
   color: #253137;
   padding-left: 100px;
   padding-right: 100px;
+
+  @media (max-width : $chrome-321) {
+    font-size: 0.8em;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+    font-size: 0.8em;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+    font-size: 0.8em;
+    padding-left: 0px;
+    padding-right: 0px;
+   }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+  }
+  @media (min-width : $chrome-2561) {
+
+  }
+
 }
 
 
@@ -60,16 +92,92 @@
 
 .round-img-div {
     padding-left: 40%;
+    @media (max-width : $chrome-321) {
+      padding-left: 5%;
+    }
+    @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+      padding-left: 5%;
+    }
+    @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+      padding-left: 5%;
+    }
+    @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+
+    }
+    @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+    }
+    @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+    }
+    @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+    }
+    @media (min-width : $chrome-2561) {
+
+    }
 }
 
 .round-img-title-div {
   float: left;
   padding-left: 5%;
   padding:20px;
+
+  @media (max-width : $chrome-321) {
+    padding: 0px;
+    padding-top: 24px;
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+    padding: 0px;
+    padding-top: 24px;
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+    padding: 0px;
+    padding-top: 24px;
+   }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+  }
+  @media (min-width : $chrome-2561) {
+
+  }
 }
 
 .founder-name {
   color: #db2b2b;
+  @media (max-width : $chrome-321) {
+    font-size: 1em;
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+    font-size: 1em;
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+    font-size: 1em;
+  }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+  }
+  @media (min-width : $chrome-2561) {
+
+  }
 }
 
 .render_hidden {
@@ -92,7 +200,7 @@
 }
 
 .svg-wrapper {
-  
+
   background-color: #F6F6F6;
 
   @media (max-width : $chrome-321) {
@@ -103,6 +211,60 @@
   }
   @media (min-width: $chrome-376) and (max-width: $chrome-426) {
     padding-right: 75px;
+   }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+  }
+  @media (min-width : $chrome-2561) {
+
+  }
+}
+
+.teamgrid-main-wrap {
+  @media (max-width : $chrome-321) {
+    display: none;
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+    display: none;
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+    display: none;
+   }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    display: none;
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+  }
+  @media (min-width : $chrome-2561) {
+
+  }
+}
+
+.founder-message {
+  @media (max-width : $chrome-321) {
+    font-size: 0.8em;
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+    font-size: 0.8em;
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+    font-size: 0.8em;
    }
   @media (min-width: $chrome-426) and (max-width : $chrome-769) {
 

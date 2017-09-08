@@ -819,9 +819,34 @@ select.round {
 }
 
 .prime-loc-left, .prime-loc-right {
-  min-height: 600px;
+
   padding-left: 0px;
   padding-right: 0px;
+
+  @media (max-width : $chrome-321) {
+    height: 300px;
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+    height: 300px;
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+    height: 300px;
+  }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    min-height: 600px;
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+    min-height: 600px;
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+    min-height: 600px;
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+    min-height: 600px;
+  }
+  @media (min-width : $chrome-2561) {
+    min-height: 600px;
+  }
 }
 .prime-loc-left {
   background-color: #333333;
@@ -833,6 +858,30 @@ select.round {
 
 .loc-heading {
   color: white;
+  @media (max-width : $chrome-321) {
+    font-size: 0.8em;
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+    font-size: 0.8em;
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+    font-size: 0.8em;
+   }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+  }
+  @media (min-width : $chrome-2561) {
+
+  }
 }
 
 .loc-title {
@@ -840,10 +889,46 @@ select.round {
 }
 
 .loc-text-wrap {
-  margin-left: 200px;
-  margin-right: 100px;
-  margin-top: 200px;
-  margin-bottom: 100px;
+
+  @media (max-width : $chrome-321) {
+    padding: 30px;
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+    padding: 30px;
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+    padding: 30px;
+  }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    margin-left: 200px;
+    margin-right: 100px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+    margin-left: 200px;
+    margin-right: 100px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+    margin-left: 200px;
+    margin-right: 100px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+    margin-left: 200px;
+    margin-right: 100px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
+  @media (min-width : $chrome-2561) {
+    margin-left: 200px;
+    margin-right: 100px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
 }
 
 

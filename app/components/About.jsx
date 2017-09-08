@@ -23,7 +23,7 @@ var About = React.createClass({
     return(
       <div>
         <TitleBar title={title} content={content}/>
-        <TeamGrid />
+        <TeamGrid  />
         <FounderMessage/>
         <PrimaryLocations/>
         <ContactUsBar/>
