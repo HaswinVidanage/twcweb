@@ -257,14 +257,18 @@
 }
 
 .founder-message {
+
   @media (max-width : $chrome-321) {
     font-size: 0.8em;
+    text-align: justify;
   }
   @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
     font-size: 0.8em;
+    text-align: justify;
   }
   @media (min-width: $chrome-376) and (max-width: $chrome-426) {
     font-size: 0.8em;
+    text-align: justify;
    }
   @media (min-width: $chrome-426) and (max-width : $chrome-769) {
 
