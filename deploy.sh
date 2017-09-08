@@ -1,10 +1,13 @@
 #!/bin/bash
 
-echo "888b.            8                 .d88b.       8  d8b "
-echo "8   8 .d88b 88b. 8 .d8b. Yb  dP    YPwww. .d88b 8  8'  "
-echo "8   8 8.dP' 8  8 8 8' .8  YbdP         d8 8.dP' 8 w8ww "
-echo "888P' `Y88P 88P' 8 `Y8P'   dP      `Y88P' `Y88P 8  8   "
-echo "            8             dP                           "
+echo "  ___                                                       "
+echo " (|  \ _   |\ _              _     _|_     () _   ,_ o  _|_ "
+echo "  |   |/|/\|// \|  | /|/|/| |/ /|/| |      /\/   /  |||/\|  "
+echo " (\__/|_|_/|_\_/ \/|/ | | |_|_/ | |_|_/   /(_\__/   |||_/|_/"
+echo "       (,         (|                                 (|     "
+echo " (|  |_/|                                                   "
+echo "  |  |  |                                                   "
+echo "   \/   |                                                   "
 
 echo "Deploying ..."
 echo "Commit label : $1."
