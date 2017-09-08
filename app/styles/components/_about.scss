@@ -90,3 +90,33 @@
   background: linear-gradient(to bottom, #b31217, #e52d27)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+
+.svg-wrapper {
+  
+  background-color: #F6F6F6;
+
+  @media (max-width : $chrome-321) {
+    padding-right: 75px;
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+    padding-right: 75px;
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+    padding-right: 75px;
+   }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+  }
+  @media (min-width : $chrome-2561) {
+
+  }
+}

@@ -359,8 +359,10 @@ var TeamGrid = React.createClass({
         <div className="floating-about-text-mob show-for-small-only">
           <h2 className="about-title">ONE CARING&nbsp;<span className= "red-span">TEAM</span> </h2>
         </div>
-        <div >
-              <svg version="1.1" id="Team" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1440 905" style={{enableBackground: 'new 0 0 1440 905'}} xmlSpace="preserve">
+        <div className = 'svg-wrapper'>
+              <svg version="1.1" id="Team" xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1440 905"
+              style={{enableBackground: 'new 0 0 1440 905'}} xmlSpace="preserve">
                   <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t.st0{fill:none;enable-background:new;}\n\t.st1{fill:#F6F6F6;}\n" }} />
                   <path className="st0" d="M0,0" />
                   <g id="Team_1_">
