@@ -1,10 +1,4 @@
 .section0-home {
-  // padding-top: 200px;
-  // background: #e52d27!important;  /* fallback for old browsers */
-  // background: -webkit-linear-gradient(to bottom, #b31217, #e52d27)!important;  /* Chrome 10-25, Safari 5.1-6 */
-  // background-image: -moz-linear-gradient(to bottom, #b31217, #e52d27)!important;
-  // background: linear-gradient(to bottom, #b31217, #e52d27)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
   background: #be0b0b!important;  /* fallback for old browsers */
   background: -webkit-linear-gradient(#be0b0b, #da1616)!important;  /* Chrome 10-25, Safari 5.1-6 */
   background-image: -moz-linear-gradient(#be0b0b, #da1616)!important;
@@ -274,37 +268,6 @@
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
 }
-// .align-right {
-//     -webkit-box-pack: end;
-//     -webkit-justify-content: flex-end;
-//     -moz-box-pack: end;
-//     -ms-flex-pack: end;
-//     justify-content: flex-end;
-// }
-//
-// // @media screen and (min-width: 75em)
-// #home div.header .illustration .illu-editor {
-//     top: -20px;
-//     left: 80px;
-// }
-//
-//
-// // @media screen and (min-width: 75em)
-// #home div.header .illustration .illu-editor {
-//     position: absolute!important;
-//     top: -20px;
-//     left: 80px;
-// }
-
-// #home div.header .illustration .illu-editor {
-//     -webkit-transition: all 0.5s ease-in-out;
-//     -moz-transition: all 0.5s ease-in-out;
-//     transition: all 0.5s ease-in-out;
-//     z-index: -1;
-//     /* background: white; */
-//     border-radius: 6px;
-//     box-shadow: 0 10px 20px 0 rgba(91, 107, 174, 0.15);
-// }
 
 .header {
   height: 520px!important;
@@ -530,10 +493,6 @@ div.header .header-container .illustration {
   border-color: transparent transparent #f7f7f7 #fff2f2;
 }
 
-// .section0-home-services , .section0-home, .section0-home:after {
-//   background: linear-gradient(180deg,#1e1e21,#021c65)!important;
-// }
-//
-// .btn-service-call {
-//   border: 2px solid rgba(196, 0, 0, 0);
-// }
+.home-logo-bar {
+  width: 100%;
+}
