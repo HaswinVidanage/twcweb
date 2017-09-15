@@ -9,9 +9,7 @@ var Nav = React.createClass({
       <nav className="vertical light menu" id="navbar">
         <div className="navbar align-middle row navbar-custom">
           <a className="brand small-6 medium-1 large-3 align-middle columns" href="index.html">
-            <object data="./images/logo.svg" type="image/svg+xml">
-              <img src="./images/logo.png" />
-            </object>
+              <img src="./images/logo.png" className='twc-logo'/>
           </a>
 
 
