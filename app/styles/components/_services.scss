@@ -37,12 +37,75 @@
 }
 
 .service-info {
-  background: #485563;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color:white;
+  background: #fbfafe;
+  color: #000;
+  background-image: url(http://www.theprospect.net/wp-content/uploads/2014/09/woman-typing-writing-windows-large.jpg);
+  background-position: 0px -700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.service-margin-10 {
+  margin: 10px;
 }
 
 .service-title-title {
   color: white;
+}
+
+.service-info > .fp-tableCell {
+  vertical-align: unset!important;
+}
+
+.service-info-top-img {
+  min-height: 200px;
+  width: 100%;
+}
+
+.service-info-card {
+
+  background-image: url(http://res.cloudinary.com/haswind/image/upload/v1505503786/services/service-card-1.png);
+  background-position: -183px -70px;
+  background-repeat: no-repeat;
+  background-size: 500px 500px;
+  background-color: blue;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(45,50,126,.1), 0 5px 15px 0 rgba(45,50,126,.07);
+  height: 320px;
+  margin-top: 100px;
+  background-color: #ffffff;
+  color: #002d56;
+}
+
+.service-card-text {
+  margin: 38px 38px 38px 350px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+
+.service-testomonial-wrapper {
+  color : $text-brown;
+  margin: 38px 250px 30px;
+}
+
+.service-testomonial {
+  color : $text-brown;
+  font-size: 1.0em;
+  font-weight: 600;
+
+}
+
+.service-testomonial-auth-wrapper {
+
+}
+
+.service-testomonial-auth {
+  color : $text-brown;
+  font-size: 0.8em;
+}
+
+.service-testomonial-icon {
+  width: 25px;
+  height: 25px;
 }

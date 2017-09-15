@@ -64,12 +64,12 @@ var Home = React.createClass({
 	            <div className="row align-middle align-justify">
 	              <div className="presentation small-12 medium-6 large-6 align-center">
 	                <div className="column">
-	                  <div className="hashtags small-12 medium-12 large-11">
+	                  <div className="hashtags small-12 medium-12 large-11 align-left">
 	                    <h1>
 	                      <strong>#Creativity-Ahead</strong>
 	                    </h1>
 	                  </div>
-	                  <div className="title small-12 medium-12 large-11">
+	                  <div className="title small-12 medium-12 large-11 align-left">
 	                    <h2>One place for all your Websites & Apps</h2>
 	                  </div>
 

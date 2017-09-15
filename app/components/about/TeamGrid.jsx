@@ -345,10 +345,10 @@ var TeamGrid = React.createClass({
     return (
       <div classsName = "small-12 medium-12 large-12">
         <div className= 'teamgrid-main-wrap' >
-          <div className="progress progress-teamgrid" role="progressbar" tabindex="0"
+          {/* <div className="progress progress-teamgrid" role="progressbar" tabindex="0"
             aria-valuenow= { (this.state.loadedImgCount / this.state.imgArray.length ) * 100} aria-valuemin="0" aria-valuetext="50 percent" aria-valuemax="100">
             <div className="progress-meter progress-meter-teamgrid" style={{width: (this.state.loadedImgCount / this.state.imgArray.length ) * 100 + '%'}}></div>
-          </div>
+          </div> */}
           {/* <h1>{this.state.loadedImgCount}</h1>
           <h1>Total :{this.state.imgArray.length}</h1>
           <h1>{ (this.state.loadedImgCount / this.state.imgArray.length ) * 100} % </h1>

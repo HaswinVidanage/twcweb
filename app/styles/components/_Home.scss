@@ -1,10 +1,14 @@
 .section0-home {
   // padding-top: 200px;
-  background: #e52d27!important;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #b31217, #e52d27)!important;  /* Chrome 10-25, Safari 5.1-6 */
-  background-image: -moz-linear-gradient(to bottom, #b31217, #e52d27)!important;
-  background: linear-gradient(to bottom, #b31217, #e52d27)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // background: #e52d27!important;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to bottom, #b31217, #e52d27)!important;  /* Chrome 10-25, Safari 5.1-6 */
+  // background-image: -moz-linear-gradient(to bottom, #b31217, #e52d27)!important;
+  // background: linear-gradient(to bottom, #b31217, #e52d27)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+  background: #be0b0b!important;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(#be0b0b, #da1616)!important;  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: -moz-linear-gradient(#be0b0b, #da1616)!important;
+  background: linear-gradient(#be0b0b, #da1616)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   height: 720px;
   min-height: 660px!important;
@@ -31,10 +35,10 @@
     //width: 1440px;
     //max-width: 1440px;
     max-width: 100%!important;
-    background: #e52d27!important;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #b31217, #e52d27)!important;  /* Chrome 10-25, Safari 5.1-6 */
-    background-image: -moz-linear-gradient(to bottom, #b31217, #e52d27)!important;
-    background: linear-gradient(to bottom, #b31217, #e52d27)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #c70f0f!important;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom,  #c70f0f, #e71c1c)!important;  /* Chrome 10-25, Safari 5.1-6 */
+    background-image: -moz-linear-gradient(to bottom,  #c70f0f, #e71c1c)!important;
+    background: linear-gradient(180deg, #c70f0f, #e71c1c)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     top: 405px;
     overflow:hidden!important;
@@ -62,13 +66,7 @@
 
 .section1-home :after{
 
-  // background: -webkit-linear-gradient(-10deg,#fff,#fff 50%,#fbfafe 0);
-  // background: -moz-linear-gradient(-10deg,#fff,#fff 50%,#fbfafe 0);
-  // background: linear-gradient(-10deg,#fff,#fff 50%,#fbfafe 0);
-
     content: "";
-    //-webkit-clip-path: polygon(100% 100%,100% 0,0 100%)!important;
-    // clip-path: polygon(100% 100%,100% 0,0 100%)!important;4
     -webkit-clip-path: polygon(0 0, 0 40%, 100% 0)!important;
     clip-path: polygon(0 0, 0 40%, 100% 0)!important;;
     display: block;

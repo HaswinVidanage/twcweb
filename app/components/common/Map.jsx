@@ -31,7 +31,7 @@ function createMapOptions(maps) {
 class MapBox extends Component {
   static defaultProps = {
     center: {lat: 6.848437, lng: 79.879381},
-    zoom: 15
+    zoom: 13
   };
 
 

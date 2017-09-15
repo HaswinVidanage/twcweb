@@ -48,7 +48,6 @@ var Web = React.createClass ({
       <div id="fullpage">
 
           <div className= "section section0-home section0-home-services active" id="section1">
-
               <div className="slide active" id="slide1">
                 <div>
                   <div className="small-6 medium-6 large-6 columns">
@@ -57,7 +56,7 @@ var Web = React.createClass ({
                       <p className="service-intro-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.
                         <br/><br/>
-                        <button className="button btn-round-red-white btn-service-call"><big className="contact-btn-txt">See it live</big></button>
+                        <button className="button btn-round-pink-white btn-service-call"><big className="contact-btn-txt">See it live</big></button>
                       </p>
                     </div>
                   </div>
@@ -75,7 +74,7 @@ var Web = React.createClass ({
                       <p className="service-intro-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.
                         <br/><br/>
-                        <button className="button btn-round-red-white btn-service-call"><big className="contact-btn-txt">See it live</big></button>
+                        <button className="button btn-round-pink-white btn-service-call"><big className="contact-btn-txt">See it live</big></button>
                       </p>
                     </div>
                   </div>
@@ -93,7 +92,7 @@ var Web = React.createClass ({
                       <p className="service-intro-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.
                         <br/><br/>
-                        <button className="button btn-round-red-white btn-service-call"><big className="contact-btn-txt">See it live</big></button>
+                        <button className="button btn-round-pink-white btn-service-call"><big className="contact-btn-txt">See it live</big></button>
                       </p>
                     </div>
                   </div>
@@ -104,20 +103,27 @@ var Web = React.createClass ({
               </div>
           </div>
           <div className="section service-info" id="section2">
-            <div className="row">
-              <div className="small-4">
-                <div className="intro">
-                    <p>
-                      <h1 className="service-title-title">Website Design & Development</h1>
-                      And it will animate down to the first section
-                    </p>
-                </div>
+            <div className='service-margin-10'>
+              <div className='service-info-card small-12 medium-12 large-12 row'>
+                <p className="float-right service-card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam,<strong>Suis nostrud exercitation</strong>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
               </div>
-              <div className="small-8">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div className='service-testomonial-wrapper'>
+                <img  className="service-testomonial-icon" src="https://prismic-io.s3.amazonaws.com/guidline-prismic%2F36540da8-1e1c-4849-81cc-a31679a215c2_industry-icon.svg" />
+                <p className='service-testomonial'>
+                  TWC did a wonderful job with our website! Love the design, work
+                  is on point and the timely deliveries impressed me the most. Recommended!
+                </p>
+                <span className='service-testomonial-auth-wrapper'>
+                  <p className='service-testomonial-auth'>
+                    - Lalith Sirisena <br/> CEO & Founder Sithaka Tea
+                  </p>
+                </span>
               </div>
             </div>
-
           </div>
           <div className="section discover-service-panel" id="section3">
               <div className="discover-service-wrap small-12 medium-12 large-12 ">

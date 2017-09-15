@@ -12,6 +12,24 @@
   font-size: 0.9em;
 
 }
+
+.btn-round-pink-white {
+  border: 2px solid $button-pink;
+  background-color: $button-pink;
+  color: white;
+  border-radius: 140px;
+  padding: 0 25px;
+  line-height: 40px;
+  display: inline-block;
+  max-height: 42px;
+  min-width: 124px;
+}
+
+.btn-round-pink-white:hover , .btn-round-pink-white:focus {
+  background-color: white;
+  color: $button-pink;
+}
+
 .btn-round-red-white {
   border: 2px solid $blood-red-light;
   background-color: white;
@@ -29,7 +47,7 @@
     color: white;
 }
 
-.btn-round-red-red:focus, .btn-round-red-red:hover {
+.btn-round-red-red:focus, .btn-round-red-red:hover  {
   background-color: white;
   color: $blood-red-light;
 }
@@ -761,10 +779,15 @@ select.round {
  }
 
   width: 100%;
-  background: #e52d27!important;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #b31217, #e52d27)!important;  /* Chrome 10-25, Safari 5.1-6 */
-  background-image: -moz-linear-gradient(to bottom, #b31217, #e52d27)!important;
-  background: linear-gradient(to bottom, #b31217, #e52d27)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // background: #e52d27!important;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to bottom, #b31217, #e52d27)!important;  /* Chrome 10-25, Safari 5.1-6 */
+  // background-image: -moz-linear-gradient(to bottom, #b31217, #e52d27)!important;
+  // background: linear-gradient(to bottom, #b31217, #e52d27)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #be0b0b!important;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(#be0b0b, #da1616)!important;  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: -moz-linear-gradient(#be0b0b, #da1616)!important;
+  background: linear-gradient(#be0b0b, #da1616)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .titlebar-text-area {
@@ -1014,4 +1037,8 @@ select.round {
 
 .font-white, .font-white:hover , .font-white:focus {
   color: white!important;
+}
+
+.align-left {
+  text-align : left!important;
 }
