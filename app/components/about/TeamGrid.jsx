@@ -11,7 +11,7 @@ const south_west = 'http://res.cloudinary.com/haswind/image/upload/v1499575397/6
 const west = 'http://res.cloudinary.com/haswind/image/upload/v1499575400/7-west_hkybna.png';
 const north_west = 'http://res.cloudinary.com/haswind/image/upload/v1499575398/8-north-west_xnx3jo.png';
 
-const cloudinary_format = 'http://res.cloudinary.com/haswind/image/upload/c_scale,q_40,w_300/v1504503061/teamgrid/';
+const cloudinary_format = 'http://res.cloudinary.com/haswind/image/upload/c_scale,q_40,w_300/v1505516772/teamgrid/';
 
 //chathuranga
 const defImg_chathu    = cloudinary_format + 'chathuranga/0.jpg';
