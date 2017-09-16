@@ -112,7 +112,7 @@ var Web = React.createClass ({
                 </p>
               </div>
               <div className='service-testomonial-wrapper'>
-                <img  className="service-testomonial-icon" src="https://prismic-io.s3.amazonaws.com/guidline-prismic%2F36540da8-1e1c-4849-81cc-a31679a215c2_industry-icon.svg" />
+                <img  className="service-testomonial-icon" src="http://res.cloudinary.com/haswind/image/upload/v1505545555/services/icons/heart-1.svg" />
                 <p className='service-testomonial'>
                   TWC did a wonderful job with our website! Love the design, work
                   is on point and the timely deliveries impressed me the most. Recommended!

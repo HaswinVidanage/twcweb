@@ -35,20 +35,11 @@ exports.getPosts = function(req, res) {
     // });
 
   Post.model.find({'state':'published'}).populate('author categories', 'name email isAdmin').exec(function(err, posts) {
-     //console.log(posts[1].author.password);
-     //delete posts.blue;
      if (err) return res.apiError('database error', err);
-
      res.apiResponse({
     		posts: posts
      });
    });
-  // keystone.list('Post').model.findOne().populate('author', function (err, doc) {
-  //   if (err) return res.apiError('database error', err);
-  //   console.log(doc); // Joe
-  //   //console.log(doc.populated('author'));  // '1234af9876b024c680d111a1' -> _id
-  // });
-
 }
 
 // /**

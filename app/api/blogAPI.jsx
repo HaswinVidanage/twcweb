@@ -16,7 +16,6 @@ module.exports = {
     },function(err){
       console.log('fetch error thrown');
       throw new Error(err.response.data.message);
-
     });
   },
 
