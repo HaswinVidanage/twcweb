@@ -2,7 +2,8 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 //es6 object destructuring
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
-
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-107439268-1'); //Unique Google Analytics tracking number
 var Main = require('Main');
 var Home = require('Home');
 var Blog = require('Blog');
@@ -20,9 +21,15 @@ require('style!css!sass!applicationStyles');
 
 $(document).foundation();
 
+var fireTracking = function () {
+    let currentURL  = window.location.hash.match(/\/(.*)\?/).pop() || 'home';
+    console.log('current-url', currentURL);
+    ReactGA.pageview(currentURL);
+
+}
 
 ReactDOM.render(
-   <Router history={hashHistory}>
+   <Router onUpdate={fireTracking} history={hashHistory}>
      <Route path="/" component={Main}>
        <Route path="about" component={About}/>
        <Route path="contact" component={ContactUs}/>
@@ -31,10 +38,8 @@ ReactDOM.render(
        <Route path="portfolio" component={Portfolio}/>
        <Route  path="blog" component={Blog}/>
        <Route  path="blog-single/:slug" component={BlogSingle}/>
-
        <Route path="websites" component={Web}/>
        <Route path="mobileapps" component={MobileApps}/>
-
        <IndexRoute component={Home}/>
      </Route>
    </Router>,

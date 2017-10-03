@@ -1,13 +1,12 @@
 var React = require('react');
 var fullpageJs = require('fullpage.js');
-
+import ReactGA from 'react-ga';
 var Footer = require('Footer');
 var ContactUsBar = require('ContactUsBar');
 var MiniContactForm = require('MiniContactForm');
 
 var Home = React.createClass({
 	componentWillMount: function() {
-
 		//add this so fullpage js won't give error saying you called it multiple times
 		if ( $( 'html' ).hasClass( 'fp-enabled' ) ) {
 			console.log('fullpage was there');
@@ -16,6 +15,10 @@ var Home = React.createClass({
 
 	},
 	componentDidMount: function(){
+		ReactGA.event({
+            category: 'Navigation',
+            action: 'Clicked Home',
+        });
 		$('#fullpage').fullpage({
 							verticalCentered: true,
 							menu: '#menu',
