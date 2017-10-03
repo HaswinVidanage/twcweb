@@ -48,6 +48,16 @@ var Home = React.createClass({
 								$('#nexus').toggleClass('moveUp', nextIndex == 1);
 								//$('#nexus').toggleClass('moveUp', index == 1 && direction == 'up');
 
+								// if((index == 1 && direction == 'down' ) || (index != 1) && direction == 'moveDown' ){
+								// 	console.log('GOIN DOWN');
+								// 	var element = $("#Punch_In");
+								// 	$('#Punch_In').attr('xlink:href',"http://res.cloudinary.com/haswind/image/upload/v1506152829/sales-suite/nexus/screen-1.png");
+								// }
+								//
+								// if(nextIndex == 1 && direction == 'up') {
+								// 	console.log('MOVIN UP BOIS');
+								// }
+
 							}
 
 					});
@@ -119,7 +129,7 @@ var Home = React.createClass({
 					<div className="section3-home">
 						<div className="r row align-justify align-middle ">
 							<div className = 'small-12 medium-6 large-6 content column z-index-high'>
-								<img src="http://res.cloudinary.com/haswind/image/upload/v1504292304/computer_sfnkzc.svg" />
+								<img src="http://res.cloudinary.com/haswind/image/upload/v1506146852/home/computer-filled.svg" />
 							</div>
 							<div className = 'small-12 medium-6 large-6 content column'>
 
