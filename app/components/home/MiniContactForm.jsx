@@ -88,6 +88,7 @@ var MiniContactForm = React.createClass({
           <big><FaSpinner/>&nbsp;...</big>
         );
       } else if (submitBtnState == 2) {
+        sendAnother();
         return (
           <big><FaCheck/>&nbsp;Sent</big>
         );
@@ -96,6 +97,10 @@ var MiniContactForm = React.createClass({
           <big><FaEnvelope/>&nbsp;Error</big>
         );
       }
+    }
+
+    function sendAnother() {
+        alert('Send Another Got Clicked!!!');
     }
 
     return (
