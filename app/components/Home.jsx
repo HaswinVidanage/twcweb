@@ -87,7 +87,7 @@ var Home = React.createClass({
 	                  </div>
 
 	                  <div className="logos small-12">
-	                    <img className="home-logo-bar" src="https://prismicio.cdn.prismic.io/prismicio%2Fd590a9ff-fad3-4e71-9453-fca04fa5a66e_logo_header.svg" alt="" />
+	                    <img className="home-logo-bar" src="https://res.cloudinary.com/haswind/image/upload/v1507148273/home/logo_header.png" alt="" />
 	                  </div>
 	                </div>
 	              </div>

@@ -103,13 +103,13 @@ var MiniContactForm = React.createClass({
           <div className="mini-form-box small-6 medium-6 large-6 columns">
               <div className="mini-contact-wrapper">
                 <form onSubmit={this.onSubmit}>
-                  <input className="mini-contact-input" type="text" ref="name" placeholder="Your Name"
+                  <input className="mini-contact-input" type="text" ref="name" placeholder="Your Name" required
                     value = {this.state.submitBtnState == 2 ? '' : this.value}
                   />
-                  <input className="mini-contact-input" type="email" ref="email" placeholder="Email Address"
+                  <input className="mini-contact-input" type="email" ref="email" placeholder="Email Address" required
                     value = {this.state.submitBtnState == 2 ? '' : this.value}
                   />
-                  <input className="mini-contact-input" type="text" ref="phone" placeholder="Contact Number"
+                  <input className="mini-contact-input" type="text" ref="phone" placeholder="Contact Number" required
                     value = {this.state.submitBtnState == 2 ? '' : this.value}
                   />
 
@@ -120,7 +120,7 @@ var MiniContactForm = React.createClass({
                     <option value="3" selected={this.state.optionsState == 3}>Other</option>
                   </select>
 
-                  <textarea className="mini-text-area" rows="4" cols="50" ref="message" placeholder="Your lovely feedback goes here..."
+                  <textarea required className="mini-text-area" rows="4" cols="50" ref="message" placeholder="Your lovely feedback goes here..."
                     value = {this.state.submitBtnState == 2 ? '' : this.value}
                   />
                   <div className="mini-submit-wrapper"
