@@ -22,7 +22,7 @@ var Home = React.createClass({
 		$('#fullpage').fullpage({
 							verticalCentered: true,
 							menu: '#menu',
-							anchors: ['?section1', '?section2', '?section3','?section4','?section5'],
+							anchors: ['?1', '?2', '?3','?4','?5'],
 							autoScrolling: false,
 						  scrollOverflow: false,
 							fitToSection:false,
@@ -114,9 +114,7 @@ var Home = React.createClass({
 						<div className = 'small-12 medium-6 large-6 content column'>
 
 							<div className="container-sales-suit">
-								<object id="obj-sales-suit" data="./images/Home/grabber-logo.svg" type="image/svg+xml">
-									<img src="./images/Home/grabber-logo.png" />
-								</object>
+								<img src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507142743/home/twc-industrial-apps.png" />
 
 								<div className="align-center">
 									<p className="justify-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -137,9 +135,8 @@ var Home = React.createClass({
 							<div className = 'small-12 medium-6 large-6 content column'>
 
 								<div className="container-sales-suit">
-									<object id="obj-sales-suit" data="./images/Home/grabber-logo.svg" type="image/svg+xml">
-										<img src="./images/Home/grabber-logo.png" />
-									</object>
+
+									<img src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507142738/home/twc-web-solutions.png" />
 
 									<div className="align-center">
 										<p className="justify-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -169,9 +166,6 @@ var Home = React.createClass({
 							<div className = 'small-12 medium-6 large-6 content column'>
 
 								<div className="container-section4-content">
-									<object id="obj-sales-suit" data="./images/Home/grabber-logo.svg" type="image/svg+xml">
-										<img src="./images/Home/grabber-logo.png" />
-									</object>
 
 									<div className="align-center">
 										<p className="justify-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -193,20 +187,20 @@ var Home = React.createClass({
 							</div>
 							<div className="row">
 								<div className="small-12 medium-12 large-12 content column small-block-grid-12">
-										<div className="small-2 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
-										<div className="small-2 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
-										<div className="small-2 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
-										<div className="small-2 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
-										<div className="small-2 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
-										<div className="small-2 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
+										<div className="small-2 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143889/clients/tanclean.png"/></div>
+										<div className="small-2 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143871/clients/threesinha.png"/></div>
+										<div className="small-2 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143876/clients/venora.png"/></div>
+										<div className="small-2 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/oppo.png"/></div>
+										<div className="small-2 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143878/clients/ogilvy.png"/></div>
+										<div className="small-2 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507049549/clients/nasa.png"/></div>
 								</div>
 							</div>
 							<div className="row">
 								<div className="small-12 medium-12 large-12 content column small-block-grid-12">
-										<div className="small-3 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
-										<div className="small-3 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
-										<div className="small-3 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
-										<div className="small-3 content column"><img className="mini-img" src="http://easi-ie.com/wp-content/uploads/2013/01/happy-dummy-logos.png"/></div>
+										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/cmblogistics.png"/></div>
+										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/fslga.png"/></div>
+										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143880/clients/cartec.png"/></div>
+										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/azonic.png"/></div>
 								</div>
 							</div>
 							<p className="logo-text-desc">Trusted by companies islandwide</p>

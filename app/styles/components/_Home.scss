@@ -60,7 +60,6 @@
 }
 
 .section1-home :after{
-
     content: "";
     -webkit-clip-path: polygon(0 0, 0 40%, 100% 0)!important;
     clip-path: polygon(0 0, 0 40%, 100% 0)!important;;
@@ -71,15 +70,13 @@
     z-index: 0;
     height: 254px;
     width: 100%!important;
-    //width: 1440px;
-    //max-width: 1440px;
     max-width: 100%!important;
     background: #e52d27!important;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #fbfafe, #fbfafe)!important;  /* Chrome 10-25, Safari 5.1-6 */
     background-image: -moz-linear-gradient(to bottom, #fbfafe, #fbfafe)!important;
     background: linear-gradient(180deg,#fbfafe,#fbfafe)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    top: 1320px;
+    top: 660px;
     overflow:hidden!important;
 
     @media screen and (min-width: 253px){
