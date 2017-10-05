@@ -25,6 +25,7 @@
     bottom: 0;
     left: 0;
     z-index: 0;
+
     width: 100%!important;
     //width: 1440px;
     //max-width: 1440px;
@@ -41,31 +42,8 @@
     //   height: 253px;
     //   //display: none!important;
     // }
+    top: 460px;
 
-    @media (max-width : $chrome-321) {
-
-    }
-    @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
-
-    }
-    @media (min-width: $chrome-376) and (max-width: $chrome-426) {
-
-     }
-    @media (min-width: $chrome-426) and (max-width : $chrome-769) {
-
-    }
-    @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
-
-    }
-    @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
-
-    }
-    @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
-
-    }
-    @media (min-width : $chrome-2561) {
-
-    }
 }
 
 .section1-home {
@@ -103,35 +81,11 @@
 
     overflow:hidden!important;
 
-    @media screen and (min-width: 253px){
-      height: 253px;
-      //display: none!important;
-    }
-
-    @media (max-width : $chrome-321) {
-
-    }
-    @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
-
-    }
-    @media (min-width: $chrome-376) and (max-width: $chrome-426) {
-
-     }
-    @media (min-width: $chrome-426) and (max-width : $chrome-769) {
-
-    }
-    @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
-
-    }
-    @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
-      top: 660px;
-    }
-    @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
-
-    }
-    @media (min-width : $chrome-2561) {
-
-    }
+    // @media screen and (min-width: 253px){
+    //   height: 253px;
+    //   //display: none!important;
+    // }
+    top: 660px;
 
 }
 
@@ -393,6 +347,7 @@ h1 {
 .logos {
   margin-top: 72px;
   z-index: 1;
+  padding-right: 20px;
 }
 
 .section2-home {

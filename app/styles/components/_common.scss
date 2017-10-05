@@ -1,3 +1,29 @@
+.small-screen-only-custom {
+  @media (max-width : $chrome-321) {
+    display: none;
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+    display: none;
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+    display: none;
+   }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    display: none;
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+  }
+  @media (min-width : $chrome-2561) {
+    
+  }
+}
 .twc-logo {
   width: 100px;
 }
