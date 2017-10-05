@@ -92,7 +92,7 @@ var Home = React.createClass({
 	                </div>
 	              </div>
 
-	              <div className="illustration hide-for-small-only medium-6 large-6 align-right text-center">
+	              <div className="hide-for-small-only medium-6 large-6 align-right text-center">
 	                <div className="illu illu-editor" id="nexus">
 	                  <object id="obj-nexus" data="./images/Home/nexus.svg" type="image/svg+xml">
 	                    <img src="./images/Home/nexus.png" />
