@@ -23,7 +23,7 @@ var Footer = React.createClass({
               </div>
             </div>
           </div>
-          <div className="small-12  medium-3 columns">
+          <div className="small-12  medium-2 columns">
             <div className="vertical-line" >
             </div>
             <div className="footer-menu-wrap">
@@ -32,16 +32,15 @@ var Footer = React.createClass({
               </div>
 
               <div className="footer-menu-ul-wrap">
-                <div className="small-12 medium-6 columns">
+                <div className="small-12 medium-6 columns footer-link-wrap">
                   <ul className="footer-ul">
-                    <li>About</li>
-                    <li>Contact Us</li>
-                    <li>Sales Suit</li>
-                    <li>Services</li>
+                    <li><Link to="/#" className="footer-link-text">Home</Link></li>
+                    <li><Link to="/about" className="footer-link-text" activeClassName="active" activeStyle={{fontWeight:'bold'}}>About</Link></li>
+                    <li><Link to="/contact" className="footer-link-text" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Contact Us</Link></li>
                   </ul>
                 </div>
 
-                <div className="small-12 medium-6 columns">
+                <div className="small-12 medium-6 columns" style={{display:'none'}}>
                   <ul className="footer-ul">
                     <li>FAQ</li>
                     <li>Careers</li>
@@ -56,11 +55,11 @@ var Footer = React.createClass({
           <div className="small-12 medium-3 columns">
             <div className="vertical-line" />
             <div className="footer-contact-wrapper">
-              <div className="small-12 medium-12 columns">
+              <div className="small-12 medium-12 columns footer-contact-div">
                 <strong>CONTACT US</strong>
-                <div className="footer-contact-text-wrapper">
+                <div className="footer-contact-text-wrapper footer-contact-div">
                   <ul className="footer-ul">
-                    <li><p>info@twcinnovations.com</p></li>
+                    <li><p className='email-medium-wrap'>info@twcinnovations.com</p></li>
                     <li><p>25 Vijitha Road <br/>Nadimala Dehiwala(10230) <br/>Sri Lanka</p></li>
                     <li><p>(+94) 11 2345678</p></li>
                   </ul>
@@ -73,7 +72,7 @@ var Footer = React.createClass({
             <div className="footer-social-wrapper">
               <div className="small-12 medium-12 columns">
                 <strong>FOLLOW US</strong>
-                <div className="footer-contact-text-wrapper">
+                <div className="footer-contact-text-wrapper footer-contact-div">
                   <ul className="footer-ul">
                     <li><a href="https://www.facebook.com/twcinnovation/" target="_blank" className="footer-social-text"><span><p><FaFacebook/>&nbsp;Facebook</p></span></a></li>
                     <li><a href="https://twitter.com/twcinnovations/" target="_blank" className="footer-social-text"><span><p><FaTwitter/>&nbsp;Twitter</p></span></a></li>

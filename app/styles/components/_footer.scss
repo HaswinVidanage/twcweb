@@ -5,6 +5,7 @@
 .footer-row {
   display: flex;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 .footer-row-col-1 {
@@ -15,6 +16,23 @@
   display: block;
   margin-left: 30%;
   margin-right: 30%;
+
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    margin-left: 15%;
+    margin-right: 0;
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+  }
+  @media (min-width : $chrome-2561) {
+
+  }
 }
 
 .footer-logo-text-wrap {
@@ -37,9 +55,67 @@
   color: $footer-font-grey-light;
 }
 
+.footer-menu-wrap , .footer-contact-wrapper {
+
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    padding: 50px 20px 50px!important;
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+  }
+  @media (min-width : $chrome-2561) {
+
+  }
+}
+
+.footer-contact-div {
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    padding-left: 0px;
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+  }
+  @media (min-width : $chrome-2561) {
+
+  }
+}
+
+.email-medium-wrap {
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    word-wrap: break-word;
+    width: 147px;
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+  }
+  @media (min-width : $chrome-2561) {
+
+  }
+}
 .footer-social-wrapper {
   padding: 50px 5px 50px 50px;
   color: $footer-font-grey-light;
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    padding-left: 5px!important;
+  }
 }
 .footer-menu-ul-wrap {
   margin-top: 10px;
@@ -47,6 +123,8 @@
 
 .footer-ul {
   list-style-type: none;
+  margin-left: 0rem;
+  width: 100px;
 }
 
 .footer-contact-text-wrapper {
@@ -66,3 +144,38 @@ div.vertical-line{
     margin-top: 40px;
 
   }
+
+.footer-link-text {
+  color: #b3b4b9;
+}
+
+.footer-link-wrap {
+    padding-left: 0px;
+    padding-right: 0px;
+
+    @media (max-width : $chrome-321) {
+      padding-left: 20px;
+    }
+    @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+      padding-left: 20px;
+    }
+    @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+      padding-left: 20px;
+     }
+    @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+
+    }
+    @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+    }
+    @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+    }
+    @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+    }
+    @media (min-width : $chrome-2561) {
+
+    }
+
+}
