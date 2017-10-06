@@ -96,11 +96,6 @@
 
     overflow:hidden!important;
 
-    // @media screen and (min-width: 253px){
-    //   height: 253px;
-    //   //display: none!important;
-    // }
-
     @media (max-width : $chrome-321) {
         top: 660px;
     }
@@ -120,11 +115,12 @@
       top: 658px;
     }
     @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
-      top: 1141px;
+      top: 1060px;
       height: 470px;
     }
     @media (min-width : $chrome-2561) {
-      top: 800px;
+      top: 1060px;
+      height: 470px;
     }
 
 }
@@ -515,6 +511,14 @@ div.header .header-container .illustration {
    height: 50%;
    background-color: $medium-grey;
    z-index: 1;
+   @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+      padding-top: 174px;
+      max-height: 350px;
+   }
+   @media (min-width : $chrome-2561) {
+     padding-top: 174px;
+     max-height: 350px;
+   }
 }
 
 .off-white {

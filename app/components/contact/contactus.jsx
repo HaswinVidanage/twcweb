@@ -8,6 +8,14 @@ var Footer = require('Footer');
 var enquiryAPI = require('enquiryAPI');
 
 var ContactUs = React.createClass({
+  componentWillMount: function() {
+		//add this so fullpage js won't give error saying you called it multiple times
+		if ( $( 'html' ).hasClass( 'fp-enabled' ) ) {
+			console.log('fullpage was there');
+			$('#fullpage').fullpage.destroy('all');
+		}
+
+	},
   getInitialState : function(){
     return {
       contactChoice: 0,
