@@ -63,7 +63,7 @@ var Footer = React.createClass({
                   <ul className="footer-ul">
                     <li><p className='email-medium-wrap'>sales@twcinnovations.com</p></li>
                     <li><p>25 Vijitha Road <br/>Nadimala Dehiwala(10350) <br/>Sri Lanka</p></li>
-                    <li><p>(+94) 11 2345678</p></li>
+                    <li><p>(+94) 11 2731912</p></li>
                   </ul>
                 </div>
               </div>

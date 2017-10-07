@@ -20,9 +20,9 @@ class PrimaryLocations extends Component {
           <div className="loc-text-wrap">
             <h1 className="loc-heading">MELBOURNE, AUS</h1>
             <p  className="loc-title">
-              8 MONASH UNIVERSITY,<br/>
-              LONGDON AVENUE,<br/>
-              MELBOURNE (10230),<br/>
+              91 WELLINGTON ROAD,<br/>
+              CLAYTON VIC,<br/>
+              MELBOURNE (3168),<br/>
               AUSTRALIA
             </p>
           </div>

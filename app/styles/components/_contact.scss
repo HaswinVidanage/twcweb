@@ -26,6 +26,22 @@
   color:black;
   text-align: center;
   font-weight: 100;
+
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    height: 85px;
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+    height: 85px;
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+    height: 85px;
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+    height: 85px;
+  }
+  @media (min-width : $chrome-2561) {
+    height: 85px;
+  }
 }
 
 .contact-title {
