@@ -19,7 +19,9 @@ var Footer = React.createClass({
                 </object>
               </div>
               <div className="footer-logo-text-wrap" >
-                <p className="footer-logo-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p className="footer-logo-text">
+                  TWC Innovations was founded with a rebellious spirit and a lofty objective to offer state of the art soft technologies at a revolutionary price, while leading the way for socially conscious business.
+                </p>
               </div>
             </div>
           </div>
@@ -59,8 +61,8 @@ var Footer = React.createClass({
                 <strong>CONTACT US</strong>
                 <div className="footer-contact-text-wrapper footer-contact-div">
                   <ul className="footer-ul">
-                    <li><p className='email-medium-wrap'>info@twcinnovations.com</p></li>
-                    <li><p>25 Vijitha Road <br/>Nadimala Dehiwala(10230) <br/>Sri Lanka</p></li>
+                    <li><p className='email-medium-wrap'>sales@twcinnovations.com</p></li>
+                    <li><p>25 Vijitha Road <br/>Nadimala Dehiwala(10350) <br/>Sri Lanka</p></li>
                     <li><p>(+94) 11 2345678</p></li>
                   </ul>
                 </div>

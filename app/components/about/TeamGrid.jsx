@@ -181,7 +181,7 @@ var TeamGrid = React.createClass({
           this.setState({
             fname: 'Dinuka',
             lname: '',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            desc: 'Content about Dinuka will be updated soon.',
             url_1:defImg_dinuka,
             url_2:west_hashi,
             url_3:north_east_chathu,
@@ -196,7 +196,7 @@ var TeamGrid = React.createClass({
           this.setState({
             fname: 'Hashi',
             lname: '',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            desc: 'Content about Hashi will be updated soon.',
             url_1:east_dinuka,
             url_2:defImg_hashi,
             url_3:north_east_east_chathu,
@@ -211,7 +211,7 @@ var TeamGrid = React.createClass({
           this.setState({
             fname: 'Chathuranga',
             lname: '',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            desc: 'Content about Chathuranga will be updated soon.',
             url_1:south_west_dinuka,
             url_2:south_west_hashi,
             url_3:defImg_chathu,
@@ -226,7 +226,7 @@ var TeamGrid = React.createClass({
           this.setState({
             fname: 'Sachin',
             lname: '',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            desc: 'Content about Sachin will be updated soon.',
             url_1:south_east_dinuka,
             url_2:south_west_hashi,
             url_3:east_chathu,
@@ -241,7 +241,7 @@ var TeamGrid = React.createClass({
           this.setState({
             fname: 'Haswin',
             lname: '',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            desc: 'Content about Haswin will be updated soon.',
             url_1:south_east_dinuka,
             url_2:south_east_hashi,
             url_3:east_chathu,
@@ -256,7 +256,7 @@ var TeamGrid = React.createClass({
           this.setState({
             fname: 'Kasun',
             lname: '',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            desc: 'Content about Kasun will be updated soon.',
             url_1:south_dinuka,
             url_2:south_west_hashi,
             url_3:south_east_chathu,
@@ -271,7 +271,7 @@ var TeamGrid = React.createClass({
           this.setState({
             fname: 'Nafeel',
             lname: '',
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            desc: 'Content about Nafeel will be updated soon.',
             url_1:south_east_dinuka,
             url_2:south_hashi,
             url_3:south_east_east_chathu,
@@ -286,7 +286,7 @@ var TeamGrid = React.createClass({
           this.setState({
             fname: 'Cactus',
             lname: '',
-            desc: 'She is good at sleeping and eating.',
+            desc: 'Content about Cactus will be updated soon. Well for now lets just say she is good at sleeping and eating.',
             url_1:south_dinuka,
             url_2:south_hashi,
             url_3:south_east_chathu,
@@ -326,7 +326,7 @@ var TeamGrid = React.createClass({
       imageStatus: 'loading',
       fname: 'ONE CARING',
       lname: 'TEAM',
-      desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      desc: 'The young blood within the company, young blood is constantly into challenges and they are always sensitive to the trends. So our expertise will assist you in having an innovative and an eminent IT business solution that will attract more potential customers.',
       url_1:  spinner,
       url_2:  spinner,
       url_3:  spinner,

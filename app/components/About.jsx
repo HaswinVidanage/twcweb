@@ -21,7 +21,7 @@ var About = React.createClass({
     return {
 
       title: 'ABOUT US',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      content: 'Our existence purports innovative Internet marketing solutions and provides user friendly and customer experience enhanced interfaces aimed at solving corporate and customer relationship issues.'
     };
   },
   render:function(){

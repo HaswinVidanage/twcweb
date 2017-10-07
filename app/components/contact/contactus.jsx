@@ -22,7 +22,7 @@ var ContactUs = React.createClass({
       isLoading: 'inactive',
       contactFormShow : 'hide',
       title: 'GET IN TOUCH',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      content: 'We thrive by connecting to you. The marketing team of TWC Innovations is all ears for any inquiries you may have.',
     };
   },
   handleClick:function(id){

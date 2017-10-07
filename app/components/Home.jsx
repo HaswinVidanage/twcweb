@@ -121,9 +121,11 @@ var Home = React.createClass({
 								<img src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507142743/home/twc-industrial-apps.png" />
 
 								<div className="align-center">
-									<p className="justify-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									<p className="justify-text">
+										Redefine your selling and distribution process with an app that integrates the entire team.
+										TWC sales suite is the ultimate tool that monitors sales team and track locations of sales representative’s real time.
+										TWC Industrial Apps enable your company to eliminate all manual ordering processes and will enhance the operational efficiency while increasing company revenue.
+
 									</p>
 								</div>
 							</div>
@@ -143,9 +145,9 @@ var Home = React.createClass({
 									<img src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507142738/home/twc-web-solutions.png" />
 
 									<div className="align-center">
-										<p className="justify-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-											cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										<p className="justify-text">
+											We at TWC value long term customer relationships. Help desk system will stamp that relationship with you and customer.
+											 The system is built according to your industry and customers’ needs to connect you and your customers better.
 										</p>
 									</div>
 								</div>
@@ -159,22 +161,25 @@ var Home = React.createClass({
 							<div className = 'small-12 medium-6 large-6 content column'>
 								<div className="container-section4-content">
 									<div>
-										<h2 className="section4-title">We take care of<br/>Upgrades, Maintenance<br/>and Security</h2>
+										<h2 className="section4-title">We also deliver<br/>Web, Mobile, SEO<br/>& Digital Marketing Solutions</h2>
 									</div>
 									<div className="align-center">
-										<p className="justify-text section4-content-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										<p className="justify-text section4-content-1">
+											We at TWC Innovations welcome the opportunity to design, develop and maintain a cutting edge web application to meet your requirements.
+											TWC Innovations will be providing you with the finest quality while maintaining the stability of your web application on all devices such as desktop PC’s, mobile devices and tablets.
 										</p>
 									</div>
 								</div>
 							</div>
 							<div className = 'small-12 medium-6 large-6 content column'>
-
+								<img src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507142738/home/twc-web-solutions.png" />
 								<div className="container-section4-content">
 
 									<div className="align-center">
-										<p className="justify-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-											cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										<p className="justify-text">
+											TWC Innovations offers the highest quality development for affordable price rates.
+											The reason why we are able to provide you with the best quality and rates in the industry is that we minimize the development cost by only recruiting the needed amount of the best and well trained,
+											experienced developers to the team who will be working on your project to meet timeline and the standards expected of TWC products.
 										</p>
 									</div>
 								</div>
@@ -211,7 +216,7 @@ var Home = React.createClass({
 						</div>
 					</div>
 				</div>
-				<div className="fp-normal-scroll" id="section6-home">
+				<div className="fp-normal-scroll">
 					<ContactUsBar/>
 					<Footer/>
 				</div>

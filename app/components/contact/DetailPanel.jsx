@@ -15,7 +15,7 @@ var DetailPanel = React.createClass({
                         TWC Innovations<br />
                         25 Vijitha Road,<br />
                         Nedimala,<br />
-                        10280 Sri Lanka
+                        10350 Sri Lanka
                     </span>
                 </address>
               </div>
@@ -24,9 +24,9 @@ var DetailPanel = React.createClass({
                     <span>
                         <h3 className="address-title">Corporate Office</h3>
                         TWC Innovations<br />
-                        25 Vijitha Road,<br />
-                        Nedimala,<br />
-                        10280 Sri Lanka
+                        91 WELLINGTON ROAD,<br />
+                        CLAYTON VIC,<br />
+                        3168, AUSTRALIA
                     </span>
                 </address>
               </div>
@@ -34,9 +34,9 @@ var DetailPanel = React.createClass({
                 <address>
                     <span>
                         <h3 className="address-title">General Contact</h3>
-                        Hotline: 011-213-7654<br/>
-                        Phone: 071-123-4567<br/>
-                        Email: info@twcwebs.com<br/>
+                        Hotline: 011-273-1912<br/>
+                        Phone: 077-377-8084<br/>
+                        Email: sales@twcwebs.com<br/>
                     </span>
                 </address>
               </div>
