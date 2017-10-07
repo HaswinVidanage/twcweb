@@ -53,9 +53,9 @@ var Blog = React.createClass({
   },
 
   changePage : function (clickedPageNo) {
-    this.setState({
-      currentPage : clickedPageNo
-    })
+    // this.setState({
+    //   currentPage : clickedPageNo
+    // })
   },
 
   render : function(){
@@ -63,12 +63,13 @@ var Blog = React.createClass({
 
     var renderPagination = () => {
 
+        let totalPages = 0;
         let postLength =  posts.length;
         const PostsPerPage = 3;
-        let totalPages = Math.round(postLength / PostsPerPage);
-        if (postLength % PostsPerPage != 0 ){ totalPages+1;}
-
+        totalPages = Math.ceil(postLength / PostsPerPage);
+        console.log('totalPages!!', totalPages);
         var paginationHTML;
+        //TODO : APPEND paginationHTML somehow
         for (var i = 1; i <= totalPages; i++) {
           paginationHTML = <li><a href="" onClick={this.changePage(i)}>{i}</a></li>
 
@@ -98,37 +99,16 @@ var Blog = React.createClass({
       }
 
       return posts.map((post, i) =>{
-
-        if (currentPage > 10 ) {
-          if(i >= (currentPage * 10 ) && i < (currentPage * 10) + 10) {
-            var link = `/blog-single/${post.slug}`;
-            return (
-
-              <div key={post._id}>
-                <Link to={link} >
-                  <h1 className="blog-prev-title">{post.title}</h1>
-                </Link>
-                <div>Uploaded {moment(post.publishedDate).fromNow()} under {post.categories.name}<span className="highlight"></span> by <span className="highlight">{post.author.name.first +' '+post.author.name.last}</span></div>
-                <p className="blog-prev-content">{Parser(post.content.brief)}</p>
-              </div>
-            );
-          }
-        } else {
-          if(i >= 0 && i < (currentPage * 10) ) {
-            var link = `/blog-single/${post.slug}`;
-            return (
-
-              <div key={post._id}>
-                <Link to={link} >
-                  <h1 className="blog-prev-title">{post.title}</h1>
-                </Link>
-                <div>Uploaded {moment(post.publishedDate).fromNow()} under {post.categories.name}<span className="highlight"></span> by <span className="highlight">{post.author.name.first +' '+post.author.name.last}</span></div>
-                <p className="blog-prev-content">{Parser(post.content.brief)}</p>
-              </div>
-            );
-          }
-        }
-
+          var link = `/blog-single/${post.slug}`;
+          return (
+            <div key={post._id}>
+              <Link to={link} >
+                <h1 className="blog-prev-title">{post.title}</h1>
+              </Link>
+              <div>Uploaded {moment(post.publishedDate).fromNow()} under {post.categories.name}<span className="highlight"></span> by <span className="highlight">{post.author.name.first +' '+post.author.name.last}</span></div>
+              <p className="blog-prev-content">{Parser(post.content.brief)}</p>
+            </div>
+          );
 
       });
     };
