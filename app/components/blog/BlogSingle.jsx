@@ -100,36 +100,8 @@ var BlogSingle = React.createClass({
   render : function(){
     var {post} = this.state;
     const shareUrl = `https://twcwebs.herokuapp.com/#/blog-single/${post.slug}`;
-    //const shareUrl = "https://github.com";
-    //let url = "https://github.com";
-    const title = 'Blog';
+    const title = post.title;
 
-    // <meta property="fb:app_id" content="231413577317212"/>
-    // <meta property="og:site_name" content="twcinnovations"/>
-    // <meta property="og:title" content="twcinnovations" />
-    // <meta property="og:description" content="twcinnovations" />
-    // <meta property="og:type" content="http://www.example.com/images/xxx.png">
-    // <meta property="og:url" content="https://twcwebs.herokuapp.com/"/>
-    // <meta property="og:image" content="http://res.cloudinary.com/haswind/image/upload/v1500191502/Untitled_ltuspt.png"/>
-
-
-
-    // const meta = {
-    //   title: 'Some Meta ',
-    //   description: 'I am a description, and I can create multiple tags',
-    //   canonical: 'http://example.com/path/to/page',
-    //   meta: {
-    //     charset: 'utf-8',
-    //     name: {
-    //       keywords: 'react,meta,document,html,tags'
-    //     }
-    //   }
-    // };
-
-    // <meta charset="utf-8" data-rdm="">
-    // <meta name="keywords" content="react,meta,document,html,tags" data-rdm="">
-    // <meta name="description" content="I am a description, and I can create multiple tags" data-rdm="">
-    // <link rel="canonical" href="http://example.com/path/to/page" data-rdm="">
     <meta property="fb:app_id" content="231413577317212"/>
     const meta = {
       title: 'Facebook Meta ',
@@ -170,7 +142,6 @@ var BlogSingle = React.createClass({
     };
 
     return (
-      // <DocumentMeta {...meta}>
       <div>
         <MetaTags>
             <title>Page 1</title>
@@ -190,27 +161,84 @@ var BlogSingle = React.createClass({
         <div className="blog-wrap-main no-left-padding margin-top-20">
           <div className="small-8 medium-8 large-8 small-centered">
               {renderSinglePost()}
-              <div className="Demo__some-network">
-                <FacebookShareButton
-                  url={shareUrl}
-                  title={title}
-                  // picture={`${String(window.location)}/${exampleImage}`}
-                  className="Demo__some-network__share-button">
-                  <FacebookIcon
-                    size={32}
-                    round />
-                </FacebookShareButton>
-
-                <FacebookShareCount
-                  url={shareUrl}
-                  className="Demo__some-network__share-count">
-                  {count => count}
-                </FacebookShareCount>
-                {/* <FacebookButton url={url}>
-                  <FacebookCount url={url} />
-                  {" Share " + url}
-                </FacebookButton> */}
+              <div className="small-1 columns social-icons">
+                <span id='facebook-share'>
+                  <FacebookShareButton
+                    url={shareUrl}
+                    title={title}
+                    className="Demo__some-network__share-button">
+                    <FacebookIcon
+                      size={32}
+                      round />
+                  </FacebookShareButton>
+                  <FacebookShareCount
+                    url={shareUrl}
+                    className="Demo__some-network__share-count">
+                    {count => count}
+                  </FacebookShareCount>
+                </span>
               </div>
+              <div className="small-1 columns social-icons">
+                <span id='googleplus-share'>
+                  <GooglePlusShareButton
+                    url={shareUrl}
+                    title={title}
+                    // picture={`${String(window.location)}/${exampleImage}`}
+                    className="Demo__some-network__share-button">
+                    <GooglePlusIcon
+                      size={32}
+                      round />
+                  </GooglePlusShareButton>
+                  <GooglePlusShareCount
+                    url={shareUrl}
+                    className="Demo__some-network__share-count">
+                    {count => count}
+                  </GooglePlusShareCount>
+                </span>
+              </div>
+              <div className="small-1 columns social-icons">
+                <span id='linkedin-share'>
+                  <LinkedinShareButton
+                    url={shareUrl}
+                    title={title}
+                    className="Demo__some-network__share-button">
+                    <LinkedinIcon
+                      size={32}
+                      round />
+                  </LinkedinShareButton>
+                  <LinkedinShareCount
+                    url={shareUrl}
+                    className="Demo__some-network__share-count">
+                    {count => count}
+                  </LinkedinShareCount>
+                </span>
+              </div>
+              <div className="small-1 columns social-icons">
+                <span id='twitter-share'>
+                  <TwitterShareButton
+                    url={shareUrl}
+                    title={title}
+                    className="Demo__some-network__share-button">
+                    <TwitterIcon
+                      size={32}
+                      round />
+                  </TwitterShareButton>
+                </span>
+              </div>
+              <div className="small-1 columns social-icons">
+                <span id='whatsapp-share'>
+                  <WhatsappShareButton
+                    url={shareUrl}
+                    title={title}
+                    className="Demo__some-network__share-button">
+                    <WhatsappIcon
+                      size={32}
+                      round />
+                  </WhatsappShareButton>
+                </span>
+              </div>
+
+
           </div>
         </div>
         <ContactUsBar/>
