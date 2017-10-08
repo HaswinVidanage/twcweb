@@ -169,7 +169,6 @@ var BlogSingle = React.createClass({
         );
     };
 
-    console.log(post.image.secure_url);
     return (
       // <DocumentMeta {...meta}>
       <div>

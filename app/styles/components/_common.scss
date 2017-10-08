@@ -1078,3 +1078,14 @@ select.round {
 .align-left {
   text-align : left!important;
 }
+
+// pagination
+.pg-active-page {
+  background: $blood-red-light;
+  color: white!important;
+}
+
+.pagination a:hover, .pagination button:hover {
+    background:#e6e6e6!important;
+    color: $blood-red-light!important;
+}

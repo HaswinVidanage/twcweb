@@ -5,13 +5,16 @@ import TitleBar from '../common/TitleBar';
 var moment = require('moment');
 import Parser from 'html-react-parser';
 var ReactDOM = require('react-dom');
-import { Timeline } from 'react-twitter-widgets'
+import { Timeline } from 'react-twitter-widgets';
+
+const PostsPerPage = 3;
+
 //pagination
 //https://github.com/AdeleD/react-paginate/blob/master/demo/js/demo.js
 var Blog = React.createClass({
   getInitialState : function(){
     return {
-      currentPage : 1,
+      selectedPageNumber : 1,
       isLoading: false,
       posts: [],
       title: 'Our Blog',
@@ -52,29 +55,59 @@ var Blog = React.createClass({
     });
   },
 
-  changePage : function (clickedPageNo) {
-    // this.setState({
-    //   currentPage : clickedPageNo
-    // })
+  changePage : function (selectedPageNumber) {
+    console.log('selectedPageNumber', selectedPageNumber);
+    this.setState({
+      selectedPageNumber : selectedPageNumber
+    });
+  },
+
+  previousPage: function(){
+    this.setState({
+      selectedPageNumber : (this.state.selectedPageNumber - 1)
+    });
+  },
+
+  nextPage: function(){
+    this.setState({
+      selectedPageNumber : (this.state.selectedPageNumber + 1)
+    });
   },
 
   render : function(){
-    var {title, content, posts, currentPage} = this.state;
+    var {title, content, posts, selectedPageNumber} = this.state;
+    var startPostKey = PostsPerPage * (selectedPageNumber - 1);
+    var endPostKey = startPostKey + PostsPerPage;
+    console.log('startPostKey' , startPostKey);
+    console.log('endPostKey', endPostKey);
 
     var renderPagination = () => {
-
-        let totalPages = 0;
+        var totalPages = 0;
         let postLength =  posts.length;
-        const PostsPerPage = 3;
+
         totalPages = Math.ceil(postLength / PostsPerPage);
         console.log('totalPages!!', totalPages);
-        var paginationHTML;
-        //TODO : APPEND paginationHTML somehow
-        for (var i = 1; i <= totalPages; i++) {
-          paginationHTML = <li><a href="" onClick={this.changePage(i)}>{i}</a></li>
+        let contents = [];
+        let content;
+        console.log('selectedPageNumber', selectedPageNumber);
+        console.log('this.state.selectedPageNumber === 0', this.state.selectedPageNumber == 1);
+        content = (this.state.selectedPageNumber === 1)?<li className="pagination-previous disabled">Previous</li> : <li className="pagination-previous"><a onClick = {() => {this.previousPage()}}>Previous</a></li>
+        contents.push(content);
 
+        for (var i = 1; i <= totalPages; i++) {
+          content = <li><a key={i} value={i} onClick = {this.changePage.bind(this, i)} className={(i === selectedPageNumber)?'pg-active-page': ''} >{i}</a></li>
+          contents.push(content);
         }
-        return (paginationHTML);
+        console.log('totalPages', totalPages);
+        console.log('this.state.selectedPageNumber === totalPages',this.state.selectedPageNumber === totalPages);
+        content = (this.state.selectedPageNumber === totalPages)?<li className="pagination-next disabled">Next</li> : <li className="pagination-next"><a onClick = {() => {this.nextPage()}}>Next</a></li>
+        contents.push(content);
+
+        return (
+          <span>
+            { contents }
+          </span>
+        );
 
         // <ul className="pagination" role="navigation" aria-label="Pagination">
         //   <li className="pagination-previous disabled">Previous <span className="show-for-sr">page</span></li>
@@ -98,17 +131,19 @@ var Blog = React.createClass({
         );
       }
 
-      return posts.map((post, i) =>{
-          var link = `/blog-single/${post.slug}`;
-          return (
-            <div key={post._id}>
-              <Link to={link} >
-                <h1 className="blog-prev-title">{post.title}</h1>
-              </Link>
-              <div>Uploaded {moment(post.publishedDate).fromNow()} under {post.categories.name}<span className="highlight"></span> by <span className="highlight">{post.author.name.first +' '+post.author.name.last}</span></div>
-              <p className="blog-prev-content">{Parser(post.content.brief)}</p>
-            </div>
-          );
+      return posts.map((post, key) =>{
+          if(key >= startPostKey && key < endPostKey){
+            var link = `/blog-single/${post.slug}`;
+            return (
+              <div key={post._id}>
+                <Link to={link} >
+                  <h1 className="blog-prev-title">{post.title}</h1>
+                </Link>
+                <div>Uploaded {moment(post.publishedDate).fromNow()} under {post.categories.name}<span className="highlight"></span> by <span className="highlight">{post.author.name.first +' '+post.author.name.last}</span></div>
+                <p className="blog-prev-content">{Parser(post.content.brief)}</p>
+              </div>
+            );
+          }
 
       });
     };
@@ -122,9 +157,7 @@ var Blog = React.createClass({
               { renderSinglePosts()}
 
               <ul className="pagination" role="navigation" aria-label="Pagination">
-                <li className="pagination-previous disabled">Previous <span className="show-for-sr">page</span></li>
                 { renderPagination() }
-                <li className="pagination-next"><a href="#" aria-label="Next page">Next <span className="show-for-sr">page</span></a></li>
               </ul>
 
 

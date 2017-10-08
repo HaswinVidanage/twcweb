@@ -31,6 +31,7 @@ var Home = React.createClass({
 							'easingcss3': 'ease-out',
 							'recordHistory': false,
 							'responsiveWidth': 769,
+							'scrollBar': false,
 							'afterLoad': function(anchorLink, index){
 								// console.log("Width/2 : " + $( window ).width()/2);
 								// console.log("Height/2 : " + $( window ).height()/2);
