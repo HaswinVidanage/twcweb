@@ -20,18 +20,18 @@ var Home = React.createClass({
             action: 'Clicked Home',
         });
 		$('#fullpage').fullpage({
+							'scrollBar': false,
 							'verticalCentered': true,
 							'menu': false,
 							'anchors': ['?0', '?1', '?2','?3','?4','?5'],
 							'autoScrolling': true,
-						  'scrollOverflow': false,
+							'scrollOverflow': false,
 							'fitToSection':false,
 							'hybrid': true,
 							'css3':true,
 							'easingcss3': 'ease-out',
 							'recordHistory': false,
 							'responsiveWidth': 769,
-							'scrollBar': false,
 							'afterLoad': function(anchorLink, index){
 								// console.log("Width/2 : " + $( window ).width()/2);
 								// console.log("Height/2 : " + $( window ).height()/2);

@@ -1094,3 +1094,11 @@ select.round {
 .social-icons {
   float: left!important;
 }
+
+// blog loader
+.blog-loading {
+  width: 100%;
+  font-size: 1em;
+  background-color: $light-grey;
+  color: black;
+}

@@ -102,23 +102,23 @@ var BlogSingle = React.createClass({
     const shareUrl = `https://twcwebs.herokuapp.com/#/blog-single/${post.slug}`;
     const title = post.title;
 
-    <meta property="fb:app_id" content="231413577317212"/>
-    const meta = {
-      title: 'Facebook Meta ',
-      app_id: '231413577317212',
-
-      canonical: 'http://example.com/path/to/page',
-      meta: {
-        charset: 'utf-8',
-        name: {
-          keywords: 'react,meta,document,html,tags'
-        }
-      }
-    };
+    // <meta property="fb:app_id" content="231413577317212"/>
+    // const meta = {
+    //   title: 'Facebook Meta ',
+    //   app_id: '231413577317212',
+    //
+    //   canonical: 'http://example.com/path/to/page',
+    //   meta: {
+    //     charset: 'utf-8',
+    //     name: {
+    //       keywords: 'react,meta,document,html,tags'
+    //     }
+    //   }
+    // };
 
     if(post.length === 0){
       return (
-        <div className="row">
+        <div className="row blog-loading">
           <p className="container__message">Loading...</p>
         </div>
       );
@@ -146,10 +146,10 @@ var BlogSingle = React.createClass({
         <MetaTags>
             <title>Page 1</title>
             <meta id="fb-app-id" property="fb:app_id" content="231413577317212"/>
-            <meta id="site_name" property="og:site_name" content="twcinnovations"/>
+            <meta id="site_name" property="og:site_name" content="TWCInnovations"/>
             <meta id="title" property="og:title" content="twc meta" />
-            <meta id="description" property="og:description" content="twc meta" />
-            <meta id="type" property="og:type" content='http://www.example.com/images/xxx.png'/>
+            <meta id="description" property="og:description" content="This is the TWC Innovations Blog Page" />
+            <meta id="type" property="og:type" content='http://res.cloudinary.com/haswind/image/upload/v1507491528/utility/twcinnovations-snapshot.png'/>
             <meta id="url" property="og:url" content='https://twcwebs.herokuapp.com/'/>
             <meta id="image" property="og:image" content= {post.image.secure_url} />
         </MetaTags>
