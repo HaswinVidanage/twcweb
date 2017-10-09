@@ -20,18 +20,14 @@ var Home = React.createClass({
             action: 'Clicked Home',
         });
 		$('#fullpage').fullpage({
-							'scrollBar': false,
 							'verticalCentered': true,
 							'menu': false,
 							'anchors': ['?0', '?1', '?2','?3','?4','?5'],
 							'autoScrolling': false,
 							'scrollOverflow': false,
 							'fitToSection':false,
-							'hybrid': false,
-							'css3':true,
-							'easingcss3': 'ease-out',
-							'recordHistory': false,
-							'responsiveWidth': 769,
+
+
 							'afterLoad': function(anchorLink, index){
 								// console.log("Width/2 : " + $( window ).width()/2);
 								// console.log("Height/2 : " + $( window ).height()/2);
@@ -82,12 +78,12 @@ var Home = React.createClass({
 	            <div className="row align-middle align-justify">
 	              <div className="presentation small-12 medium-6 large-6 align-center">
 	                <div className="column">
-	                  <div className="hashtags small-12 medium-12 large-11 align-left">
+	                  <div className="hashtags small-12 medium-12 large-11 align-left home-section-1-text">
 	                    <h1>
 	                      <strong>#Creativity-Ahead</strong>
 	                    </h1>
 	                  </div>
-	                  <div className="title small-12 medium-12 large-11 align-left">
+	                  <div className="title small-12 medium-12 large-11 align-left home-section-1-text">
 	                    <h2>One place for all your Websites & Apps</h2>
 	                  </div>
 
@@ -113,7 +109,7 @@ var Home = React.createClass({
 	          </div>
 	        </div>
 				</div>
-				<div className="section section1-home small-12 medium-12 large-12 fp-normal-scroll" id="section1-home">
+				<div className="section section1-home small-12 medium-12 large-12  " id="section1-home">
 
 					<div className="row align-justify align-middle ">
 						<div className = 'small-12 medium-6 large-6 content column'>
@@ -133,7 +129,7 @@ var Home = React.createClass({
 						</div>
 					</div>
 				</div>
-				<div className="section section3-home small-12 medium-12 large-12 fp-normal-scroll" id="section3-home">
+				<div className="section section3-home small-12 medium-12 large-12  " id="section3-home">
 					<div className="section3-home">
 						<div className="r row align-justify align-middle ">
 							<div className = 'small-12 medium-6 large-6 content column z-index-high'>
@@ -156,7 +152,7 @@ var Home = React.createClass({
 						</div>
 					</div>
 				</div>
-				<div className="section section4-home hide-for-small-only medium-12 large-12 fp-normal-scroll" id="section4-home">
+				<div className="section section4-home hide-for-small-only medium-12 large-12  " id="section4-home">
 					<div className="section3-home">
 						<div className="r row align-justify align-middle ">
 							<div className = 'small-12 medium-6 large-6 content column'>
@@ -188,7 +184,7 @@ var Home = React.createClass({
 						</div>
 					</div>
 				</div>
-				<div className="section section5-home hide-for-small-only medium-12 large-12 fp-normal-scroll" id="section5-home">
+				<div className="section section5-home hide-for-small-only medium-12 large-12  " id="section5-home">
 					<div className="half-grey">
 						<MiniContactForm/>
 						<div className = 'padding-top-50 off-white small-12 medium-12 large-12 content column'>
@@ -217,10 +213,8 @@ var Home = React.createClass({
 						</div>
 					</div>
 				</div>
-				<div className="fp-normal-scroll">
 					<ContactUsBar/>
 					<Footer/>
-				</div>
 			</div>
 
 		);

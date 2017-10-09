@@ -7,7 +7,19 @@
   height: 720px;
   min-height: 660px!important;
   max-height: 720px!important;
-  // max-height: 660px!important;
+  @media (max-width : $chrome-321) {
+    height: 550px;
+    min-height: 550px!important;
+    max-height: 720px!important;
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+    height: 550px;
+    min-height: 550px!important;
+    max-height: 720px!important;
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+
+   }
   width: 100%;
   margin: 0;
   box-sizing: inherit;
@@ -115,12 +127,12 @@
       top: 658px;
     }
     @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
-      top: 1060px;
-      height: 470px;
+      top: 1098px;
+      height: 492px;
     }
     @media (min-width : $chrome-2561) {
-      top: 1060px;
-      height: 470px;
+      top: 1098px;
+      height: 492px;
     }
 
 }
@@ -206,35 +218,16 @@
   text-align: left;
   z-index: 1;
 
-  @media (min-width : $mobile-sc) {
-    text-align: center;
-    left: 0px;
-    right: 0px;
-    padding: 120 0px;
+  @media (max-width : $chrome-321) {
+    padding-top: 110px!important;
   }
-  @media only screen and (min-width : $mobile-sc) and (max-width : $tab-sc ) {
-    // height: 1000px;
-    // min-height: 1000px;
-    text-align: center;
-    left: 0px;
-    right: 0px;
-    padding: 120 0px;
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+    padding-top: 130px!important;
   }
-  @media (min-width: $tab-sc) and (max-width: 640px) {
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
 
    }
-  @media (min-width: 640px) and (max-width : $desktop-sc) {
 
-  }
-  @media (min-width: $desktop-sc) and (max-width : 1330px)  {
-
-  }
-  @media (min-width: 1330px) and (max-width : $large-sc) {
-
-  }
-  @media (min-width : $large-sc) {
-
-  }
 }
 
 .body-class {
@@ -604,4 +597,33 @@ div.header .header-container .illustration {
 
 .home-logo-bar {
   width: 100%;
+}
+
+.home-section-1-text {
+  @media (max-width : $chrome-321) {
+
+    align-items: center;
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+
+    align-items: center;
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+
+   }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+  }
+  @media (min-width : $chrome-2561) {
+
+  }
 }
