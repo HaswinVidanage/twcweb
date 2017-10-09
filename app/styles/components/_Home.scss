@@ -144,11 +144,11 @@
 
   @media (max-width : $chrome-321) {
     padding-top: 16%;
-    min-height: 1000px;
+    min-height: 668px;
   }
   @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
     padding-top: 16%;
-    min-height: 1000px;
+    min-height: 668px;
   }
   @media (min-width: $chrome-376) and (max-width: $chrome-426) {
     padding-top: 5%;
@@ -504,12 +504,16 @@ div.header .header-container .illustration {
    height: 50%;
    background-color: $medium-grey;
    z-index: 1;
+   @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+     padding-top: 213px;
+     max-height: 350px;
+   }
    @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
-      padding-top: 174px;
+      padding-top: 213px;
       max-height: 350px;
    }
    @media (min-width : $chrome-2561) {
-     padding-top: 174px;
+     padding-top: 213px;
      max-height: 350px;
    }
 }
