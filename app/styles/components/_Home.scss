@@ -147,7 +147,6 @@
     min-height: 668px;
   }
   @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
-    padding-top: 16%;
     min-height: 668px;
   }
   @media (min-width: $chrome-376) and (max-width: $chrome-426) {
@@ -179,6 +178,32 @@
   height: 331px;
   padding-top: 5%;
   min-height: 500px;
+  max-height: 750px;
+
+  @media (max-width : $chrome-321) {
+
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+
+   }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    height: 650px!important;
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+      height: 650px!important;
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+      height: 650px!important;
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+      height: 650px!important;
+  }
+  @media (min-width : $chrome-2561) {
+      height: 650px!important;
+  }
 }
 //
 //  #section1-home .fp-tableCell :after {
@@ -494,6 +519,16 @@ div.header .header-container .illustration {
 
 .section5-home {
   background-color: $off-white;
+
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+    min-height: 685px;
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+    min-height: 685px;
+  }
+  @media (min-width : $chrome-2561) {
+    min-height: 685px;
+  }
 }
 
 .half-grey {
@@ -610,7 +645,7 @@ div.header .header-container .illustration {
 
   }
   @media (min-width: $chrome-376) and (max-width: $chrome-426) {
-    
+
    }
   @media (min-width: $chrome-426) and (max-width : $chrome-769) {
     padding-top: 100px;
