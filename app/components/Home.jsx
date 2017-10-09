@@ -20,13 +20,17 @@ var Home = React.createClass({
             action: 'Clicked Home',
         });
 		$('#fullpage').fullpage({
-							'verticalCentered': true,
+							'scrollBar': false,
+							'verticalCentered': false,
 							'menu': false,
 							'anchors': ['?0', '?1', '?2','?3','?4','?5'],
 							'autoScrolling': false,
 							'scrollOverflow': false,
 							'fitToSection':false,
-
+							'recordHistory': false,
+							'css3':true,
+							'easingcss3': 'ease-out',
+							'recordHistory': false,
 
 							'afterLoad': function(anchorLink, index){
 								// console.log("Width/2 : " + $( window ).width()/2);
@@ -111,7 +115,7 @@ var Home = React.createClass({
 				</div>
 				<div className="section section1-home small-12 medium-12 large-12  " id="section1-home">
 
-					<div className="row align-justify align-middle ">
+					<div className="row align-justify align-middle industrial-app-wrap">
 						<div className = 'small-12 medium-6 large-6 content column'>
 
 							<div className="container-sales-suit">
@@ -131,7 +135,7 @@ var Home = React.createClass({
 				</div>
 				<div className="section section3-home small-12 medium-12 large-12  " id="section3-home">
 					<div className="section3-home">
-						<div className="r row align-justify align-middle ">
+						<div className="r row align-justify align-middle industrial-app-wrap">
 							<div className = 'small-12 medium-6 large-6 content column z-index-high'>
 								<img src="http://res.cloudinary.com/haswind/image/upload/v1507569261/home/macbook-help-desk.svg" />
 							</div>
