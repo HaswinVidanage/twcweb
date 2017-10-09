@@ -115,7 +115,7 @@ var Home = React.createClass({
 						<div className = 'small-12 medium-6 large-6 content column'>
 
 							<div className="container-sales-suit">
-								<img src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507142743/home/twc-industrial-apps.png" />
+								<img src="./images/Home/twc-industrial-apps.svg" />
 
 								<div className="align-center">
 									<p className="justify-text">
@@ -133,13 +133,13 @@ var Home = React.createClass({
 					<div className="section3-home">
 						<div className="r row align-justify align-middle ">
 							<div className = 'small-12 medium-6 large-6 content column z-index-high'>
-								<img src="http://res.cloudinary.com/haswind/image/upload/v1506146852/home/computer-filled.svg" />
+								<img src="http://res.cloudinary.com/haswind/image/upload/v1507569261/home/macbook-help-desk.svg" />
 							</div>
 							<div className = 'small-12 medium-6 large-6 content column'>
 
 								<div className="container-sales-suit">
 
-									<img src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507142738/home/twc-web-solutions.png" />
+									<img src="./images/Home/twc-help-desk.svg" />
 
 									<div className="align-center">
 										<p className="justify-text">
@@ -169,7 +169,7 @@ var Home = React.createClass({
 								</div>
 							</div>
 							<div className = 'small-12 medium-6 large-6 content column'>
-								<img src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507142738/home/twc-web-solutions.png" />
+								<img src="./images/Home/twc-web-solutions.svg" />
 								<div className="container-section4-content">
 
 									<div className="align-center">

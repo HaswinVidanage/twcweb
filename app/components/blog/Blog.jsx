@@ -18,7 +18,7 @@ var Blog = React.createClass({
       isLoading: false,
       posts: [],
       title: 'Our Blog',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      content: 'Our blog aims on discussing current trends, events and updates in the tech world along with our experience in the industry.',
     };
   },
   componentWillMount:function(){

@@ -15,7 +15,7 @@ var Portfolio = React.createClass({
       projects: [],
       errorMessage: undefined,
       title: 'OUR WORKS',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      content: 'We believe that our work reflects our passion and creativity towards providing you a better solution to improve your business.'
     };
   },
   componentWillMount:function(){
