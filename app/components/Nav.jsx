@@ -3,13 +3,17 @@ var {Link, IndexLink} = require('react-router');
 
 var Nav = React.createClass({
 
+  close : function () {
+    document.getElementById('app').click();
+    console.log('Clicked!!!');
+  },
   render:function(){
     return (
 
       <nav className="vertical light menu" id="navbar">
         <div className="navbar align-middle row navbar-custom">
           <a className="brand small-6 medium-1 large-3 align-middle columns" href="index.html">
-              <img src="http://res.cloudinary.com/haswind/image/upload/v1507568944/home/twc-logo-white.svg" className='twc-logo'/>
+              <img src="./images/logo.png" className='twc-logo'/>
           </a>
 
 
@@ -21,86 +25,79 @@ var Nav = React.createClass({
                 <div className="sub-items row">
 
                   <div className="sub-item medium-6 large-4 column">
-                  <Link to="#" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
+                  <Link to="/websites" onClick= {() => {this.close()}} activeClassName="active" activeStyle={{fontWeight:'bold'}}>
                       <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
 
 
                       <span className="menu-item ">
-                          TWC Industrial Solutions
+                          Web Design & Development
                         </span>
 
-                      <p>Coming Soon. This page is under development.</p>
+                      <p>Join us to deliver an unique web presence to your clients</p>
                     </Link>
                   </div>
 
                   <div className="sub-item medium-6 large-4 column">
-                  <Link to="#" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
-                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
+                    <Link to="/mobileapps" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
+                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F0512e2c7-dea5-4af0-9e92-f83ca41c8536_schedule.svg" alt="" />
 
 
                       <span className="menu-item ">
-                          TWC Help Desk
+                          Mobile Application Development
                         </span>
 
-                      <p>Coming Soon. This page is under development.</p>
+                      <p>Join us to deliver an unique mobile presence to your clients</p>
                     </Link>
                   </div>
 
                   <div className="sub-item medium-6 large-4 column">
-                  <Link to="#" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
-                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
+                    <a href="feature/full-history-revision.html">
+
+                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F20867243-c0c0-4c46-94d8-bd20ceda4618_history.svg" alt="" />
 
 
                       <span className="menu-item ">
-                          Website Development
+                          Full revision history
                         </span>
 
-                      <p>Coming Soon. This page is under development.</p>
-                    </Link>
+                      <p>Never lose a change thanks to revision history</p>
+                    </a>
                   </div>
 
+
                   <div className="sub-item medium-6 large-4 column">
-                  <Link to="#" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
-                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
+                    <a href="feature/localization-and-multilanguage.html">
+
+                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F12786898-79c8-4316-98d7-92b22a6bb453_localization.svg" alt="" />
 
 
                       <span className="menu-item ">
-                          Mobile Applications
+                          Multi-language
                         </span>
 
-                      <p>Coming Soon. This page is under development.</p>
-                    </Link>
+                      <p>Localize your content and succeed globally</p>
+                    </a>
                   </div>
 
+
                   <div className="sub-item medium-6 large-4 column">
-                  <Link to="#" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
-                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
+                    <a href="feature/dynamic-layout-content-components.html">
+
+                      <img src="https://prismicio.cdn.prismic.io/prismicio%2Fffdae39b-7aed-4cd4-9b6c-34046faa5406_layout.svg" alt="" />
 
 
                       <span className="menu-item ">
-                          Web Applications
+                          Dynamic layouts
                         </span>
 
-                      <p>Coming Soon. This page is under development.</p>
-                    </Link>
-                  </div>
-
-                  <div className="sub-item medium-6 large-4 column">
-                  <Link to="#" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
-                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
-
-
-                      <span className="menu-item ">
-                          Digital Media Marketing
-                        </span>
-
-                      <p>Coming Soon. This page is under development.</p>
-                    </Link>
+                      <p>Create dynamic layouts with reusable custom components</p>
+                    </a>
                   </div>
 
                 </div>
               </div>
             </li>
+            <li><Link to="/Saless" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Sales Suit</Link></li>
             <li><Link to="/portfolio" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Portfolio</Link></li>
             <li><Link to="/about" activeClassName="active" activeStyle={{fontWeight:'bold'}}>About</Link></li>
             <li className="separator"></li>
@@ -120,6 +117,91 @@ var Nav = React.createClass({
               </i>
               <div className="menu-content">
                 <div className="item small-12"><li><Link to="#">Home</Link></li></div>
+
+                <span className="group-label">Services</span>
+                <div className="sub-items">
+                  <div className="sub-item small-12">
+
+                    <Link to="/websites" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
+                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
+
+
+                      <span className="">
+                      Web Development
+                    </span>
+
+                    </Link>
+                  </div>
+                  <div className="sub-item small-12">
+
+                    <Link to="/mobileapps" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
+                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
+
+
+                      <span className="">
+                      Mobile App Development
+                    </span>
+
+                    </Link>
+                  </div>
+
+
+                  <div className="sub-item small-12">
+
+                    <Link to="/websites" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
+                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
+
+
+                      <span className="">
+                      Web Development
+                    </span>
+
+                    </Link>
+                  </div>
+
+                  <div className="sub-item small-12">
+
+                    <Link to="/websites" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
+                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
+
+
+                      <span className="">
+                      Web Development
+                    </span>
+
+                    </Link>
+                  </div>
+
+
+                  <div className="sub-item small-12">
+
+                    <Link to="/websites" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
+                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
+
+
+                      <span className="">
+                      Web Development
+                    </span>
+
+                    </Link>
+                  </div>
+
+                  <div className="sub-item small-12">
+
+                    <Link to="/websites" activeClassName="active" activeStyle={{fontWeight:'bold'}}>
+                      <img src="https://prismicio.cdn.prismic.io/prismicio%2F7df9f9e7-7948-4f26-a33f-eeb4bfec95a6_visual-builder.svg" alt="" />
+
+
+                      <span className="">
+                      Web Development
+                    </span>
+
+                    </Link>
+                  </div>
+
+                </div>
+                <span className="separator"></span>
+                <div className="item small-12"><Link to="/Saless" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Sales Suit</Link></div>
                 <div className="item small-12"><li><Link to="/portfolio" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Portfolio</Link></li></div>
                 <div className="item small-12"><li><Link to="/about" activeClassName="active" activeStyle={{fontWeight:'bold'}}>About</Link></li></div>
                 <span className="separator"></span>

@@ -23,11 +23,17 @@
 
      <title>TWC Innovations</title>
 
-
+     <style>
+     .body-class {
+         overflow-y: scroll;
+         -webkit-overflow-scrolling: touch;
+         height:100%; //A value other than height:auto needs to be set
+      }
+     </style>
 </head>
 
 
-<body class="body-class" style="overflow-x:hidden!important" >
+<body class="body-class" style="overflow-x:hidden!important">
     <div id="app" class="main"></div>
     <script  src="bundle.js"/></script>
     <script  src="js/twc/web.js"></script>

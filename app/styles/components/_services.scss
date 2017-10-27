@@ -1,5 +1,29 @@
 .service-img-wrap {
   padding-top: 50px;
+
+  @media (max-width : $chrome-321) {
+    padding-top: 10px;
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+    padding-top: 10px;
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+    padding-top: 10px;
+   }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+    padding-bottom: 300px;
+  }
+  @media (min-width : $chrome-2561) {
+    padding-bottom: 300px;
+  }
 }
 
 
@@ -8,6 +32,34 @@
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px;
+
+  @media (max-width : $chrome-321) {
+    padding-bottom: 0px;
+    padding-top: 120px;
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+    padding-bottom: 0px;
+    padding-top: 120px;
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+    padding-bottom: 0px;
+    padding-top: 120px;
+   }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    padding-top: 80px;
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+  }
+  @media (min-width : $chrome-2561) {
+
+  }
 }
 
 .service-img {
@@ -18,31 +70,142 @@
 .service-title {
   color: #fff;
   font-size: 42px;
+
+  @media (max-width : $chrome-321) {
+    font-size: 1.2em;
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+    font-size: 1.2em;
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+
+   }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+  }
+  @media (min-width : $chrome-2561) {
+
+  }
 }
 
 .service-intro-info {
   color: #fff;
+
+  .intro p {
+    width: 62%;
+    text-align: left;
+    font-size: 1.2em;
+  }
+
+  @media (max-width : $chrome-321) {
+    width: 100%!important;
+    font-size: 0.6em!important;
+    text-align: center!important;
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+    width: 100%!important;
+    font-size: 0.6em!important;
+    text-align: center!important;
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+    width: 100%!important;
+    font-size: 0.6em!important;
+    text-align: center!important;
+   }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    width: 100%!important;
+    font-size: 1em!important;
+    text-align: center!important;
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+    width: 100%!important;
+    font-size: 1em!important;
+    text-align: center!important;
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+    width: 100%!important;
+    font-size: 1em!important;
+    text-align: center!important;
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+    width: 100%!important;
+    font-size: 1em!important;
+    text-align: center!important;
+  }
+  @media (min-width : $chrome-2561) {
+    width: 100%!important;
+    font-size: 1em!important;
+    text-align: center!important;
+  }
 }
 
 
-.intro p {
-  width: 62%;
-  text-align: left;
-  font-size: 1.2em;
-}
+
 
 .btn-service-call {
-  min-width: 200px!important;
-  min-height: 54px!important;
+  // min-width: 200px!important;
+  // min-height: 54px!important;
+  //
+  // @media (max-width : $chrome-321) {
+  //   min-width: 200px!important;
+  //   min-height: 54px!important;
+  // }
+  // @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+  //   min-width: 200px!important;
+  //   min-height: 54px!important;
+  // }
+  // @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+  //   min-width: 200px!important;
+  //   min-height: 54px!important;
+  // }
 }
 
+
 .service-info {
+  max-height: 720px!important;
   background: #fbfafe;
   color: #000;
   background-image: url('http://res.cloudinary.com/haswind/image/upload/q_40/v1505544151/services/bg-image-web.jpg');
   background-position: 0px -700px;
   background-repeat: no-repeat;
   background-size: cover;
+
+  .fp-tableCell {
+    max-height: 720px!important;
+  }
+  @media (max-width : $chrome-321) {
+    background-position: 0px -323px;
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+    background-position: 0px -323px;
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+    background-position: 0px -323px;
+   }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    background-position: 0 -373px;
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+    background-position: 0 -433px;
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+    background-position: 0 -710px;
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+    background-position: 0 -710px;
+  }
+  @media (min-width : $chrome-2561) {
+    background-position: 0 -710px;
+  }
 }
 
 .service-margin-10 {
@@ -75,18 +238,128 @@
   margin-top: 100px;
   background-color: #ffffff;
   color: #002d56;
+
+  @media (max-width : $chrome-321) {
+    background-position: -75px 343px;
+    background-size: 172px;
+    height: 470px;
+    margin-top: 70px;
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+    background-position: -75px 343px;
+    background-size: 172px;
+    height: 470px;
+    margin-top: 70px;
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+    background-position: -75px 241px;
+    background-size: 172px;
+    height: 370px;
+    margin-top: 70px;
+   }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    background-position: -75px 20px;
+    background-size: 172px;
+    height: 209px;
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+  }
+  @media (min-width : $chrome-2561) {
+
+  }
 }
 
 .service-card-text {
   margin: 38px 38px 38px 350px;
   font-size: 1.2em;
   text-align: center;
+
+  @media (max-width : $chrome-321) {
+    margin-top: 10px;
+    margin-left: 4px;
+    margin-right: 5px;
+    border-bottom-width: 20px;
+    margin-bottom: 20px;
+    font-size: 1em;
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+    margin-top: 10px;
+    margin-left: 4px;
+    margin-right: 5px;
+    border-bottom-width: 20px;
+    margin-bottom: 20px;
+    font-size: 1em;
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+    margin-top: 10px;
+    margin-left: 4px;
+    margin-right: 5px;
+    border-bottom-width: 20px;
+    margin-bottom: 20px;
+    font-size: 1em;
+   }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    margin-right: 5px;
+    border-bottom-width: 20px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+  }
+  @media (min-width : $chrome-2561) {
+
+  }
 }
 
 
 .service-testomonial-wrapper {
   color : $text-brown;
   margin: 38px 250px 30px;
+
+  @media (max-width : $chrome-321) {
+
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+
+   }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 5px;
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+  }
+  @media (min-width : $chrome-2561) {
+
+  }
+
 }
 
 .service-testomonial {
@@ -103,6 +376,8 @@
 .service-testomonial-auth {
   color : $text-brown;
   font-size: 0.8em;
+  margin-bottom: 0px;
+
 }
 
 .service-testomonial-icon {

@@ -19,6 +19,7 @@ var Home = React.createClass({
             category: 'Navigation',
             action: 'Clicked Home',
         });
+		// TODO : change jquery version to js version
 		$('#fullpage').fullpage({
 							'scrollBar': false,
 							'verticalCentered': false,
