@@ -2212,17 +2212,17 @@ nav.menu {
     nav.menu.dark .menu-desktop li > a {
       color: #2C2B59; }
       nav.menu.dark .menu-desktop li > a:hover {
-        color: #13c095; }
+        color: #c40000; }
     nav.menu.dark .menu-desktop li .menu-group > span {
       color: #2C2B59; }
       nav.menu.dark .menu-desktop li .menu-group > span:hover {
-        color: #13c095; }
+        color: #c40000; }
     nav.menu.dark .menu-desktop li .button {
       background: white;
       border: 2px solid #ECF0F4; }
       nav.menu.dark .menu-desktop li .button:hover {
-        background: #13c095;
-        border: 2px solid #13c095;
+        background: #c40000;
+        border: 2px solid #c40000;
         color: white; }
     nav.menu.dark .menu-mobile i.icon-menu {
       color: #2C2B59; }
@@ -2352,7 +2352,7 @@ nav.menu {
             nav.menu .menu-desktop li .menu-group .sub-items .sub-item a {
               display: block; }
             nav.menu .menu-desktop li .menu-group .sub-items .sub-item:hover span.menu-item {
-              color: #13c095; }
+              color: #c40000; }
             nav.menu .menu-desktop li .menu-group .sub-items .sub-item span.menu-item {
               display: block;
               font-weight: 500;
@@ -2363,7 +2363,7 @@ nav.menu {
               margin-bottom: 0.5rem;
               line-height: 1.4; }
               nav.menu .menu-desktop li .menu-group .sub-items .sub-item span.menu-item.active {
-                color: #13c095; }
+                color: #c40000; }
             nav.menu .menu-desktop li .menu-group .sub-items .sub-item p {
               font-size: 14px;
               font-weight: initial; }
@@ -2466,7 +2466,7 @@ nav.menu {
           -moz-transition-property: color;
           transition-property: color; }
           nav.menu .menu-mobile .menu-mobile-container .menu-content .sub-items a:hover {
-            color: #13c095; }
+            color: #c40000; }
           nav.menu .menu-mobile .menu-mobile-container .menu-content .sub-items a img {
             width: 36px; }
           nav.menu .menu-mobile .menu-mobile-container .menu-content .sub-items a span {
@@ -2479,7 +2479,7 @@ nav.menu {
         nav.menu .menu-mobile .menu-mobile-container .menu-content .item:last-child {
           padding-bottom: 0; }
         nav.menu .menu-mobile .menu-mobile-container .menu-content .item a {
-          color: #13c095;
+          color: #c40000;
           -webkit-transition-timing-function: ease;
           -moz-transition-timing-function: ease;
           transition-timing-function: ease;
@@ -3777,7 +3777,7 @@ footer {
     #home .authoring-experience .content .descriptions .desc:last-child {
       margin-bottom: 0; }
     #home .authoring-experience .content .descriptions .desc:hover h3, #home .authoring-experience .content .descriptions .desc.active h3 {
-      color: #13c095; }
+      color: #c40000; }
 
 @media screen and (max-width: 39.9375em) {
   #home .authoring-experience .content {
@@ -4583,7 +4583,7 @@ footer {
     margin-top: 2rem;
     margin-bottom: 15px; }
   #tutorial #content #steps p a {
-    color: #13c095; }
+    color: #c40000; }
   #tutorial #content #steps .select-container {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -5459,7 +5459,7 @@ a.doc-tab {
 #pricing div.header {
   margin-top: 190px; }
   #pricing div.header h2 {
-    color: #13c095;
+    color: #c40000;
     font-size: 18px; }
   #pricing div.header .switch {
     overflow: hidden;
@@ -5550,8 +5550,8 @@ a.doc-tab {
     background: white;
     color: #484A7A; }
     #pricing article .public-plans .plan a:hover {
-      background: #13c095;
-      border-color: #13c095;
+      background: #c40000;
+      border-color: #c40000;
       color: white; }
 
 #pricing article .professionnal {
@@ -5571,7 +5571,7 @@ a.doc-tab {
       font-weight: 300; }
     #pricing article .professionnal .head span {
       font-weight: 500;
-      color: #13c095;
+      color: #c40000;
       margin-left: 10px; }
     @media screen and (max-width: 39.9375em) {
       #pricing article .professionnal .head {
@@ -5633,13 +5633,13 @@ a.doc-tab {
           display: block;
           color: #C5CCDB; }
       #pricing article .professionnal .plans .plan .signup a:hover i {
-        background: #13c095;
+        background: #c40000;
         color: white; }
       #pricing article .professionnal .plans .plan .signup a i {
         -webkit-transition: background 0.2s ease-in-out,color 0.2s ease-in-out;
         -moz-transition: background 0.2s ease-in-out,color 0.2s ease-in-out;
         transition: background 0.2s ease-in-out,color 0.2s ease-in-out;
-        color: #13c095;
+        color: #c40000;
         background-color: rgba(29, 233, 182, 0.2);
         font-size: 24px;
         border-radius: 50%;
@@ -6459,7 +6459,7 @@ a.doc-tab {
       #notFound .msg, #error .msg {
         margin: 250px auto 150px auto; } }
     #notFound .msg a, #error .msg a {
-      color: #13c095;
+      color: #c40000;
       text-decoration: none; }
       #notFound .msg a:hover, #error .msg a:hover {
         text-decoration: underline; }
@@ -7363,7 +7363,7 @@ a.doc-tab {
 
 // Navigation menu button on click grey
 nav.menu .menu-desktop li .menu-group.open>span {
-    color: #4fad95!important;
+    color: #000000!important;
 }
 
 //navigation buttons

@@ -63,6 +63,7 @@ module.exports = {
     // AboutMap : 'app/components/common/Map.jsx',
     // TitleBar: 'app/components/common/AboutMap.jsx',
     TeamGrid : 'app/components/about/TeamGrid',
+    ServicesCore : 'app/components/services/ServicesCore.jsx',
     Web : 'app/components/services/Web.jsx',
     MobileApps : 'app/components/services/MobileApps.jsx',
     ContactUs : 'app/components/contact/contactus.jsx',

@@ -11,6 +11,7 @@ var BlogSingle = require('BlogSingle');
 var About = require('About');
 var Examples = require('Examples');
 var Portfolio = require('Portfolio');
+var ServicesCore =  require('ServicesCore');
 var Web = require('Web');
 var MobileApps = require('MobileApps');
 var ContactUs = require('ContactUs');
@@ -38,8 +39,7 @@ ReactDOM.render(
        <Route path="portfolio" component={Portfolio}/>
        <Route  path="blog" component={Blog}/>
        <Route  path="blog-single/:slug" component={BlogSingle}/>
-       <Route path="websites" component={Web}/>
-       <Route path="mobileapps" component={MobileApps}/>
+       <Route path="services/:serviceIndex" component={ServicesCore}/>
        <IndexRoute component={Home}/>
      </Route>
    </Router>,

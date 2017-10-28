@@ -24,11 +24,9 @@ var Portfolio = React.createClass({
       console.log('fullpage was there');
       $('#fullpage').fullpage.destroy('all');
     }
-
     this.fetchProjects();
   },
-
-
+  
   fetchProjects:function(){
     var that = this;
 

@@ -538,15 +538,14 @@ div.header .header-container .illustration {
    background-color: $medium-grey;
    z-index: 1;
    @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
-     padding-top: 213px;
+    //  padding-top: 213px;
      max-height: 350px;
    }
    @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
-      padding-top: 213px;
+
       max-height: 350px;
    }
    @media (min-width : $chrome-2561) {
-     padding-top: 213px;
      max-height: 350px;
    }
 }
@@ -623,14 +622,6 @@ div.header .header-container .illustration {
   border-style: solid;
   border-color: transparent transparent #f7f7f7 #fff2f2;
 }
-
-// .section0-home-services , .section0-home, .section0-home:after {
-//   background: linear-gradient(180deg,#1e1e21,#021c65)!important;
-// }
-
-// .btn-service-call {
-//   border: 2px solid rgba(196, 0, 0, 0);
-// }
 
 .home-logo-bar {
   width: 100%;
