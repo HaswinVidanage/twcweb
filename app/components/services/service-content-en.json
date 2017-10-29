@@ -42,22 +42,22 @@
   },
   "service_1": {
     "slides": [{
-        "title": "Service 1",
+        "title": "TWC Industrial Solutions",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
-        "link": "https://support.wwf.org.uk/earth_hour/index.php?type:individual"
+        "link": "#"
       },
       {
-        "title": "Website 2",
+        "title": "SDS CRM",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
-        "link": "https://support.wwf.org.uk/earth_hour/index.php?type:individual"
+        "img": "http://res.cloudinary.com/haswind/image/upload/v1509211809/services/sliders/shashika.png",
+        "link": "#"
       },
       {
         "title": "Website 3",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
-        "link": "https://support.wwf.org.uk/earth_hour/index.php?type:individual"
+        "link": "#"
       }
     ],
     "card": {
@@ -72,22 +72,22 @@
   },
   "service_2": {
     "slides": [{
-        "title": "Service 2",
+        "title": "TWC Help Desk",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
-        "link": "https://support.wwf.org.uk/earth_hour/index.php?type:individual"
+        "link": "#"
       },
       {
         "title": "Website 2",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
-        "link": "https://support.wwf.org.uk/earth_hour/index.php?type:individual"
+        "link": "#"
       },
       {
         "title": "Website 3",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
-        "link": "https://support.wwf.org.uk/earth_hour/index.php?type:individual"
+        "link": "#"
       }
     ],
     "card": {
@@ -102,22 +102,22 @@
   },
   "service_3": {
     "slides": [{
-        "title": "Service 3",
+        "title": "Wesbsite Development",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
-        "link": "https://support.wwf.org.uk/earth_hour/index.php?type:individual"
+        "link": "#"
       },
       {
-        "title": "Website 2",
+        "title": "Alankara Website",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
-        "link": "https://support.wwf.org.uk/earth_hour/index.php?type:individual"
+        "img": "http://res.cloudinary.com/haswind/image/upload/v1509211606/services/sliders/alankara.png",
+        "link": "#"
       },
       {
-        "title": "Website 3",
+        "title": "Tanclean Lanka",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
-        "link": "https://support.wwf.org.uk/earth_hour/index.php?type:individual"
+        "img": "http://res.cloudinary.com/haswind/image/upload/v1509211738/services/sliders/tanclean.png",
+        "link": "#"
       }
     ],
     "card": {
@@ -132,22 +132,22 @@
   },
   "service_4": {
     "slides": [{
-        "title": "Service 4",
+        "title": "Mobile Applications",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
-        "link": "https://support.wwf.org.uk/earth_hour/index.php?type:individual"
+        "link": "#"
       },
       {
         "title": "Website 2",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
-        "link": "https://support.wwf.org.uk/earth_hour/index.php?type:individual"
+        "link": "#"
       },
       {
         "title": "Website 3",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
-        "link": "https://support.wwf.org.uk/earth_hour/index.php?type:individual"
+        "link": "#"
       }
     ],
     "card": {
@@ -162,22 +162,22 @@
   },
   "service_5": {
     "slides": [{
-        "title": "Service 5",
+        "title": "Web Applications",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
-        "link": "https://support.wwf.org.uk/earth_hour/index.php?type:individual"
+        "link": "#"
       },
       {
         "title": "Website 2",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
-        "link": "https://support.wwf.org.uk/earth_hour/index.php?type:individual"
+        "link": "#"
       },
       {
         "title": "Website 3",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
-        "link": "https://support.wwf.org.uk/earth_hour/index.php?type:individual"
+        "link": "#"
       }
     ],
     "card": {
@@ -192,22 +192,22 @@
   },
   "service_6": {
     "slides": [{
-        "title": "Service 6",
+        "title": "Digital Media Marketing",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
-        "link": "https://support.wwf.org.uk/earth_hour/index.php?type:individual"
+        "link": "#"
       },
       {
         "title": "Website 2",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
-        "link": "https://support.wwf.org.uk/earth_hour/index.php?type:individual"
+        "link": "#"
       },
       {
         "title": "Website 3",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
-        "link": "https://support.wwf.org.uk/earth_hour/index.php?type:individual"
+        "link": "#"
       }
     ],
     "card": {

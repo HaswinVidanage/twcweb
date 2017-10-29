@@ -89,7 +89,7 @@ var Home = React.createClass({
 	                    </h1>
 	                  </div>
 	                  <div className="title small-12 medium-12 large-11 align-left home-section-1-text">
-	                    <h2>One place for all your Websites & Apps</h2>
+											<h2>Innovative solution provider for your needs</h2>
 	                  </div>
 
 	                  <div className="logos small-12">

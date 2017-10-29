@@ -111,7 +111,7 @@ var ServicesCore = React.createClass({
 								</div>
 							</div>
 						</div>
-						<div className="discover-menu-wrap small-12 medium-12 large-12">
+						<div className="discover-menu-wrap">
 
 								<div className="small-6 medium-4 large-4 columns discovery-box-wrapper">
 									<div className="discovery-box" id="discovery-box-01"  id="discovery-box-01" onClick= {()=> {this.goto(ServicesContent.service_commons.tile1.menuLink);}}>
@@ -158,8 +158,6 @@ var ServicesCore = React.createClass({
 										</div>
 									</div>
 								</div>
-
-
 								<div className="small-6 medium-4 large-4 columns discovery-box-wrapper">
 									<div className="discovery-box" id="discovery-box-04"onClick= {()=> {this.goto(ServicesContent.service_commons.tile4.menuLink);}}>
 										<div className="discovery-text-wrap">
