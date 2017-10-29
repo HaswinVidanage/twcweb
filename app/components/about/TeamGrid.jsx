@@ -1,5 +1,7 @@
 var React = require('react');
 var Loadable = require('react-loading-overlay');
+var ImageLoader = require('ImageLoader');
+
 const spinner = '/images/Spinner.gif';
 const defImg    = 'http://res.cloudinary.com/haswind/image/upload/v1499575396/0-default_aznpyk.png';
 const north  = 'http://res.cloudinary.com/haswind/image/upload/v1499575398/1-north_adhoox.png';
@@ -141,32 +143,49 @@ var Img_Array = [
 
 var TeamGrid = React.createClass({
 
-
+  // keeps track of loaded images.
   handleImageLoaded : function() {
+    // this.setState({
+    //   loadedImgCount : this.state.loadedImgCount + 1,
+    //   imageStatus: 'loading'
+    // });
+
+    // if (this.state.loadedImgCount === (Img_Array.length - 1)){
+    //   this.setState({
+    //     imageStatus: 'loaded',
+    //     isLoading : false,
+    //     fname: 'ONE CARING',
+    //     lname: 'TEAM',
+    //     url_1: defImg_dinuka,
+    //     url_2: defImg_hashi,
+    //     url_3: defImg_chathu,
+    //     url_4: defImg_sachin,
+    //     url_5: defImg_haswin,
+    //     url_6: defImg_kasun,
+    //     url_7: defImg_jala,
+    //     url_8: defImg_cactus
+    //   });
+    //
+    // } else {
+    //   console.log('count ', this.state.loadedImgCount);
+    // }
+    console.log('Team Grid called!');
     this.setState({
-      loadedImgCount : this.state.loadedImgCount + 1,
-      imageStatus: 'loading'
+      imageStatus: 'loaded',
+      isLoading : false,
+      fname: 'ONE CARING',
+      lname: 'TEAM',
+      url_1: defImg_dinuka,
+      url_2: defImg_hashi,
+      url_3: defImg_chathu,
+      url_4: defImg_sachin,
+      url_5: defImg_haswin,
+      url_6: defImg_kasun,
+      url_7: defImg_jala,
+      url_8: defImg_cactus
+    }, () => {
+      console.log('Team grid status updated!');
     });
-
-    if (this.state.loadedImgCount === (Img_Array.length - 1)){
-      this.setState({
-        imageStatus: 'loaded',
-        isLoading : false,
-        fname: 'ONE CARING',
-        lname: 'TEAM',
-        url_1: defImg_dinuka,
-        url_2: defImg_hashi,
-        url_3: defImg_chathu,
-        url_4: defImg_sachin,
-        url_5: defImg_haswin,
-        url_6: defImg_kasun,
-        url_7: defImg_jala,
-        url_8: defImg_cactus
-      });
-
-    } else {
-      console.log('count ', this.state.loadedImgCount);
-    }
 
   },
   handleImageError : function(item) {
@@ -345,7 +364,7 @@ var TeamGrid = React.createClass({
     return (
       <div classsName = "small-12 medium-12 large-12">
         <div className= 'teamgrid-main-wrap' >
-          {/* <div className="progress progress-teamgrid" role="progressbar" tabindex="0"
+          {/* <div className="progress progress-teamgrid" role="progressbar" tabIndex="0"
             aria-valuenow= { (this.state.loadedImgCount / this.state.imgArray.length ) * 100} aria-valuemin="0" aria-valuetext="50 percent" aria-valuemax="100">
             <div className="progress-meter progress-meter-teamgrid" style={{width: (this.state.loadedImgCount / this.state.imgArray.length ) * 100 + '%'}}></div>
           </div> */}
@@ -485,8 +504,8 @@ var TeamGrid = React.createClass({
           </div>
 
           <div>
-
-            {
+            <ImageLoader  imgArray = {imgArray} loadingOverlay= {true} sectionName="About Us" onLoadCompleted= {this.handleImageLoaded} handleImageError= {this.handleImageError} />
+            {/* {
               imgArray.map((item, index) => (
                  <img
                    className="render_hidden"
@@ -496,7 +515,7 @@ var TeamGrid = React.createClass({
                    onError={() => this.handleImageError(item)}
                  />
               ))
-            }
+            } */}
 
           </div>
         </div>
