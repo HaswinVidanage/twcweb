@@ -16,6 +16,14 @@ var About = React.createClass({
 		}
 
 	},
+  componentDidMount: function() {
+		$('#fullpage').fullpage({
+			'menu': false,
+			'recordHistory': false,
+			'autoScrolling': false,
+			'scrollOverflow': false
+		});
+	},
   getInitialState : function(){
     return {
 

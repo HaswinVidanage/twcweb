@@ -33,8 +33,7 @@ var ServicesCore = React.createClass({
 			'menu': false,
 			'recordHistory': false,
 			'autoScrolling': true,
-			'scrollOverflow': false,
-      'fadingEffect':'slides'
+			'scrollOverflow': false
 		});
 
 	},
