@@ -1,3 +1,4 @@
+var bodyMain = $("#body");
 var servicesGroup = $(".menu-group");
 var navnMenuMobile = $("nav.menu .menu-mobile");
 var  iconMenu = navnMenuMobile.find(".icon-menu");
@@ -46,7 +47,9 @@ servicesGroup.click(() => {
 
 iconMenu.on("click touch", function(e) {
         navnMenuMobile.addClass("open");
-        e.stopPropagation();
+        bodyMain.removeClass("overflow-hidden");
+        bodyMain.addClass("overflow-auto");
+        //e.stopPropagation();
     });
 
 
@@ -55,8 +58,10 @@ iconClose = mobileContainer.find(".icon-close");
 
 iconClose.on("click touch", function(e) {
         navnMenuMobile.removeClass("open");
-        e.stopPropagation();
-        console.log('all');
+        bodyMain.removeClass("overflow-auto");
+        bodyMain.addClass("overflow-hidden");
+        //e.stopPropagation();
+        //console.log('all');
     });
 
     //     var n = $("nav.menu .menu-mobile"),

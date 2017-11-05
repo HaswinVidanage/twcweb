@@ -78,11 +78,31 @@
       #app {
           -webkit-overflow-scrolling: touch;
        }
+
+       .overflow-auto {
+         overflow: auto!important;
+       }
+
+       .overflow-hidden {
+         overflow: hidden!important;
+       }
      </style>
+
+     <script>
+     //adding the actions to the buttons
+    //  $(document).on('click', '.icon-close', function() {
+    //    $.fn.fullpage.setAllowScrolling(false);
+    //    $.fn.fullpage.setKeyboardScrolling(false);
+    //  });
+     //
+    //  $(document).on('click', '#mobile-menu', function() {
+    //    alert('clicked');
+    //  });
+     </script>
 </head>
 
 
-<body class="body-class" style="overflow-x:hidden!important">
+<body class="body-class" style="overflow-x:hidden!important" id="body">
     <div id="app" class="main"></div>
     <script  src="bundle.js"/></script>
     <script  src="js/twc/web.js"></script>

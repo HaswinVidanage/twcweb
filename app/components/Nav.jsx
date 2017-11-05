@@ -5,6 +5,11 @@ var Nav = React.createClass({
   close : function () {
     document.getElementById("desktop-menu").classList.remove("open");
     document.getElementById("mobile-menu").classList.remove("open");
+    // var d = document.getElementById("body");
+    // d.className += " overflow-auto";
+  },
+  onMobileMenuClicked : function () {
+    //alert('Menu Clicked');
   },
   render:function(){
     return (
@@ -109,12 +114,12 @@ var Nav = React.createClass({
           </ul>
 
 
-          <div className= 'menu-mobile small-6' id="mobile-menu">
-            <i className="icon-menu">
+          <div className= 'menu-mobile small-6' id="mobile-menu" >
+            <i className="icon-menu" onClick={() => {this.onMobileMenuClicked()}}>
               <img src = "http://flatironsmineralclub.org/wp-content/themes/fmc/img/menu_icon.png" className="navbar-icon"/>
             </i>
             <div className="menu-mobile-container small-12">
-              <i className="icon-close">
+              <i className="icon-close" onClick={() => {this.onMobileMenuClicked()}}>
                 <img src = "https://cdn2.iconfinder.com/data/icons/designers-and-developers-icon-set/32/close-512.png" className="navbar-close"/>
               </i>
               <div className="menu-content">

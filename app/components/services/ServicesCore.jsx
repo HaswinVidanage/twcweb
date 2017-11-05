@@ -33,7 +33,8 @@ var ServicesCore = React.createClass({
 			'menu': false,
 			'recordHistory': false,
 			'autoScrolling': true,
-			'scrollOverflow': false
+			'scrollOverflow': true,
+			'normalScrollElements': '#navbar, #mobile-menu'
 		});
 
 	},
