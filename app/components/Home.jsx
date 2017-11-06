@@ -4,7 +4,37 @@ import ReactGA from 'react-ga';
 var Footer = require('Footer');
 var ContactUsBar = require('ContactUsBar');
 var MiniContactForm = require('MiniContactForm');
+var ImageLoader = require('ImageLoader');
 
+const IMG_HOME_1 = "https://res.cloudinary.com/haswind/image/upload/v1507148273/home/logo_header.png";
+const IMG_HOME_2 = "./images/Home/nexus.svg";
+const IMG_HOME_4 ="./images/Home/browser-window.svg";
+const IMG_HOME_6 ="./images/Home/twc-industrial-apps.svg";
+const IMG_HOME_7 ="http://res.cloudinary.com/haswind/image/upload/v1507569261/home/macbook-help-desk.svg";
+const IMG_HOME_8 ="./images/Home/twc-help-desk.svg";
+const IMG_HOME_9 ="./images/Home/twc-web-solutions.svg";
+const IMG_HOME_10 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143889/clients/tanclean.png";
+const IMG_HOME_11 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143871/clients/threesinha.png";
+const IMG_HOME_12 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143876/clients/venora.png";
+const IMG_HOME_13 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/oppo.png";
+const IMG_HOME_14 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143878/clients/ogilvy.png";
+const IMG_HOME_15 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507049549/clients/nasa.png";
+
+const imgArray = [
+	IMG_HOME_1,
+	IMG_HOME_2,
+	IMG_HOME_4,
+	IMG_HOME_6,
+	IMG_HOME_7,
+	IMG_HOME_8,
+	IMG_HOME_9,
+	IMG_HOME_10,
+	IMG_HOME_11,
+	IMG_HOME_12,
+	IMG_HOME_13,
+	IMG_HOME_14,
+	IMG_HOME_15
+];
 var Home = React.createClass({
 	componentWillMount: function() {
 		//add this so fullpage js won't give error saying you called it multiple times
@@ -89,24 +119,22 @@ var Home = React.createClass({
 	                    </h1>
 	                  </div>
 	                  <div className="title small-12 medium-12 large-11 align-left home-section-1-text">
-	                    <h2>One place for all your Websites & Apps</h2>
+											<h2>Innovative solution provider for your needs</h2>
 	                  </div>
 
 	                  <div className="logos small-12">
-	                    <img className="home-logo-bar" src="https://res.cloudinary.com/haswind/image/upload/v1507148273/home/logo_header.png" alt="" />
+	                    <img className="home-logo-bar" src={IMG_HOME_1} alt="" />
 	                  </div>
 	                </div>
 	              </div>
 
 	              <div className="hide-for-small-only medium-6 large-6 align-right text-center">
 	                <div className="illu illu-editor" id="nexus">
-	                  <object id="obj-nexus" data="./images/Home/nexus.svg" type="image/svg+xml">
-	                    <img src="./images/Home/nexus.png" />
+	                  <object id="obj-nexus" data={IMG_HOME_2} type="image/svg+xml">
 	                  </object>
 	                </div>
 	                <div className="illu illu-code text-right hide-for-small-only medium-6 large-6">
-										<object id="obj-browser" data="./images/Home/browser-window.svg" type="image/svg+xml">
-	                    <img src="./images/Home/browser-window.png" />
+										<object id="obj-browser" data={IMG_HOME_4} type="image/svg+xml">
 	                  </object>
 	                </div>
 	              </div>
@@ -120,7 +148,7 @@ var Home = React.createClass({
 						<div className = 'small-12 medium-6 large-6 content column'>
 
 							<div className="container-sales-suit">
-								<img src="./images/Home/twc-industrial-apps.svg" />
+								<img src={IMG_HOME_6} />
 
 								<div className="align-center">
 									<p className="justify-text">
@@ -138,13 +166,13 @@ var Home = React.createClass({
 					<div className="section3-home">
 						<div className="r row align-justify align-middle industrial-app-wrap">
 							<div className = 'small-12 medium-6 large-6 content column z-index-high'>
-								<img src="http://res.cloudinary.com/haswind/image/upload/v1507569261/home/macbook-help-desk.svg" />
+								<img src={IMG_HOME_7} />
 							</div>
 							<div className = 'small-12 medium-6 large-6 content column'>
 
 								<div className="container-sales-suit">
 
-									<img src="./images/Home/twc-help-desk.svg" />
+									<img src={IMG_HOME_8} />
 
 									<div className="align-center">
 										<p className="justify-text">
@@ -174,7 +202,7 @@ var Home = React.createClass({
 								</div>
 							</div>
 							<div className = 'small-12 medium-6 large-6 content column'>
-								<img src="./images/Home/twc-web-solutions.svg" />
+								<img src={IMG_HOME_9} />
 								<div className="container-section4-content">
 
 									<div className="align-center">
@@ -189,7 +217,7 @@ var Home = React.createClass({
 						</div>
 					</div>
 				</div>
-				<div className="section section5-home hide-for-small-only medium-12 large-12  " id="section5-home">
+				<div className="section section5-home hide-for-small-only medium-12 large-12 " id="section5-home">
 					<div className="half-grey">
 						<MiniContactForm/>
 						<div className = 'padding-top-50 off-white small-12 medium-12 large-12 content column'>
@@ -198,12 +226,12 @@ var Home = React.createClass({
 							</div>
 							<div className="row">
 								<div className="small-12 medium-12 large-12 content column small-block-grid-12">
-										<div className="small-2 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143889/clients/tanclean.png"/></div>
-										<div className="small-2 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143871/clients/threesinha.png"/></div>
-										<div className="small-2 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143876/clients/venora.png"/></div>
-										<div className="small-2 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/oppo.png"/></div>
-										<div className="small-2 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143878/clients/ogilvy.png"/></div>
-										<div className="small-2 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507049549/clients/nasa.png"/></div>
+										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_10}/></div>
+										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_11}/></div>
+										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_12}/></div>
+										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_13}/></div>
+										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_14}/></div>
+										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_15}/></div>
 								</div>
 							</div>
 							<div className="row">
@@ -220,6 +248,7 @@ var Home = React.createClass({
 				</div>
 					<ContactUsBar/>
 					<Footer/>
+				{/* <ImageLoader  imgArray = {imgArray} loadingOverlay= {true} sectionName="Home Page" onLoadCompleted= {this.handleImageLoaded} handleImageError= {this.handleImageError} /> */}
 			</div>
 
 		);

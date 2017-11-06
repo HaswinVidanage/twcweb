@@ -12,8 +12,6 @@ var About = require('About');
 var Examples = require('Examples');
 var Portfolio = require('Portfolio');
 var ServicesCore =  require('ServicesCore');
-var Web = require('Web');
-var MobileApps = require('MobileApps');
 var ContactUs = require('ContactUs');
 //Load foundation
 require('style!css!foundation-sites/dist/foundation.min.css');

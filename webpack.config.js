@@ -58,6 +58,7 @@ module.exports = {
     SingleProject: 'app/components/portfolio/SingleProject.jsx',
     applicationStyles: 'app/styles/app.scss',
     ContactUsBar:  'app/components/common/ContactUsBar.jsx',
+    ImageLoader:  'app/components/common/ImageLoader.jsx',
     MiniContactForm: 'app/components/home/MiniContactForm.jsx',
     MapBox: 'app/components/common/Map.jsx',
     // AboutMap : 'app/components/common/Map.jsx',

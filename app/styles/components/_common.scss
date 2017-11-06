@@ -794,14 +794,14 @@ select.round {
 .titlebar-title-wrap {
 
  @media only screen and (min-width : $mobile-sc) and (max-width : $tab-sc ) {
-   height: 300px;
-   min-height: 300px;
-   max-height: 300px;
+  //  height: 300px;
+  //  min-height: 300px;
+  //  max-height: 300px;
  }
  @media (min-width: $tab-sc) and (max-width : $desktop-sc) {
-   height: 270px;
-   min-height: 270px;
-   max-height: 270px;
+  //  height: 270px;
+  //  min-height: 270px;
+  //  max-height: 270px;
   }
  @media (min-width: $desktop-sc) and (max-width : 1330px) {
    height: 300px;
@@ -1120,12 +1120,15 @@ select.round {
 .discover-menu-wrap {
   @media (max-width : $chrome-321) {
     margin-top: 0px;
+    margin-left: 8px;
   }
   @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
     margin-top: 0px;
+    margin-left: 30px;
   }
   @media (min-width: $chrome-376) and (max-width: $chrome-426) {
       margin-top: 0px;
+      margin-left: 60px;
    }
   @media (min-width: $chrome-426) and (max-width : $chrome-769) {
       margin-top: 50px;
@@ -1273,19 +1276,22 @@ select.round {
     margin: 0px;
     padding: 0.6rem;
     width: 150px;
+    float: left!important;
   }
   @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
     margin: 0px;
     padding: 0.6rem;
     width: 150px;
+    float: left!important;
   }
   @media (min-width: $chrome-376) and (max-width: $chrome-426) {
     margin: 0px;
     padding: 0.6rem;
     width: 150px;
+    float: left!important;
    }
   @media (min-width: $chrome-426) and (max-width : $chrome-769) {
-
+    float: left!important;
   }
   @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
 
@@ -1385,3 +1391,46 @@ select.round {
   }
 
 }
+
+// loading-overlay
+.loading-overlay {
+  position: fixed; /* Sit on top of the page content */
+  // display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 9999; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  height: 100%;
+  width: 100%;
+  background-color: rgba(196, 0, 0, 0.73);
+  color: #f3f5f5!important;
+}
+
+.ldr-txt {
+  color: #f3f5f5!important;
+  margin: 25px;
+  float: right;
+}
+
+//loader tester 1 End
+.circular-loader {
+  width: 100px;
+  height: 100px;
+  // .CircularProgressbar-path { stroke: #000000; }
+  // .CircularProgressbar-text {fill : #000000;}
+
+  .CircularProgressbar-path { stroke: red; }
+  .CircularProgressbar-trail { stroke: gray; }
+  .CircularProgressbar-text { fill: white; }
+  .CircularProgressbar-background { fill: green; }
+}
+
+#loader-container {
+  padding: 20%;
+}
+// Loading end

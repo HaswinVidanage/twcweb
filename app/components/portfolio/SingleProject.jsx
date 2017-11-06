@@ -100,7 +100,9 @@ var SingleProject = React.createClass({
 
           <div className="small-12 medium-12 large-12 columns hide-for-small-only">
             <div className="small-12 medium-6 large-6 columns">
-                <a id="see-live-btn" href={url} target="_blank" className="hollow button">SEE IT LIVE</a>
+              {url != undefined && url.trim() != '' &&
+                  <a id="see-live-btn" href={url} target="_blank" className="hollow button">SEE IT LIVE</a>
+              }
             </div>
             <div className="small-12 medium-6 large-6 columns">
               <div className="device-btn-wrap small-12 small-centered columns float-center">
