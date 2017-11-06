@@ -2,14 +2,13 @@ var React = require('react');
 var {Link, IndexLink} = require('react-router');
 
 var Nav = React.createClass({
-<<<<<<< Updated upstream
+
   close : function () {
     document.getElementById("desktop-menu").classList.remove("open");
     document.getElementById("mobile-menu").classList.remove("open");
   },
-=======
 
->>>>>>> Stashed changes
+
   render:function(){
     return (
 
@@ -116,12 +115,7 @@ var Nav = React.createClass({
 
           </ul>
 
-
-<<<<<<< Updated upstream
           <div className= 'menu-mobile small-6' id="mobile-menu">
-=======
-          <div className="menu-mobile small-6">
->>>>>>> Stashed changes
             <i className="icon-menu">
               <img src = "http://flatironsmineralclub.org/wp-content/themes/fmc/img/menu_icon.png" className="navbar-icon"/>
             </i>
