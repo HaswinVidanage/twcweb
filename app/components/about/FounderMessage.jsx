@@ -19,8 +19,7 @@ class FounderMessage extends Component {
               <h2 className="founder-title">We help breed amazing products</h2>
             </div>
             <div className="small-12 medium-12 large-12 ">
-              <p className="founder-message">Technology as it self develops rapidly as we wait in lack of innovation, therefore TWC
-              Innovations will satiate the lack of innovation, creativity and vision in the IT industry. We hold highly trained developers and marketers to derive the best market offer to optimize customer satisfaction to its best by closely branching out and merging Australian technology. TWC Innovations vow to create its best every second and as our slogan speaks for itself “Creativity ahead with TWC!!”
+              <p className="founder-message">We hold highly trained developers and marketers to derive the best market offer to optimize customer satisfaction to its best by closely branching out and merging latest technology. TWC Innovations vow to create its best every second and as our slogan speaks for itself “Creativity ahead with TWC!!”
               </p>
             </div>
 

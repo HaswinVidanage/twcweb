@@ -56,8 +56,8 @@ var DetailPanel = React.createClass({
                 <address>
                     <span>
                         <h3 className="address-title">International Sales</h3>
-                        Hotline: 011-213-7654<br/>
-                        Phone: 071-123-4567<br/>
+                        Hotline: 011-273-1912<br/>
+                        Phone: +(94) 77-893-3898<br/>
                         Email: info@twcwebs.com<br/>
                     </span>
                 </address>

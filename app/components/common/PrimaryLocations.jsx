@@ -7,7 +7,7 @@ class PrimaryLocations extends Component {
       <div className=" medium-12 large-12">
         <div className="small-6 medium-6 large-6 columns prime-loc-left">
           <div className="loc-text-wrap">
-            <h1 className="loc-heading">DEHIWALA, LK</h1>
+            <h1 className="loc-heading">COLOMBO, LK</h1>
             <p  className="loc-title">
               25 VIJITHA RD,<br/>
               NADIMALA,<br/>
