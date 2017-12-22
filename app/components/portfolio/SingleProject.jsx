@@ -1,6 +1,4 @@
 var React = require('react');
-var Isvg = require('react-inlinesvg');
-import MySVG from './svgComp.jsx';
 var {FaLaptop, FaTablet, FaMobile} = require('react-icons/lib/fa');
 
 var SingleProject = React.createClass({
