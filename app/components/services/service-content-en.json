@@ -38,25 +38,25 @@
       "description": "SEO, Google adverts and social media marketing for your company",
       "menuLink": "/services/6"
     }
-
   },
   "service_1": {
-    "slides": [{
+    "slides": [
+      {
         "title": "TWC Industrial Solutions",
-        "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
+        "info": "Lorem1 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "img": "http://res.cloudinary.com/haswind/image/upload/c_scale,w_500/v1514355119/services/1_industrial/chat.png",
         "link": "#"
       },
       {
-        "title": "SDS CRM",
+        "title": "A mobile app",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "img": "http://res.cloudinary.com/haswind/image/upload/v1509211809/services/sliders/shashika.png",
+        "img": "http://res.cloudinary.com/haswind/image/upload/c_scale,w_500/v1514355124/services/1_industrial/map.png",
         "link": "#"
       },
       {
-        "title": "Website 3",
+        "title": "Dashboard 3",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
+        "img": "http://res.cloudinary.com/haswind/image/upload/c_scale,w_500/v1514355120/services/1_industrial/dashboard-2.png",
         "link": "#"
       }
     ],
@@ -71,7 +71,8 @@
     }
   },
   "service_2": {
-    "slides": [{
+    "slides": [
+      {
         "title": "TWC Help Desk",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
@@ -101,7 +102,8 @@
     }
   },
   "service_3": {
-    "slides": [{
+    "slides": [
+      {
         "title": "Wesbsite Development",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
@@ -131,7 +133,8 @@
     }
   },
   "service_4": {
-    "slides": [{
+    "slides": [
+      {
         "title": "Mobile Applications",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
@@ -161,7 +164,8 @@
     }
   },
   "service_5": {
-    "slides": [{
+    "slides": [
+      {
         "title": "Web Applications",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
@@ -191,7 +195,8 @@
     }
   },
   "service_6": {
-    "slides": [{
+    "slides": [
+      {
         "title": "Digital Media Marketing",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
@@ -220,5 +225,4 @@
       "designation": "CEO & Founder Sithaka Tea"
     }
   }
-
 }
