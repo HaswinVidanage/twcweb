@@ -217,29 +217,29 @@ var Home = React.createClass({
 						</div>
 					</div>
 				</div>
-				<div className="section section5-home hide-for-small-only medium-12 large-12 " id="section5-home">
+				<div className="section section5-home small-12 medium-12 large-12 " id="section5-home">
 					<div className="half-grey">
 						<MiniContactForm/>
 						<div className = 'padding-top-50 off-white small-12 medium-12 large-12 content column'>
-							<div className="padding-sides-350">
+							<div className="padding-sides">
 							<p className="logo-text-title">Sri Lanka's best companies use TWC to improve their productivity.</p>
 							</div>
 							<div className="row">
 								<div className="small-12 medium-12 large-12 content column small-block-grid-12">
-										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_10}/></div>
-										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_11}/></div>
-										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_12}/></div>
-										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_13}/></div>
-										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_14}/></div>
-										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_15}/></div>
+										<div className="small-2 content column"><img className="companyicons" src={IMG_HOME_10}/></div>
+										<div className="small-2 content column"><img className="companyicons" src={IMG_HOME_11}/></div>
+										<div className="small-2 content column"><img className="companyicons" src={IMG_HOME_12}/></div>
+										<div className="small-2 content column"><img className="companyicons" src={IMG_HOME_13}/></div>
+										<div className="small-2 content column"><img className="companyicons" src={IMG_HOME_14}/></div>
+										<div className="small-2 content column"><img className="companyicons" src={IMG_HOME_15}/></div>
 								</div>
 							</div>
 							<div className="row">
 								<div className="small-12 medium-12 large-12 content column small-block-grid-12">
-										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/cmblogistics.png"/></div>
-										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/fslga.png"/></div>
-										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143880/clients/cartec.png"/></div>
-										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/azonic.png"/></div>
+										<div className="small-3 content column"><img className="companyicons" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/cmblogistics.png"/></div>
+										<div className="small-3 content column"><img className="companyicons" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/fslga.png"/></div>
+										<div className="small-3 content column"><img className="companyicons" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143880/clients/cartec.png"/></div>
+										<div className="small-3 content column"><img className="companyicons" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/azonic.png"/></div>
 								</div>
 							</div>
 							<p className="logo-text-desc">Trusted by companies islandwide</p>

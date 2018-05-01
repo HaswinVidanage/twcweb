@@ -112,7 +112,7 @@ var MiniContactForm = React.createClass({
 
     return (
       <div className="MiniContactForm small-12 medium-12 large-12 row" id="MiniContactForm">
-          <div className="mini-form-box small-6 medium-6 large-6 columns">
+          <div className="mini-form-box small-12 medium-6 large-6 columns">
               <div className="mini-contact-wrapper">
                 <form onSubmit={this.onSubmit}>
                   <input className="mini-contact-input" type="text" ref="name" placeholder="Your Name" required
@@ -143,7 +143,7 @@ var MiniContactForm = React.createClass({
 
           </div>
 
-          <div className="MabBox-Wrapper small-6 medium-6 large-6 columns">
+          <div className="MabBox-Wrapper small-12 medium-6 large-6 columns">
             <MapBox className="left-curved-5px"/>
           </div>
 

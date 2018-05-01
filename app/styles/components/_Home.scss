@@ -589,7 +589,28 @@ div.header .header-container .illustration {
     padding-right:0px;
   }
 }
-
+.padding-sides {
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    padding-left: 0px;
+    padding-right:0px;
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+    padding-left: 0px;
+    padding-right:0px;
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+    padding-left: 0px;
+    padding-right:0px;
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+    padding-left: 0px;
+    padding-right:0px;
+  }
+  @media (min-width : $chrome-2561) {
+    padding-left: 0px;
+    padding-right:0px;
+  }
+}
 
 .fp-controlArrow.fp-prev {
   border-width: 30px 30px 6px 6px;
@@ -653,4 +674,15 @@ div.header .header-container .illustration {
   @media (min-width : $chrome-2561) {
     padding-top: 100px;
   }
+}
+
+
+// OZi
+.mapalign{
+
+}
+
+.companyicons{
+  width: 48px!important;
+  height: 100px!important;
 }

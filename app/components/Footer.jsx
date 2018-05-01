@@ -18,8 +18,8 @@ var Footer = React.createClass({
                   <img src="./images/Home/footer-logo.png" />
                 </object>
               </div>
-              <div className="footer-logo-text-wrap" >
-                <p className="footer-logo-text">
+              <div>
+                <p>
                   TWC Innovations was founded with a rebellious spirit and a lofty objective to offer state of the art soft technologies at a revolutionary price, while leading the way for socially conscious business.
                 </p>
               </div>
@@ -79,6 +79,9 @@ var Footer = React.createClass({
                     <li><a href="https://www.facebook.com/twcinnovation/" target="_blank" className="footer-social-text"><span><p><FaFacebook/>&nbsp;Facebook</p></span></a></li>
                     <li><a href="https://twitter.com/twcinnovations/" target="_blank" className="footer-social-text"><span><p><FaTwitter/>&nbsp;Twitter</p></span></a></li>
                     <li><a href="https://www.instagram.com/twcinnovations/" target="_blank" className="footer-social-text"><span><p><FaInstagram/>&nbsp;Instagram</p></span></a></li>
+                    <li><a href="https://www.linkedin.com/company/the-web-company-sri-lanka/" target="_blank" className="footer-social-text"><span><p>&nbsp;Linkedin</p></span></a></li>
+                    <li><a href="https://plus.google.com/103196226565054953717/" target="_blank" className="footer-social-text"><span><p>&nbsp;GooglePlus</p></span></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCPUukkHtQy2dMzpt-YJOtTg" target="_blank" className="footer-social-text"><span><p>&nbsp;Youtube</p></span></a></li>
                   </ul>
                 </div>
               </div>
