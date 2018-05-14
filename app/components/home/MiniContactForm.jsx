@@ -135,9 +135,9 @@ var MiniContactForm = React.createClass({
                   <textarea required className="mini-text-area" rows="4" cols="50" ref="message" placeholder="Your lovely feedback goes here..."
                     value = {this.state.submitBtnState == 2 ? '' : this.value}
                   />
-                  <div className="mini-submit-wrapper"
-                    onClick={() => {
-                    }}> <button type="submit" className="button btn-submit-green-mini" >{renderSubmitButton()}</button> </div>
+                  <button type="submit" className="button btn-submit-green-mini hide-for-small-only" >{renderSubmitButton()}</button>
+                  <button type="submit" className="button btn-submit-green-mini-mobile show-for-small-only" >{renderSubmitButton()}</button>
+
                 </form>
               </div>
 

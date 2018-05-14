@@ -164,7 +164,7 @@ var Home = React.createClass({
 				</div>
 				<div className="section section3-home small-12 medium-12 large-12  " id="section3-home">
 					<div className="section3-home">
-						<div className="r row align-justify align-middle industrial-app-wrap">
+						<div className="row align-justify align-middle industrial-app-wrap">
 							<div className = 'small-12 medium-6 large-6 content column z-index-high'>
 								<img src={IMG_HOME_7} />
 							</div>
@@ -226,20 +226,20 @@ var Home = React.createClass({
 							</div>
 							<div className="row">
 								<div className="small-12 medium-12 large-12 content column small-block-grid-12">
-										<div className="small-2 content column"><img className="companyicons" src={IMG_HOME_10}/></div>
-										<div className="small-2 content column"><img className="companyicons" src={IMG_HOME_11}/></div>
-										<div className="small-2 content column"><img className="companyicons" src={IMG_HOME_12}/></div>
-										<div className="small-2 content column"><img className="companyicons" src={IMG_HOME_13}/></div>
-										<div className="small-2 content column"><img className="companyicons" src={IMG_HOME_14}/></div>
-										<div className="small-2 content column"><img className="companyicons" src={IMG_HOME_15}/></div>
+										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_10}/></div>
+										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_11}/></div>
+										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_12}/></div>
+										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_13}/></div>
+										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_14}/></div>
+										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_15}/></div>
 								</div>
 							</div>
 							<div className="row">
 								<div className="small-12 medium-12 large-12 content column small-block-grid-12">
-										<div className="small-3 content column"><img className="companyicons" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/cmblogistics.png"/></div>
-										<div className="small-3 content column"><img className="companyicons" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/fslga.png"/></div>
-										<div className="small-3 content column"><img className="companyicons" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143880/clients/cartec.png"/></div>
-										<div className="small-3 content column"><img className="companyicons" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/azonic.png"/></div>
+										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/cmblogistics.png"/></div>
+										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/fslga.png"/></div>
+										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143880/clients/cartec.png"/></div>
+										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/azonic.png"/></div>
 								</div>
 							</div>
 							<p className="logo-text-desc">Trusted by companies islandwide</p>
