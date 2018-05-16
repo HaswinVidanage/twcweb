@@ -6,7 +6,7 @@ var ContactUsBar = require('ContactUsBar');
 var MiniContactForm = require('MiniContactForm');
 var ImageLoader = require('ImageLoader');
 
-const IMG_HOME_1 = "https://res.cloudinary.com/haswind/image/upload/v1507148273/home/logo_header.png";
+const IMG_HOME_1 = "http://res.cloudinary.com/haswind/image/upload/v1526388473/logo_header_new.png";
 const IMG_HOME_2 = "./images/Home/nexus.svg";
 const IMG_HOME_4 ="./images/Home/browser-window.svg";
 const IMG_HOME_6 ="./images/Home/twc-industrial-apps.svg";
@@ -19,6 +19,11 @@ const IMG_HOME_12 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143
 const IMG_HOME_13 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/oppo.png";
 const IMG_HOME_14 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143878/clients/ogilvy.png";
 const IMG_HOME_15 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507049549/clients/nasa.png";
+const IMG_HOME_16 ="http://res.cloudinary.com/haswind/image/upload/v1526385947/packwell_logo.png";
+const IMG_HOME_17 ="http://res.cloudinary.com/haswind/image/upload/v1526385949/hyundai_logo.png";
+const IMG_HOME_18 ="http://res.cloudinary.com/haswind/image/upload/v1526385950/sithaka_logo.png";
+const IMG_HOME_19 ="http://res.cloudinary.com/haswind/image/upload/v1526385951/ceylon_logo.png";
+
 
 const imgArray = [
 	IMG_HOME_1,
@@ -33,7 +38,12 @@ const imgArray = [
 	IMG_HOME_12,
 	IMG_HOME_13,
 	IMG_HOME_14,
-	IMG_HOME_15
+	IMG_HOME_15,
+	IMG_HOME_16,
+	IMG_HOME_17,
+	IMG_HOME_18,
+	IMG_HOME_19
+
 ];
 var Home = React.createClass({
 	componentWillMount: function() {
@@ -240,6 +250,14 @@ var Home = React.createClass({
 										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/fslga.png"/></div>
 										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143880/clients/cartec.png"/></div>
 										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/azonic.png"/></div>
+								</div>
+							</div>
+							<div className="row">
+								<div className="small-12 medium-12 large-12 content column small-block-grid-12">
+									<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1526385947/packwell_logo.png"/></div>
+									<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1526385949/hyundai_logo.png"/></div>
+									<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1526385950/sithaka_logo.png"/></div>
+									<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1526385951/ceylon_logo.png"/></div>
 								</div>
 							</div>
 							<p className="logo-text-desc">Trusted by companies islandwide</p>
