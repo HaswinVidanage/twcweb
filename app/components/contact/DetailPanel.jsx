@@ -11,7 +11,6 @@ var DetailPanel = React.createClass({
               <div className="small-4 medium-4 large-4 columns">
                 <address>
                     <span>
-                        <h3 className="address-title">Corporate Office</h3>
                         TWC Innovations<br />
                         25 Vijitha Road,<br />
                         Nedimala,<br />
@@ -22,7 +21,6 @@ var DetailPanel = React.createClass({
               <div className="small-4 medium-4 large-4 columns">
                 <address>
                     <span>
-                        <h3 className="address-title">Corporate Office</h3>
                         TWC Innovations<br />
                         91 WELLINGTON ROAD,<br />
                         CLAYTON VIC,<br />
@@ -33,6 +31,19 @@ var DetailPanel = React.createClass({
               <div className="small-4 medium-4 large-4 columns">
                 <address>
                     <span>
+                        Don Lugoda / New Zealand Agent<br />
+                        TWC Innovations (PVT) Ltd<br />
+                        95, Southampton st, Sydenham, Christchurch <br />
+                        Mobile (+64) 224177221
+                    </span>
+                </address>
+              </div>
+
+            </div>
+            <div className= "small-12 medium-12 large-12 address-row-2">
+              <div className="small-4 medium-4 large-4 columns">
+                <address>
+                    <span>
                         <h3 className="address-title">General Contact</h3>
                         Hotline: 011-273-1912<br/>
                         Phone: 077-377-8084<br/>
@@ -40,8 +51,6 @@ var DetailPanel = React.createClass({
                     </span>
                 </address>
               </div>
-            </div>
-            <div className= "small-12 medium-12 large-12 address-row-2">
               <div className="small-4 medium-4 large-4 columns">
                 <address>
                     <span>
@@ -62,8 +71,7 @@ var DetailPanel = React.createClass({
                     </span>
                 </address>
               </div>
-              <div className="small-4 medium-4 large-4 columns">
-              </div>
+
             </div>
           </div>
           <div className="small-12 medium-5 large-5 columns map-panel">

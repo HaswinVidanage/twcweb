@@ -805,3 +805,35 @@ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   }
 
 }
+
+//OZi helpgesk
+
+#helpdesk{
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+
+#helpdesk.active{
+		-webkit-transform: translate3d(0px, 0px, 0px);
+		-moz-transform: translate3d(0px, 0px, 0px);
+		-ms-transform:translate3d(0px, 0px, 0px);
+		transform: translate3d(0px, 0px, 0px);
+	}
+
+#helpdesk.moveDown{
+  	-webkit-transform: translate3d(20%, 0, 0);
+    -ms-transform: translate3d(20%, 0, 0);
+    transform: translate3d(20%, 0, 0);
+    // TODO : Write Media Queries
+  }
+
+#helpdesk.moveUp{
+  	-webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }

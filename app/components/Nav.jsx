@@ -107,11 +107,11 @@ var Nav = React.createClass({
             {/* <li><Link to="/Saless" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Sales Suit</Link></li> */}
             <li><Link to="/portfolio" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Portfolio</Link></li>
             <li><Link to="/about" activeClassName="active" activeStyle={{fontWeight:'bold'}}>About</Link></li>
-            
+
             <li><Link to="/blog" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Blog</Link></li>
             <li><Link to="/contact" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Contact Us</Link></li>
             <li className="separator"></li>
-            <li><Link to="/#" className="button navButton" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Log in</Link></li>
+            <li><a href="http://twccrm.twcwebs.com/login/" className="button navButton" activeClassName="active" target="_blank" activeStyle={{fontWeight:'bold'}}>Log in</a></li>
 
           </ul>
 

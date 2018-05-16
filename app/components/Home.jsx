@@ -6,7 +6,7 @@ var ContactUsBar = require('ContactUsBar');
 var MiniContactForm = require('MiniContactForm');
 var ImageLoader = require('ImageLoader');
 
-const IMG_HOME_1 = "http://res.cloudinary.com/haswind/image/upload/v1526388473/logo_header_new.png";
+const IMG_HOME_1 = "http://res.cloudinary.com/haswind/image/upload/v1526388473/home/logo_header_new.png";
 const IMG_HOME_2 = "./images/Home/nexus.svg";
 const IMG_HOME_4 ="./images/Home/browser-window.svg";
 const IMG_HOME_6 ="./images/Home/twc-industrial-apps.svg";
@@ -19,10 +19,10 @@ const IMG_HOME_12 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143
 const IMG_HOME_13 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/oppo.png";
 const IMG_HOME_14 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143878/clients/ogilvy.png";
 const IMG_HOME_15 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507049549/clients/nasa.png";
-const IMG_HOME_16 ="http://res.cloudinary.com/haswind/image/upload/v1526385947/packwell_logo.png";
-const IMG_HOME_17 ="http://res.cloudinary.com/haswind/image/upload/v1526385949/hyundai_logo.png";
-const IMG_HOME_18 ="http://res.cloudinary.com/haswind/image/upload/v1526385950/sithaka_logo.png";
-const IMG_HOME_19 ="http://res.cloudinary.com/haswind/image/upload/v1526385951/ceylon_logo.png";
+const IMG_HOME_16 ="http://res.cloudinary.com/haswind/image/upload/v1526385947/clients/packwell_logo.png";
+const IMG_HOME_17 ="http://res.cloudinary.com/haswind/image/upload/v1526449881/clients/hyundai11.png";
+const IMG_HOME_18 ="http://res.cloudinary.com/haswind/image/upload/v1526385950/clients/sithaka_logo.png";
+const IMG_HOME_19 ="http://res.cloudinary.com/haswind/image/upload/v1526385951/clients/ceylon_logo.png";
 
 
 const imgArray = [
@@ -176,13 +176,12 @@ var Home = React.createClass({
 					<div className="section3-home">
 						<div className="row align-justify align-middle industrial-app-wrap">
 							<div className = 'small-12 medium-6 large-6 content column z-index-high'>
-								<img src={IMG_HOME_7} />
+									<img src={IMG_HOME_7} />
 							</div>
 							<div className = 'small-12 medium-6 large-6 content column'>
 
 								<div className="container-sales-suit">
-
-									<img src={IMG_HOME_8} />
+										<img src={IMG_HOME_8} />
 
 									<div className="align-center">
 										<p className="justify-text">

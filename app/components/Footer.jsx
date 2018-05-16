@@ -39,6 +39,7 @@ var Footer = React.createClass({
                     <li><Link to="/#" className="footer-link-text">Home</Link></li>
                     <li><Link to="/about" className="footer-link-text" activeClassName="active" activeStyle={{fontWeight:'bold'}}>About</Link></li>
                     <li><Link to="/contact" className="footer-link-text" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Contact Us</Link></li>
+                    <li><Link to="/careers" className="footer-link-text" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Careers</Link></li>
                   </ul>
                 </div>
 

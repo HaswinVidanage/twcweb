@@ -70,7 +70,9 @@ module.exports = {
     ContactUs : 'app/components/contact/contactus.jsx',
     DescPanel : 'app/components/contact/DescPanel.jsx',
     DetailPanel : 'app/components/contact/DetailPanel.jsx',
-    ContactForm : 'app/components/contact/ContactForm.jsx'
+    ContactForm : 'app/components/contact/ContactForm.jsx',
+    Careers: 'app/components/careers/Careers.jsx'
+
     },
     extensions:['','.js','.jsx']
   },
