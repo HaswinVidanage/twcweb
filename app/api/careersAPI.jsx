@@ -3,12 +3,12 @@ var axios = require('axios');
 const TWC_CAREERS_API_URL ='/api/careers';
 
 module.exports = {
-  getProjects:function(){
+  getCareers:function(){
     var requestUrl = `${TWC_CAREERS_API_URL}`;
 
     return axios.get(requestUrl).then(function(res){
       if(res.data.cod && res.data.message){
-        console.log('error fetching projects from api');
+        console.log('error fetching careers from api');
         throw new Error(res.data.message);
       } else {
         console.log('fetch success');
