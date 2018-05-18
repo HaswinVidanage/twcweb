@@ -73,11 +73,7 @@ var Careers = React.createClass({
           </div>
         );
       }
-      // return careers.map((careers) =>{
-      //   return (
-      //     <SingleCareers  key={careers._id} {...careers}  />
-      //   );
-      // });
+
     };
     return (
       <div id="fullpage" className="small-12 medium-12 large-12">
