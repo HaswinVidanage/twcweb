@@ -38,11 +38,6 @@ var Careers = React.createClass({
 
   },
   componentDidMount: function(){
-    ReactGA.event({
-            category: 'Navigation',
-            action: 'Clicked Home',
-        });
-    // TODO : change jquery version to js version
     $('#fullpage').fullpage({
               'scrollBar': false,
               'verticalCentered': false,
@@ -65,8 +60,25 @@ var Careers = React.createClass({
 
   },
   render : function(){
-    var title = this.state.title;
-    var content = this.state.content;
+    // var title = this.state.title;
+    // var content = this.state.content;
+
+    var {isLoading , careers, errorMessage, title, content} = this.state;
+
+    var renderSingleCareers = () => {
+      if(careers === 0){
+        return (
+          <div className="row">
+            <p className="container__message">No careers Added.</p>
+          </div>
+        );
+      }
+      // return careers.map((careers) =>{
+      //   return (
+      //     <SingleCareers  key={careers._id} {...careers}  />
+      //   );
+      // });
+    };
     return (
       <div id="fullpage" className="small-12 medium-12 large-12">
         <TitleBar title={title} content={content}/>
@@ -75,7 +87,11 @@ var Careers = React.createClass({
           <div className="careersTopic small-12 medium-12 large-12">
             <h1>Current openining</h1>
           </div>
-          
+
+          <div className="backend text-center">
+            <h1>this area is for the back end</h1>
+            {renderSingleCareers()}
+          </div>
           <div className="carrersImage small-12 medium-12 large-12 text-center">
             <img src={IMG_CAREERS_1}/>
           </div>

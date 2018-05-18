@@ -49,7 +49,7 @@ var DetailPanel = React.createClass({
                         <h3 className="address-title">Sales Inquiries</h3>
                           <a href="tel:+94112731912">Hotline : +(94) 011-273-1912</a><br/>
                           <a href="tel:+94773778084">Nafeel  : +(94) 077-377-8084</a><br/>
-                          <a href="email:sales@twcwebs.com">Email: sales@twcwebs.com</a>
+                          <a href="mailto: sales@twcwebs.com">Email: sales@twcwebs.com</a>
                     </span>
                 </address>
               </div>
@@ -59,7 +59,7 @@ var DetailPanel = React.createClass({
                         <h3 className="address-title">International Sales</h3>
                         <a href="tel:+64224177221">New Zealand: (+64) 224177221</a><br/>
                         <a href="tel:+61450964261">Australia: (+61) 0450964261</a><br/>
-                        <a href="mail:sales@twcwebs.com">Email: sales@twcwebs.com</a>
+                        <a href="mailto: sales@twcwebs.com">Email: sales@twcwebs.com</a>
                     </span>
                 </address>
               </div>
