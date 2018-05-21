@@ -85,17 +85,17 @@ var Footer = React.createClass({
                     <li><a href="https://www.youtube.com/channel/UCPUukkHtQy2dMzpt-YJOtTg" target="_blank" className="footer-social-text"><span><p><FaYoutube/>&nbsp;Youtube</p></span></a></li>
                   </ul>
                 </div>
-                <div className="footer-contact-text-wrapper footer-contact-div show-for-small-only small-12 inline-list">
-                  <ul className="footer-ul small-6 inline-list">
-                    <li><a href="https://www.facebook.com/twcinnovation/" target="_blank" className="footer-social-text"><span><p><FaFacebook/>&nbsp;Facebook</p></span></a></li>
-                    <li><a href="https://twitter.com/twcinnovations/" target="_blank" className="footer-social-text"><span><p><FaTwitter/>&nbsp;Twitter</p></span></a></li>
-                    <li><a href="https://www.instagram.com/twcinnovations/" target="_blank" className="footer-social-text"><span><p><FaInstagram/>&nbsp;Instagram</p></span></a></li>
-                  </ul>
-                  <ul className="footer-ul small-6 inline-list">
-                    <li><a href="https://www.linkedin.com/company/the-web-company-sri-lanka/" target="_blank" className="footer-social-text"><span><p><FaLinkedin/>&nbsp;Linkedin</p></span></a></li>
-                    <li><a href="https://plus.google.com/103196226565054953717/" target="_blank" className="footer-social-text"><span><p><FaGooglePlus/>&nbsp;GooglePlus</p></span></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCPUukkHtQy2dMzpt-YJOtTg" target="_blank" className="footer-social-text"><span><p><FaYoutube/>&nbsp;Youtube</p></span></a></li>
-                  </ul>
+                <div className="row footer-contact-text-wrapper footer-contact-div show-for-small-only small-12">
+                    <ul className="footer-ul small-6">
+                      <li><a href="https://www.facebook.com/twcinnovation/" target="_blank" className="footer-social-text"><span><p><FaFacebook/>&nbsp;Facebook</p></span></a></li>
+                      <li><a href="https://twitter.com/twcinnovations/" target="_blank" className="footer-social-text"><span><p><FaTwitter/>&nbsp;Twitter</p></span></a></li>
+                      <li><a href="https://www.instagram.com/twcinnovations/" target="_blank" className="footer-social-text"><span><p><FaInstagram/>&nbsp;Instagram</p></span></a></li>
+                    </ul>
+                    <ul className="footer-ul small-6">
+                      <li><a href="https://www.linkedin.com/company/the-web-company-sri-lanka/" target="_blank" className="footer-social-text"><span><p><FaLinkedin/>&nbsp;Linkedin</p></span></a></li>
+                      <li><a href="https://plus.google.com/103196226565054953717/" target="_blank" className="footer-social-text"><span><p><FaGooglePlus/>&nbsp;GooglePlus</p></span></a></li>
+                      <li><a href="https://www.youtube.com/channel/UCPUukkHtQy2dMzpt-YJOtTg" target="_blank" className="footer-social-text"><span><p><FaYoutube/>&nbsp;Youtube</p></span></a></li>
+                    </ul>
                 </div>
 
 

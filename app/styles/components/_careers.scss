@@ -10,18 +10,50 @@
 #FAQ{
   // margin: 0px -100px 0px -100px;
   background-color: #CBC2C0;
+  padding-left: 20px;
+}
+
+#cc{
+  padding-left: 20px;
 }
 
 .careersFAQ{
-  margin-left: 50px;
-  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .careersContact{
   margin-top: 50px;
-  margin-left: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .backend{
-  
+
+}
+
+.btn-round-red-white {
+  border: 2px solid $blood-red-light;
+  background-color: white;
+  color: $blood-red-dark;
+  border-radius: 140px;
+  padding: 0 25px;
+  line-height: 40px;
+  display: inline-block;
+  max-height: 42px;
+  min-width: 124px;
+}
+
+.btn-round-red-white:focus, .btn-round-red-white:hover {
+    background-color: $blood-red-light!important;
+    color: white!important;
+}
+
+.careersContactBtnWeb{
+  padding-top: 50px;
+}
+
+.careersContactBtnMob{
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
