@@ -15,7 +15,7 @@ Careers.add({
 	title: { type: String, required: true },
 	description: { type: Types.Textarea,  height: 400 },
 	requirements: { type: Types.Textarea,  height: 100 },
-	salary: { type: Types.Textarea,  height: 10 },
+	salary: { type: Types.Textarea,  height: 50 },
   state: { type: Types.Select, options: 'draft, published, archived', default: 'draft', index: true },
 	author: { type: Types.Relationship, ref: 'User', index: true },
 	publishedDate: { type: Types.Date, index: true, dependsOn: { state: 'published' } },

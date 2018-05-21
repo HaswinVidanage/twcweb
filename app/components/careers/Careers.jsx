@@ -3,6 +3,7 @@ import TitleBar from '../common/TitleBar';
 var {Link, IndexLink} = require('react-router');
 var Footer = require('Footer');
 var careersAPI = require('careersAPI');
+var moment = require('moment');
 
 // var SingleCareers = require('SingleCareers');
 var fullpageJs = require('fullpage.js');
@@ -19,12 +20,14 @@ var Careers = React.createClass({
       title: 'WORK WITH US',
       content: 'careers page contact'
       };
+      debugger;
   },
   getInitialState: function () {
     return{
       title: this.props.title,
       content: this.props.content
     };
+    debugger;
   },
   handleNewData: function(updates) {
     this.setState(updates);
@@ -36,7 +39,35 @@ var Careers = React.createClass({
       $('#fullpage').fullpage.destroy('all');
     }
 
+    this.fetchCareers();
   },
+
+  fetchCareers:function(){
+    var that = this;
+
+    this.setState({
+      isLoading: true,
+      careers: [],
+      errorMessage: undefined
+    });
+
+    careersAPI.getCareers().then(function(careers){
+      that.setState({
+        careers:careers,
+        isLoading:false,
+        errorMessage:undefined
+      });
+
+    },function(e){
+      console.log(e);
+      that.setState({
+        isLoading:false,
+        careers:[],
+        errorMessage: e.message
+      });
+    });
+  },
+
   componentDidMount: function(){
     $('#fullpage').fullpage({
               'scrollBar': false,
@@ -66,17 +97,39 @@ var Careers = React.createClass({
     var {isLoading , careers, errorMessage, title, content} = this.state;
 
     var renderSingleCareers = () => {
-      // if(careers.length === 0){
-      //   return (
-      //     <div className="row">
-      //       <p className="container__message">No careers Added.</p>
-      //     </div>
-      //   );
-      // }
+      if(careers.length === 0){
+        return (
+          <div className="row">
+            <p className="container__message">No careers Added.</p>
+          </div>
+        );
+      }
+      return careers.map((careers, key) =>{
+          // if(key >= startCareersKey && key < endCareersKey){
+            var link = `/careers-single/${careers.slug}`;
+            return (
+              <div className="section small-12 medium-12 large-12">
+                  <div className="row align-justify align-middle">
+                    <div className = 'small-6 medium-4 large-4 content column z-index-high'>
+                        <h5><b>{careers.title}</b></h5>
+                    </div>
+                    <div className = 'small-3 medium-4 large-4 content column'>
+                      <p>{careers.description}</p>
+                    </div>
+                    <div className = 'small-3 medium-4 large-4 content column'>
+                      <p>{careers.salary}</p>
+                    </div>
+                  </div>
+              </div>
+
+            );
+          }
+
+      );
       // return careers.map((careers) =>{
-      //   return (
-      //     <SingleCareers  key={careers._id} {...careers}  />
-      //   );
+      //   // return (
+      //   //   <SingleCareers  key={careers._id} {...careers}  />
+      //   // );
       // });
     };
     return (
@@ -88,20 +141,8 @@ var Careers = React.createClass({
             <h1>Current openining</h1>
           </div>
 
-          <div className="backend text-center">
-           <h1>this area is for the back end</h1>
-            <div className="jobs row text-center">
-              <div className="small-4 medium-4 large-4">
-                <p>Web Developer</p>
-              </div>
-              <div className="small-4 medium-4 large-4">
-                <p>HTML</p>
-              </div>
-              <div className="small-4 medium-4 large-4">
-                <p>Full Time | 50, 000 LKR</p>
-              </div>
+          <div className="backend text-center LR0 text-center">
 
-            </div>
             {renderSingleCareers()}
           </div>
           <div className="carrersImage small-12 medium-12 large-12 text-center">
@@ -132,7 +173,7 @@ var Careers = React.createClass({
 
 
         <div className="row" id="FAQ">
-          <div className="careersFAQ small-12 medium-12 large-12">
+          <div className="LR0 small-12 medium-12 large-12">
             <h1>FAQ</h1>
             <h3>His nut declines throughout your tricky address.</h3>
             <p>A hypothetical potato eases the advantageous bubble.</p>

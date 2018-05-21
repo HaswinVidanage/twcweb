@@ -15,7 +15,7 @@ module.exports = {
         console.log(res.data.careers);
         return res.data.careers;
       }
-
+debugger;
     },function(err){
       console.log('fetch error thrown');
       throw new Error(err.response.data.message);
