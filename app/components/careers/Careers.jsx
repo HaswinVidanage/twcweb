@@ -171,9 +171,9 @@ var Careers = React.createClass({
             </div>
           </div>
 
-
-        <div className="row" id="FAQ">
-          <div className="LR0 small-12 medium-12 large-12">
+        <div className="footer-row" id="FAQ">
+          <div className="row LR0 small-12 medium-12 large-12">
+            <span>
             <h1>FAQ</h1>
             <h3>His nut declines throughout your tricky address.</h3>
             <p>A hypothetical potato eases the advantageous bubble.</p>
@@ -183,6 +183,7 @@ var Careers = React.createClass({
 
             <h3>Will the ego vat the higher accused?</h3>
             <p>The mole bores after an algorithm.</p>
+            </span>
           </div>
         </div>
         <Footer/>

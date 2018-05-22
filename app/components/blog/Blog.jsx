@@ -125,34 +125,21 @@ var Blog = React.createClass({
             var link = `/blog-single/${post.slug}`;
 
             return (
-              // <div key={post._id}>
-              //   <Link to={link} >
-              //     <h1 className="blog-prev-title">{post.title}</h1>
-              //   </Link>
-              //   <div>Uploaded {moment(post.publishedDate).fromNow()} under {post.categories.name}<span className="highlight"></span> by <span className="highlight">{post.author.name.first +' '+post.author.name.last}</span></div>
-              //   <p className="blog-prev-content">{Parser(post.content.brief)}</p>
-              // </div>
 
-// <div className="row">
-                <div key={post._id}>
-                  <div className="section small-12 medium-4 large-4">
-                    <div className="bigimage small-12 medium-12 large-12">
-                        <img src={post.image.url}/>
-                    </div>
-                    <div className="align-justify align-middle">
-                      <div className = 'small-6 medium-12 large-12 content column z-index-high'>
-                        <Link to={link} >
-                          <h1 className="blog-prev-title">{post.title}</h1>
-                        </Link>
-                      </div>
-                      <div className = 'small-6 medium-12 large-12 content column'>
-                        <div>Uploaded {moment(post.publishedDate).fromNow()} under {post.categories.name}<span className="highlight"></span> by <span className="highlight">{post.author.name.first +' '+post.author.name.last}</span></div>
-                        <p className="blog-prev-content">{Parser(post.content.brief)}</p>
-                      </div>
-                    </div>
-                  </div>
+            <div class="row">
+              <div className="row">
+                <div className="small-12 medium-8 large-8">
+                              <div key={post._id}>
+                                <Link to={link} >
+                                  <img src={post.image.url}/>
+                                  <h2 className="blog-prev-title">{post.title}</h2>
+                                </Link>
+                                <div>Uploaded {moment(post.publishedDate).fromNow()} under {post.categories.name}<span className="highlight"></span> by <span className="highlight">{post.author.name.first +' '+post.author.name.last}</span></div>
+                                <p className="blog-prev-content">{Parser(post.content.brief)}</p>
+                              </div>
                 </div>
-              // </div>
+              </div>
+            </div>
 
             );
           }
@@ -164,17 +151,21 @@ var Blog = React.createClass({
       <div>
         <TitleBar title={title} content={content}/>
           <div className="blog-wrap-main no-left-padding">
-            <div className="columns small-12 medium-12 large-12 large-centered margin-top-20 no-left-padding">
-              <div className="columns small-12 medium-8 large-8 small-push-2 no-left-padding">
-                { renderSinglePosts()}
+            <div className="columns small-12 medium-12 large-12 margin-top-20 no-left-padding">
+              <div class="row">
 
-              <ul className="pagination" role="navigation" aria-label="Pagination">
-                { renderPagination() }
-              </ul>
+                          <div className="columns small-12 medium-8 large-8 small-push-2 no-left-padding">
+                            { renderSinglePosts() }
 
-            </div>
+                          <ul className="pagination" role="navigation" aria-label="Pagination">
+                            { renderPagination() }
+                          </ul>
 
-            <div className="small-12 medium-4 large-4"></div>
+                        </div>
+
+              </div>
+
+
 
             <div className="columns small-4 medium-4 large-4 hide-for-small-only">
               <Timeline
