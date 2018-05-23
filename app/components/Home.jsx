@@ -6,7 +6,7 @@ var ContactUsBar = require('ContactUsBar');
 var MiniContactForm = require('MiniContactForm');
 var ImageLoader = require('ImageLoader');
 
-const IMG_HOME_1 = "https://res.cloudinary.com/haswind/image/upload/v1507148273/home/logo_header.png";
+const IMG_HOME_1 = "http://res.cloudinary.com/haswind/image/upload/v1526388473/home/logo_header_new.png";
 const IMG_HOME_2 = "./images/Home/nexus.svg";
 const IMG_HOME_4 ="./images/Home/browser-window.svg";
 const IMG_HOME_6 ="./images/Home/twc-industrial-apps.svg";
@@ -19,6 +19,11 @@ const IMG_HOME_12 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143
 const IMG_HOME_13 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/oppo.png";
 const IMG_HOME_14 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143878/clients/ogilvy.png";
 const IMG_HOME_15 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507049549/clients/nasa.png";
+// const IMG_HOME_16 ="http://res.cloudinary.com/haswind/image/upload/v1526626567/packwell_ueo3gd.png";
+// const IMG_HOME_17 ="http://res.cloudinary.com/haswind/image/upload/v1526626566/hyundai_diw1pk.png";
+// const IMG_HOME_18 ="http://res.cloudinary.com/haswind/image/upload/v1526626566/sithaka_pzehgf.png";
+// const IMG_HOME_19 ="http://res.cloudinary.com/haswind/image/upload/v1526626565/ceylon_ucjvtt.png";
+
 
 const imgArray = [
 	IMG_HOME_1,
@@ -34,6 +39,8 @@ const imgArray = [
 	IMG_HOME_13,
 	IMG_HOME_14,
 	IMG_HOME_15
+
+
 ];
 var Home = React.createClass({
 	componentWillMount: function() {
@@ -164,15 +171,14 @@ var Home = React.createClass({
 				</div>
 				<div className="section section3-home small-12 medium-12 large-12  " id="section3-home">
 					<div className="section3-home">
-						<div className="r row align-justify align-middle industrial-app-wrap">
+						<div className="row align-justify align-middle industrial-app-wrap">
 							<div className = 'small-12 medium-6 large-6 content column z-index-high'>
-								<img src={IMG_HOME_7} />
+									<img src={IMG_HOME_7} />
 							</div>
 							<div className = 'small-12 medium-6 large-6 content column'>
 
 								<div className="container-sales-suit">
-
-									<img src={IMG_HOME_8} />
+										<img src={IMG_HOME_8} />
 
 									<div className="align-center">
 										<p className="justify-text">
@@ -217,11 +223,11 @@ var Home = React.createClass({
 						</div>
 					</div>
 				</div>
-				<div className="section section5-home hide-for-small-only medium-12 large-12 " id="section5-home">
+				<div className="section section5-home small-12 medium-12 large-12 " id="section5-home">
 					<div className="half-grey">
 						<MiniContactForm/>
 						<div className = 'padding-top-50 off-white small-12 medium-12 large-12 content column'>
-							<div className="padding-sides-350">
+							<div className="padding-sides">
 							<p className="logo-text-title">Sri Lanka's best companies use TWC to improve their productivity.</p>
 							</div>
 							<div className="row">
@@ -240,6 +246,14 @@ var Home = React.createClass({
 										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/fslga.png"/></div>
 										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143880/clients/cartec.png"/></div>
 										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/azonic.png"/></div>
+								</div>
+							</div>
+							<div className="row">
+								<div className="small-12 medium-12 large-12 content column small-block-grid-12">
+										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1526385951/clients/ceylon_logo.png"/></div>
+										<div className="small-3 content column"><a href="http://hyundai.lk/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1526449574/clients/hyundai.png"/></a></div>
+										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1526385950/clients/sithaka_logo.png"/></div>
+										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1526385947/clients/packwell_logo.png"/></div>
 								</div>
 							</div>
 							<p className="logo-text-desc">Trusted by companies islandwide</p>
