@@ -2,7 +2,7 @@ var keystone = require('keystone');
 var Types = keystone.Field.Types;
 
 /**
- * Project/ Portfolio Model
+ * Careers Model
  * ==========
  */
 

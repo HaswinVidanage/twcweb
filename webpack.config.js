@@ -53,6 +53,7 @@ module.exports = {
     projectsApi:'app/api/projectsApi.jsx',
     enquiryAPI:'app/api/enquiryAPI.jsx',
     blogAPI:'app/api/blogAPI.jsx',
+    cvAPI:'app/api/cvAPI.jsx',
     ErrorModal :'app/components/ErrorModal.jsx',
     Portfolio : 'app/components/portfolio/Portfolio.jsx',
     SingleProject: 'app/components/portfolio/SingleProject.jsx',

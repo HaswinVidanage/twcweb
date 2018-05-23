@@ -64,8 +64,11 @@ exports = module.exports = function (app) {
 	// API FOR Portfolio
 	app.get('/api/projects', keystone.middleware.api, routes.api.project.getProjects);
 
+	//API for Careers
 	app.get('/api/careers', keystone.middleware.api, routes.api.careers.getCareers);
 
+	//API for cv
+	app.post('/api/cv', keystone.middleware.api, routes.api.cv.createCv);
 };
 
 
