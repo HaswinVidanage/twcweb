@@ -208,6 +208,7 @@ var ServicesCore = React.createClass({
 
 					</div>
 				</div>
+				<Footer/>
 			</div>
 		);
 	}

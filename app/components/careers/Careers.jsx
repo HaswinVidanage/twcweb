@@ -5,8 +5,6 @@ var Footer = require('Footer');
 var careersAPI = require('careersAPI');
 var moment = require('moment');
 
-// import Popup from "reactjs-popup";
-
 // var SingleCareers = require('SingleCareers');
 var fullpageJs = require('fullpage.js');
 
@@ -138,6 +136,7 @@ var Careers = React.createClass({
       //   // );
       // });
     };
+
     return (
       <div id="fullpage" className="small-12 medium-12 large-12">
         <TitleBar title={title} content={content}/>
