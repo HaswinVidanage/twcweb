@@ -6,6 +6,7 @@ var moment = require('moment');
 import Parser from 'html-react-parser';
 var ReactDOM = require('react-dom');
 import { Timeline } from 'react-twitter-widgets';
+var ImageLoader = require('ImageLoader');
 
 const PostsPerPage = 3;
 
@@ -122,14 +123,24 @@ var Blog = React.createClass({
       return posts.map((post, key) =>{
           if(key >= startPostKey && key < endPostKey){
             var link = `/blog-single/${post.slug}`;
+
             return (
-              <div key={post._id}>
-                <Link to={link} >
-                  <h1 className="blog-prev-title">{post.title}</h1>
-                </Link>
-                <div>Uploaded {moment(post.publishedDate).fromNow()} under {post.categories.name}<span className="highlight"></span> by <span className="highlight">{post.author.name.first +' '+post.author.name.last}</span></div>
-                <p className="blog-prev-content">{Parser(post.content.brief)}</p>
+
+            <div class="row">
+              <div className="row">
+                <div className="small-12 medium-8 large-8">
+                              <div key={post._id}>
+                                <Link to={link} >
+                                  <img src={post.image.url}/>
+                                  <h2 className="blog-prev-title">{post.title}</h2>
+                                </Link>
+                                <div>Uploaded {moment(post.publishedDate).fromNow()} under {post.categories.name}<span className="highlight"></span> by <span className="highlight">{post.author.name.first +' '+post.author.name.last}</span></div>
+                                <p className="blog-prev-content">{Parser(post.content.brief)}</p>
+                              </div>
+                </div>
               </div>
+            </div>
+
             );
           }
 
@@ -139,18 +150,23 @@ var Blog = React.createClass({
     return (
       <div>
         <TitleBar title={title} content={content}/>
-        <div className="blog-wrap-main no-left-padding">
-          <div className="columns small-12 medium-12 large-12 large-centered margin-top-20 no-left-padding">
-            <div className="columns small-12 medium-6 large-6 small-push-2 no-left-padding">
-              { renderSinglePosts()}
+          <div className="blog-wrap-main no-left-padding">
+            <div className="columns small-12 medium-12 large-12 margin-top-20 no-left-padding">
+              <div class="row">
 
-              <ul className="pagination" role="navigation" aria-label="Pagination">
-                { renderPagination() }
-              </ul>
+                          <div className="columns small-12 medium-8 large-8 small-push-2 no-left-padding">
+                            { renderSinglePosts() }
+
+                          <ul className="pagination" role="navigation" aria-label="Pagination">
+                            { renderPagination() }
+                          </ul>
+
+                        </div>
+
+              </div>
 
 
 
-            </div>
             <div className="columns small-4 medium-4 large-4 hide-for-small-only">
               <Timeline
                  dataSource={{
