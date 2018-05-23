@@ -18,9 +18,9 @@ const IMG_HOME_11 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143
 const IMG_HOME_12 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143876/clients/venora.png";
 const IMG_HOME_13 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/oppo.png";
 const IMG_HOME_14 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143878/clients/ogilvy.png";
-const IMG_HOME_15 ="http://res.cloudinary.com/haswind/image/upload/v1527072098/sms-logo.png";
-// const IMG_HOME_16 ="http://res.cloudinary.com/haswind/image/upload/v1526626567/packwell_ueo3gd.png";
-// const IMG_HOME_17 ="http://res.cloudinary.com/haswind/image/upload/v1526626566/hyundai_diw1pk.png";
+const IMG_HOME_15 ="http://res.cloudinary.com/haswind/image/upload/v1527072098/clients/sms-logo.png";
+const IMG_HOME_16 ="http://res.cloudinary.com/haswind/image/upload/v1527076682/clients/packwell-lanka.png";
+const IMG_HOME_17 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143880/clients/cartec.png";
 // const IMG_HOME_18 ="http://res.cloudinary.com/haswind/image/upload/v1526626566/sithaka_pzehgf.png";
 // const IMG_HOME_19 ="http://res.cloudinary.com/haswind/image/upload/v1526626565/ceylon_ucjvtt.png";
 
@@ -38,7 +38,10 @@ const imgArray = [
 	IMG_HOME_12,
 	IMG_HOME_13,
 	IMG_HOME_14,
-	IMG_HOME_15
+	IMG_HOME_15,
+	IMG_HOME_16,
+	IMG_HOME_17
+
 
 
 ];
@@ -232,28 +235,29 @@ var Home = React.createClass({
 							</div>
 							<div className="row">
 								<div className="small-12 medium-12 large-12 content column small-block-grid-12">
-										<div className="small-2 content column"><a href="http://tanclean.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_10}/></a></div>
-										<div className="small-2 content column"><a href="http://threesinha.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_11}/></a></div>
-										<div className="small-2 content column"><a href="http://venoragroup.com/" target="_blank"><img className="mini-img" src={IMG_HOME_12}/></a></div>
-										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_13}/></div>
 										<div className="small-2 content column"><a href="http://ogilvypr.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_14}/></a></div>
+										<div className="small-2 content column"><a href="http://packwell.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_16}/></a></div>
+										<div className="small-2 content column"><a href="http://cartectrading.com/" target="_blank"><img className="mini-img" src={IMG_HOME_17}/></a></div>
+										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_13}/></div>
 										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_15}/></div>
+										<div className="small-2 content column"><a href="http://venoragroup.com/" target="_blank"><img className="mini-img" src={IMG_HOME_12}/></a></div>
 								</div>
 							</div>
 							<div className="row">
 								<div className="small-12 medium-12 large-12 content column small-block-grid-12">
 										<div className="small-3 content column"><a href="http://www.colombologistics.com/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/cmblogistics.png"/></a></div>
 										<div className="small-3 content column"><a href="http://fslga.lk/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/fslga.png"/></a></div>
-										<div className="small-3 content column"><a href="http://cartectrading.com/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143880/clients/cartec.png"/></a></div>
+										<div className="small-3 content column"><a href="http://threesinha.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_11}/></a></div>
 										<div className="small-3 content column"><a href="http://www.azonicmidas.lk/ " target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/azonic.png"/></a></div>
 								</div>
 							</div>
 							<div className="row">
 								<div className="small-12 medium-12 large-12 content column small-block-grid-12">
-										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1526385951/clients/ceylon_logo.png"/></div>
-										<div className="small-3 content column"><a href="http://hyundai.lk/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1526449574/clients/hyundai.png"/></a></div>
-										<div className="small-3 content column"><a href="http://sithakatea.com/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1526385950/clients/sithaka_logo.png"/></a></div>
-										<div className="small-3 content column"><a href="http://packwell.lk/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1526385947/clients/packwell_logo.png"/></a></div>
+										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527076682/clients/ceylon-jewelry.png"/></div>
+										<div className="small-3 content column"><a href="http://hyundai.lk/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527076683/clients/hyundai-srilanka.png"/></a></div>
+										<div className="small-3 content column"><a href="http://sithakatea.com/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527076682/clients/sithaka.png"/></a></div>
+										<div className="small-3 content column"><a href="http://tanclean.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_10}/></a></div>
+
 								</div>
 							</div>
 							<p className="logo-text-desc">Trusted by companies islandwide</p>
