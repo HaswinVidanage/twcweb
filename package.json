@@ -37,6 +37,7 @@
     "react-social": "^1.9.0",
     "react-tappable": "^1.0.0",
     "react-twitter-widgets": "^1.4.0",
+    "reactjs-popup": "^1.1.1",
     "resolve-url-loader": "^2.0.2",
     "restful-keystone": "^0.3.0",
     "resty-stone": "0.0.32-alpha",

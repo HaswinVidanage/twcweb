@@ -5,6 +5,8 @@ var Footer = require('Footer');
 var careersAPI = require('careersAPI');
 var moment = require('moment');
 
+// import Popup from "reactjs-popup";
+
 // var SingleCareers = require('SingleCareers');
 var fullpageJs = require('fullpage.js');
 
@@ -116,11 +118,15 @@ var Careers = React.createClass({
                     <div className = 'small-3 medium-4 large-4 content column'>
                       <p>{careers.description}</p>
                     </div>
-                    <div className = 'small-3 medium-4 large-4 content column'>
+                    <div className = 'small-3 medium-2 large-2 content column'>
                       <p>{careers.salary}</p>
+                    </div>
+                    <div className = 'small-3 medium-2 large-2 content column'>
+                      <button className="button btn-round-red-white orange-border">apply</button>
                     </div>
                   </div>
               </div>
+
 
             );
           }
@@ -144,6 +150,26 @@ var Careers = React.createClass({
           <div className="backend text-center LR0 text-center">
 
             {renderSingleCareers()}
+
+            <div id="contact-form" className="column large-centered small-12 medium-6 large-6 contact-form-wrapper">
+              <form ref="form" onSubmit={this.onSubmit} className="countdown-form">
+
+                <input className="column small-12 medium-12small-12  large-12" type="text" ref="name" placeholder="*Enter your name" required/>
+                <input className="column small-12 medium-12small-12  large-12" type="email" ref="email" placeholder="*Email" required/>
+                <input className="column small-12 medium-12small-12  large-12" type="tel" ref="phone" placeholder="*Phone" required/>
+
+                <select  onChange={this.handleSelect} className="column medium-12 large-12" type="text" ref="drpPurpose" required>
+                    <option value="0">JOB 1</option>
+                    <option value="1">JOB 2</option>
+                </select>
+
+                <input type="file" name="cv" ref="cv" accept=".pdf" placeholder="cv" required />
+
+                <button className="button btn-round-red-white orange-border">Send</button>
+              </form>
+            </div>
+
+
           </div>
           <div className="carrersImage small-12 medium-12 large-12 text-center">
             <img src={IMG_CAREERS_1}/>
@@ -172,19 +198,21 @@ var Careers = React.createClass({
           </div>
 
 
-        <div className="row" id="FAQ">
-          <div className="LR0 small-12 medium-12 large-12">
-            <h1>FAQ</h1>
-            <h3>His nut declines throughout your tricky address.</h3>
-            <p>A hypothetical potato eases the advantageous bubble.</p>
+          <div className="footer-row" id="FAQ">
+            <div className="row LR0 small-12 medium-12 large-12">
+              <span>
+              <h1>FAQ</h1>
+              <h3>His nut declines throughout your tricky address.</h3>
+              <p>A hypothetical potato eases the advantageous bubble.</p>
 
-            <h3>The courier repairs the whistle throughout the frustrated gift</h3>
-            <p>The bond bottles the related director behind the confine.</p>
+              <h3>The courier repairs the whistle throughout the frustrated gift</h3>
+              <p>The bond bottles the related director behind the confine.</p>
 
-            <h3>Will the ego vat the higher accused?</h3>
-            <p>The mole bores after an algorithm.</p>
+              <h3>Will the ego vat the higher accused?</h3>
+              <p>The mole bores after an algorithm.</p>
+              </span>
+            </div>
           </div>
-        </div>
         <Footer/>
     </div>
 
