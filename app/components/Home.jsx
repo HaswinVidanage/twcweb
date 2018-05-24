@@ -4,7 +4,10 @@ import ReactGA from 'react-ga';
 var Footer = require('Footer');
 var ContactUsBar = require('ContactUsBar');
 var MiniContactForm = require('MiniContactForm');
+var MiniContactFormMobile = require('MiniContactFormMobile');
 var ImageLoader = require('ImageLoader');
+
+
 
 const IMG_HOME_1 = "http://res.cloudinary.com/haswind/image/upload/v1526388473/home/logo_header_new.png";
 const IMG_HOME_2 = "./images/Home/nexus.svg";
@@ -114,6 +117,7 @@ var Home = React.createClass({
 
 	},
 	render: function() {
+
 		return (
 
 			<div id="fullpage" className="small-12 medium-12 large-12">
@@ -228,8 +232,16 @@ var Home = React.createClass({
 				</div>
 				<div className="section section5-home small-12 medium-12 large-12 " id="section5-home">
 					<div className="half-grey">
-						<MiniContactForm/>
-						<div className = 'padding-top-50 off-white small-12 medium-12 large-12 content column'>
+
+						<div className="hide-for-small-only">
+							<MiniContactForm/>
+						</div>
+						<div className="show-for-small-only">
+							<MiniContactFormMobile/>
+						</div>
+
+					{/* MEDIUM and large only-END */}
+						<div className = 'padding-top-50 off-white small-12 medium-12 large-12 content column hide-for-small-only'>
 							<div className="padding-sides">
 							<p className="logo-text-title">Sri Lanka's best companies use TWC to improve their productivity.</p>
 							</div>
@@ -257,11 +269,47 @@ var Home = React.createClass({
 										<div className="small-3 content column"><a href="http://hyundai.lk/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527076683/clients/hyundai-srilanka.png"/></a></div>
 										<div className="small-3 content column"><a href="http://sithakatea.com/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527076682/clients/sithaka.png"/></a></div>
 										<div className="small-3 content column"><a href="http://tanclean.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_10}/></a></div>
+								</div>
+							</div>
+							<p className="logo-text-desc">Trusted by companies islandwide</p>
+						</div>
+						{/* MEDIUM and large only-END */}
+
+
+
+						{/* ONLY FOR MOBILE */}
+						<div className = 'padding-top-50 off-white small-12 medium-12 large-12 content column show-for-small-only'>
+							<div className="padding-sides">
+							<p className="logo-text-title">Sri Lanka's best companies use TWC to improve their productivity.</p>
+							</div>
+							<div className="row">
+								<div className="small-12 content column small-block-grid-12">
+										<div className="small-4 content column"><a href="http://ogilvypr.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_14}/></a></div>
+										<div className="small-4 content column"><a href="http://packwell.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_16}/></a></div>
+										<div className="small-4 content column"><a href="http://cartectrading.com/" target="_blank"><img className="mini-img" src={IMG_HOME_17}/></a></div>
+										<div className="small-4 content column"><img className="mini-img" src={IMG_HOME_13}/></div>
+
+									  <div className="small-4 content column"><img className="mini-img" src={IMG_HOME_15}/></div>
+										<div className="small-4 content column"><a href="http://venoragroup.com/" target="_blank"><img className="mini-img" src={IMG_HOME_12}/></a></div>
+										<div className="small-4 content column"><a href="http://www.colombologistics.com/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/cmblogistics.png"/></a></div>
+										<div className="small-4 content column"><a href="http://fslga.lk/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/fslga.png"/></a></div>
+
+									  <div className="small-4 content column"><a href="http://threesinha.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_11}/></a></div>
+										<div className="small-4 content column"><a href="http://www.azonicmidas.lk/ " target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/azonic.png"/></a></div>
+
+										<div className="small-4 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527076682/clients/ceylon-jewelry.png"/></div>
+										<div className="small-4 content column"><a href="http://hyundai.lk/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527076683/clients/hyundai-srilanka.png"/></a></div>
+										<div className="small-4 content column"><a href="http://sithakatea.com/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527076682/clients/sithaka.png"/></a></div>
+										<div className="small-4 content column"><a href="http://tanclean.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_10}/></a></div>
 
 								</div>
 							</div>
 							<p className="logo-text-desc">Trusted by companies islandwide</p>
 						</div>
+						{/* ONLY FOR MOBILE-END */}
+
+
+
 					</div>
 				</div>
 					<ContactUsBar/>

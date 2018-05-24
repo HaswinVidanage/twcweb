@@ -318,6 +318,17 @@
   padding-right: 0px;
   border-right-width: 0px;
 }
+// Mini Map Form-MOBILE
+.mini-form-box-mobile {
+  z-index: 5;
+  background-color: $blood-red-light;
+  height: 450px;
+  border: 2px solid $blood-red-light;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right-width: 0px;
+}
+
 
 // placeholder
 .mini-form-box ::-webkit-input-placeholder { /* WebKit, Blink, Edge */

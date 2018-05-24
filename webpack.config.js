@@ -60,6 +60,7 @@ module.exports = {
     ContactUsBar:  'app/components/common/ContactUsBar.jsx',
     ImageLoader:  'app/components/common/ImageLoader.jsx',
     MiniContactForm: 'app/components/home/MiniContactForm.jsx',
+    MiniContactFormMobile: 'app/components/home/MiniContactFormMobile.jsx',
     MapBox: 'app/components/common/Map.jsx',
     // AboutMap : 'app/components/common/Map.jsx',
     // TitleBar: 'app/components/common/AboutMap.jsx',
