@@ -1,4 +1,3 @@
-
 var keystone = require('keystone'),
     Cv = keystone.list('Cv');
 exports.createCv = function(req, res) {
@@ -7,7 +6,7 @@ exports.createCv = function(req, res) {
 		data = req.body;
 
 	item.getUpdateHandler(req).process(data,{
-    fields: 'name, email, phone, cvType, message'
+    fields: 'name, email, phone, job, file'
   },function(err) {
     console.log(data);
 		if (err) return res.apiError('error', err);

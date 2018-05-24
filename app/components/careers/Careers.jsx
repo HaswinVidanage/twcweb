@@ -2,10 +2,13 @@ var React = require('react');
 import TitleBar from '../common/TitleBar';
 var {Link, IndexLink} = require('react-router');
 var Footer = require('Footer');
+var CvForm = require('CvForm');
+
 var careersAPI = require('careersAPI');
+var cvAPI = require('cvAPI');
+
 var moment = require('moment');
 
-// var SingleCareers = require('SingleCareers');
 var fullpageJs = require('fullpage.js');
 
 const IMG_CAREERS_1 = "http://res.cloudinary.com/haswind/image/upload/v1526468087/careers/careers.png";
@@ -15,6 +18,28 @@ const imgArray = [
 ];
 
 var Careers = React.createClass({
+
+  handleCvForm:function(res){
+    this.setState({
+      isLoading:true
+    });
+    this.postCv(res);
+  },
+
+  postCv:function(res){
+    var that = this;
+    cvAPI.postCv(res).then(function(){
+      console.log('post completed');
+      that.setState({
+        isLoading:false
+      });
+    },function(e){
+      console.log(e);
+    });
+
+  },
+
+
   getDefaultProps: function () {
     return{
       title: 'WORK WITH US',
@@ -105,8 +130,7 @@ var Careers = React.createClass({
         );
       }
       return careers.map((careers, key) =>{
-          // if(key >= startCareersKey && key < endCareersKey){
-            var link = `/careers-single/${careers.slug}`;
+
             return (
               <div className="section small-12 medium-12 large-12">
                   <div className="row align-justify align-middle">
@@ -130,13 +154,8 @@ var Careers = React.createClass({
           }
 
       );
-      // return careers.map((careers) =>{
-      //   // return (
-      //   //   <SingleCareers  key={careers._id} {...careers}  />
-      //   // );
-      // });
-    };
 
+    };
     return (
       <div id="fullpage" className="small-12 medium-12 large-12">
         <TitleBar title={title} content={content}/>
@@ -150,23 +169,7 @@ var Careers = React.createClass({
 
             {renderSingleCareers()}
 
-            <div id="contact-form" className="column large-centered small-12 medium-6 large-6 contact-form-wrapper">
-              <form ref="form" onSubmit={this.onSubmit} className="countdown-form">
-
-                <input className="column small-12 medium-12small-12  large-12" type="text" ref="name" placeholder="*Enter your name" required/>
-                <input className="column small-12 medium-12small-12  large-12" type="email" ref="email" placeholder="*Email" required/>
-                <input className="column small-12 medium-12small-12  large-12" type="tel" ref="phone" placeholder="*Phone" required/>
-
-                <select  onChange={this.handleSelect} className="column medium-12 large-12" type="text" ref="drpPurpose" required>
-                    <option value="0">JOB 1</option>
-                    <option value="1">JOB 2</option>
-                </select>
-
-                <input type="file" name="cv" ref="cv" accept=".pdf" placeholder="cv" required />
-
-                <button className="button btn-round-red-white orange-border">Send</button>
-              </form>
-            </div>
+            <CvForm/>
 
 
           </div>

@@ -11,8 +11,8 @@ module.exports = {
         name: req.name,
         email: req.email,
         phone: req.phone,
-        cvType : req.cvType,
-        message : req.message
+        job : req.job,
+        file : req.file
       })
       .then(function (response) {
         console.log(response);
