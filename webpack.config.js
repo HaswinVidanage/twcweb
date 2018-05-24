@@ -60,6 +60,7 @@ module.exports = {
     ContactUsBar:  'app/components/common/ContactUsBar.jsx',
     ImageLoader:  'app/components/common/ImageLoader.jsx',
     MiniContactForm: 'app/components/home/MiniContactForm.jsx',
+    MiniContactFormMobile: 'app/components/home/MiniContactFormMobile.jsx',
     MapBox: 'app/components/common/Map.jsx',
     // AboutMap : 'app/components/common/Map.jsx',
     // TitleBar: 'app/components/common/AboutMap.jsx',
@@ -70,7 +71,9 @@ module.exports = {
     ContactUs : 'app/components/contact/contactus.jsx',
     DescPanel : 'app/components/contact/DescPanel.jsx',
     DetailPanel : 'app/components/contact/DetailPanel.jsx',
-    ContactForm : 'app/components/contact/ContactForm.jsx'
+    ContactForm : 'app/components/contact/ContactForm.jsx',
+    Careers: 'app/components/careers/Careers.jsx',
+
     },
     extensions:['','.js','.jsx']
   },

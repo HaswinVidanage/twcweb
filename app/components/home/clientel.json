@@ -1,0 +1,48 @@
+{
+  "clientel": {
+    "tile1": {
+      "icon": "http://res.cloudinary.com/haswind/image/upload/q_30/v1507143878/clients/ogilvy.png",
+    },
+    "tile2": {
+      "icon": "http://res.cloudinary.com/haswind/image/upload/v1527076682/clients/packwell-lanka.png",
+    },
+    "tile3": {
+      "icon": "http://res.cloudinary.com/haswind/image/upload/q_30/v1507143880/clients/cartec.png",
+    },
+    "tile4": {
+      "icon": "http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/oppo.png",
+    },
+    "tile5": {
+      "icon": "http://res.cloudinary.com/haswind/image/upload/v1527072098/clients/sms-logo.png",
+    },
+    "tile6": {
+      "icon": "http://res.cloudinary.com/haswind/image/upload/q_30/v1507143876/clients/venora.png",
+    },
+    "tile7": {
+      "icon": "http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/cmblogistics.png",
+    },
+    "tile8": {
+      "icon": "http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/fslga.png",
+    },
+    "tile9": {
+      "icon": "http://res.cloudinary.com/haswind/image/upload/q_30/v1507143871/clients/threesinha.png",
+    },
+    "tile10": {
+      "icon": "http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/azonic.png",
+    },
+    "tile11": {
+      "icon": "http://res.cloudinary.com/haswind/image/upload/v1527076682/clients/ceylon-jewelry.png",
+    },
+    "tile12": {
+      "icon": "http://res.cloudinary.com/haswind/image/upload/v1527076683/clients/hyundai-srilanka.png",
+    },
+    "tile13": {
+      "icon": "http://res.cloudinary.com/haswind/image/upload/v1527076682/clients/sithaka.png",
+    },
+    "tile14": {
+      "icon": "http://res.cloudinary.com/haswind/image/upload/q_30/v1507143889/clients/tanclean.png",
+    },
+
+  }
+
+}

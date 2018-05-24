@@ -200,7 +200,7 @@ var TeamGrid = React.createClass({
           this.setState({
             fname: 'Dinuka',
             lname: '',
-            desc: 'Content about Dinuka will be updated soon.',
+            desc: 'The young blood within the company, young blood is constantly into challenges and they are always sensitive to the trends. So our expertise will assist you in having an innovative and an eminent IT business solution that will attract more potential customers.',
             url_1:defImg_dinuka,
             url_2:west_hashi,
             url_3:north_east_chathu,
@@ -215,7 +215,7 @@ var TeamGrid = React.createClass({
           this.setState({
             fname: 'Hashi',
             lname: '',
-            desc: 'Content about Hashi will be updated soon.',
+            desc: 'The young blood within the company, young blood is constantly into challenges and they are always sensitive to the trends. So our expertise will assist you in having an innovative and an eminent IT business solution that will attract more potential customers.',
             url_1:east_dinuka,
             url_2:defImg_hashi,
             url_3:north_east_east_chathu,
@@ -230,7 +230,7 @@ var TeamGrid = React.createClass({
           this.setState({
             fname: 'Chathuranga',
             lname: '',
-            desc: 'Content about Chathuranga will be updated soon.',
+            desc: 'The young blood within the company, young blood is constantly into challenges and they are always sensitive to the trends. So our expertise will assist you in having an innovative and an eminent IT business solution that will attract more potential customers.',
             url_1:south_west_dinuka,
             url_2:south_west_hashi,
             url_3:defImg_chathu,
@@ -245,7 +245,7 @@ var TeamGrid = React.createClass({
           this.setState({
             fname: 'Sachin',
             lname: '',
-            desc: 'Content about Sachin will be updated soon.',
+            desc: 'The young blood within the company, young blood is constantly into challenges and they are always sensitive to the trends. So our expertise will assist you in having an innovative and an eminent IT business solution that will attract more potential customers.',
             url_1:south_east_dinuka,
             url_2:south_west_hashi,
             url_3:east_chathu,
@@ -260,7 +260,7 @@ var TeamGrid = React.createClass({
           this.setState({
             fname: 'Haswin',
             lname: '',
-            desc: 'Content about Haswin will be updated soon.',
+            desc: 'The young blood within the company, young blood is constantly into challenges and they are always sensitive to the trends. So our expertise will assist you in having an innovative and an eminent IT business solution that will attract more potential customers.',
             url_1:south_east_dinuka,
             url_2:south_east_hashi,
             url_3:east_chathu,
@@ -275,7 +275,7 @@ var TeamGrid = React.createClass({
           this.setState({
             fname: 'Kasun',
             lname: '',
-            desc: 'Content about Kasun will be updated soon.',
+            desc: 'The young blood within the company, young blood is constantly into challenges and they are always sensitive to the trends. So our expertise will assist you in having an innovative and an eminent IT business solution that will attract more potential customers.',
             url_1:south_dinuka,
             url_2:south_west_hashi,
             url_3:south_east_chathu,
@@ -290,7 +290,7 @@ var TeamGrid = React.createClass({
           this.setState({
             fname: 'Nafeel',
             lname: '',
-            desc: 'Content about Nafeel will be updated soon.',
+            desc: 'The young blood within the company, young blood is constantly into challenges and they are always sensitive to the trends. So our expertise will assist you in having an innovative and an eminent IT business solution that will attract more potential customers.',
             url_1:south_east_dinuka,
             url_2:south_hashi,
             url_3:south_east_east_chathu,
