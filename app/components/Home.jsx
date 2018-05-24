@@ -9,6 +9,8 @@ var ImageLoader = require('ImageLoader');
 
 
 
+
+
 const IMG_HOME_1 = "http://res.cloudinary.com/haswind/image/upload/v1526388473/home/logo_header_new.png";
 const IMG_HOME_2 = "./images/Home/nexus.svg";
 const IMG_HOME_4 ="./images/Home/browser-window.svg";
@@ -117,6 +119,9 @@ var Home = React.createClass({
 
 	},
 	render: function() {
+
+
+
 
 		return (
 
@@ -240,7 +245,8 @@ var Home = React.createClass({
 							<MiniContactFormMobile/>
 						</div>
 
-					{/* MEDIUM and large only-END */}
+
+					{/* MEDIUM and large only */}
 						<div className = 'padding-top-50 off-white small-12 medium-12 large-12 content column hide-for-small-only'>
 							<div className="padding-sides">
 							<p className="logo-text-title">Sri Lanka's best companies use TWC to improve their productivity.</p>

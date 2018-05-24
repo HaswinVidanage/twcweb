@@ -19,7 +19,7 @@ var Footer = React.createClass({
                 </object>
               </div>
               <div>
-                <p className="footerWords">
+                <p className="footer-logo-text" id="fontColor">
                   TWC Innovations was founded with a rebellious spirit and a lofty objective to offer state of the art soft technologies at a revolutionary price, while leading the way for socially conscious business.
                 </p>
               </div>
