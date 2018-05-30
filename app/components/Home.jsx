@@ -7,8 +7,7 @@ var MiniContactForm = require('MiniContactForm');
 var MiniContactFormMobile = require('MiniContactFormMobile');
 var ImageLoader = require('ImageLoader');
 
-
-
+var ImageSlider = require('ImageSlider');
 
 
 const IMG_HOME_1 = "http://res.cloudinary.com/haswind/image/upload/v1526388473/home/logo_header_new.png";
@@ -20,7 +19,7 @@ const IMG_HOME_8 ="./images/Home/twc-help-desk.svg";
 const IMG_HOME_9 ="./images/Home/twc-web-solutions.svg";
 const IMG_HOME_10 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143889/clients/tanclean.png";
 const IMG_HOME_11 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143871/clients/threesinha.png";
-const IMG_HOME_12 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143876/clients/venora.png";
+const IMG_HOME_12 ="http://res.cloudinary.com/haswind/image/upload/v1527502745/clients/venora.png";
 const IMG_HOME_13 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/oppo.png";
 const IMG_HOME_14 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143878/clients/ogilvy.png";
 const IMG_HOME_15 ="http://res.cloudinary.com/haswind/image/upload/v1527072098/clients/sms-logo.png";
@@ -119,8 +118,6 @@ var Home = React.createClass({
 
 	},
 	render: function() {
-
-
 
 
 		return (
@@ -271,10 +268,12 @@ var Home = React.createClass({
 							</div>
 							<div className="row">
 								<div className="small-12 medium-12 large-12 content column small-block-grid-12">
-										<div className="small-3 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527076682/clients/ceylon-jewelry.png"/></div>
-										<div className="small-3 content column"><a href="http://hyundai.lk/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527076683/clients/hyundai-srilanka.png"/></a></div>
-										<div className="small-3 content column"><a href="http://sithakatea.com/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527076682/clients/sithaka.png"/></a></div>
-										<div className="small-3 content column"><a href="http://tanclean.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_10}/></a></div>
+										<div className="small-2 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527510726/clients/harcourts.png"/></div>
+										<div className="small-2 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527511234/clients/prestige.png"/></div>
+										<div className="small-2 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527076682/clients/ceylon-jewelry.png"/></div>
+										<div className="small-2 content column"><a href="http://hyundai.lk/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527076683/clients/hyundai-srilanka.png"/></a></div>
+										<div className="small-2 content column"><a href="http://sithakatea.com/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527076682/clients/sithaka.png"/></a></div>
+										<div className="small-2 content column"><a href="http://tanclean.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_10}/></a></div>
 								</div>
 							</div>
 							<p className="logo-text-desc">Trusted by companies islandwide</p>
@@ -283,34 +282,18 @@ var Home = React.createClass({
 
 
 
+
 						{/* ONLY FOR MOBILE */}
 						<div className = 'padding-top-50 off-white small-12 medium-12 large-12 content column show-for-small-only'>
 							<div className="padding-sides">
-							<p className="logo-text-title">Sri Lanka's best companies use TWC to improve their productivity.</p>
+								<p className="logo-text-title">Sri Lanka's best companies use TWC to improve their productivity.</p>
 							</div>
 							<div className="row">
 								<div className="small-12 content column small-block-grid-12">
-										<div className="small-4 content column"><a href="http://ogilvypr.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_14}/></a></div>
-										<div className="small-4 content column"><a href="http://packwell.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_16}/></a></div>
-										<div className="small-4 content column"><a href="http://cartectrading.com/" target="_blank"><img className="mini-img" src={IMG_HOME_17}/></a></div>
-										<div className="small-4 content column"><img className="mini-img" src={IMG_HOME_13}/></div>
-
-									  <div className="small-4 content column"><img className="mini-img" src={IMG_HOME_15}/></div>
-										<div className="small-4 content column"><a href="http://venoragroup.com/" target="_blank"><img className="mini-img" src={IMG_HOME_12}/></a></div>
-										<div className="small-4 content column"><a href="http://www.colombologistics.com/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/cmblogistics.png"/></a></div>
-										<div className="small-4 content column"><a href="http://fslga.lk/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/fslga.png"/></a></div>
-
-									  <div className="small-4 content column"><a href="http://threesinha.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_11}/></a></div>
-										<div className="small-4 content column"><a href="http://www.azonicmidas.lk/ " target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/azonic.png"/></a></div>
-
-										<div className="small-4 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527076682/clients/ceylon-jewelry.png"/></div>
-										<div className="small-4 content column"><a href="http://hyundai.lk/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527076683/clients/hyundai-srilanka.png"/></a></div>
-										<div className="small-4 content column"><a href="http://sithakatea.com/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527076682/clients/sithaka.png"/></a></div>
-										<div className="small-4 content column"><a href="http://tanclean.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_10}/></a></div>
-
+									<ImageSlider/>
 								</div>
+								<p className="logo-text-desc text-center">Trusted by companies islandwide</p>
 							</div>
-							<p className="logo-text-desc">Trusted by companies islandwide</p>
 						</div>
 						{/* ONLY FOR MOBILE-END */}
 

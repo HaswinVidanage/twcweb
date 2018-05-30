@@ -73,6 +73,7 @@ module.exports = {
     DetailPanel : 'app/components/contact/DetailPanel.jsx',
     ContactForm : 'app/components/contact/ContactForm.jsx',
     Careers: 'app/components/careers/Careers.jsx',
+    ImageSlider: 'app/components/home/ImageSlider.jsx',
 
     },
     extensions:['','.js','.jsx']

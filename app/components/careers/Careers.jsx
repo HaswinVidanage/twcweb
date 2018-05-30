@@ -5,9 +5,9 @@ var Footer = require('Footer');
 var careersAPI = require('careersAPI');
 var moment = require('moment');
 
-// import Popup from "reactjs-popup";
 
-// var SingleCareers = require('SingleCareers');
+
+
 var fullpageJs = require('fullpage.js');
 
 const IMG_CAREERS_1 = "http://res.cloudinary.com/haswind/image/upload/v1526468087/careers/careers.png";
@@ -107,8 +107,7 @@ var Careers = React.createClass({
         );
       }
       return careers.map((careers, key) =>{
-          // if(key >= startCareersKey && key < endCareersKey){
-            var link = `/careers-single/${careers.slug}`;
+
             return (
               <div className="section small-12 medium-12 large-12">
                   <div className="row align-justify align-middle">
@@ -132,11 +131,7 @@ var Careers = React.createClass({
           }
 
       );
-      // return careers.map((careers) =>{
-      //   // return (
-      //   //   <SingleCareers  key={careers._id} {...careers}  />
-      //   // );
-      // });
+
     };
     return (
       <div id="fullpage" className="small-12 medium-12 large-12">
