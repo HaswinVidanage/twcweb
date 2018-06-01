@@ -19,17 +19,13 @@ var Footer = React.createClass({
                 </object>
               </div>
               <div>
-<<<<<<< HEAD
                 <p className="footer-logo-text" id="fontColor">
-=======
-                <p>
->>>>>>> parent of 89a9725... home, portfolio, Services pages
                   TWC Innovations was founded with a rebellious spirit and a lofty objective to offer state of the art soft technologies at a revolutionary price, while leading the way for socially conscious business.
                 </p>
               </div>
             </div>
           </div>
-          <div className="small-12  medium-2 columns">
+          <div className="small-12 medium-2 columns hide-for-small-only">
             <div className="vertical-line" >
             </div>
             <div className="footer-menu-wrap">
@@ -79,7 +75,7 @@ var Footer = React.createClass({
             <div className="footer-social-wrapper">
               <div className="small-12 medium-12 columns">
                 <strong>FOLLOW US</strong>
-                <div className="footer-contact-text-wrapper footer-contact-div">
+                <div className="footer-contact-text-wrapper footer-contact-div hide-for-small-only">
                   <ul className="footer-ul">
                     <li><a href="https://www.facebook.com/twcinnovation/" target="_blank" className="footer-social-text"><span><p><FaFacebook/>&nbsp;Facebook</p></span></a></li>
                     <li><a href="https://twitter.com/twcinnovations/" target="_blank" className="footer-social-text"><span><p><FaTwitter/>&nbsp;Twitter</p></span></a></li>
@@ -89,7 +85,6 @@ var Footer = React.createClass({
                     <li><a href="https://www.youtube.com/channel/UCPUukkHtQy2dMzpt-YJOtTg" target="_blank" className="footer-social-text"><span><p><FaYoutube/>&nbsp;Youtube</p></span></a></li>
                   </ul>
                 </div>
-<<<<<<< HEAD
                 <div className="row footer-contact-text-wrapper footer-contact-div show-for-small-only small-12">
                     <ul className="footer-ul small-6">
                       <li><a href="https://www.facebook.com/twcinnovation/" target="_blank" className="footer-social-text"><span><p><FaFacebook/>&nbsp;Facebook</p></span></a></li>
@@ -104,8 +99,6 @@ var Footer = React.createClass({
                 </div>
 
 
-=======
->>>>>>> parent of 89a9725... home, portfolio, Services pages
               </div>
             </div>
           </div>

@@ -7,14 +7,10 @@ var MiniContactForm = require('MiniContactForm');
 var MiniContactFormMobile = require('MiniContactFormMobile');
 var ImageLoader = require('ImageLoader');
 
-<<<<<<< HEAD
 var ImageSlider = require('ImageSlider');
 
 
 const IMG_HOME_1 = "http://res.cloudinary.com/haswind/image/upload/v1526388473/home/logo_header_new.png";
-=======
-const IMG_HOME_1 = "https://res.cloudinary.com/haswind/image/upload/v1507148273/home/logo_header.png";
->>>>>>> parent of 89a9725... home, portfolio, Services pages
 const IMG_HOME_2 = "./images/Home/nexus.svg";
 const IMG_HOME_4 ="./images/Home/browser-window.svg";
 const IMG_HOME_6 ="./images/Home/twc-industrial-apps.svg";
@@ -26,16 +22,12 @@ const IMG_HOME_11 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143
 const IMG_HOME_12 ="http://res.cloudinary.com/haswind/image/upload/v1527502745/clients/venora.png";
 const IMG_HOME_13 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/oppo.png";
 const IMG_HOME_14 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143878/clients/ogilvy.png";
-<<<<<<< HEAD
 const IMG_HOME_15 ="http://res.cloudinary.com/haswind/image/upload/v1527072098/clients/sms-logo.png";
 const IMG_HOME_16 ="http://res.cloudinary.com/haswind/image/upload/v1527076682/clients/packwell-lanka.png";
 const IMG_HOME_17 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143880/clients/cartec.png";
 // const IMG_HOME_18 ="http://res.cloudinary.com/haswind/image/upload/v1526626566/sithaka_pzehgf.png";
 // const IMG_HOME_19 ="http://res.cloudinary.com/haswind/image/upload/v1526626565/ceylon_ucjvtt.png";
 
-=======
-const IMG_HOME_15 ="http://res.cloudinary.com/haswind/image/upload/q_30/v1507049549/clients/nasa.png";
->>>>>>> parent of 89a9725... home, portfolio, Services pages
 
 const imgArray = [
 	IMG_HOME_1,
@@ -50,16 +42,12 @@ const imgArray = [
 	IMG_HOME_12,
 	IMG_HOME_13,
 	IMG_HOME_14,
-<<<<<<< HEAD
 	IMG_HOME_15,
 	IMG_HOME_16,
 	IMG_HOME_17
 
 
 
-=======
-	IMG_HOME_15
->>>>>>> parent of 89a9725... home, portfolio, Services pages
 ];
 var Home = React.createClass({
 	componentWillMount: function() {
@@ -278,7 +266,6 @@ var Home = React.createClass({
 										<div className="small-3 content column"><a href="http://www.azonicmidas.lk/ " target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/azonic.png"/></a></div>
 								</div>
 							</div>
-<<<<<<< HEAD
 							<div className="row">
 								<div className="small-12 medium-12 large-12 content column small-block-grid-12">
 										<div className="small-2 content column"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527510726/clients/harcourts.png"/></div>
@@ -289,8 +276,6 @@ var Home = React.createClass({
 										<div className="small-2 content column"><a href="http://tanclean.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_10}/></a></div>
 								</div>
 							</div>
-=======
->>>>>>> parent of 89a9725... home, portfolio, Services pages
 							<p className="logo-text-desc">Trusted by companies islandwide</p>
 						</div>
 						{/* MEDIUM and large only-END */}
