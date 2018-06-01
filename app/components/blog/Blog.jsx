@@ -139,10 +139,10 @@ var Blog = React.createClass({
     return (
       <div>
         <TitleBar title={title} content={content}/>
-          <div className="blog-wrap-main no-left-padding">
-            <div className="columns small-12 medium-12 large-12 large-centered margin-top-20 no-left-padding">
-              <div className="columns small-12 medium-6 large-6 small-push-2 no-left-padding">
-                { renderSinglePosts()}
+        <div className="blog-wrap-main no-left-padding">
+          <div className="columns small-12 medium-12 large-12 large-centered margin-top-20 no-left-padding">
+            <div className="columns small-12 medium-6 large-6 small-push-2 no-left-padding">
+              { renderSinglePosts()}
 
               <ul className="pagination" role="navigation" aria-label="Pagination">
                 { renderPagination() }
@@ -151,9 +151,6 @@ var Blog = React.createClass({
 
 
             </div>
-
-            <div className="small-12 medium-4 large-4"></div>
-
             <div className="columns small-4 medium-4 large-4 hide-for-small-only">
               <Timeline
                  dataSource={{
@@ -164,7 +161,6 @@ var Blog = React.createClass({
                    username: 'twcinnovations',
                    height: '600',
                    chrome:'nofooter noscrollbar'
-
                  }}
                  onLoad={() =>
                    {
@@ -172,16 +168,13 @@ var Blog = React.createClass({
                       'background-color' : '#24b4ff',
                       'padding': '18px'
                     });
-
                     $("iframe#twitter-widget-0").contents().find(".timeline-Header-title").css({
                       'color' : '#fff'
                     });
-
                     $("iframe#twitter-widget-0").contents().find(".timeline-Header-byline").css({
                       'font-size': '1px',
                       'color': '#24b4ff'
                     });
-
                    }
                }
                />
