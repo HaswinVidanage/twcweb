@@ -11,7 +11,7 @@ var DetailPanel = React.createClass({
               <div className="small-4 medium-4 large-4 columns">
                 <address>
                     <span>
-                        <h3 className="address-title">Corporate Office</h3>
+                        <h3 className="address-title">SRI LANKA</h3>
                         TWC Innovations<br />
                         25 Vijitha Road,<br />
                         Nedimala,<br />
@@ -22,21 +22,22 @@ var DetailPanel = React.createClass({
               <div className="small-4 medium-4 large-4 columns">
                 <address>
                     <span>
-                        <h3 className="address-title">Corporate Office</h3>
-                        TWC Innovations<br />
-                        91 WELLINGTON ROAD,<br />
-                        CLAYTON VIC,<br />
-                        3168, AUSTRALIA
+                        <h3 className="address-title">NEW ZEALAND</h3>
+                        95, Southampton st,<br />
+                        Sydenham,<br />
+                        Christchurch<br />
+                      New Zealand.
                     </span>
                 </address>
               </div>
               <div className="small-4 medium-4 large-4 columns">
                 <address>
                     <span>
-                        <h3 className="address-title">General Contact</h3>
-                        Hotline: 011-273-1912<br/>
-                        Phone: 077-377-8084<br/>
-                        Email: sales@twcwebs.com<br/>
+                        <h3 className="address-title">AUSTRALIA</h3>
+                        8 Warrina court,<br/>
+                        Burwood east<br/>
+                        Victoria 3151<br/>
+                      Australia.
                     </span>
                 </address>
               </div>
@@ -46,9 +47,9 @@ var DetailPanel = React.createClass({
                 <address>
                     <span>
                         <h3 className="address-title">Sales Inquiries</h3>
-                        Nafeel: +(94) 77-893-3898<br />
-                        Sachin: +(94) 77-893-3898<br />
-                        Email: sales@twcwebs.com
+                          <a href="tel:+94112731912">Hotline : +(94) 011-273-1912</a><br/>
+                          <a href="tel:+94773778084">Nafeel  : +(94) 077-377-8084</a><br/>
+                          <a href="email:sales@twcwebs.com">Email: sales@twcwebs.com</a>
                     </span>
                 </address>
               </div>
@@ -56,9 +57,9 @@ var DetailPanel = React.createClass({
                 <address>
                     <span>
                         <h3 className="address-title">International Sales</h3>
-                        Hotline: 011-213-7654<br/>
-                        Phone: 071-123-4567<br/>
-                        Email: info@twcwebs.com<br/>
+                          <a href="tel:+64224177221">New Zealand: (+64) 224177221</a><br/>
+                          <a href="tel:+61450964261">Australia: (+61) 0450964261</a><br/>
+                          <a href="email:sales@twcwebs.com">Email: sales@twcwebs.com</a>
                     </span>
                 </address>
               </div>
