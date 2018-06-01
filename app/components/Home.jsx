@@ -180,7 +180,7 @@ var Home = React.createClass({
 				</div>
 				<div className="section section3-home small-12 medium-12 large-12  " id="section3-home">
 					<div className="section3-home">
-						<div className="r row align-justify align-middle industrial-app-wrap">
+						<div className="row align-justify align-middle industrial-app-wrap">
 							<div className = 'small-12 medium-6 large-6 content column z-index-high'>
 									<img src={IMG_HOME_7} />
 							</div>
@@ -250,26 +250,16 @@ var Home = React.createClass({
 							</div>
 							<div className="row">
 								<div className="small-12 medium-12 large-12 content column small-block-grid-12">
-<<<<<<< HEAD
 										<div className="small-2 content column"><a href="http://ogilvypr.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_14}/></a></div>
 										<div className="small-2 content column"><a href="http://packwell.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_16}/></a></div>
 										<div className="small-2 content column"><a href="http://cartectrading.com/" target="_blank"><img className="mini-img" src={IMG_HOME_17}/></a></div>
 										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_13}/></div>
 										<div className="small-2 content column"><img className="mini-img" src={IMG_HOME_15}/></div>
 										<div className="small-2 content column"><a href="http://venoragroup.com/" target="_blank"><img className="mini-img" src={IMG_HOME_12}/></a></div>
-=======
-										<div className="small-2 content column"><img className="companyicons" src={IMG_HOME_10}/></div>
-										<div className="small-2 content column"><img className="companyicons" src={IMG_HOME_11}/></div>
-										<div className="small-2 content column"><img className="companyicons" src={IMG_HOME_12}/></div>
-										<div className="small-2 content column"><img className="companyicons" src={IMG_HOME_13}/></div>
-										<div className="small-2 content column"><img className="companyicons" src={IMG_HOME_14}/></div>
-										<div className="small-2 content column"><img className="companyicons" src={IMG_HOME_15}/></div>
->>>>>>> parent of 6432fd0... social buttons and some
 								</div>
 							</div>
 							<div className="row">
 								<div className="small-12 medium-12 large-12 content column small-block-grid-12">
-<<<<<<< HEAD
 										<div className="small-3 content column"><a href="http://www.colombologistics.com/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/cmblogistics.png"/></a></div>
 										<div className="small-3 content column"><a href="http://fslga.lk/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/fslga.png"/></a></div>
 										<div className="small-3 content column"><a href="http://threesinha.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_11}/></a></div>
@@ -284,12 +274,6 @@ var Home = React.createClass({
 										<div className="small-2 content column"><a href="http://hyundai.lk/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527076683/clients/hyundai-srilanka.png"/></a></div>
 										<div className="small-2 content column"><a href="http://sithakatea.com/" target="_blank"><img className="mini-img" src="http://res.cloudinary.com/haswind/image/upload/v1527076682/clients/sithaka.png"/></a></div>
 										<div className="small-2 content column"><a href="http://tanclean.lk/" target="_blank"><img className="mini-img" src={IMG_HOME_10}/></a></div>
-=======
-										<div className="small-3 content column"><img className="companyicons" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/cmblogistics.png"/></div>
-										<div className="small-3 content column"><img className="companyicons" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143873/clients/fslga.png"/></div>
-										<div className="small-3 content column"><img className="companyicons" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143880/clients/cartec.png"/></div>
-										<div className="small-3 content column"><img className="companyicons" src="http://res.cloudinary.com/haswind/image/upload/q_30/v1507143868/clients/azonic.png"/></div>
->>>>>>> parent of 6432fd0... social buttons and some
 								</div>
 							</div>
 							<p className="logo-text-desc">Trusted by companies islandwide</p>

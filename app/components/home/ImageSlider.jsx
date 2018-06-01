@@ -24,10 +24,10 @@ var ImageSlider = React.createClass({
       'http://res.cloudinary.com/haswind/image/upload/v1527076683/clients/hyundai-srilanka.png',
     ];
 
-    let timerId = setInterval(() => alert('tick'), 2000);
-
-   // after 5 seconds stop
-   setTimeout(() => { clearInterval(timerId); alert('stop'); }, 5000);
+   //  let timerId = setInterval(() => alert('tick'), 2000);
+   //
+   // // after 5 seconds stop
+   // setTimeout(() => { clearInterval(timerId); alert('stop'); }, 5000);
 
 
 

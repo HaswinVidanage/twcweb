@@ -1,6 +1,6 @@
 var React = require('react');
 
-var {FaFacebook, FaTwitter, FaInstagram} = require('react-icons/lib/fa');
+var {FaFacebook, FaTwitter, FaInstagram, FaGooglePlus, FaLinkedin, FaYoutube} = require('react-icons/lib/fa');
 
 var {Link, IndexLink} = require('react-router');
 
@@ -80,9 +80,9 @@ var Footer = React.createClass({
                     <li><a href="https://www.facebook.com/twcinnovation/" target="_blank" className="footer-social-text"><span><p><FaFacebook/>&nbsp;Facebook</p></span></a></li>
                     <li><a href="https://twitter.com/twcinnovations/" target="_blank" className="footer-social-text"><span><p><FaTwitter/>&nbsp;Twitter</p></span></a></li>
                     <li><a href="https://www.instagram.com/twcinnovations/" target="_blank" className="footer-social-text"><span><p><FaInstagram/>&nbsp;Instagram</p></span></a></li>
-                    <li><a href="https://www.linkedin.com/company/the-web-company-sri-lanka/" target="_blank" className="footer-social-text"><span><p>&nbsp;Linkedin</p></span></a></li>
-                    <li><a href="https://plus.google.com/103196226565054953717/" target="_blank" className="footer-social-text"><span><p>&nbsp;GooglePlus</p></span></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCPUukkHtQy2dMzpt-YJOtTg" target="_blank" className="footer-social-text"><span><p>&nbsp;Youtube</p></span></a></li>
+                    <li><a href="https://www.linkedin.com/company/the-web-company-sri-lanka/" target="_blank" className="footer-social-text"><span><p><FaLinkedin/>&nbsp;Linkedin</p></span></a></li>
+                    <li><a href="https://plus.google.com/103196226565054953717/" target="_blank" className="footer-social-text"><span><p><FaGooglePlus/>&nbsp;GooglePlus</p></span></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCPUukkHtQy2dMzpt-YJOtTg" target="_blank" className="footer-social-text"><span><p><FaYoutube/>&nbsp;Youtube</p></span></a></li>
                   </ul>
                 </div>
                 <div className="row footer-contact-text-wrapper footer-contact-div show-for-small-only small-12">
