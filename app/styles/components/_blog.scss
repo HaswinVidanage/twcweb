@@ -23,3 +23,13 @@
 .no-left-padding {
   padding-left: 0px;
 }
+
+.marginRight{
+  margin-right: 20px;
+}
+
+#blogMobile{
+  @media (max-width : $chrome-426) {
+    padding-right: 110px;
+  }
+}

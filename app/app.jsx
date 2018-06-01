@@ -13,7 +13,7 @@ var Examples = require('Examples');
 var Portfolio = require('Portfolio');
 var ServicesCore =  require('ServicesCore');
 var ContactUs = require('ContactUs');
-var Careers = require('Careers');
+// var Careers = require('Careers');
 //Load foundation
 require('style!css!foundation-sites/dist/foundation.min.css');
 //app.css
@@ -39,7 +39,7 @@ ReactDOM.render(
        <Route path="blog" component={Blog}/>
        <Route path="blog-single/:slug" component={BlogSingle}/>
        <Route path="services/:serviceIndex" component={ServicesCore}/>
-       <Route path="careers" component={Careers}/>
+       
        <IndexRoute component={Home}/>
      </Route>
    </Router>,
