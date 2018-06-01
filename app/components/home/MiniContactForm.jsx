@@ -112,7 +112,7 @@ var MiniContactForm = React.createClass({
 
     return (
       <div className="MiniContactForm small-12 medium-12 large-12 row" id="MiniContactForm">
-          <div className="mini-form-box small-12 medium-6 large-6 columns">
+          <div className="mini-form-box small-6 medium-6 large-6 columns">
               <div className="mini-contact-wrapper">
                 <form onSubmit={this.onSubmit}>
                   <input className="mini-contact-input" type="text" ref="name" placeholder="Your Name" required
@@ -135,15 +135,15 @@ var MiniContactForm = React.createClass({
                   <textarea required className="mini-text-area" rows="4" cols="50" ref="message" placeholder="Your lovely feedback goes here..."
                     value = {this.state.submitBtnState == 2 ? '' : this.value}
                   />
-                  <button type="submit" className="button btn-submit-green-mini hide-for-small-only" >{renderSubmitButton()}</button>
-                  <button type="submit" className="button btn-submit-green-mini-mobile show-for-small-only" >{renderSubmitButton()}</button>
-
+                  <div className="mini-submit-wrapper"
+                    onClick={() => {
+                    }}> <button type="submit" className="button btn-submit-green-mini" >{renderSubmitButton()}</button> </div>
                 </form>
               </div>
 
           </div>
 
-          <div className="MabBox-Wrapper small-12 medium-6 large-6 columns">
+          <div className="MabBox-Wrapper small-6 medium-6 large-6 columns">
             <MapBox className="left-curved-5px"/>
           </div>
 
