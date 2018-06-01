@@ -70,7 +70,7 @@ keystone.set('nav', {
 	enquiries: 'enquiries',
 	users: 'users',
 	careers: 'careers',
-	cv : 'cv',
+	// cv : 'cv',
 });
 
 // Start Keystone to connect to your database and initialise the web server

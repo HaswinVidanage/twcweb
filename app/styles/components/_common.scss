@@ -48,6 +48,16 @@
   max-height: 42px;
   min-width: 124px;
 }
+.btn-round-red-white-small {
+  border: 2px solid $blood-red-light;
+  background-color: white;
+  color: $blood-red-dark;
+  border-radius: 140px;
+  line-height: 32px;
+  display: inline-block;
+  max-height: 34px;
+  min-width: 35px;
+}
 
 .btn-round-red-white:focus, .btn-round-red-white:hover {
     background-color: $blood-red-light!important;

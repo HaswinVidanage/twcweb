@@ -134,7 +134,7 @@ var Careers = React.createClass({
             return (
               <div className="section small-12 medium-12 large-12">
                   <div className="row align-justify align-middle">
-                    <div className = 'small-6 medium-4 large-4 content column z-index-high'>
+                    <div className = 'small-4 medium-4 large-4 content column z-index-high'>
                         <h5><b>{careers.title}</b></h5>
                     </div>
                     <div className = 'small-3 medium-4 large-4 content column'>
@@ -143,8 +143,9 @@ var Careers = React.createClass({
                     <div className = 'small-3 medium-2 large-2 content column'>
                       <p>{careers.salary}</p>
                     </div>
-                    <div className = 'small-3 medium-2 large-2 content column'>
-                      <button className="button btn-round-red-white orange-border">apply</button>
+                    <div className = 'small-2 medium-2 large-2 content column'>
+                      <button className="button btn-round-red-white orange-border hide-for-small-only">apply</button>
+                      <button className="button btn-round-red-white-small orange-border show-for-small-only">apply</button>
                     </div>
                   </div>
               </div>
