@@ -73,7 +73,7 @@ module.exports = {
     DetailPanel : 'app/components/contact/DetailPanel.jsx',
     ContactForm : 'app/components/contact/ContactForm.jsx',
     Careers: 'app/components/careers/Careers.jsx',
-    CvForm: 'app/components/careers/CvForm.jsx'
+    Cv: 'app/components/careers/Cv.jsx'
 
 
     },

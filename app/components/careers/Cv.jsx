@@ -1,6 +1,6 @@
 var React = require('react');
 var {FaSpinner, FaCheck} = require('react-icons/lib/fa');
-var CvForm = React.createClass({
+var Cv = React.createClass({
 
   onSubmit:function(e){
     e.preventDefault();
@@ -76,4 +76,4 @@ var CvForm = React.createClass({
   }
 });
 
-module.exports = CvForm;
+module.exports = Cv;

@@ -2,7 +2,7 @@ var React = require('react');
 import TitleBar from '../common/TitleBar';
 var {Link, IndexLink} = require('react-router');
 var Footer = require('Footer');
-var CvForm = require('CvForm');
+var Cv = require('Cv');
 
 var careersAPI = require('careersAPI');
 var cvAPI = require('cvAPI');
@@ -19,7 +19,7 @@ const imgArray = [
 
 var Careers = React.createClass({
 
-  handleCvForm:function(res){
+  handleCv:function(res){
     this.setState({
       isLoading:true
     });
@@ -134,18 +134,20 @@ var Careers = React.createClass({
             return (
               <div className="section small-12 medium-12 large-12">
                   <div className="row align-justify align-middle">
-                    <div className = 'small-4 medium-4 large-4 content column z-index-high'>
+                    <div className = 'small-4 medium-4 large-4 content column'>
                         <h5><b>{careers.title}</b></h5>
                     </div>
-                    <div className = 'small-3 medium-4 large-4 content column'>
+                    <div className = 'small-2 medium-4 large-4 content column'>
                       <p>{careers.description}</p>
                     </div>
-                    <div className = 'small-3 medium-2 large-2 content column'>
+                    <div className = 'small-2 medium-2 large-2 content column'>
                       <p>{careers.salary}</p>
                     </div>
                     <div className = 'small-2 medium-2 large-2 content column'>
                       <button className="button btn-round-red-white orange-border hide-for-small-only">apply</button>
-                      <button className="button btn-round-red-white-small orange-border show-for-small-only">apply</button>
+                      <button className="button tiny btn-round-red-white-small orange-border show-for-small-only">apply</button>
+                    </div>
+                    <div className = 'small-1 medium-2 large-2 content column'>
                     </div>
                   </div>
               </div>
@@ -162,7 +164,10 @@ var Careers = React.createClass({
         <TitleBar title={title} content={content}/>
 
         <div className="careersPage row">
-          <div className="careersTopic small-12 medium-12 large-12">
+          <div className="careersTopic small-12 medium-12 large-12 hide-for-small-only">
+            <h1>Current openining</h1>
+          </div>
+          <div className="small-12 medium-12 large-12 show-for-small-only text-center">
             <h1>Current openining</h1>
           </div>
 
@@ -170,7 +175,7 @@ var Careers = React.createClass({
 
             {renderSingleCareers()}
 
-            <CvForm/>
+            <Cv/>
 
 
           </div>

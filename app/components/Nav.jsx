@@ -23,6 +23,7 @@ var Nav = React.createClass({
 
           <ul className="menu-desktop medium-11 large-9 align-right align-middle row" >
             <li><Link to="#">Home</Link></li>
+            <li><Link to="/about" activeClassName="active" activeStyle={{fontWeight:'bold'}}>About</Link></li>
             <li>
               <div className="menu-group" id="desktop-menu">
                 <span>Services</span>
@@ -106,10 +107,13 @@ var Nav = React.createClass({
             </li>
             {/* <li><Link to="/Saless" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Sales Suit</Link></li> */}
             <li><Link to="/portfolio" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Portfolio</Link></li>
-            <li><Link to="/about" activeClassName="active" activeStyle={{fontWeight:'bold'}}>About</Link></li>
-            <li className="separator"></li>
             <li><Link to="/blog" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Blog</Link></li>
-            <li><Link to="/contact" className="button navButton" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Contact Us</Link></li>
+            <li><Link to="/careers" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Careers</Link></li>
+            <li><Link to="/contact" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Contact Us</Link></li>
+            <li className="separator"></li>
+            <li><a href="http://twccrm.twcwebs.com/login/" className="button navButton" activeClassName="active" target="_blank" activeStyle={{fontWeight:'bold'}}>Log in</a></li>
+
+
 
           </ul>
 
@@ -192,8 +196,10 @@ var Nav = React.createClass({
                 <div className="item small-12"><li><Link onClick= {() => {this.close()}}  to="/about" activeClassName="active" activeStyle={{fontWeight:'bold'}}>About</Link></li></div>
                 <span className="separator"></span>
                 <div className="item small-12"><li><Link onClick= {() => {this.close()}} to="/blog" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Blog</Link></li></div>
-                <div className="item small-12"><li><Link onClick= {() => {this.close()}} to="/contact" className="button navButton" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Contact Us</Link></li></div>
-
+                <div className="item small-12"><li><Link onClick= {() => {this.close()}} to="/careers" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Careers</Link></li></div>
+                <div className="item small-12"><li><Link onClick= {() => {this.close()}} to="/contact" className="navButton" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Contact Us</Link></li></div>
+                <span className="separator"></span>
+                  <div className="item small-12"><li><a href="http://twccrm.twcwebs.com/login/" className="button navButton" activeClassName="active" target="_blank" activeStyle={{fontWeight:'bold'}}>Log in</a></li></div>
               </div>
             </div>
           </div>
