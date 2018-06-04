@@ -42,94 +42,94 @@
   "service_1": {
     "slides": [
       {
-        "title": "TWC Industrial Solutions",
-        "info": "Lorem1 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "img": "http://res.cloudinary.com/haswind/image/upload/c_scale,w_500/v1514355119/services/1_industrial/chat.png",
+        "title": "TWC Sales Suite",
+        "info": "TWC Sales suite will elimate few key driving issues by enabling companies to track and monitor their sales teams.",
+        "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
         "link": "#"
       },
       {
-        "title": "A mobile app",
-        "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "img": "http://res.cloudinary.com/haswind/image/upload/c_scale,w_500/v1514355124/services/1_industrial/map.png",
+        "title": "TWC mobile order placement ",
+        "info": "Digital ordering system with invoicing facility will optimise reduce your leadtime in operations.",
+        "img": "http://res.cloudinary.com/haswind/image/upload/v1509211809/services/sliders/shashika.png",
         "link": "#"
       },
       {
-        "title": "Dashboard 3",
-        "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "img": "http://res.cloudinary.com/haswind/image/upload/c_scale,w_500/v1514355120/services/1_industrial/dashboard-2.png",
+        "title": "TWC Fleet Managment system ",
+        "info": "Real time fleet tracker and efficient order delivery system.",
+        "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
         "link": "#"
       }
     ],
     "card": {
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<strong>Suis nostrud exercitation</strong>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "text": "Redefine your selling and distribution process with an app that integrates the entire team. TWC sales suite is the ultimate tool that monitors sales team and track locations of sales representative's real time. TWC Industrial Apps enable your company to eliminate all manual ordering processes and will enhance the operational efficiency while increasing company revenue.",
       "icon": "http://res.cloudinary.com/haswind/image/upload/v1509200560/utility/icons/industrial-2.svg"
     },
     "testomonial": {
-      "message": "TWC did a wonderful job with our website! Love the design, work is on point and the timely deliveries impressed me the most. Recommended!",
-      "owner": "Lalith Sirisena",
-      "designation": "CEO & Founder Sithaka Tea"
+      "message": "We had many issues related to manual ordering system and we had few operational issues before we implemented this system. We were in the look out for a system or an app that will solve our ineffiancies. TWC understood our requirement and we had the trust in them to go ahead and develop. We are more than satisfied with TWC Innvations efforts in identifying our problem and delivering it on point.",
+      "owner": "Nakeeb Nawaz",
+      "designation": "Brand Manager , Buffalo Energy Drink (American Remadies) "
     }
   },
   "service_2": {
     "slides": [
       {
-        "title": "TWC Help Desk",
-        "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "title": "Get ahead from your competitors",
+        "info": "Help desk system will ensure a unique customer experiance in engaging with your company",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
         "link": "#"
       },
       {
-        "title": "Website 2",
-        "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "title": "Eliminate all management decripencies in relation to CRM",
+        "info": "The system gives a wide variety of features that will help the company to re-solve driving issues in relation to customer relationship managment",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
         "link": "#"
       },
       {
-        "title": "Website 3",
+        "title": "Drive  ",
         "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
         "link": "#"
       }
     ],
     "card": {
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<strong>Suis nostrud exercitation</strong>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "text": "Give your customer the luxury of connecting to you digitally.We at TWC value long term customer relationships. Help desk system will stamp that relationship with you and customer. The system is built according to your industry and customers' needs to connect you and your customers better.",
       "icon": "http://res.cloudinary.com/haswind/image/upload/v1509200560/utility/icons/hrlp-desk-2.svg"
     },
     "testomonial": {
-      "message": "TWC did a wonderful job with our website! Love the design, work is on point and the timely deliveries impressed me the most. Recommended!",
-      "owner": "Lalith Sirisena",
-      "designation": "CEO & Founder Sithaka Tea"
+      "message": "We had a maintream process before we met TWC. They took us through the product and we had a very positive idea about product and implemented it. We are happy and so far everything is going smooth. Wishing The team at TWC Innovations to do more innovative products.",
+      "owner": "Mustafa Abid",
+      "designation": "Manager, Ceylon Jewelry Manufacturers"
     }
   },
   "service_3": {
     "slides": [
       {
-        "title": "Wesbsite Development",
-        "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "title": "Why TWC Wesbite Development ",
+        "info": "With less than five years we have\nbeen able to capture some of the best brands and companies as a service\nprovider.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1503939465/greenery_jsbmti.png",
         "link": "#"
       },
       {
-        "title": "Alankara Website",
-        "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "title": "Why TWC Wesbite Development ",
+        "info": "Competitive pricing since we\nadapt latest development concepts to minimize the cost.",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1509211606/services/sliders/alankara.png",
         "link": "#"
       },
       {
-        "title": "Tanclean Lanka",
-        "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "title": "Why TWC Website Developement ",
+        "info": "Designing unique designs and development technologies and giving that competitive\nedge ver competitors.\n\n\n",
         "img": "http://res.cloudinary.com/haswind/image/upload/v1509211738/services/sliders/tanclean.png",
         "link": "#"
       }
     ],
     "card": {
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<strong>Suis nostrud exercitation</strong>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "text": "We at TWC Innovations welcome the opportunity to design, develop and maintain a cutting edge websites to meet your requirements. TWC Innovations will be providing you with the finest quality while maintaining the stability of your web application on all devices such as desktop PC's, mobile devices and tablets. TWC Innovations offers the highest quality development for affordable price rates.",
       "icon": "http://res.cloudinary.com/haswind/image/upload/v1509200567/utility/icons/web-1.svg"
     },
     "testomonial": {
-      "message": "TWC did a wonderful job with our website! Love the design, work is on point and the timely deliveries impressed me the most. Recommended!",
-      "owner": "Lalith Sirisena",
-      "designation": "CEO & Founder Sithaka Tea"
+      "message": "We selected TWC to update and relaunch our company website through a recommendation and happy to say that they delivered beyond expectations. The whole process was very well planned and executed with minimum hassle on our end. Any changes we requested later on were attended in prompt manner by the TWC team. And thanks to their ongoing SEO work and online marking advice we had a noticeable increase in web based traffic and inquiries. Overall, we are very satisfied with the job they did and would recommend them to anyone who is after hassle free, professional and prompt IT services. ",
+      "owner": "Don Adam Ketagoda",
+      "designation": "Director Cartect Trading Lanka "
     }
   },
   "service_4": {
@@ -154,13 +154,13 @@
       }
     ],
     "card": {
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<strong>Suis nostrud exercitation</strong>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "text": "TWC develop both Android and IOS with latest technology stacks available. We stay away from mainstream mobile app development as our company intention is to continously innovate cutting edge mobile app products that stakeholders value alot. We have lauched and developed quite a few apps that are in the market which are mind-bogling.",
       "icon": "http://res.cloudinary.com/haswind/image/upload/v1509200561/utility/icons/mobile-2.svg"
     },
     "testomonial": {
-      "message": "TWC did a wonderful job with our website! Love the design, work is on point and the timely deliveries impressed me the most. Recommended!",
-      "owner": "Lalith Sirisena",
-      "designation": "CEO & Founder Sithaka Tea"
+      "message": "We loved the transparancy of the work carried out by TWC. We wish them for their future endevours.",
+      "owner": "Paul Ray",
+      "designation": "Director Steel Link (Austrailia) "
     }
   },
   "service_5": {
@@ -185,13 +185,13 @@
       }
     ],
     "card": {
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<strong>Suis nostrud exercitation</strong>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "text": "Technology offers cost economy by reducing resource requirements, improving productivity of the firm and enhancing financial value in the long run. TWC Innovations will find innovative ways to reduce costs, increase revenue and most importantly implement it to your organisation. ",
       "icon": "http://res.cloudinary.com/haswind/image/upload/v1509200566/utility/icons/software-2.svg"
     },
     "testomonial": {
-      "message": "TWC did a wonderful job with our website! Love the design, work is on point and the timely deliveries impressed me the most. Recommended!",
-      "owner": "Lalith Sirisena",
-      "designation": "CEO & Founder Sithaka Tea"
+      "message": "TWC did a wonderful job with our purchase management web app, loved the output and the attentive employees of TWC. Recommended!",
+      "owner": "pengsenyao ",
+      "designation": "Business Developement Manager, OPPO Sri LAn "
     }
   },
   "service_6": {
@@ -216,13 +216,13 @@
       }
     ],
     "card": {
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<strong>Suis nostrud exercitation</strong>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "text": "Our team at TWC Innovations has expertise in advanced SEM ,PPC,Reputational management,Social media marketing, Analytics, SEO coding and is able to keep our customer's website always on the highest platform in Google and other search engines",
       "icon": "http://res.cloudinary.com/haswind/image/upload/v1509200564/utility/icons/social-media-1.svg"
     },
     "testomonial": {
-      "message": "TWC did a wonderful job with our website! Love the design, work is on point and the timely deliveries impressed me the most. Recommended!",
-      "owner": "Lalith Sirisena",
-      "designation": "CEO & Founder Sithaka Tea"
+      "message": "We have frachised a new business to Sri Lanka and gave the sole resposibility to TWC to maintain the companies online presence. We are quite thrilled about the results shown and we have seen a massive noise created by TWC digital media team about this new venture. Recomending the team at TWC.",
+      "owner": "Manujula Ariyakumara ",
+      "designation": "CEO, Three Sinha Industries"
     }
   }
 }
