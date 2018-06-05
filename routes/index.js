@@ -68,7 +68,7 @@ exports = module.exports = function (app) {
 	app.get('/api/careers', keystone.middleware.api, routes.api.careers.getCareers);
 
 	//API for cv
-	// app.post('/api/cv', keystone.middleware.api, routes.api.careers.createCv);
+	app.post('/api/cv', keystone.middleware.api, routes.api.careers.createCv);
 };
 
 
