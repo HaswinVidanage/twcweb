@@ -1,5 +1,8 @@
 var React = require('react');
 var {FaSpinner, FaCheck} = require('react-icons/lib/fa');
+
+var cvAPI = require('cvAPI');
+
 var Cv = React.createClass({
 
   onSubmit:function(e){

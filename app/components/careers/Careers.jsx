@@ -7,6 +7,8 @@ var Cv = require('Cv');
 var careersAPI = require('careersAPI');
 var cvAPI = require('cvAPI');
 
+import Modal from 'react-responsive-modal';
+
 var moment = require('moment');
 
 var fullpageJs = require('fullpage.js');
@@ -16,6 +18,10 @@ const IMG_CAREERS_1 = "http://res.cloudinary.com/haswind/image/upload/v152646808
 const imgArray = [
   IMG_CAREERS_1
 ];
+
+var state = {
+open: false,
+};
 
 var Careers = React.createClass({
 
@@ -115,9 +121,21 @@ var Careers = React.createClass({
 
 
   },
+
+
+
+onOpenModal: function(){
+  this.setState({ open: true });
+},
+
+onCloseModal: function(){
+  this.setState({ open: false });
+},
+
   render : function(){
     // var title = this.state.title;
     // var content = this.state.content;
+const { open } = this.state;
 
     var {isLoading , careers, errorMessage, title, content} = this.state;
 
@@ -133,7 +151,7 @@ var Careers = React.createClass({
 
             return (
               <div className="section small-12 medium-12 large-12">
-                  <div className="row align-justify align-middle">
+                  <div className="row align-justify align-middle" id="careersRow">
                     <div className = 'small-4 medium-4 large-4 content column'>
                         <h5><b>{careers.title}</b></h5>
                     </div>
@@ -144,12 +162,20 @@ var Careers = React.createClass({
                       <p>{careers.salary}</p>
                     </div>
                     <div className = 'small-2 medium-2 large-2 content column'>
-                      <button className="button btn-round-red-white orange-border hide-for-small-only">apply</button>
-                      <button className="button tiny btn-round-red-white-small orange-border show-for-small-only">apply</button>
+                      <button className="button btn-round-red-white orange-border hide-for-small-only" onClick={this.onOpenModal}>apply</button>
+                      <button className="button tiny btn-round-red-white-small orange-border show-for-small-only" onClick={this.onOpenModal}>apply</button>
                     </div>
                     <div className = 'small-1 medium-2 large-2 content column'>
                     </div>
                   </div>
+
+                  <div>
+
+                    <Modal open={open} onClose={this.onCloseModal} center>
+                      <Cv/>
+                    </Modal>
+                  </div>
+
               </div>
 
 
@@ -175,7 +201,7 @@ var Careers = React.createClass({
 
             {renderSingleCareers()}
 
-            <Cv/>
+
 
 
           </div>

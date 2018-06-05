@@ -7,6 +7,7 @@ module.exports = {
     console.log(req.name);
     var requestUrl = `${TWC_PORTFOLIO_API_URL}`;
     console.log(requestUrl);
+    console.log('CV API');
     return axios.post(requestUrl, {
         name: req.name,
         email: req.email,
