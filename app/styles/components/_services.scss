@@ -1,3 +1,12 @@
+
+@media (max-width : $chrome-426) {
+  .trasnformNON{
+      height: 575px!important;
+  }
+}
+// #fullpage{
+//   transform: none!important;
+// }
 #service-section1 {
   background: #c40000!important;  /* fallback for old browsers */
   background: -webkit-linear-gradient(#c40000, #da1616)!important;  /* Chrome 10-25, Safari 5.1-6 */
