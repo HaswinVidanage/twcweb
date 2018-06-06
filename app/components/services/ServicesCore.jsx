@@ -5,6 +5,7 @@ var FooterComponent = require('Footer');
 import Parser from 'html-react-parser';
 var ServicesContent = require("./service-content-en.json");
 var ServiceContent,CardStyle;
+var Footer = require('Footer');
 
 var ServicesCore = React.createClass({
 	componentWillMount: function() {
@@ -75,7 +76,8 @@ var ServicesCore = React.createClass({
     };
 
 		return (
-			<div id="fullpage">
+			<div>
+			<div id="fullpage" className="trasnformNON">
 				<div className="section section0-services" data-menuanchor="websites?0" id={`service-section${this.props.params.serviceIndex}`}>
           {renderSlides()}
 				</div>
@@ -208,6 +210,8 @@ var ServicesCore = React.createClass({
 
 					</div>
 				</div>
+				<Footer/>
+			</div>
 			</div>
 		);
 	}
