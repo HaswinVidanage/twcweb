@@ -161,7 +161,6 @@ var Blog = React.createClass({
                    username: 'twcinnovations',
                    height: '600',
                    chrome:'nofooter noscrollbar'
-
                  }}
                  onLoad={() =>
                    {
@@ -169,16 +168,13 @@ var Blog = React.createClass({
                       'background-color' : '#24b4ff',
                       'padding': '18px'
                     });
-
                     $("iframe#twitter-widget-0").contents().find(".timeline-Header-title").css({
                       'color' : '#fff'
                     });
-
                     $("iframe#twitter-widget-0").contents().find(".timeline-Header-byline").css({
                       'font-size': '1px',
                       'color': '#24b4ff'
                     });
-
                    }
                }
                />

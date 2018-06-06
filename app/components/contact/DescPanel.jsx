@@ -56,7 +56,7 @@ var DescPanel = React.createClass({
                     <p className="inquiry-desc">Customer support and project related updates will be given from this portal.</p>
                     <div className="small-12 medium-12 large-12">
                       <div className="contact-btn-desc-wrap">
-                        <a href="#contact-form" className="button btn-round-red-white orange-border"  refs="btnCustomerSup" onClick={this.onButtonClicked(2)}>Customer Support</a>
+                        <a href="http://twccrm.twcwebs.com/login/" target="_blank" className="button btn-round-red-white orange-border"  refs="btnCustomerSup" onClick={this.onButtonClicked(2)}>Customer Support</a>
                       </div>
                     </div>
                   </div>
