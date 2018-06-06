@@ -111,6 +111,46 @@
 
   }
 }
+.btn-submit-green-mini-mobile {
+  border: 2px solid $submit-green;
+  border-top-left-radius: 5px;
+  padding-right: 0px;
+  border-right-width: 0px;
+  background-color: $submit-green;
+  color: white;
+  padding: 0 25px;
+  display: inline-block;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  height: 50px;
+  width: 111px;
+  margin-left: 66%;
+
+  @media (max-width : $chrome-321) {
+
+  }
+  @media only screen and (min-width : $chrome-321) and (max-width : $chrome-376 ) {
+
+  }
+  @media (min-width: $chrome-376) and (max-width: $chrome-426) {
+
+   }
+  @media (min-width: $chrome-426) and (max-width : $chrome-769) {
+    margin-left: 249px;
+  }
+  @media (min-width: $chrome-769) and (max-width : $chrome-1025)  {
+
+  }
+  @media (min-width: $chrome-1025) and (max-width : $chrome-1441) {
+
+  }
+  @media (min-width: $chrome-1441) and (max-width : $chrome-2561) {
+
+  }
+  @media (min-width : $chrome-2561) {
+
+  }
+}
 
 .btn-submit-green-mini:focus, .btn-submit-green-mini:hover {
     background-color: $submit-green-focus;
@@ -277,6 +317,17 @@
   padding-right: 0px;
   border-right-width: 0px;
 }
+// Mini Map Form-MOBILE
+.mini-form-box-mobile {
+  z-index: 5;
+  background-color: $blood-red-light;
+  height: 450px;
+  border: 2px solid $blood-red-light;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right-width: 0px;
+}
+
 
 // placeholder
 .mini-form-box ::-webkit-input-placeholder { /* WebKit, Blink, Edge */

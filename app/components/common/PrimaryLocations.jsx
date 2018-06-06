@@ -21,9 +21,9 @@ class PrimaryLocations extends Component {
             <h1 className="loc-heading">MELBOURNE, AUS</h1>
             <p  className="loc-title">
               91 WELLINGTON ROAD,<br/>
-              CLAYTON VIC,<br/>
-              MELBOURNE (3168),<br/>
-              AUSTRALIA
+-              CLAYTON VIC,<br/>
+-              MELBOURNE (3168),<br/>
+-              AUSTRALIA
             </p>
           </div>
         </div>
